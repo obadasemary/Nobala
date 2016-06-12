@@ -11,8 +11,8 @@ import UIKit
 
 extension NobalaClient {
     
-    
-    func downloadData(urlString: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+    //get10News
+    func get10News(urlString: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
         
         taskForGETMethod(urlString) { (result, error) in
             
@@ -20,8 +20,34 @@ extension NobalaClient {
                 completionHandler(success: false, error: error)
                 return
             }
-            
-            
         }
+    }
+    
+    //getTop5Events
+    func getTop5Events(urlString: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+    
+    
+    }
+    
+    //getMainPages
+    func getMainPages(urlString: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+        
+        
+    }
+    
+    //getContactInfo
+    func getContactInfo(urlString: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+        
+    }
+    
+    //getAdmissionsAndRegistrationo
+    func getAdmissionsAndRegistrationo(urlString: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+        
+        
+    }
+    
+    //getAdvertisment
+    func getAdvertisment(urlString: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+        
     }
 }
