@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BEE1D0D5D260053130C /* AppDelegate.swift */; };
+		AF106BF11D0D5D260053130C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BF01D0D5D260053130C /* ViewController.swift */; };
+		AF106BF41D0D5D260053130C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF106BF21D0D5D260053130C /* Main.storyboard */; };
+		AF106BF61D0D5D260053130C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF106BF51D0D5D260053130C /* Assets.xcassets */; };
+		AF106BF91D0D5D260053130C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF106BF71D0D5D260053130C /* LaunchScreen.storyboard */; };
+		AF106C041D0D5D270053130C /* NobalaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C031D0D5D270053130C /* NobalaTests.swift */; };
+		AF106C0F1D0D5D270053130C /* NobalaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C0E1D0D5D270053130C /* NobalaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF106C001D0D5D270053130C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF106BE31D0D5D260053130C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF106BEA1D0D5D260053130C;
+			remoteInfo = Nobala;
+		};
+		AF106C0B1D0D5D270053130C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF106BE31D0D5D260053130C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF106BEA1D0D5D260053130C;
+			remoteInfo = Nobala;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF106BEB1D0D5D260053130C /* Nobala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobala.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF106BEE1D0D5D260053130C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF106BF01D0D5D260053130C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF106BF31D0D5D260053130C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF106BF51D0D5D260053130C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF106BF81D0D5D260053130C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF106BFA1D0D5D270053130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF106BFF1D0D5D270053130C /* NobalaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NobalaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF106C031D0D5D270053130C /* NobalaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobalaTests.swift; sourceTree = "<group>"; };
+		AF106C051D0D5D270053130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF106C0A1D0D5D270053130C /* NobalaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NobalaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF106C0E1D0D5D270053130C /* NobalaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobalaUITests.swift; sourceTree = "<group>"; };
+		AF106C101D0D5D270053130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF106BE81D0D5D260053130C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF106BFC1D0D5D270053130C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF106C071D0D5D270053130C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF106BE21D0D5D260053130C = {
+			isa = PBXGroup;
+			children = (
+				AF106BED1D0D5D260053130C /* Nobala */,
+				AF106C021D0D5D270053130C /* NobalaTests */,
+				AF106C0D1D0D5D270053130C /* NobalaUITests */,
+				AF106BEC1D0D5D260053130C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF106BEC1D0D5D260053130C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF106BEB1D0D5D260053130C /* Nobala.app */,
+				AF106BFF1D0D5D270053130C /* NobalaTests.xctest */,
+				AF106C0A1D0D5D270053130C /* NobalaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF106BED1D0D5D260053130C /* Nobala */ = {
+			isa = PBXGroup;
+			children = (
+				AF106BEE1D0D5D260053130C /* AppDelegate.swift */,
+				AF106BF01D0D5D260053130C /* ViewController.swift */,
+				AF106BF21D0D5D260053130C /* Main.storyboard */,
+				AF106BF51D0D5D260053130C /* Assets.xcassets */,
+				AF106BF71D0D5D260053130C /* LaunchScreen.storyboard */,
+				AF106BFA1D0D5D270053130C /* Info.plist */,
+			);
+			path = Nobala;
+			sourceTree = "<group>";
+		};
+		AF106C021D0D5D270053130C /* NobalaTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF106C031D0D5D270053130C /* NobalaTests.swift */,
+				AF106C051D0D5D270053130C /* Info.plist */,
+			);
+			path = NobalaTests;
+			sourceTree = "<group>";
+		};
+		AF106C0D1D0D5D270053130C /* NobalaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF106C0E1D0D5D270053130C /* NobalaUITests.swift */,
+				AF106C101D0D5D270053130C /* Info.plist */,
+			);
+			path = NobalaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF106BEA1D0D5D260053130C /* Nobala */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF106C131D0D5D270053130C /* Build configuration list for PBXNativeTarget "Nobala" */;
+			buildPhases = (
+				AF106BE71D0D5D260053130C /* Sources */,
+				AF106BE81D0D5D260053130C /* Frameworks */,
+				AF106BE91D0D5D260053130C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nobala;
+			productName = Nobala;
+			productReference = AF106BEB1D0D5D260053130C /* Nobala.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF106BFE1D0D5D270053130C /* NobalaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF106C161D0D5D270053130C /* Build configuration list for PBXNativeTarget "NobalaTests" */;
+			buildPhases = (
+				AF106BFB1D0D5D270053130C /* Sources */,
+				AF106BFC1D0D5D270053130C /* Frameworks */,
+				AF106BFD1D0D5D270053130C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF106C011D0D5D270053130C /* PBXTargetDependency */,
+			);
+			name = NobalaTests;
+			productName = NobalaTests;
+			productReference = AF106BFF1D0D5D270053130C /* NobalaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF106C091D0D5D270053130C /* NobalaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF106C191D0D5D270053130C /* Build configuration list for PBXNativeTarget "NobalaUITests" */;
+			buildPhases = (
+				AF106C061D0D5D270053130C /* Sources */,
+				AF106C071D0D5D270053130C /* Frameworks */,
+				AF106C081D0D5D270053130C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF106C0C1D0D5D270053130C /* PBXTargetDependency */,
+			);
+			name = NobalaUITests;
+			productName = NobalaUITests;
+			productReference = AF106C0A1D0D5D270053130C /* NobalaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF106BE31D0D5D260053130C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Abdelrahman Mohamed";
+				TargetAttributes = {
+					AF106BEA1D0D5D260053130C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6KNM32Y4FM;
+					};
+					AF106BFE1D0D5D270053130C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6KNM32Y4FM;
+						TestTargetID = AF106BEA1D0D5D260053130C;
+					};
+					AF106C091D0D5D270053130C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6KNM32Y4FM;
+						TestTargetID = AF106BEA1D0D5D260053130C;
+					};
+				};
+			};
+			buildConfigurationList = AF106BE61D0D5D260053130C /* Build configuration list for PBXProject "Nobala" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF106BE21D0D5D260053130C;
+			productRefGroup = AF106BEC1D0D5D260053130C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF106BEA1D0D5D260053130C /* Nobala */,
+				AF106BFE1D0D5D270053130C /* NobalaTests */,
+				AF106C091D0D5D270053130C /* NobalaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF106BE91D0D5D260053130C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF106BF91D0D5D260053130C /* LaunchScreen.storyboard in Resources */,
+				AF106BF61D0D5D260053130C /* Assets.xcassets in Resources */,
+				AF106BF41D0D5D260053130C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF106BFD1D0D5D270053130C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF106C081D0D5D270053130C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF106BE71D0D5D260053130C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF106BF11D0D5D260053130C /* ViewController.swift in Sources */,
+				AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF106BFB1D0D5D270053130C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF106C041D0D5D270053130C /* NobalaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF106C061D0D5D270053130C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF106C0F1D0D5D270053130C /* NobalaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF106C011D0D5D270053130C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF106BEA1D0D5D260053130C /* Nobala */;
+			targetProxy = AF106C001D0D5D270053130C /* PBXContainerItemProxy */;
+		};
+		AF106C0C1D0D5D270053130C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF106BEA1D0D5D260053130C /* Nobala */;
+			targetProxy = AF106C0B1D0D5D270053130C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF106BF21D0D5D260053130C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF106BF31D0D5D260053130C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF106BF71D0D5D260053130C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF106BF81D0D5D260053130C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF106C111D0D5D270053130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF106C121D0D5D270053130C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF106C141D0D5D270053130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Nobala/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.Nobala;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF106C151D0D5D270053130C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Nobala/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.Nobala;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AF106C171D0D5D270053130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NobalaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.NobalaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nobala.app/Nobala";
+			};
+			name = Debug;
+		};
+		AF106C181D0D5D270053130C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NobalaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.NobalaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nobala.app/Nobala";
+			};
+			name = Release;
+		};
+		AF106C1A1D0D5D270053130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NobalaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.NobalaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Nobala;
+			};
+			name = Debug;
+		};
+		AF106C1B1D0D5D270053130C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NobalaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.NobalaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Nobala;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF106BE61D0D5D260053130C /* Build configuration list for PBXProject "Nobala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF106C111D0D5D270053130C /* Debug */,
+				AF106C121D0D5D270053130C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF106C131D0D5D270053130C /* Build configuration list for PBXNativeTarget "Nobala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF106C141D0D5D270053130C /* Debug */,
+				AF106C151D0D5D270053130C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF106C161D0D5D270053130C /* Build configuration list for PBXNativeTarget "NobalaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF106C171D0D5D270053130C /* Debug */,
+				AF106C181D0D5D270053130C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF106C191D0D5D270053130C /* Build configuration list for PBXNativeTarget "NobalaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF106C1A1D0D5D270053130C /* Debug */,
+				AF106C1B1D0D5D270053130C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF106BE31D0D5D260053130C /* Project object */;
+}
