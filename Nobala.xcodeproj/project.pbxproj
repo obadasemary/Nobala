@@ -14,6 +14,9 @@
 		AF106BF91D0D5D260053130C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF106BF71D0D5D260053130C /* LaunchScreen.storyboard */; };
 		AF106C041D0D5D270053130C /* NobalaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C031D0D5D270053130C /* NobalaTests.swift */; };
 		AF106C0F1D0D5D270053130C /* NobalaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C0E1D0D5D270053130C /* NobalaUITests.swift */; };
+		AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C1D1D0D755C0053130C /* NobalaClient.swift */; };
+		AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C1F1D0D75760053130C /* NobalaConvenient.swift */; };
+		AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C211D0D75860053130C /* NobalaConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		AF106C0A1D0D5D270053130C /* NobalaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NobalaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF106C0E1D0D5D270053130C /* NobalaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobalaUITests.swift; sourceTree = "<group>"; };
 		AF106C101D0D5D270053130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF106C1D1D0D755C0053130C /* NobalaClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaClient.swift; sourceTree = "<group>"; };
+		AF106C1F1D0D75760053130C /* NobalaConvenient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConvenient.swift; sourceTree = "<group>"; };
+		AF106C211D0D75860053130C /* NobalaConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		AF106BED1D0D5D260053130C /* Nobala */ = {
 			isa = PBXGroup;
 			children = (
+				AF106C1C1D0D70FC0053130C /* Model */,
 				AF106BEE1D0D5D260053130C /* AppDelegate.swift */,
 				AF106BF01D0D5D260053130C /* ViewController.swift */,
 				AF106BF21D0D5D260053130C /* Main.storyboard */,
@@ -123,6 +130,16 @@
 				AF106C101D0D5D270053130C /* Info.plist */,
 			);
 			path = NobalaUITests;
+			sourceTree = "<group>";
+		};
+		AF106C1C1D0D70FC0053130C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF106C211D0D75860053130C /* NobalaConstants.swift */,
+				AF106C1D1D0D755C0053130C /* NobalaClient.swift */,
+				AF106C1F1D0D75760053130C /* NobalaConvenient.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF106BF11D0D5D260053130C /* ViewController.swift in Sources */,
+				AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */,
 				AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */,
+				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,
+				AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +507,7 @@
 				AF106C151D0D5D270053130C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF106C161D0D5D270053130C /* Build configuration list for PBXNativeTarget "NobalaTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +516,7 @@
 				AF106C181D0D5D270053130C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF106C191D0D5D270053130C /* Build configuration list for PBXNativeTarget "NobalaUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +525,7 @@
 				AF106C1B1D0D5D270053130C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
