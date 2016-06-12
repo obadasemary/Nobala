@@ -15,11 +15,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        print("Nobala School")
-//        NobalaClient.sharedInstance().get10News((url + NobalaClient.Methods.get10News)) { (success, error) in
-//            
-//            print(success)
-//        }
+        print("Nobala School")
+        
+
+    }
+    @IBAction func btnOne(sender: AnyObject) {
+        
+        NobalaClient.sharedInstance().get10News((url + NobalaClient.Methods.get10News)) { (success, error) in
+            
+            print(success)
+        }
+    }
+    @IBAction func btnTwo(sender: AnyObject) {
         
         NobalaClient.sharedInstance().getTop5Events((url + NobalaClient.Methods.getTop5Events)) { (success, error) in
             
