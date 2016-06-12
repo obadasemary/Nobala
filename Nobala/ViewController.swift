@@ -9,11 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var url = NobalaClient.Constants.BaseURL
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Nobala School")
+//        print("Nobala School")
+//        NobalaClient.sharedInstance().get10News((url + NobalaClient.Methods.get10News)) { (success, error) in
+//            
+//            print(success)
+//        }
+        
+        NobalaClient.sharedInstance().getTop5Events((url + NobalaClient.Methods.getTop5Events)) { (success, error) in
+            
+            print(success)
+        }
     }
 }
 
