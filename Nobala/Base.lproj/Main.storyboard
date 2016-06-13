@@ -17,34 +17,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="4a8-ga-jPk">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRi-Ce-d2v">
-                                <rect key="frame" x="261" y="194" width="78" height="30"/>
-                                <state key="normal" title="Button One"/>
+                                <rect key="frame" x="262" y="125" width="77" height="30"/>
+                                <state key="normal" title="get10News"/>
                                 <connections>
-                                    <action selector="btnOne:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="Tna-UQ-rYZ"/>
+                                    <action selector="btn10News:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="3bG-NS-ebU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGi-fT-5Co">
-                                <rect key="frame" x="261" y="246" width="78" height="30"/>
-                                <state key="normal" title="Button Two"/>
+                                <rect key="frame" x="249" y="177" width="103" height="30"/>
+                                <state key="normal" title="getTop5Events"/>
                                 <connections>
-                                    <action selector="btnTwo:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="b4Q-eT-Nmi"/>
+                                    <action selector="btnTop5Events:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="2ai-Ea-xAA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGO-zM-7xQ">
+                                <rect key="frame" x="251" y="234" width="98" height="30"/>
+                                <state key="normal" title="getMainPages"/>
+                                <connections>
+                                    <action selector="btnMainPages:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="bQM-bP-icN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSF-bQ-t1F">
+                                <rect key="frame" x="249" y="335" width="103" height="30"/>
+                                <state key="normal" title="getContactInfo"/>
+                                <connections>
+                                    <action selector="btnContacntInfo:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="333-1n-i9G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KD-e3-MyY">
+                                <rect key="frame" x="191" y="387" width="219" height="30"/>
+                                <state key="normal" title="getAdmissionsAndRegistrationo"/>
+                                <connections>
+                                    <action selector="btnAdminAndRegister:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="CyI-CX-es9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EyP-kI-dwV">
+                                <rect key="frame" x="243" y="444" width="114" height="30"/>
+                                <state key="normal" title="getAdvertisment"/>
+                                <connections>
+                                    <action selector="btnAdvertisment:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="ELd-yO-SQD"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="EK7-dU-KM6" firstAttribute="top" secondItem="4a8-ga-jPk" secondAttribute="bottom" id="87b-BF-9PR"/>
-                            <constraint firstItem="tGi-fT-5Co" firstAttribute="leading" secondItem="WRi-Ce-d2v" secondAttribute="leading" id="KXG-gJ-SFm"/>
-                            <constraint firstItem="4a8-ga-jPk" firstAttribute="leading" secondItem="zaG-EC-55f" secondAttribute="leading" id="XTS-Gr-xNU"/>
-                            <constraint firstAttribute="trailing" secondItem="4a8-ga-jPk" secondAttribute="trailing" id="aDJ-zc-Bwa"/>
-                            <constraint firstItem="WRi-Ce-d2v" firstAttribute="top" secondItem="kT6-ge-kK4" secondAttribute="bottom" constant="174" id="doA-97-r8A"/>
-                            <constraint firstItem="WRi-Ce-d2v" firstAttribute="centerX" secondItem="4a8-ga-jPk" secondAttribute="centerX" id="dsA-uP-0qW"/>
-                            <constraint firstItem="4a8-ga-jPk" firstAttribute="top" secondItem="zaG-EC-55f" secondAttribute="top" id="tZ0-fu-lVY"/>
-                            <constraint firstItem="tGi-fT-5Co" firstAttribute="top" secondItem="WRi-Ce-d2v" secondAttribute="bottom" constant="22" id="yuQ-LM-bMz"/>
+                            <constraint firstItem="WRi-Ce-d2v" firstAttribute="centerX" secondItem="zaG-EC-55f" secondAttribute="centerX" id="5w6-7q-Wb5"/>
+                            <constraint firstItem="FSF-bQ-t1F" firstAttribute="top" secondItem="UGO-zM-7xQ" secondAttribute="bottom" constant="71" id="BpJ-sM-p7a"/>
+                            <constraint firstItem="EyP-kI-dwV" firstAttribute="top" secondItem="0KD-e3-MyY" secondAttribute="bottom" constant="27" id="IrC-f6-Leo"/>
+                            <constraint firstItem="UGO-zM-7xQ" firstAttribute="top" secondItem="tGi-fT-5Co" secondAttribute="bottom" constant="27" id="OTR-4w-WY1"/>
+                            <constraint firstItem="WRi-Ce-d2v" firstAttribute="top" secondItem="kT6-ge-kK4" secondAttribute="bottom" constant="105" id="PuI-ha-gIm"/>
+                            <constraint firstItem="0KD-e3-MyY" firstAttribute="top" secondItem="FSF-bQ-t1F" secondAttribute="bottom" constant="22" id="Sox-z6-TLi"/>
+                            <constraint firstItem="tGi-fT-5Co" firstAttribute="leading" secondItem="FSF-bQ-t1F" secondAttribute="leading" id="YWa-GZ-1dm"/>
+                            <constraint firstItem="WRi-Ce-d2v" firstAttribute="centerX" secondItem="tGi-fT-5Co" secondAttribute="centerX" id="bBX-Vn-seM"/>
+                            <constraint firstItem="tGi-fT-5Co" firstAttribute="top" secondItem="WRi-Ce-d2v" secondAttribute="bottom" constant="22" id="gGz-Kn-GKB"/>
+                            <constraint firstItem="0KD-e3-MyY" firstAttribute="centerX" secondItem="EyP-kI-dwV" secondAttribute="centerX" id="nl6-gn-bcc"/>
+                            <constraint firstItem="FSF-bQ-t1F" firstAttribute="centerX" secondItem="0KD-e3-MyY" secondAttribute="centerX" id="ppS-ym-hwB"/>
+                            <constraint firstItem="tGi-fT-5Co" firstAttribute="centerX" secondItem="UGO-zM-7xQ" secondAttribute="centerX" id="wdc-wm-W85"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="A4j-tn-Rg5"/>
@@ -54,7 +83,4 @@
             <point key="canvasLocation" x="949" y="257"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="sample" width="2588" height="4600"/>
-    </resources>
 </document>
