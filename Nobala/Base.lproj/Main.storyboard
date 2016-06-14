@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wnJ-Ej-l25">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -180,7 +180,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleNewsDetails" id="mx5-tI-KL6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleContactUs" id="mx5-tI-KL6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -190,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVx-xC-pwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748" y="347"/>
+            <point key="canvasLocation" x="2011" y="999"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5vM-b5-2Uf">
@@ -255,39 +255,102 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUp-NV-e0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1145" y="1126"/>
+            <point key="canvasLocation" x="1189" y="1817"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="szP-f4-I1p">
+        <!--ContactUs-->
+        <scene sceneID="io5-Xa-t1F">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wnJ-Ej-l25" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ed3-le-PRJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="WBw-oS-tkH" kind="relationship" relationship="rootViewController" id="m8N-TJ-UZK"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3cI-6P-65L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="mw9-3u-oUh" userLabel="ContactUs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ofy-K7-xtT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactUsBackground" id="Kvf-mU-6Fg">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactUsRectangle" id="PZi-Mc-csi">
+                                <rect key="frame" x="15" y="82" width="285" height="472"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GEK-36-dVe">
+                                <rect key="frame" x="26" y="101" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="twitter"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="R3B-Xc-Peu">
+                                <rect key="frame" x="91" y="101" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="youtube"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="s3e-Fz-FC0">
+                                <rect key="frame" x="162" y="101" width="56" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="facebook"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dmj-Ul-17A">
+                                <rect key="frame" x="231" y="101" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="google plus"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0j3-0g-gET">
+                                <rect key="frame" x="226" y="206" width="54" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="telephone"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h8g-lE-Kbw">
+                                <rect key="frame" x="228" y="250" width="53" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="mobileNumber"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1qV-jV-B7Y">
+                                <rect key="frame" x="222" y="297" width="64" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="fax"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vxa-oc-CqL">
+                                <rect key="frame" x="194" y="334" width="87" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="email"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WB7-gs-9hz">
+                                <rect key="frame" x="225" y="376" width="59" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Address"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WnV-Hg-jzq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pm8-2p-8oL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="863" y="347"/>
+            <point key="canvasLocation" x="1659" y="999"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Address" width="59" height="28"/>
         <image name="backgroundHome" width="320" height="511"/>
         <image name="backgroundNews" width="320" height="511"/>
         <image name="contactUs" width="107" height="75"/>
+        <image name="contactUsBackground" width="320" height="511"/>
+        <image name="contactUsRectangle" width="287" height="471"/>
+        <image name="email" width="102" height="14"/>
         <image name="events" width="119" height="73"/>
+        <image name="facebook" width="56" height="57"/>
+        <image name="fax" width="64" height="21"/>
+        <image name="google plus" width="57" height="57"/>
         <image name="knowUs" width="128" height="72"/>
         <image name="learning" width="171" height="70"/>
+        <image name="mobileNumber" width="53" height="27"/>
         <image name="news" width="97" height="73"/>
         <image name="newsCellRectangle" width="311" height="106"/>
         <image name="newsDetailsBackground" width="320" height="511"/>
         <image name="newsDetailsRectangle" width="287" height="472"/>
-        <image name="sampleNewsDetails" width="320" height="569"/>
+        <image name="sampleContactUs" width="320" height="569"/>
         <image name="socialMedia" width="173" height="70"/>
+        <image name="telephone" width="54" height="26"/>
+        <image name="twitter" width="57" height="57"/>
+        <image name="youtube" width="57" height="57"/>
     </resources>
 </document>
