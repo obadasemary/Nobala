@@ -16,26 +16,13 @@ class EventsViewController: UIViewController, CalendarViewDelegate {
     
     @IBOutlet weak var date: UILabel!
     
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         let calendar = CalendarView()
         calendar.frame = calendarView.frame
         calendar.delegate = self
-//        CalendarView.daySelectedBackgroundColor = UIColor.redColor()
-//        CalendarView.daySelectedTextColor = UIColor.whiteColor()
-//        CalendarView.todayBackgroundColor = UIColor.redColor()
-//        CalendarView.todayTextColor = UIColor.whiteColor()
-//        CalendarView.otherMonthBackgroundColor = UIColor.clearColor()
-//        CalendarView.otherMonthTextColor = UIColor(white: 1.0, alpha: 0.3)
         CalendarView.dayTextColor = UIColor.grayColor()
-//        CalendarView.dayBackgroundColor = UIColor.clearColor()
-//        CalendarView.weekLabelTextColor = UIColor(white: 1.0, alpha: 0.3)
-        
-        
-        calendar.delegate = self
         view.addSubview(calendar)
     }
     
