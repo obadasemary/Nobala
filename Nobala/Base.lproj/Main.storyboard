@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wYi-nG-72Q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1m0-5o-AEy">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -145,7 +145,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample (1)" id="vL3-9F-CqV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleEvents" id="vL3-9F-CqV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -155,7 +155,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7WG-el-rwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2336" y="-1009"/>
+            <point key="canvasLocation" x="3386" y="-847"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sTv-lv-wen">
+            <objects>
+                <viewController id="jk5-Do-0gb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lZE-6Q-vv9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundEvents" id="3Xj-d2-hNa">
+                                <rect key="frame" x="0.0" y="63" width="320" height="505"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="Btd-Yt-xko">
+                                <rect key="frame" x="27" y="110" width="266" height="272"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="487647320.63457602">
+                                    <!--2016-06-15 01:35:20 +0000-->
+                                </date>
+                            </datePicker>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" id="Hnb-Cf-xe8">
+                                <rect key="frame" x="27" y="390" width="95" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aWv-Ty-3cN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hF8-8e-F0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3019" y="-847"/>
         </scene>
         <!--News-->
         <scene sceneID="NX3-E8-VTG">
@@ -463,29 +495,59 @@
             </objects>
             <point key="canvasLocation" x="1409" y="-1009"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PN6-GJ-lUJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1m0-5o-AEy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3yX-N9-aqh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jk5-Do-0gb" kind="relationship" relationship="rootViewController" id="0DD-Ps-EuI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6P-xO-xPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2487" y="-847"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Address" width="59" height="28"/>
         <image name="KalmetMoshref" width="171" height="26"/>
+        <image name="backgroundEvents" width="320" height="511"/>
         <image name="backgroundHome" width="320" height="511"/>
         <image name="backgroundKnowsUs" width="320" height="511"/>
         <image name="backgroundNews" width="320" height="511"/>
         <image name="cashway" width="116" height="27"/>
         <image name="contactUs" width="107" height="75"/>
+        <image name="contactUsBackground" width="320" height="511"/>
+        <image name="contactUsRectangle" width="287" height="471"/>
         <image name="divider line" width="234" height="1"/>
+        <image name="email" width="102" height="14"/>
         <image name="events" width="119" height="73"/>
+        <image name="facebook" width="56" height="57"/>
+        <image name="fax" width="64" height="21"/>
         <image name="feesSchool" width="153" height="27"/>
+        <image name="google plus" width="57" height="57"/>
         <image name="knowUs" width="128" height="72"/>
         <image name="learning" width="171" height="70"/>
         <image name="logo" width="71" height="65"/>
+        <image name="mobileNumber" width="53" height="27"/>
         <image name="news" width="97" height="73"/>
         <image name="newsCellRectangle" width="311" height="106"/>
         <image name="newsDetailsBackground" width="320" height="511"/>
         <image name="newsDetailsRectangle" width="287" height="472"/>
         <image name="registerInSchool" width="163" height="26"/>
-        <image name="sample (1)" width="320" height="569"/>
-        <image name="sampleNewsDetails" width="320" height="569"/>
+        <image name="sampleContactUs" width="320" height="569"/>
+        <image name="sampleEvents" width="320" height="569"/>
         <image name="socialMedia" width="173" height="70"/>
+        <image name="telephone" width="54" height="26"/>
         <image name="transportation" width="153" height="26"/>
+        <image name="twitter" width="57" height="57"/>
         <image name="vision" width="134" height="27"/>
+        <image name="youtube" width="57" height="57"/>
     </resources>
 </document>
