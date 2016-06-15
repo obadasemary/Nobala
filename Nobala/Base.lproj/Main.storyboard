@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wnJ-Ej-l25">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wYi-nG-72Q">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -55,12 +55,112 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIB-kM-7qO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="-277"/>
+            <point key="canvasLocation" x="497" y="347"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H3S-tG-99g">
+            <objects>
+                <viewController id="0Ub-dj-UU5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O3A-Pd-PW0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundKnowsUs" id="f5t-o0-eny">
+                                <rect key="frame" x="0.0" y="63" width="320" height="505"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tys-TP-pbi">
+                                <rect key="frame" x="43" y="227" width="234" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="divider line"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" id="9pN-vs-vDZ">
+                                <rect key="frame" x="20" y="477" width="95" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Cw1-Sq-rQu">
+                                <rect key="frame" x="43" y="191" width="234" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="divider line"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ajN-vj-2NN">
+                                <rect key="frame" x="141" y="101" width="143" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="vision"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O0w-EN-fCS">
+                                <rect key="frame" x="43" y="123" width="234" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="divider line"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yBh-zm-O2y">
+                                <rect key="frame" x="139" y="137" width="143" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="KalmetMoshref"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tym-fw-5cS">
+                                <rect key="frame" x="43" y="156" width="234" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="divider line"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XnT-mT-Bxe">
+                                <rect key="frame" x="139" y="174" width="143" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="registerInSchool"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HOV-rZ-Rbo">
+                                <rect key="frame" x="139" y="209" width="143" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="feesSchool"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1wN-hQ-abM">
+                                <rect key="frame" x="146" y="245" width="143" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="cashway"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gse-G5-Re0">
+                                <rect key="frame" x="43" y="273" width="234" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="divider line"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BZ2-4x-M7w">
+                                <rect key="frame" x="139" y="282" width="143" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="transportation"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="di2-q1-nOf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3g-6x-REH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1941" y="-1009"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eAq-8p-N2c">
+            <objects>
+                <viewController id="ftD-5c-eMX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dn0-9I-35S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample (1)" id="vL3-9F-CqV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7WG-el-rwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2336" y="-1009"/>
         </scene>
         <!--News-->
         <scene sceneID="NX3-E8-VTG">
             <objects>
-                <viewController id="wBN-0l-szh" userLabel="News" sceneMemberID="viewController">
+                <viewController id="wBN-0l-szh" userLabel="News" customClass="NewsViewController" customModule="Nobala" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X26-lo-Uy4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,7 +178,7 @@
                                         <rect key="frame" x="0.0" y="28" width="303" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="81b-VO-fLQ" id="6Bi-3W-CCu">
-                                            <rect key="frame" x="0.0" y="0.0" width="303" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="303" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newsCellRectangle" id="wd4-ZS-aN2">
@@ -86,7 +186,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="G0g-Bb-FWz">
-                                                    <rect key="frame" x="0.0" y="-5" width="118" height="83.5"/>
+                                                    <rect key="frame" x="0.0" y="-5" width="118" height="84"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deatils" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bTt-wP-shD">
@@ -127,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="52e-kd-8BE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1221" y="-277"/>
+            <point key="canvasLocation" x="1753" y="-277"/>
         </scene>
         <!--NewsDetails-->
         <scene sceneID="YJO-jO-aLG">
@@ -275,19 +375,65 @@
             </objects>
             <point key="canvasLocation" x="863" y="347"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aik-Le-OSH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ety-YA-vrv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X82-8z-FRw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wBN-0l-szh" kind="relationship" relationship="rootViewController" id="6uv-am-5YX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7f-02-s19" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221" y="-277"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uwm-vA-yM9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wYi-nG-72Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Te4-eV-jfv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0Ub-dj-UU5" kind="relationship" relationship="rootViewController" id="Up8-Fc-JzH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FFo-0Q-aeG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1409" y="-1009"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="KalmetMoshref" width="171" height="26"/>
         <image name="backgroundHome" width="320" height="511"/>
+        <image name="backgroundKnowsUs" width="320" height="511"/>
         <image name="backgroundNews" width="320" height="511"/>
+        <image name="cashway" width="116" height="27"/>
         <image name="contactUs" width="107" height="75"/>
+        <image name="divider line" width="234" height="1"/>
         <image name="events" width="119" height="73"/>
+        <image name="feesSchool" width="153" height="27"/>
         <image name="knowUs" width="128" height="72"/>
         <image name="learning" width="171" height="70"/>
+        <image name="logo" width="71" height="65"/>
         <image name="news" width="97" height="73"/>
         <image name="newsCellRectangle" width="311" height="106"/>
         <image name="newsDetailsBackground" width="320" height="511"/>
         <image name="newsDetailsRectangle" width="287" height="472"/>
+        <image name="registerInSchool" width="163" height="26"/>
+        <image name="sample (1)" width="320" height="569"/>
         <image name="sampleNewsDetails" width="320" height="569"/>
         <image name="socialMedia" width="173" height="70"/>
+        <image name="transportation" width="153" height="26"/>
+        <image name="vision" width="134" height="27"/>
     </resources>
 </document>

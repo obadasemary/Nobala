@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41D16C621D10384700EEB8A2 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D16C611D10384700EEB8A2 /* NewsTableViewCell.swift */; };
+		AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */; };
 		AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BEE1D0D5D260053130C /* AppDelegate.swift */; };
 		AF106BF11D0D5D260053130C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BF01D0D5D260053130C /* ViewController.swift */; };
 		AF106BF41D0D5D260053130C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF106BF21D0D5D260053130C /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		41D16C611D10384700EEB8A2 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewCell.swift; path = View/NewsTableViewCell.swift; sourceTree = "<group>"; };
+		AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		AF106BEB1D0D5D260053130C /* Nobala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF106BEE1D0D5D260053130C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF106BF01D0D5D260053130C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		AF0438861D10C28800CF6F2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		AF106BE21D0D5D260053130C = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 		AF106BED1D0D5D260053130C /* Nobala */ = {
 			isa = PBXGroup;
 			children = (
+				AF0438861D10C28800CF6F2A /* Controller */,
 				41D16C5C1D10311000EEB8A2 /* View */,
 				AF106C1C1D0D70FC0053130C /* Model */,
 				AF106BEE1D0D5D260053130C /* AppDelegate.swift */,
@@ -291,6 +302,7 @@
 				AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */,
 				41D16C621D10384700EEB8A2 /* NewsTableViewCell.swift in Sources */,
 				AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */,
+				AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */,
 				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,
 				AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */,
 			);
