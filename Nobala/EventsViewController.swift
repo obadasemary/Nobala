@@ -27,8 +27,9 @@ class EventsViewController: UIViewController, CalendarViewDelegate {
 //        CalendarView.dayTextColor = UIColor(white: 1.0, alpha: 0.6)
 //        CalendarView.dayBackgroundColor = UIColor.clearColor()
 //        CalendarView.weekLabelTextColor = UIColor(white: 1.0, alpha: 0.3)
-
         
+        
+        calendar.delegate = self
         view.addSubview(calendar)
     }
     
