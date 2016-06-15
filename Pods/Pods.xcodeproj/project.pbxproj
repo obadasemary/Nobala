@@ -1,0 +1,1158 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B622D241E5F05D138ABA211BFE703A /* Pods-NobalaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 800F3DC175C6D5DFEEF132A403C829A5 /* Pods-NobalaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		134B250E1864D43B166253EDACB84BC7 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EB01546D564DBCADB7DCD4362B3FE1 /* MonthView.swift */; };
+		15BA79E5FA73F611878C81C807D8BCCE /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD334F42E3888E3BCEDDA98D2BB4DD /* TimeUnit.swift */; };
+		1E6F81F9ACB5C9FB512B10C3B1D1B200 /* SwiftMoment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A505F99DE6D87F6E05C4FA4253BA9F4 /* SwiftMoment-dummy.m */; };
+		29A8059D1E03301AE6B275705F53476F /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD807B890F3B4A955B3C49546A4D6ADE /* DayView.swift */; };
+		38CA5C1A02AC17DCC99BD4BA3C3AB45B /* SwiftMoment.h in Headers */ = {isa = PBXBuildFile; fileRef = 86F1F1B1C1404822F21A81C2119765B0 /* SwiftMoment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BAAA9F34A62F442CF68D4F24549175C /* EasyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03102B2B252819A05FDC7DEE99E9704D /* EasyCast.swift */; };
+		47082C15955512F8DE46118A66DFB9BC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B638D78E0EB434E18D2BB9425AF905 /* CalendarView.swift */; };
+		4BBAA62688253728B96ECC9C8D13C790 /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD22125E84BE8721EA3E324E3CA9857C /* SwiftMoment.framework */; };
+		50580829B2ED6797C3BE2EFDAFC99F2F /* Pods-NobalaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4E38D41E9B9621D27383C270104B7BB /* Pods-NobalaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50792157C04EA162C4F0B238225E8725 /* Pods-NobalaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB683A2655A81F96895E55380EE6D5 /* Pods-NobalaTests-dummy.m */; };
+		597C28F5AE6422A7E718838559A48FC0 /* CalendarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E28DFA1507A7220C14BD60B859B7A73 /* CalendarView.bundle */; };
+		5A7ADE0B32A113CFC84F5FBFC8BDE4FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A627DB666EAA76196A84DEBEA3A22 /* ContentView.swift */; };
+		5D20D1029EA3E4FD008A69B26E91D775 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFD84B8CE3E86FE05BC4DAEC0378709 /* Operators.swift */; };
+		62783ABE44EA19DD7AF504220137FC12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */; };
+		78EEC1CF2977B8107DBCE313BCA9DE6D /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8BE1471D40A4B95BF3A3944C42B655 /* WeekView.swift */; };
+		89D8FD1EB0666920C2EA196814AA7E27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */; };
+		9254D51D86F769CB80B82EFA1DFF10D5 /* CalendarView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5966A6E4B0AA5768C46C7FDE1A00BC /* CalendarView-dummy.m */; };
+		944DEEA0CA794F93E0C929411B0DD871 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */; };
+		9A0022D3D3501212EF9EDDA1797B5B0D /* Pods-NobalaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D223D3A4915989473BC8FB88C183FE /* Pods-NobalaUITests-dummy.m */; };
+		9CC2A7251DAEA9865CD12913C709F951 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */; };
+		A24AABB5997DDE1452044D461FBD6DD9 /* SwiftMoment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A47CD2F5880F0D1FFAC063FBD8BE70E /* SwiftMoment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3145D8EDA8C290BE61D87DE1A62B2B3 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BCB8959EF2F8AFCDEE7DD39A6ACF1 /* Moment.swift */; };
+		AE0100913BDCE445D8B7743246C6586C /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A955F568D3E6C2CDDFF565FDEC17E /* Duration.swift */; };
+		B1B691766BB6EEBC433A1B2EFA05DFD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */; };
+		B4D31539DA43F96EFAB534435ABED834 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6829B741F3C9A303B69D1FEBBA3D9606 /* UIKit.framework */; };
+		C599444BF9EBED1592C76DD56D81FEA4 /* Pods-Nobala-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A6CB56D5BD7F662783356741A04DDF /* Pods-Nobala-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC1B0AB47BB3609E0961AE8470B6F191 /* CalendarView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE53680CE6962E784E9E65AEC1BC8BF4 /* CalendarView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7B8B175749B48E0552273D1C4ABB2A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96EE429FE863E6E911D11403FD97548 /* Extensions.swift */; };
+		EE1BECA22E8D0280C8D35F78B24C41EA /* Pods-Nobala-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F62E78F0D451D1DC44C80F34E0FA5D /* Pods-Nobala-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D84C8727FB89B9F325CE77F5DC8300F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A249CF9CC83EF996380469C8249B2013;
+			remoteInfo = CalendarView;
+		};
+		BB05E31A2585BD4A4129E4FAF04FECF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A21DCB995841FE970CCB507D94F822D9;
+			remoteInfo = SwiftMoment;
+		};
+		C212A310ED81EF7C8C983084530A575B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41638D9B170F774D9F650F63B192526A;
+			remoteInfo = "CalendarView-CalendarView";
+		};
+		D1A063AF9C40FCD4CFD795752708DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A21DCB995841FE970CCB507D94F822D9;
+			remoteInfo = SwiftMoment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03102B2B252819A05FDC7DEE99E9704D /* EasyCast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyCast.swift; path = CalendarView/CalendarView/Classes/EasyCast.swift; sourceTree = "<group>"; };
+		05652E3F87A650D9102DA0F186A2DEBD /* Pods-Nobala-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Nobala-frameworks.sh"; sourceTree = "<group>"; };
+		08DC066395D47AECA6B490512168FA32 /* CalendarView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CalendarView.xcconfig; sourceTree = "<group>"; };
+		0E28DFA1507A7220C14BD60B859B7A73 /* CalendarView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BAA64FF099596D23F99154DE4126EC /* Pods-NobalaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NobalaTests.release.xcconfig"; sourceTree = "<group>"; };
+		13530C17E69D60E34E122695BCC0D789 /* Pods-NobalaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NobalaTests-frameworks.sh"; sourceTree = "<group>"; };
+		13E3EAB7CDE9A3F836001A20B4667253 /* Pods-NobalaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NobalaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CFD84B8CE3E86FE05BC4DAEC0378709 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = SwiftMoment/SwiftMoment/Operators.swift; sourceTree = "<group>"; };
+		20EB683A2655A81F96895E55380EE6D5 /* Pods-NobalaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NobalaTests-dummy.m"; sourceTree = "<group>"; };
+		220BCB8959EF2F8AFCDEE7DD39A6ACF1 /* Moment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Moment.swift; path = SwiftMoment/SwiftMoment/Moment.swift; sourceTree = "<group>"; };
+		2495B4152AEA61AADA6D5369F0C3D02E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2720675BC8C8431B273FAABAD30AC349 /* Pods-NobalaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NobalaTests.modulemap"; sourceTree = "<group>"; };
+		2C5966A6E4B0AA5768C46C7FDE1A00BC /* CalendarView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CalendarView-dummy.m"; sourceTree = "<group>"; };
+		38EB01546D564DBCADB7DCD4362B3FE1 /* MonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonthView.swift; path = CalendarView/CalendarView/Classes/MonthView.swift; sourceTree = "<group>"; };
+		3A6A338D24B3F77E4632ED4817FA04FA /* Pods-NobalaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NobalaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		417130C2FC87A4845D71DE657BFE2BDC /* CalendarView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CalendarView-prefix.pch"; sourceTree = "<group>"; };
+		48D223D3A4915989473BC8FB88C183FE /* Pods-NobalaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NobalaUITests-dummy.m"; sourceTree = "<group>"; };
+		4A505F99DE6D87F6E05C4FA4253BA9F4 /* SwiftMoment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMoment-dummy.m"; sourceTree = "<group>"; };
+		4D4FE69BB2D380F8F7280EA24F659951 /* ResourceBundle-CalendarView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CalendarView-Info.plist"; sourceTree = "<group>"; };
+		5125FDE91F8F3C573FEE877B40854953 /* Pods-NobalaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NobalaTests-resources.sh"; sourceTree = "<group>"; };
+		51FF962CFA2E4B419727AEE2DB689D11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5226300DBAA4CA2832EB7A3E83E1D82B /* CalendarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalendarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F62E78F0D451D1DC44C80F34E0FA5D /* Pods-Nobala-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Nobala-dummy.m"; sourceTree = "<group>"; };
+		57B47E4676AC720D012C8CB4F57C4F17 /* Pods-Nobala.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Nobala.release.xcconfig"; sourceTree = "<group>"; };
+		5842EC8DD4100D8E1AC1E09596C1D25A /* Pods_NobalaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60D6A26EB60DAC820A7355D210AB3190 /* Pods-Nobala-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Nobala-acknowledgements.markdown"; sourceTree = "<group>"; };
+		63E4B6D19B9108E039730614AED00A9E /* SwiftMoment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMoment-prefix.pch"; sourceTree = "<group>"; };
+		66C13753ACE52DCD4EC75FE754AEBB3B /* Pods-NobalaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NobalaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6829B741F3C9A303B69D1FEBBA3D9606 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6A47CD2F5880F0D1FFAC063FBD8BE70E /* SwiftMoment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMoment-umbrella.h"; sourceTree = "<group>"; };
+		75BBFDC3DF1AE9860831C709B0F15521 /* CalendarView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CalendarView.modulemap; sourceTree = "<group>"; };
+		7634C3E4E59DC36E17598289DF7BC1C4 /* Pods-NobalaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NobalaUITests.modulemap"; sourceTree = "<group>"; };
+		76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7FA942B3A33510D0CC02A0F8AE9C0903 /* Pods-NobalaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NobalaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		800F3DC175C6D5DFEEF132A403C829A5 /* Pods-NobalaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NobalaUITests-umbrella.h"; sourceTree = "<group>"; };
+		8294C38A36B1E3AB7200306429F39C09 /* Pods-Nobala-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Nobala-resources.sh"; sourceTree = "<group>"; };
+		8434C23A6EAEA787BE2F3176960B9B31 /* Pods-NobalaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NobalaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		868363208BF3B422E3A49410934814D2 /* Pods_NobalaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F1F1B1C1404822F21A81C2119765B0 /* SwiftMoment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftMoment.h; path = SwiftMoment/SwiftMoment/SwiftMoment.h; sourceTree = "<group>"; };
+		8C2EC55DFF52F527831CF62D7B308BAB /* Pods-Nobala-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Nobala-acknowledgements.plist"; sourceTree = "<group>"; };
+		8E74E92FFF1AA5334606024D90A446BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90B0F98A377CE0354D4665D8803BF9AB /* Pods-NobalaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NobalaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		936A955F568D3E6C2CDDFF565FDEC17E /* Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Duration.swift; path = SwiftMoment/SwiftMoment/Duration.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94F554F97DC21EAB7D20FD2AEC592A1A /* SwiftMoment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftMoment.modulemap; sourceTree = "<group>"; };
+		A709AB23863E21C883ED8071B97269E6 /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75A627DB666EAA76196A84DEBEA3A22 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = CalendarView/CalendarView/Classes/ContentView.swift; sourceTree = "<group>"; };
+		AF9EAD387D0B14F82D3559A59C9E4EB0 /* SwiftMoment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMoment.xcconfig; sourceTree = "<group>"; };
+		B4E38D41E9B9621D27383C270104B7BB /* Pods-NobalaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NobalaTests-umbrella.h"; sourceTree = "<group>"; };
+		BE9E5BAE53E99998B07A606299EC7745 /* Pods_Nobala.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nobala.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8AEB580E54C0047F40230E64DDC059D /* Pods-Nobala.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Nobala.debug.xcconfig"; sourceTree = "<group>"; };
+		CCB8923F494E760BF538D48FBCAE4992 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE53680CE6962E784E9E65AEC1BC8BF4 /* CalendarView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CalendarView-umbrella.h"; sourceTree = "<group>"; };
+		D9A6CB56D5BD7F662783356741A04DDF /* Pods-Nobala-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Nobala-umbrella.h"; sourceTree = "<group>"; };
+		D9CD334F42E3888E3BCEDDA98D2BB4DD /* TimeUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeUnit.swift; path = SwiftMoment/SwiftMoment/TimeUnit.swift; sourceTree = "<group>"; };
+		DB8BE1471D40A4B95BF3A3944C42B655 /* WeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeekView.swift; path = CalendarView/CalendarView/Classes/WeekView.swift; sourceTree = "<group>"; };
+		E5D5D7E1C9BD043ED8C133DC18A35144 /* Pods-NobalaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NobalaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E6624A81B56320BE6745E55F8A954B2F /* Pods-NobalaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NobalaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E66F80EBF0FDDD4074444408A70BD6AB /* Pods-NobalaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NobalaUITests-resources.sh"; sourceTree = "<group>"; };
+		E96EE429FE863E6E911D11403FD97548 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftMoment/SwiftMoment/Extensions.swift; sourceTree = "<group>"; };
+		E9B638D78E0EB434E18D2BB9425AF905 /* CalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = CalendarView/CalendarView/Classes/CalendarView.swift; sourceTree = "<group>"; };
+		EF2EA0309FE3DE0AD407EB3C9E1B8FEC /* Pods-Nobala.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Nobala.modulemap"; sourceTree = "<group>"; };
+		F244B8A8DFE4E07DC6ADB0AA5A1B4E01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD22125E84BE8721EA3E324E3CA9857C /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD807B890F3B4A955B3C49546A4D6ADE /* DayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayView.swift; path = CalendarView/CalendarView/Classes/DayView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BD32109E560D9CF4E3CE5F886CE5EC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC2A7251DAEA9865CD12913C709F951 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B4167F9890413D10AA3C55CD44F51B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D8FD1EB0666920C2EA196814AA7E27 /* Foundation.framework in Frameworks */,
+				4BBAA62688253728B96ECC9C8D13C790 /* SwiftMoment.framework in Frameworks */,
+				B4D31539DA43F96EFAB534435ABED834 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE42323B24CE4F52EAD6833C06526A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99C2B006E1C6B68CBFC1FA680C920C39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944DEEA0CA794F93E0C929411B0DD871 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA36ABA049F54E15B477316A638C2AE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62783ABE44EA19DD7AF504220137FC12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0708840727C8C1D9952B765C5A83003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B691766BB6EEBC433A1B2EFA05DFD9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		061FFEE819A7E7FB19E946441AE17EAE /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				E9B638D78E0EB434E18D2BB9425AF905 /* CalendarView.swift */,
+				A75A627DB666EAA76196A84DEBEA3A22 /* ContentView.swift */,
+				FD807B890F3B4A955B3C49546A4D6ADE /* DayView.swift */,
+				03102B2B252819A05FDC7DEE99E9704D /* EasyCast.swift */,
+				38EB01546D564DBCADB7DCD4362B3FE1 /* MonthView.swift */,
+				DB8BE1471D40A4B95BF3A3944C42B655 /* WeekView.swift */,
+				C2D015D41458C1108818D2D40C58FE89 /* Support Files */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		0D753C0CECD204C101AC2E3EAD300974 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E74E92FFF1AA5334606024D90A446BD /* Info.plist */,
+				94F554F97DC21EAB7D20FD2AEC592A1A /* SwiftMoment.modulemap */,
+				AF9EAD387D0B14F82D3559A59C9E4EB0 /* SwiftMoment.xcconfig */,
+				4A505F99DE6D87F6E05C4FA4253BA9F4 /* SwiftMoment-dummy.m */,
+				63E4B6D19B9108E039730614AED00A9E /* SwiftMoment-prefix.pch */,
+				6A47CD2F5880F0D1FFAC063FBD8BE70E /* SwiftMoment-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftMoment";
+			sourceTree = "<group>";
+		};
+		385AB5BA9EBE978F83C20BEDA88B9E04 /* Pods-NobalaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8923F494E760BF538D48FBCAE4992 /* Info.plist */,
+				7634C3E4E59DC36E17598289DF7BC1C4 /* Pods-NobalaUITests.modulemap */,
+				E5D5D7E1C9BD043ED8C133DC18A35144 /* Pods-NobalaUITests-acknowledgements.markdown */,
+				90B0F98A377CE0354D4665D8803BF9AB /* Pods-NobalaUITests-acknowledgements.plist */,
+				48D223D3A4915989473BC8FB88C183FE /* Pods-NobalaUITests-dummy.m */,
+				8434C23A6EAEA787BE2F3176960B9B31 /* Pods-NobalaUITests-frameworks.sh */,
+				E66F80EBF0FDDD4074444408A70BD6AB /* Pods-NobalaUITests-resources.sh */,
+				800F3DC175C6D5DFEEF132A403C829A5 /* Pods-NobalaUITests-umbrella.h */,
+				13E3EAB7CDE9A3F836001A20B4667253 /* Pods-NobalaUITests.debug.xcconfig */,
+				3A6A338D24B3F77E4632ED4817FA04FA /* Pods-NobalaUITests.release.xcconfig */,
+			);
+			name = "Pods-NobalaUITests";
+			path = "Target Support Files/Pods-NobalaUITests";
+			sourceTree = "<group>";
+		};
+		42AD1DEAB5F4A04E528C98A9B7709B3B /* Pods-NobalaTests */ = {
+			isa = PBXGroup;
+			children = (
+				51FF962CFA2E4B419727AEE2DB689D11 /* Info.plist */,
+				2720675BC8C8431B273FAABAD30AC349 /* Pods-NobalaTests.modulemap */,
+				E6624A81B56320BE6745E55F8A954B2F /* Pods-NobalaTests-acknowledgements.markdown */,
+				66C13753ACE52DCD4EC75FE754AEBB3B /* Pods-NobalaTests-acknowledgements.plist */,
+				20EB683A2655A81F96895E55380EE6D5 /* Pods-NobalaTests-dummy.m */,
+				13530C17E69D60E34E122695BCC0D789 /* Pods-NobalaTests-frameworks.sh */,
+				5125FDE91F8F3C573FEE877B40854953 /* Pods-NobalaTests-resources.sh */,
+				B4E38D41E9B9621D27383C270104B7BB /* Pods-NobalaTests-umbrella.h */,
+				7FA942B3A33510D0CC02A0F8AE9C0903 /* Pods-NobalaTests.debug.xcconfig */,
+				11BAA64FF099596D23F99154DE4126EC /* Pods-NobalaTests.release.xcconfig */,
+			);
+			name = "Pods-NobalaTests";
+			path = "Target Support Files/Pods-NobalaTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8AD35ED3060B1F46E89CF030D8AA3EA0 /* Frameworks */,
+				D8032E87CA8897A7CB77D9CB1C54B290 /* Pods */,
+				B35B541DBAC7AEB76692230814B2E7BD /* Products */,
+				D2D99514CBC1B8BD64AEB462E6022FAA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8AD35ED3060B1F46E89CF030D8AA3EA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD22125E84BE8721EA3E324E3CA9857C /* SwiftMoment.framework */,
+				BE7FD02C75F7A5D43DBC8FE47151B830 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		903256AFE838AB1FE723C8D7EEC6A466 /* SwiftMoment */ = {
+			isa = PBXGroup;
+			children = (
+				936A955F568D3E6C2CDDFF565FDEC17E /* Duration.swift */,
+				E96EE429FE863E6E911D11403FD97548 /* Extensions.swift */,
+				220BCB8959EF2F8AFCDEE7DD39A6ACF1 /* Moment.swift */,
+				1CFD84B8CE3E86FE05BC4DAEC0378709 /* Operators.swift */,
+				86F1F1B1C1404822F21A81C2119765B0 /* SwiftMoment.h */,
+				D9CD334F42E3888E3BCEDDA98D2BB4DD /* TimeUnit.swift */,
+				0D753C0CECD204C101AC2E3EAD300974 /* Support Files */,
+			);
+			path = SwiftMoment;
+			sourceTree = "<group>";
+		};
+		94E69373D8E0B572C9CE8760BFB285CA /* Pods-Nobala */ = {
+			isa = PBXGroup;
+			children = (
+				F244B8A8DFE4E07DC6ADB0AA5A1B4E01 /* Info.plist */,
+				EF2EA0309FE3DE0AD407EB3C9E1B8FEC /* Pods-Nobala.modulemap */,
+				60D6A26EB60DAC820A7355D210AB3190 /* Pods-Nobala-acknowledgements.markdown */,
+				8C2EC55DFF52F527831CF62D7B308BAB /* Pods-Nobala-acknowledgements.plist */,
+				53F62E78F0D451D1DC44C80F34E0FA5D /* Pods-Nobala-dummy.m */,
+				05652E3F87A650D9102DA0F186A2DEBD /* Pods-Nobala-frameworks.sh */,
+				8294C38A36B1E3AB7200306429F39C09 /* Pods-Nobala-resources.sh */,
+				D9A6CB56D5BD7F662783356741A04DDF /* Pods-Nobala-umbrella.h */,
+				C8AEB580E54C0047F40230E64DDC059D /* Pods-Nobala.debug.xcconfig */,
+				57B47E4676AC720D012C8CB4F57C4F17 /* Pods-Nobala.release.xcconfig */,
+			);
+			name = "Pods-Nobala";
+			path = "Target Support Files/Pods-Nobala";
+			sourceTree = "<group>";
+		};
+		B35B541DBAC7AEB76692230814B2E7BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E28DFA1507A7220C14BD60B859B7A73 /* CalendarView.bundle */,
+				5226300DBAA4CA2832EB7A3E83E1D82B /* CalendarView.framework */,
+				BE9E5BAE53E99998B07A606299EC7745 /* Pods_Nobala.framework */,
+				5842EC8DD4100D8E1AC1E09596C1D25A /* Pods_NobalaTests.framework */,
+				868363208BF3B422E3A49410934814D2 /* Pods_NobalaUITests.framework */,
+				A709AB23863E21C883ED8071B97269E6 /* SwiftMoment.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE7FD02C75F7A5D43DBC8FE47151B830 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */,
+				6829B741F3C9A303B69D1FEBBA3D9606 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C2D015D41458C1108818D2D40C58FE89 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75BBFDC3DF1AE9860831C709B0F15521 /* CalendarView.modulemap */,
+				08DC066395D47AECA6B490512168FA32 /* CalendarView.xcconfig */,
+				2C5966A6E4B0AA5768C46C7FDE1A00BC /* CalendarView-dummy.m */,
+				417130C2FC87A4845D71DE657BFE2BDC /* CalendarView-prefix.pch */,
+				CE53680CE6962E784E9E65AEC1BC8BF4 /* CalendarView-umbrella.h */,
+				2495B4152AEA61AADA6D5369F0C3D02E /* Info.plist */,
+				4D4FE69BB2D380F8F7280EA24F659951 /* ResourceBundle-CalendarView-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CalendarView";
+			sourceTree = "<group>";
+		};
+		D2D99514CBC1B8BD64AEB462E6022FAA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94E69373D8E0B572C9CE8760BFB285CA /* Pods-Nobala */,
+				42AD1DEAB5F4A04E528C98A9B7709B3B /* Pods-NobalaTests */,
+				385AB5BA9EBE978F83C20BEDA88B9E04 /* Pods-NobalaUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D8032E87CA8897A7CB77D9CB1C54B290 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				061FFEE819A7E7FB19E946441AE17EAE /* CalendarView */,
+				903256AFE838AB1FE723C8D7EEC6A466 /* SwiftMoment */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		38938B58EE9AB88C4E1E36C69E2D815B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B622D241E5F05D138ABA211BFE703A /* Pods-NobalaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591FB9BE2E56BD120A925A39DBDB935E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50580829B2ED6797C3BE2EFDAFC99F2F /* Pods-NobalaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A79D8737E4BA541C34B2B0ADA8A0D98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24AABB5997DDE1452044D461FBD6DD9 /* SwiftMoment-umbrella.h in Headers */,
+				38CA5C1A02AC17DCC99BD4BA3C3AB45B /* SwiftMoment.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2FAB9338DF8DF6B30A5E9774702A439 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C599444BF9EBED1592C76DD56D81FEA4 /* Pods-Nobala-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AE8BF45492E2B424DEAB1D71F6A5CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1B0AB47BB3609E0961AE8470B6F191 /* CalendarView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A243BD782E8D11F5EF562633CB59E3A /* Pods-Nobala */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1843E15F60C4B4FF1BB9A5E3BF58AB9E /* Build configuration list for PBXNativeTarget "Pods-Nobala" */;
+			buildPhases = (
+				D72664F534166229985050424B4248F0 /* Sources */,
+				0BD32109E560D9CF4E3CE5F886CE5EC8 /* Frameworks */,
+				A2FAB9338DF8DF6B30A5E9774702A439 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B122F952806E65467CA25FB6582FE5E /* PBXTargetDependency */,
+				54BD88CD2628088DEE52A0355804F390 /* PBXTargetDependency */,
+			);
+			name = "Pods-Nobala";
+			productName = "Pods-Nobala";
+			productReference = BE9E5BAE53E99998B07A606299EC7745 /* Pods_Nobala.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		41638D9B170F774D9F650F63B192526A /* CalendarView-CalendarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A81766E10721EFE9C8CEE1AB4E808181 /* Build configuration list for PBXNativeTarget "CalendarView-CalendarView" */;
+			buildPhases = (
+				D713B42F5761C042F36F0E585388A84E /* Sources */,
+				8CE42323B24CE4F52EAD6833C06526A6 /* Frameworks */,
+				31165A49A2A4A9363C21630FACAE5D19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CalendarView-CalendarView";
+			productName = "CalendarView-CalendarView";
+			productReference = 0E28DFA1507A7220C14BD60B859B7A73 /* CalendarView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4AC80B3D7C1E854CE1C2E3E9C983191C /* Pods-NobalaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9A9638C7BB7FCADA95953A86D93EFB5 /* Build configuration list for PBXNativeTarget "Pods-NobalaTests" */;
+			buildPhases = (
+				201244F5856BA3B4CB89557CB97EEE16 /* Sources */,
+				AA36ABA049F54E15B477316A638C2AE6 /* Frameworks */,
+				591FB9BE2E56BD120A925A39DBDB935E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NobalaTests";
+			productName = "Pods-NobalaTests";
+			productReference = 5842EC8DD4100D8E1AC1E09596C1D25A /* Pods_NobalaTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A21DCB995841FE970CCB507D94F822D9 /* SwiftMoment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FBA9BDCB64E66A084507DA2C170257F /* Build configuration list for PBXNativeTarget "SwiftMoment" */;
+			buildPhases = (
+				392ED984EA3C713D11E90F1F2FA20F9B /* Sources */,
+				B0708840727C8C1D9952B765C5A83003 /* Frameworks */,
+				6A79D8737E4BA541C34B2B0ADA8A0D98 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftMoment;
+			productName = SwiftMoment;
+			productReference = A709AB23863E21C883ED8071B97269E6 /* SwiftMoment.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A249CF9CC83EF996380469C8249B2013 /* CalendarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 974339C44F3F3E4CBC7E9EEBAFAC444F /* Build configuration list for PBXNativeTarget "CalendarView" */;
+			buildPhases = (
+				E9699F5C0CE4FD13E80DB24EC21793DC /* Sources */,
+				83B4167F9890413D10AA3C55CD44F51B /* Frameworks */,
+				801261530DF1CF65E0B3D007C5066B97 /* Resources */,
+				E9AE8BF45492E2B424DEAB1D71F6A5CE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2EA9733185A9897DFD29A28783402B7 /* PBXTargetDependency */,
+				489A982E89AA89A17739AC356B3D65F7 /* PBXTargetDependency */,
+			);
+			name = CalendarView;
+			productName = CalendarView;
+			productReference = 5226300DBAA4CA2832EB7A3E83E1D82B /* CalendarView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3CA5FEC2D4A20CC16F097B3DAC07BB0 /* Pods-NobalaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BC7E3E8E39A0C514ADE1C93C5A73E2 /* Build configuration list for PBXNativeTarget "Pods-NobalaUITests" */;
+			buildPhases = (
+				A3ECB74BA168B4393EE57817A409ABC2 /* Sources */,
+				99C2B006E1C6B68CBFC1FA680C920C39 /* Frameworks */,
+				38938B58EE9AB88C4E1E36C69E2D815B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NobalaUITests";
+			productName = "Pods-NobalaUITests";
+			productReference = 868363208BF3B422E3A49410934814D2 /* Pods_NobalaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B35B541DBAC7AEB76692230814B2E7BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A249CF9CC83EF996380469C8249B2013 /* CalendarView */,
+				41638D9B170F774D9F650F63B192526A /* CalendarView-CalendarView */,
+				0A243BD782E8D11F5EF562633CB59E3A /* Pods-Nobala */,
+				4AC80B3D7C1E854CE1C2E3E9C983191C /* Pods-NobalaTests */,
+				C3CA5FEC2D4A20CC16F097B3DAC07BB0 /* Pods-NobalaUITests */,
+				A21DCB995841FE970CCB507D94F822D9 /* SwiftMoment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31165A49A2A4A9363C21630FACAE5D19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801261530DF1CF65E0B3D007C5066B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597C28F5AE6422A7E718838559A48FC0 /* CalendarView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		201244F5856BA3B4CB89557CB97EEE16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50792157C04EA162C4F0B238225E8725 /* Pods-NobalaTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		392ED984EA3C713D11E90F1F2FA20F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0100913BDCE445D8B7743246C6586C /* Duration.swift in Sources */,
+				D7B8B175749B48E0552273D1C4ABB2A4 /* Extensions.swift in Sources */,
+				A3145D8EDA8C290BE61D87DE1A62B2B3 /* Moment.swift in Sources */,
+				5D20D1029EA3E4FD008A69B26E91D775 /* Operators.swift in Sources */,
+				1E6F81F9ACB5C9FB512B10C3B1D1B200 /* SwiftMoment-dummy.m in Sources */,
+				15BA79E5FA73F611878C81C807D8BCCE /* TimeUnit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3ECB74BA168B4393EE57817A409ABC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0022D3D3501212EF9EDDA1797B5B0D /* Pods-NobalaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D713B42F5761C042F36F0E585388A84E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D72664F534166229985050424B4248F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1BECA22E8D0280C8D35F78B24C41EA /* Pods-Nobala-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9699F5C0CE4FD13E80DB24EC21793DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9254D51D86F769CB80B82EFA1DFF10D5 /* CalendarView-dummy.m in Sources */,
+				47082C15955512F8DE46118A66DFB9BC /* CalendarView.swift in Sources */,
+				5A7ADE0B32A113CFC84F5FBFC8BDE4FB /* ContentView.swift in Sources */,
+				29A8059D1E03301AE6B275705F53476F /* DayView.swift in Sources */,
+				3BAAA9F34A62F442CF68D4F24549175C /* EasyCast.swift in Sources */,
+				134B250E1864D43B166253EDACB84BC7 /* MonthView.swift in Sources */,
+				78EEC1CF2977B8107DBCE313BCA9DE6D /* WeekView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		489A982E89AA89A17739AC356B3D65F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftMoment;
+			target = A21DCB995841FE970CCB507D94F822D9 /* SwiftMoment */;
+			targetProxy = D1A063AF9C40FCD4CFD795752708DA1D /* PBXContainerItemProxy */;
+		};
+		54BD88CD2628088DEE52A0355804F390 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftMoment;
+			target = A21DCB995841FE970CCB507D94F822D9 /* SwiftMoment */;
+			targetProxy = BB05E31A2585BD4A4129E4FAF04FECF7 /* PBXContainerItemProxy */;
+		};
+		5B122F952806E65467CA25FB6582FE5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CalendarView;
+			target = A249CF9CC83EF996380469C8249B2013 /* CalendarView */;
+			targetProxy = 8D84C8727FB89B9F325CE77F5DC8300F /* PBXContainerItemProxy */;
+		};
+		B2EA9733185A9897DFD29A28783402B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CalendarView-CalendarView";
+			target = 41638D9B170F774D9F650F63B192526A /* CalendarView-CalendarView */;
+			targetProxy = C212A310ED81EF7C8C983084530A575B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		006F224D7095A9EA1635494D3429C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FA942B3A33510D0CC02A0F8AE9C0903 /* Pods-NobalaTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NobalaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NobalaTests/Pods-NobalaTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NobalaTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		175367A85C0C61FD3DE151F0AC3DC6AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF9EAD387D0B14F82D3559A59C9E4EB0 /* SwiftMoment.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMoment/SwiftMoment-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMoment/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMoment/SwiftMoment.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftMoment;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2BDF7B4E574316716EA598F9801021E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08DC066395D47AECA6B490512168FA32 /* CalendarView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CalendarView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/CalendarView/ResourceBundle-CalendarView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_NAME = CalendarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		4ACCB061EAAA6CC83D63A412127B13C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8AEB580E54C0047F40230E64DDC059D /* Pods-Nobala.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Nobala/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Nobala/Pods-Nobala.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Nobala;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		50C561393CF110D4077F15CD6F8F28B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57B47E4676AC720D012C8CB4F57C4F17 /* Pods-Nobala.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Nobala/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Nobala/Pods-Nobala.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Nobala;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		798312B167841F9B4EEF73CCD70A7635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11BAA64FF099596D23F99154DE4126EC /* Pods-NobalaTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NobalaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NobalaTests/Pods-NobalaTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NobalaTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8AEF197866C944B0BE8E6D221A002878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13E3EAB7CDE9A3F836001A20B4667253 /* Pods-NobalaUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NobalaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NobalaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9C44A757C95F3EFDCE7A3F75DB669429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A6A338D24B3F77E4632ED4817FA04FA /* Pods-NobalaUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NobalaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NobalaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9CC2C7B943CE6911ED7CC9B8A8CF7EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08DC066395D47AECA6B490512168FA32 /* CalendarView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CalendarView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/CalendarView/ResourceBundle-CalendarView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_NAME = CalendarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9D0FB222EB5B552827C113A324BFFBDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08DC066395D47AECA6B490512168FA32 /* CalendarView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CalendarView/CalendarView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CalendarView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CalendarView/CalendarView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CalendarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A034100BC5E8F3DA94DBFE406FF0DBB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF9EAD387D0B14F82D3559A59C9E4EB0 /* SwiftMoment.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMoment/SwiftMoment-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMoment/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMoment/SwiftMoment.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftMoment;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD2CE4B666E1229A1533D69107D0461E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08DC066395D47AECA6B490512168FA32 /* CalendarView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CalendarView/CalendarView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CalendarView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CalendarView/CalendarView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CalendarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1843E15F60C4B4FF1BB9A5E3BF58AB9E /* Build configuration list for PBXNativeTarget "Pods-Nobala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ACCB061EAAA6CC83D63A412127B13C8 /* Debug */,
+				50C561393CF110D4077F15CD6F8F28B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FBA9BDCB64E66A084507DA2C170257F /* Build configuration list for PBXNativeTarget "SwiftMoment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				175367A85C0C61FD3DE151F0AC3DC6AC /* Debug */,
+				A034100BC5E8F3DA94DBFE406FF0DBB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		974339C44F3F3E4CBC7E9EEBAFAC444F /* Build configuration list for PBXNativeTarget "CalendarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D0FB222EB5B552827C113A324BFFBDB /* Debug */,
+				BD2CE4B666E1229A1533D69107D0461E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A81766E10721EFE9C8CEE1AB4E808181 /* Build configuration list for PBXNativeTarget "CalendarView-CalendarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CC2C7B943CE6911ED7CC9B8A8CF7EB7 /* Debug */,
+				2BDF7B4E574316716EA598F9801021E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9A9638C7BB7FCADA95953A86D93EFB5 /* Build configuration list for PBXNativeTarget "Pods-NobalaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006F224D7095A9EA1635494D3429C39A /* Debug */,
+				798312B167841F9B4EEF73CCD70A7635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0BC7E3E8E39A0C514ADE1C93C5A73E2 /* Build configuration list for PBXNativeTarget "Pods-NobalaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AEF197866C944B0BE8E6D221A002878 /* Debug */,
+				9C44A757C95F3EFDCE7A3F75DB669429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

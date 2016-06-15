@@ -1,0 +1,6 @@
+framework module Pods_Nobala {
+  umbrella header "Pods-Nobala-umbrella.h"
+
+  export *
+  module * { export * }
+}

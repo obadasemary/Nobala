@@ -157,10 +157,10 @@
             </objects>
             <point key="canvasLocation" x="3386" y="-847"/>
         </scene>
-        <!--View Controller-->
+        <!--Events View Controller-->
         <scene sceneID="sTv-lv-wen">
             <objects>
-                <viewController id="jk5-Do-0gb" sceneMemberID="viewController">
+                <viewController id="jk5-Do-0gb" customClass="EventsViewController" customModule="Nobala" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lZE-6Q-vv9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,13 +169,10 @@
                                 <rect key="frame" x="0.0" y="63" width="320" height="505"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="Btd-Yt-xko">
-                                <rect key="frame" x="27" y="110" width="266" height="272"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <date key="date" timeIntervalSinceReferenceDate="487647320.63457602">
-                                    <!--2016-06-15 01:35:20 +0000-->
-                                </date>
-                            </datePicker>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangleEvents" id="oFe-Cy-nPj">
+                                <rect key="frame" x="20" y="81" width="280" height="467"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" id="Hnb-Cf-xe8">
                                 <rect key="frame" x="27" y="390" width="95" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -540,6 +537,7 @@
         <image name="newsCellRectangle" width="311" height="106"/>
         <image name="newsDetailsBackground" width="320" height="511"/>
         <image name="newsDetailsRectangle" width="287" height="472"/>
+        <image name="rectangleEvents" width="287" height="471"/>
         <image name="registerInSchool" width="163" height="26"/>
         <image name="sampleContactUs" width="320" height="569"/>
         <image name="sampleEvents" width="320" height="569"/>

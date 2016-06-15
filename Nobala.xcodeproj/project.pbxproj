@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41D16C621D10384700EEB8A2 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D16C611D10384700EEB8A2 /* NewsTableViewCell.swift */; };
+		57CFB314DE50DA2BFD824FA0 /* Pods_Nobala.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6584049A7C858A374C3B44 /* Pods_Nobala.framework */; };
 		AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */; };
 		AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BEE1D0D5D260053130C /* AppDelegate.swift */; };
 		AF106BF11D0D5D260053130C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BF01D0D5D260053130C /* ViewController.swift */; };
@@ -19,6 +20,9 @@
 		AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C1D1D0D755C0053130C /* NobalaClient.swift */; };
 		AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C1F1D0D75760053130C /* NobalaConvenient.swift */; };
 		AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C211D0D75860053130C /* NobalaConstants.swift */; };
+		AFB9E4BC1D11605900C045EF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9E4BB1D11605900C045EF /* EventsViewController.swift */; };
+		B86FBFB47C3B16B26650B9EF /* Pods_NobalaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F8CDBB075E1BAE30EE1D7F /* Pods_NobalaUITests.framework */; };
+		F383F28FCA7528CD2D4DF9C1 /* Pods_NobalaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4633B310B0BE17B61B465026 /* Pods_NobalaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19F8CDBB075E1BAE30EE1D7F /* Pods_NobalaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E6584049A7C858A374C3B44 /* Pods_Nobala.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nobala.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C425AFED6CC1EB8D079BC25 /* Pods-NobalaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		41D16C611D10384700EEB8A2 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewCell.swift; path = View/NewsTableViewCell.swift; sourceTree = "<group>"; };
+		4633B310B0BE17B61B465026 /* Pods_NobalaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		557B29992FCBE88A41B17321 /* Pods-Nobala.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nobala.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nobala/Pods-Nobala.release.xcconfig"; sourceTree = "<group>"; };
+		6EF4386AC8933116735F88D8 /* Pods-Nobala.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nobala.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nobala/Pods-Nobala.debug.xcconfig"; sourceTree = "<group>"; };
+		7EB0F448900B2FBAA7E40BDF /* Pods-NobalaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		AF106BEB1D0D5D260053130C /* Nobala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF106BEE1D0D5D260053130C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +68,9 @@
 		AF106C1D1D0D755C0053130C /* NobalaClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaClient.swift; sourceTree = "<group>"; };
 		AF106C1F1D0D75760053130C /* NobalaConvenient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConvenient.swift; sourceTree = "<group>"; };
 		AF106C211D0D75860053130C /* NobalaConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConstants.swift; sourceTree = "<group>"; };
+		AFB9E4BB1D11605900C045EF /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		E39CD8703F567072BB453856 /* Pods-NobalaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2C7943EB1C7EF5503DCCD36 /* Pods-NobalaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57CFB314DE50DA2BFD824FA0 /* Pods_Nobala.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F383F28FCA7528CD2D4DF9C1 /* Pods_NobalaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86FBFB47C3B16B26650B9EF /* Pods_NobalaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,10 +109,24 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		8EB71D395DFA6516626E53BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EF4386AC8933116735F88D8 /* Pods-Nobala.debug.xcconfig */,
+				557B29992FCBE88A41B17321 /* Pods-Nobala.release.xcconfig */,
+				E39CD8703F567072BB453856 /* Pods-NobalaTests.debug.xcconfig */,
+				7EB0F448900B2FBAA7E40BDF /* Pods-NobalaTests.release.xcconfig */,
+				2C425AFED6CC1EB8D079BC25 /* Pods-NobalaUITests.debug.xcconfig */,
+				F2C7943EB1C7EF5503DCCD36 /* Pods-NobalaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AF0438861D10C28800CF6F2A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */,
+				AFB9E4BB1D11605900C045EF /* EventsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -107,6 +138,8 @@
 				AF106C021D0D5D270053130C /* NobalaTests */,
 				AF106C0D1D0D5D270053130C /* NobalaUITests */,
 				AF106BEC1D0D5D260053130C /* Products */,
+				8EB71D395DFA6516626E53BE /* Pods */,
+				C3CF2CD4F4A51B077DD407ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +197,16 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		C3CF2CD4F4A51B077DD407ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E6584049A7C858A374C3B44 /* Pods_Nobala.framework */,
+				4633B310B0BE17B61B465026 /* Pods_NobalaTests.framework */,
+				19F8CDBB075E1BAE30EE1D7F /* Pods_NobalaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF106C131D0D5D270053130C /* Build configuration list for PBXNativeTarget "Nobala" */;
 			buildPhases = (
+				1664B8E4CB867E8E6C8EEB80 /* 📦 Check Pods Manifest.lock */,
 				AF106BE71D0D5D260053130C /* Sources */,
 				AF106BE81D0D5D260053130C /* Frameworks */,
 				AF106BE91D0D5D260053130C /* Resources */,
+				7B55FC63E8C3B37527744418 /* 📦 Embed Pods Frameworks */,
+				418A7ED01D0C93760E992F1D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF106C161D0D5D270053130C /* Build configuration list for PBXNativeTarget "NobalaTests" */;
 			buildPhases = (
+				A6A763EE53FB97A41E168204 /* 📦 Check Pods Manifest.lock */,
 				AF106BFB1D0D5D270053130C /* Sources */,
 				AF106BFC1D0D5D270053130C /* Frameworks */,
 				AF106BFD1D0D5D270053130C /* Resources */,
+				23D0F4BA1385D3344732DFD7 /* 📦 Embed Pods Frameworks */,
+				E654742DD92D4A144F4EE143 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF106C191D0D5D270053130C /* Build configuration list for PBXNativeTarget "NobalaUITests" */;
 			buildPhases = (
+				C706194E4137806D723223BA /* 📦 Check Pods Manifest.lock */,
 				AF106C061D0D5D270053130C /* Sources */,
 				AF106C071D0D5D270053130C /* Frameworks */,
 				AF106C081D0D5D270053130C /* Resources */,
+				B7EBD48DCC77526AA2FB2BC8 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,7 +283,7 @@
 				TargetAttributes = {
 					AF106BEA1D0D5D260053130C = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 6KNM32Y4FM;
+						DevelopmentTeam = AEU29WHAF5;
 					};
 					AF106BFE1D0D5D270053130C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -293,12 +344,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1664B8E4CB867E8E6C8EEB80 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		23D0F4BA1385D3344732DFD7 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		418A7ED01D0C93760E992F1D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nobala/Pods-Nobala-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B55FC63E8C3B37527744418 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nobala/Pods-Nobala-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6A763EE53FB97A41E168204 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7EBD48DCC77526AA2FB2BC8 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C706194E4137806D723223BA /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E654742DD92D4A144F4EE143 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF106BE71D0D5D260053130C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AF106BF11D0D5D260053130C /* ViewController.swift in Sources */,
+				AFB9E4BC1D11605900C045EF /* EventsViewController.swift in Sources */,
 				AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */,
 				41D16C621D10384700EEB8A2 /* NewsTableViewCell.swift in Sources */,
 				AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */,
@@ -446,30 +621,39 @@
 		};
 		AF106C141D0D5D270053130C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF4386AC8933116735F88D8 /* Pods-Nobala.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Nobala/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.Nobala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AF106C151D0D5D270053130C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 557B29992FCBE88A41B17321 /* Pods-Nobala.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Nobala/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.Nobala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		AF106C171D0D5D270053130C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E39CD8703F567072BB453856 /* Pods-NobalaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NobalaTests/Info.plist;
@@ -482,6 +666,7 @@
 		};
 		AF106C181D0D5D270053130C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB0F448900B2FBAA7E40BDF /* Pods-NobalaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NobalaTests/Info.plist;
@@ -494,6 +679,7 @@
 		};
 		AF106C1A1D0D5D270053130C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C425AFED6CC1EB8D079BC25 /* Pods-NobalaUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NobalaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -505,6 +691,7 @@
 		};
 		AF106C1B1D0D5D270053130C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2C7943EB1C7EF5503DCCD36 /* Pods-NobalaUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NobalaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

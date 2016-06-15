@@ -1,0 +1,6 @@
+framework module Pods_NobalaUITests {
+  umbrella header "Pods-NobalaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
