@@ -13,11 +13,16 @@ extension NobalaClient {
     
     //MARK: - get10News
     
-    func get10News(urlString: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+    func get10News(urlString: String, completionHandler: (success: Bool, error: NSError?) -> Void)
+    {
         
-        taskForGETMethod(urlString) { (result, error) in
+        taskForGETMethod(urlString)
+        {
+            (result, error) in
             
-            guard (error == nil) else {
+            guard (error == nil)
+                else
+            {
                 completionHandler(success: false, error: error)
                 return
             }

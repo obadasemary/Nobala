@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1m0-5o-AEy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1m0-5o-AEy">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -173,14 +173,30 @@
                                 <rect key="frame" x="20" y="81" width="280" height="467"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" id="Hnb-Cf-xe8">
-                                <rect key="frame" x="27" y="390" width="95" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoEvents" id="VBj-Go-Waw">
+                                <rect key="frame" x="41" y="408" width="56" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="woQ-mi-0uH">
+                                <rect key="frame" x="26" y="153" width="269" height="247"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T9i-9q-DNO">
+                                <rect key="frame" x="26" y="112" width="269" height="77"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aWv-Ty-3cN"/>
+                    <connections>
+                        <outlet property="calendarView" destination="woQ-mi-0uH" id="kt3-Fd-EBq"/>
+                        <outlet property="date" destination="T9i-9q-DNO" id="2Iv-PY-9aG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF8-8e-F0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -207,7 +223,7 @@
                                         <rect key="frame" x="0.0" y="28" width="303" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="81b-VO-fLQ" id="6Bi-3W-CCu">
-                                            <rect key="frame" x="0.0" y="0.0" width="303" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="303" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newsCellRectangle" id="wd4-ZS-aN2">
@@ -300,26 +316,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4B-4J-vOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1395" y="347"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="vsH-88-trq">
-            <objects>
-                <viewController id="cln-OM-wc3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cyX-hV-YWd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleContactUs" id="mx5-tI-KL6">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qVx-xC-pwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2011" y="999"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5vM-b5-2Uf">
@@ -532,6 +528,7 @@
         <image name="knowUs" width="128" height="72"/>
         <image name="learning" width="171" height="70"/>
         <image name="logo" width="71" height="65"/>
+        <image name="logoEvents" width="52" height="47"/>
         <image name="mobileNumber" width="53" height="27"/>
         <image name="news" width="97" height="73"/>
         <image name="newsCellRectangle" width="311" height="106"/>
@@ -539,7 +536,6 @@
         <image name="newsDetailsRectangle" width="287" height="472"/>
         <image name="rectangleEvents" width="287" height="471"/>
         <image name="registerInSchool" width="163" height="26"/>
-        <image name="sampleContactUs" width="320" height="569"/>
         <image name="sampleEvents" width="320" height="569"/>
         <image name="socialMedia" width="173" height="70"/>
         <image name="telephone" width="54" height="26"/>
