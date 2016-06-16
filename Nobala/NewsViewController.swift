@@ -8,11 +8,15 @@
 
 import UIKit
 
-class NewsViewController: UIViewController {
+class NewsViewController: UIViewController, ViewWebServiceProtocol {
 
+    var clientObject: NobalaClient?
+    var newsArray = [News]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.clientObject = NobalaClient.sharedInstance()
+        self.clientObject?.newsProtocol = self
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +26,16 @@ class NewsViewController: UIViewController {
     }
     
 
+    func onReceiveNews(news: [News])
+    {
+        
+        
+        self.newsArray = news
+    }
+    func onReceiveEvents(news: [Event])
+    {
+    
+    }
     /*
     // MARK: - Navigation
 

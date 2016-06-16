@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		418825EF1D11C523002C2648 /* ViewWebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418825EE1D11C523002C2648 /* ViewWebServiceProtocol.swift */; };
+		418825F11D11C698002C2648 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418825F01D11C698002C2648 /* News.swift */; };
+		418825F31D12FD8D002C2648 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418825F21D12FD8D002C2648 /* Event.swift */; };
 		41D16C621D10384700EEB8A2 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D16C611D10384700EEB8A2 /* NewsTableViewCell.swift */; };
 		57CFB314DE50DA2BFD824FA0 /* Pods_Nobala.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6584049A7C858A374C3B44 /* Pods_Nobala.framework */; };
 		AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */; };
@@ -46,6 +49,9 @@
 		19F8CDBB075E1BAE30EE1D7F /* Pods_NobalaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6584049A7C858A374C3B44 /* Pods_Nobala.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nobala.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C425AFED6CC1EB8D079BC25 /* Pods-NobalaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		418825EE1D11C523002C2648 /* ViewWebServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewWebServiceProtocol.swift; path = Controllers/ViewWebServiceProtocol.swift; sourceTree = "<group>"; };
+		418825F01D11C698002C2648 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = News.swift; path = Model/News.swift; sourceTree = "<group>"; };
+		418825F21D12FD8D002C2648 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Model/Event.swift; sourceTree = "<group>"; };
 		41D16C611D10384700EEB8A2 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewCell.swift; path = View/NewsTableViewCell.swift; sourceTree = "<group>"; };
 		4633B310B0BE17B61B465026 /* Pods_NobalaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B29992FCBE88A41B17321 /* Pods-Nobala.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nobala.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nobala/Pods-Nobala.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 			children = (
 				AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */,
 				AFB9E4BB1D11605900C045EF /* EventsViewController.swift */,
+				418825EE1D11C523002C2648 /* ViewWebServiceProtocol.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -193,6 +200,8 @@
 				AF106C211D0D75860053130C /* NobalaConstants.swift */,
 				AF106C1D1D0D755C0053130C /* NobalaClient.swift */,
 				AF106C1F1D0D75760053130C /* NobalaConvenient.swift */,
+				418825F01D11C698002C2648 /* News.swift */,
+				418825F21D12FD8D002C2648 /* Event.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -472,6 +481,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418825EF1D11C523002C2648 /* ViewWebServiceProtocol.swift in Sources */,
+				418825F31D12FD8D002C2648 /* Event.swift in Sources */,
 				AF106BF11D0D5D260053130C /* ViewController.swift in Sources */,
 				AFB9E4BC1D11605900C045EF /* EventsViewController.swift in Sources */,
 				AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */,
@@ -479,6 +490,7 @@
 				AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */,
 				AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */,
 				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,
+				418825F11D11C698002C2648 /* News.swift in Sources */,
 				AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

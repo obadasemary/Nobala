@@ -10,16 +10,27 @@ import UIKit
 import CalendarView
 import SwiftMoment
 
-class EventsViewController: UIViewController, CalendarViewDelegate {
+class EventsViewController: UIViewController, CalendarViewDelegate, ViewWebServiceProtocol {
     
     @IBOutlet weak var calendarView: UIView!
     
     @IBOutlet weak var date: UILabel!
     
+    var clientObject: NobalaClient?
+    var eventsArray = [Event]()
+    
+    func onReceiveNews(news: [News]) {
+        
+    }
+    func onReceiveEvents(events: [Event]) {
+        self.eventsArray = events
+    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
+        self.clientObject = NobalaClient.sharedInstance()
+        self.clientObject?.newsProtocol = self
         
         let calendar = CalendarView()
         calendar.frame = calendarView.frame

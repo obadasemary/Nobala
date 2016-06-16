@@ -8,15 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ViewWebServiceProtocol {
     
     var url = NobalaClient.Constants.BaseURL
+    var viewClientObject: NobalaClient?
+    var newsArray = [News]()
+    var eventsArray = [Event]()
+    func onReceiveNews(news: [News])
+    {
 
+        
+        self.newsArray = news
+    }
+    func onReceiveEvents(events: [Event])
+    {
+        self.eventsArray = events
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print("Nobala School")
-        
+        viewClientObject = NobalaClient.sharedInstance()
+        viewClientObject?.newsProtocol = self
 
     }
     
