@@ -1,31 +1,23 @@
 //
-//  NewsViewController.swift
+//  KnowsUsViewController.swift
 //  Nobala
 //
-//  Created by Abdelrahman Mohamed on 6/15/16.
+//  Created by Abdelrahman Mohamed on 6/17/16.
 //  Copyright © 2016 Abdelrahman Mohamed. All rights reserved.
 //
 
 import UIKit
 
-class NewsViewController: UIViewController, ViewWebServiceProtocol {
+class KnowsUsViewController: UIViewController {
 
-    var clientObject: NobalaClient?
-    var newsArray = [News]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let logo = UIImage(named: "newsIcon.png")
+
+        let logo = UIImage(named: "knowsUsTitle.png")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
-        
-        
-        self.clientObject = NobalaClient.sharedInstance()
-        self.clientObject?.newsProtocol = self
-        // Do any additional setup after loading the view.
     }
-    
+
     @IBAction func goToHome(sender: AnyObject) {
         
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -33,17 +25,6 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol {
     }
     
 
-    func onReceiveNews(news: [News])
-    {
-        
-        
-        self.newsArray = news
-    }
-    
-    func onReceiveEvents(news: [Event])
-    {
-    
-    }
     /*
     // MARK: - Navigation
 

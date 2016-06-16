@@ -28,6 +28,12 @@ class EventsViewController: UIViewController, CalendarViewDelegate, ViewWebServi
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        let logo = UIImage(named: "eventsTitle.png")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
+
+        
 
         self.clientObject = NobalaClient.sharedInstance()
         self.clientObject?.newsProtocol = self
@@ -38,6 +44,14 @@ class EventsViewController: UIViewController, CalendarViewDelegate, ViewWebServi
         CalendarView.dayTextColor = UIColor.grayColor()
         view.addSubview(calendar)
     }
+    
+    @IBAction func goToHome(sender: AnyObject) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    
     
     func calendarDidSelectDate(date: Moment)
     {
