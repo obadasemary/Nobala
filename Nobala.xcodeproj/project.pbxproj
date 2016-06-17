@@ -25,6 +25,7 @@
 		AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C211D0D75860053130C /* NobalaConstants.swift */; };
 		AFB086421D13577600DB6266 /* NobalaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086411D13577600DB6266 /* NobalaViewController.swift */; };
 		AFB086441D1358F500DB6266 /* KnowsUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086431D1358F500DB6266 /* KnowsUsViewController.swift */; };
+		AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */; };
 		AFB9E4BC1D11605900C045EF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9E4BB1D11605900C045EF /* EventsViewController.swift */; };
 		B86FBFB47C3B16B26650B9EF /* Pods_NobalaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F8CDBB075E1BAE30EE1D7F /* Pods_NobalaUITests.framework */; };
 		F383F28FCA7528CD2D4DF9C1 /* Pods_NobalaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4633B310B0BE17B61B465026 /* Pods_NobalaTests.framework */; };
@@ -78,6 +79,7 @@
 		AF106C211D0D75860053130C /* NobalaConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConstants.swift; sourceTree = "<group>"; };
 		AFB086411D13577600DB6266 /* NobalaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaViewController.swift; sourceTree = "<group>"; };
 		AFB086431D1358F500DB6266 /* KnowsUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowsUsViewController.swift; sourceTree = "<group>"; };
+		AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		AFB9E4BB1D11605900C045EF /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		E39CD8703F567072BB453856 /* Pods-NobalaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C7943EB1C7EF5503DCCD36 /* Pods-NobalaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				AFB086431D1358F500DB6266 /* KnowsUsViewController.swift */,
 				AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */,
 				AFB9E4BB1D11605900C045EF /* EventsViewController.swift */,
+				AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				41D16C621D10384700EEB8A2 /* NewsTableViewCell.swift in Sources */,
 				AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */,
 				AFB086441D1358F500DB6266 /* KnowsUsViewController.swift in Sources */,
+				AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */,
 				AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */,
 				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,
 				418825F11D11C698002C2648 /* News.swift in Sources */,

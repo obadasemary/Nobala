@@ -417,7 +417,7 @@
         <!--ContactUs-->
         <scene sceneID="io5-Xa-t1F">
             <objects>
-                <viewController id="mw9-3u-oUh" userLabel="ContactUs" sceneMemberID="viewController">
+                <viewController id="mw9-3u-oUh" userLabel="ContactUs" customClass="ContactUsViewController" customModule="Nobala" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ofy-K7-xtT">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -484,12 +484,15 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="house" id="jcK-aK-JSs">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="goToHome:" destination="mw9-3u-oUh" id="gE8-Ia-GMu"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pm8-2p-8oL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="515" y="857"/>
+            <point key="canvasLocation" x="671" y="875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KKb-w2-mQz">
