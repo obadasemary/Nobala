@@ -22,8 +22,8 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol {
         
         
         self.clientObject = NobalaClient.sharedInstance()
-        self.clientObject?.newsProtocol = self
-        // Do any additional setup after loading the view.
+        self.clientObject?.webServiceProtocol = self
+
     }
     
     @IBAction func goToHome(sender: AnyObject) {
@@ -44,14 +44,4 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol {
     {
     
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -14,22 +14,21 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
     var viewClientObject: NobalaClient?
     var newsArray = [News]()
     var eventsArray = [Event]()
-    func onReceiveNews(news: [News])
-    {
-
-        
+    
+    func onReceiveNews(news: [News]) {
         self.newsArray = news
     }
-    func onReceiveEvents(events: [Event])
-    {
+    
+    func onReceiveEvents(events: [Event]) {
         self.eventsArray = events
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print("Nobala School")
         viewClientObject = NobalaClient.sharedInstance()
-        viewClientObject?.newsProtocol = self
+        viewClientObject?.webServiceProtocol = self
 
     }
     

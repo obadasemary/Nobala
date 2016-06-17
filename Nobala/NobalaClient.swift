@@ -12,13 +12,12 @@ import UIKit
 class NobalaClient: NSObject {
     
     var session: NSURLSession
-    var newsProtocol:ViewWebServiceProtocol?
+    var webServiceProtocol:ViewWebServiceProtocol?
+    
     override init() {
         session = NSURLSession.sharedSession()
         super.init()
     }
-    
-    
     
 //    func addObserver(observer: ViewWebServiceProtocol?)
 //    {
@@ -28,6 +27,7 @@ class NobalaClient: NSObject {
 //           if(observersArray[i].)
 //        }
 //    }
+    
     func taskForGETMethod(urlString: String, completionHandler: (result: AnyObject!, error: NSError?) -> Void) {
         
         let request = NSMutableURLRequest(URL: NSURL(string: urlString)!)

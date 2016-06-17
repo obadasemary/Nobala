@@ -22,9 +22,11 @@ class EventsViewController: UIViewController, CalendarViewDelegate, ViewWebServi
     func onReceiveNews(news: [News]) {
         
     }
+    
     func onReceiveEvents(events: [Event]) {
         self.eventsArray = events
     }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -33,10 +35,8 @@ class EventsViewController: UIViewController, CalendarViewDelegate, ViewWebServi
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
 
-        
-
         self.clientObject = NobalaClient.sharedInstance()
-        self.clientObject?.newsProtocol = self
+        self.clientObject?.webServiceProtocol = self
         
         let calendar = CalendarView()
         calendar.frame = calendarView.frame
@@ -50,8 +50,6 @@ class EventsViewController: UIViewController, CalendarViewDelegate, ViewWebServi
         self.dismissViewControllerAnimated(true, completion: nil)
         self.navigationController?.popViewControllerAnimated(true)
     }
-    
-    
     
     func calendarDidSelectDate(date: Moment)
     {

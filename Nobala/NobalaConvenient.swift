@@ -27,9 +27,11 @@ extension NobalaClient {
             }
             
             if let tenNews = result as? NSArray {
+                
                 var newsArray = [News]()
-                for news in tenNews
-                {
+                
+                for news in tenNews {
+                    
                     let newsObject:News = News()
                     newsObject._id  = news["Id"] as! Int
                     newsObject._title = news["Title"] as! String
@@ -47,10 +49,11 @@ extension NobalaClient {
                     newsObject._descriptionEn = news["DescriptionEn"] as! String
                     newsObject._detailsEn = news["DetailsEn"] as! String
                     newsObject._schoolID = news["ShcoolID"] as! Int
+                    
                     newsArray.append(newsObject)
-
                 }
-                self.newsProtocol?.onReceiveNews(newsArray)
+                
+                self.webServiceProtocol?.onReceiveNews(newsArray)
                 completionHandler(success: true, error: nil)
             }
         }
@@ -66,13 +69,13 @@ extension NobalaClient {
                 completionHandler(success: false, error: error)
                 return
             }
+            
             var eventsArray = [Event]()
 
-            if let top5Events = result as? NSArray
-            {
+            if let top5Events = result as? NSArray {
                 
-                for topEvent in top5Events
-                {
+                for topEvent in top5Events {
+                    
                     let event : Event = Event()
                     event.id = topEvent["Id"] as! Int
                     event.title = topEvent["Title"] as! String
@@ -102,7 +105,8 @@ extension NobalaClient {
                     eventsArray.append(event)
                    
                 }
-                self.newsProtocol?.onReceiveEvents(eventsArray)
+                
+                self.webServiceProtocol?.onReceiveEvents(eventsArray)
                 completionHandler(success: true, error: nil)
             }
         }
