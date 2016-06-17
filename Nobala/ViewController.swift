@@ -14,6 +14,7 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
     var viewClientObject: NobalaClient?
     var newsArray = [News]()
     var eventsArray = [Event]()
+    var mainPagesArray = [MainPages]()
     
     func onReceiveNews(news: [News]) {
         self.newsArray = news
@@ -21,6 +22,11 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
     
     func onReceiveEvents(events: [Event]) {
         self.eventsArray = events
+    }
+    
+    func onReceiveMainPages(mainPages: [MainPages]) {
+        
+        self.mainPagesArray = mainPages
     }
     
     override func viewDidLoad() {

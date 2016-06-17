@@ -33,6 +33,7 @@ extension NobalaClient {
                 for news in tenNews {
                     
                     let newsObject:News = News()
+                    
                     newsObject._id  = news["Id"] as! Int
                     newsObject._title = news["Title"] as! String
                     newsObject._description = news["Description"] as! String
@@ -77,6 +78,7 @@ extension NobalaClient {
                 for topEvent in top5Events {
                     
                     let event : Event = Event()
+                    
                     event.id = topEvent["Id"] as! Int
                     event.title = topEvent["Title"] as! String
                     event.description = topEvent["Description"] as! String
@@ -123,37 +125,37 @@ extension NobalaClient {
                 return
             }
             
+            var mainPagesArray = [MainPages]()
+            
             if let mainPages = result as? NSArray {
                 
                 for mainPage in mainPages {
                     
-                    let Id = mainPage["Id"] as! Int
-                    let Title = mainPage["Title"] as! String
-                    let Description = mainPage["Description"] as! String
-                    let Details = mainPage["Details"] as! String
-                    let Photo = mainPage["Photo"] as! String
-                    let OrderId = mainPage["OrderId"] as! Int
-                    let Isdeleted = mainPage["Isdeleted"] as! Bool
-                    let CreatedDate = mainPage["CreatedDate"] as! String
-                    let UpdateDate = mainPage["UpdateDate"] as? String
-                    let UpdatedBy = mainPage["UpdatedBy"] as? Int
-                    let ViewCount = mainPage["ViewCount"] as! Int
-                    let PrintCount = mainPage["PrintCount"] as! Int
-                    let CreatedBy = mainPage["CreatedBy"] as! Int
-                    let TitleEn = mainPage["TitleEn"] as! String
-                    let DescriptionEn = mainPage["DescriptionEn"] as! String
-                    let DetailsEn = mainPage["DetailsEn"] as! String
-                    let ShcoolID = mainPage["ShcoolID"] as! Int
-                    let ShowTextImage = mainPage["ShowTextImage"] as! Int
+                    let main: MainPages = MainPages()
                     
-                    print(Id)
-                    print(Title)
-                    print(Description)
-                    print(Details)
-                    print(CreatedDate)
-                    print(UpdateDate)
+                    main.Id = mainPage["Id"] as! Int
+                    main.Title = mainPage["Title"] as! String
+                    main.Description = mainPage["Description"] as! String
+                    main.Details = mainPage["Details"] as! String
+                    main.Photo = mainPage["Photo"] as! String
+                    main.OrderId = mainPage["OrderId"] as! Int
+                    main.Isdeleted = mainPage["Isdeleted"] as! Bool
+                    main.CreatedDate = mainPage["CreatedDate"] as! String
+                    main.UpdateDate = (mainPage["UpdateDate"] as? String)!
+                    main.UpdatedBy = (mainPage["UpdatedBy"] as? Int)!
+                    main.ViewCount = mainPage["ViewCount"] as! Int
+                    main.PrintCount = mainPage["PrintCount"] as! Int
+                    main.CreatedBy = mainPage["CreatedBy"] as! Int
+                    main.TitleEn = mainPage["TitleEn"] as! String
+                    main.DescriptionEn = mainPage["DescriptionEn"] as! String
+                    main.DetailsEn = mainPage["DetailsEn"] as! String
+                    main.ShcoolID = mainPage["ShcoolID"] as! Int
+                    main.ShowTextImage = mainPage["ShowTextImage"] as! Int
+                    
+                    mainPagesArray.append(main)
                 }
                 
+                self.webServiceProtocol?.onReceiveMainPages(mainPagesArray)
                 completionHandler(success: true, error: nil)
             }
         }

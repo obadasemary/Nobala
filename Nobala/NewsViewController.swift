@@ -36,12 +36,15 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol {
     func onReceiveNews(news: [News])
     {
         
-        
         self.newsArray = news
     }
     
     func onReceiveEvents(news: [Event])
     {
     
+    }
+    
+    func onReceiveMainPages(mainPages: [MainPages]) {
+        
     }
 }

@@ -27,6 +27,10 @@ class EventsViewController: UIViewController, CalendarViewDelegate, ViewWebServi
         self.eventsArray = events
     }
     
+    func onReceiveMainPages(mainPages: [MainPages]) {
+        
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
