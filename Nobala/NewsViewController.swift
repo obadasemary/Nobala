@@ -7,9 +7,12 @@
 //
 
 import UIKit
-
-class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource {
-
+import ASProgressHud
+class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource
+{
+    
+    
+    
     @IBOutlet weak var newsTableView: UITableView!
     var clientObject: NobalaClient?
     var newsArray = [News]()
@@ -18,6 +21,7 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
         
         let logo = UIImage(named: "newsIcon.png")
         let imageView = UIImageView(image:logo)
@@ -78,6 +82,7 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
             
             self.newsArray = news
             self.newsTableView.reloadData()
+            ASProgressHud.hideHUDForView(self.view, animated: true)
         })
         
     }

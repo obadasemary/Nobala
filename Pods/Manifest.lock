@@ -1,15 +1,18 @@
 PODS:
+  - ASProgressHud (0.0.3)
   - CalendarView (1.1.2):
     - SwiftMoment (~> 0.1)
   - SwiftMoment (0.4)
 
 DEPENDENCIES:
+  - ASProgressHud
   - CalendarView
 
 SPEC CHECKSUMS:
+  ASProgressHud: 6a921cac52428f75f0bbdd6d4c3f9e454818e6fd
   CalendarView: 35d51b70586213604edec22a585d105273f6e191
   SwiftMoment: e751c44be03a183fa6c949426d9473d26a66ef29
 
-PODFILE CHECKSUM: bcd03eb058b25fe479e825d328ad578ea30ef233
+PODFILE CHECKSUM: cb2ad1c734984961b679d7e132da3f689be8b31c
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1

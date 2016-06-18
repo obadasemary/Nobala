@@ -19,10 +19,15 @@ class NewsDetailsViewController: UIViewController {
         self.newsDetailsTitle.text = self.news._details
         self.newsDetailsLable.text = self.news._title
         self.newsDetailsLable.sizeToFit()
-
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+//        self.navigationController?.navigationItem.leftBarButtonItem(UIBarButtonItem: .Add, target: self, action: #selector(backButtonClicked))
         // Do any additional setup after loading the view.
     }
 
+    func backButtonClicked()
+    {
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
