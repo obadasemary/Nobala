@@ -8,13 +8,16 @@
 
 import UIKit
 
-class NewsViewController: UIViewController, ViewWebServiceProtocol {
+class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var newsTableView: UITableView!
     var clientObject: NobalaClient?
     var newsArray = [News]()
-    
+    var selectedNews:News = News()
+    var newsDetailsView:NewsDetailsViewController = NewsDetailsViewController()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         let logo = UIImage(named: "newsIcon.png")
         let imageView = UIImageView(image:logo)
@@ -32,11 +35,51 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol {
         self.navigationController?.popViewControllerAnimated(true)
     }
     
-
-    func onReceiveNews(news: [News])
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         
-        self.newsArray = news
+        return self.newsArray.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let tableViewCell = self.newsTableView.dequeueReusableCellWithIdentifier("newsCell", forIndexPath: indexPath) as! NewsTableViewCell
+        
+        tableViewCell.NewsTitle.text = newsArray[indexPath.row]._title
+        
+        tableViewCell.NewsText.text = newsArray[indexPath.row]._description
+        return tableViewCell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        performSegueWithIdentifier("showNewsDetailsSegue", sender: self)
+        self.selectedNews = newsArray[indexPath.row]
+        self.newsDetailsView.news = self.selectedNews
+//        self.newsDetailsView.newsDetailsTitle.text = self.selectedNews._title
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        
+        if (segue.identifier == "showNewsDetailsSegue")
+        {
+            
+            // initialize new view controller and cast it as your view controller
+            self.newsDetailsView = segue.destinationViewController as! NewsDetailsViewController
+        }
+        
+    }
+    
+    func onReceiveNews(news: [News])
+    {
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            
+            self.newsArray = news
+            self.newsTableView.reloadData()
+        })
+        
     }
     
     func onReceiveEvents(news: [Event])
