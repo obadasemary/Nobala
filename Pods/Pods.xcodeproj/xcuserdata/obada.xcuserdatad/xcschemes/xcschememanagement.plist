@@ -4,40 +4,67 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ASProgressHud-Resources.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>ASProgressHud.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>CalendarView-CalendarView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>CalendarView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>Pods-Nobala.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>Pods-NobalaTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>Pods-NobalaUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>SwiftMoment.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>0A243BD782E8D11F5EF562633CB59E3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>32F789B79A806D38997C9F6F5DC0950B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -48,6 +75,11 @@
 			<true/>
 		</dict>
 		<key>4AC80B3D7C1E854CE1C2E3E9C983191C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C5AA45CF2F4D1DD42661A5FC6CBDF0B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -63,6 +95,11 @@
 			<true/>
 		</dict>
 		<key>C3CA5FEC2D4A20CC16F097B3DAC07BB0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2CE449260E767692A3078142937C25D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,16 +8,16 @@
 
 import UIKit
 import ASProgressHud
-class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource
-{
-    
-    
+
+class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var newsTableView: UITableView!
+    
     var clientObject: NobalaClient?
     var newsArray = [News]()
     var selectedNews:News = News()
     var newsDetailsView:NewsDetailsViewController = NewsDetailsViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

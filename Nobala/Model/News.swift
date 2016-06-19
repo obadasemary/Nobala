@@ -52,26 +52,24 @@ class News
 //        self._showTextImage = showTextImage
 //    }
     
-         init()
-        {
-           self._id = 0
-           self._title = ""
-            self._description = ""
-            self._details = ""
-            self._photo = ""
-            self._orderId = 0
-            self._isdeleted = true
-            self._createdDate = ""
-            self._updateDate = ""
-            self._updatedBy = ""
-            self._viewCount = 0
-            self._printCount = 0
-            self._createdBy = 0
-            self._titleEn = ""
-            self._descriptionEn = ""
-            self._detailsEn = ""
-            self._schoolID = 0
-            self._showTextImage = 0
-        }
-   
+     init() {
+        self._id = 0
+        self._title = ""
+        self._description = ""
+        self._details = ""
+        self._photo = ""
+        self._orderId = 0
+        self._isdeleted = true
+        self._createdDate = ""
+        self._updateDate = ""
+        self._updatedBy = ""
+        self._viewCount = 0
+        self._printCount = 0
+        self._createdBy = 0
+        self._titleEn = ""
+        self._descriptionEn = ""
+        self._detailsEn = ""
+        self._schoolID = 0
+        self._showTextImage = 0
+    }
 }
