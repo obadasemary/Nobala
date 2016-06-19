@@ -8,51 +8,138 @@
 
 /* Begin PBXBuildFile section */
 		01B622D241E5F05D138ABA211BFE703A /* Pods-NobalaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 800F3DC175C6D5DFEEF132A403C829A5 /* Pods-NobalaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		134B250E1864D43B166253EDACB84BC7 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EB01546D564DBCADB7DCD4362B3FE1 /* MonthView.swift */; };
-		15BA79E5FA73F611878C81C807D8BCCE /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD334F42E3888E3BCEDDA98D2BB4DD /* TimeUnit.swift */; };
-		1E6F81F9ACB5C9FB512B10C3B1D1B200 /* SwiftMoment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A505F99DE6D87F6E05C4FA4253BA9F4 /* SwiftMoment-dummy.m */; };
-		29A8059D1E03301AE6B275705F53476F /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD807B890F3B4A955B3C49546A4D6ADE /* DayView.swift */; };
-		38CA5C1A02AC17DCC99BD4BA3C3AB45B /* SwiftMoment.h in Headers */ = {isa = PBXBuildFile; fileRef = 86F1F1B1C1404822F21A81C2119765B0 /* SwiftMoment.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BAAA9F34A62F442CF68D4F24549175C /* EasyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03102B2B252819A05FDC7DEE99E9704D /* EasyCast.swift */; };
-		47082C15955512F8DE46118A66DFB9BC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B638D78E0EB434E18D2BB9425AF905 /* CalendarView.swift */; };
+		05B556E8072FF6042C483E7EA8D64D30 /* default_01.png in Resources */ = {isa = PBXBuildFile; fileRef = F61A489D45190C15D8D16CAFF57441AF /* default_01.png */; };
+		062E087E0A6DFFF875375713B9B9747E /* default_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B36311205D8FE13845FC55D920D4276 /* default_11.png */; };
+		083486801D227AF056B8075E7E84EE63 /* default_14.png in Resources */ = {isa = PBXBuildFile; fileRef = D4F621A414B2F144E974D2562C10DCAC /* default_14.png */; };
+		0AB7F72676FE2C368C8669C6B5183C97 /* flag_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 248F614DE1FC67E51EB8DFC029BA6D65 /* flag_14.png */; };
+		0ADECAC3AFA1F84A608EA72421F117B4 /* flag_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F99135CE1D767C93BC0BBBF740DA035 /* flag_00.png */; };
+		0C9657A95617BDEC595B9CFCCDA058C4 /* google_12.png in Resources */ = {isa = PBXBuildFile; fileRef = A54B21B47604BA38DCBE1A008F5B3974 /* google_12.png */; };
+		0F98DE0885CEF9639EBE61D1D3CB6FC2 /* default_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 8809DB9B8B53417BD13C376A5FECEE66 /* default_10.png */; };
+		0FA940766C270A42F1A8F35EAAC5E669 /* default_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6EC1633CF86A1177BB0C864F5AD923 /* default_05.png */; };
+		109A94F3D7843A08DBCEEFC7E1B46A09 /* flag_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5588A02E2C1FF28F10B2C8A43F74C4 /* flag_17.png */; };
+		119DEC8FE0D7CAA51234AB4622FAAD04 /* flag_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A312598F1ED25AF609F1472EA5BF3C6 /* flag_16.png */; };
+		134B250E1864D43B166253EDACB84BC7 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736EAC8811D358D240CC1C8DD0A87B0 /* MonthView.swift */; };
+		1505DA772CE177274295DED7EB476D05 /* Pods-Nobala-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F62E78F0D451D1DC44C80F34E0FA5D /* Pods-Nobala-dummy.m */; };
+		15BA79E5FA73F611878C81C807D8BCCE /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF138D5DAE5E30C409C205FC12B5C974 /* TimeUnit.swift */; };
+		1611092877CB0617B76C2E6566BA32B0 /* google_27.png in Resources */ = {isa = PBXBuildFile; fileRef = 73CCF323F691A2E4B81F2526C28123F8 /* google_27.png */; };
+		19946CC96C0CE4BA6294F937F8DA5C0D /* flag_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B0AD1953D7648EBE9BB72CB8220A284 /* flag_13.png */; };
+		1D08AAE806F1D8DF02A8FA3074CBC89E /* google_19.png in Resources */ = {isa = PBXBuildFile; fileRef = D505842228C917D2A31E91B99537B440 /* google_19.png */; };
+		1E6F81F9ACB5C9FB512B10C3B1D1B200 /* SwiftMoment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6017980646B7221891FD9EE51747AEDC /* SwiftMoment-dummy.m */; };
+		21B66FB52643DC48F456717F4090E3E0 /* flag_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 4891D6A2612E2685933E5E8AF092C2AD /* flag_08.png */; };
+		23382EC919012D227A5356C7C0E8A784 /* google_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E32D1766F75ADE10700C342B9B23FE /* google_01.png */; };
+		26496D6D3040FF081C34CAE8271611B0 /* flag_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F25F8C1BD4759B327B5D23111694A8 /* flag_09.png */; };
+		29A8059D1E03301AE6B275705F53476F /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6934B842E67A7DB2C8225FE870F7D /* DayView.swift */; };
+		2AE391EE02D503373341FBA8B5396173 /* flag_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D7E2C9C9892FC1B535E266A8D6D6F9 /* flag_18.png */; };
+		2DA169587CDAA1E8A296E07475E0CE30 /* google_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 99415BF61AF3B77A6A15F7C9DA7A7B96 /* google_29.png */; };
+		2EDE4B19CF9465886C2D1F95E42497B7 /* google_21.png in Resources */ = {isa = PBXBuildFile; fileRef = 2112F33CAA06D48C166D471B41B20A7A /* google_21.png */; };
+		3082AD730910DDF142D1E80898100681 /* flag_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEB71B4E4724A09000282338D1D75F5 /* flag_04.png */; };
+		30B99CCC782DB8C468FE168098795541 /* google_22.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CCC778FC3B83694CB6DADA9D4DE219F /* google_22.png */; };
+		317D7DE4D6DCCA8CB30307D4C2348B3E /* default_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 17FAFC47C61C4FB575536D343DBA461B /* default_15.png */; };
+		339E9D1DA846B5E21FC7DE0F4866CA7D /* flag_05.png in Resources */ = {isa = PBXBuildFile; fileRef = A631E4A0C9C1C2FEB9C0835DC742E9A4 /* flag_05.png */; };
+		35C86168F6CB121CBF09A689F87D0788 /* default_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 2823DDE007267D2E1E0FC6AAD932A828 /* default_07.png */; };
+		389B173006C07ADBE38096CB13F775D2 /* ASProgressHud-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B79A9E3BD6170194212768D61038E52 /* ASProgressHud-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38CA5C1A02AC17DCC99BD4BA3C3AB45B /* SwiftMoment.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C33A414349498D5DD22FF1A8A5347DC /* SwiftMoment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38FABFB2476A66F6440560D3B0E73C0F /* flag_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E92866C38B9871C39634FCEEBA0FF1C /* flag_15.png */; };
+		3B8CC789A281BFBEF3431722D6C37C1F /* google_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B44CAD9D9B45282070BF829DDEC37F0 /* google_08.png */; };
+		3BAAA9F34A62F442CF68D4F24549175C /* EasyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEED3090D051ABDEEB1E8F31A66E78E /* EasyCast.swift */; };
+		47082C15955512F8DE46118A66DFB9BC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E48E92B189E25629F0ED6213C2CF5 /* CalendarView.swift */; };
+		483B9508B70C5FB041C04D9C0EF9CC74 /* google_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EADC33C2D84D15CF71565C877F7B0E4 /* google_13.png */; };
 		4BBAA62688253728B96ECC9C8D13C790 /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD22125E84BE8721EA3E324E3CA9857C /* SwiftMoment.framework */; };
 		50580829B2ED6797C3BE2EFDAFC99F2F /* Pods-NobalaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4E38D41E9B9621D27383C270104B7BB /* Pods-NobalaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50792157C04EA162C4F0B238225E8725 /* Pods-NobalaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB683A2655A81F96895E55380EE6D5 /* Pods-NobalaTests-dummy.m */; };
-		597C28F5AE6422A7E718838559A48FC0 /* CalendarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E28DFA1507A7220C14BD60B859B7A73 /* CalendarView.bundle */; };
-		5A7ADE0B32A113CFC84F5FBFC8BDE4FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A627DB666EAA76196A84DEBEA3A22 /* ContentView.swift */; };
-		5D20D1029EA3E4FD008A69B26E91D775 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFD84B8CE3E86FE05BC4DAEC0378709 /* Operators.swift */; };
+		54BBF19A677C5D57A2AE2BF5DA0C31F5 /* ASProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2418DFDD5F245467F86EF30F716F2F1 /* ASProgressHud.swift */; };
+		597C28F5AE6422A7E718838559A48FC0 /* CalendarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 05BB06304781AA89D467D97ACB12CCE1 /* CalendarView.bundle */; };
+		5A7ADE0B32A113CFC84F5FBFC8BDE4FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAEAC55401D3C5EAFB8F7A87E71D511 /* ContentView.swift */; };
+		5ACD97174A065EC6BE6B082A9401C1BC /* default_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A749C233962EC528E527D407480E7A7 /* default_13.png */; };
+		5D20D1029EA3E4FD008A69B26E91D775 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF07840E27640F2C096A7B8C38A1D /* Operators.swift */; };
+		5E8AAD7E31650D0929445145F053F1A0 /* flag_10.png in Resources */ = {isa = PBXBuildFile; fileRef = BE190DFB26DDF044D6FCF789E8986751 /* flag_10.png */; };
+		5EB01510F176DE8A93B5356AB4348E4E /* ASProgressHud-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E283DC400D12CBA7D9EFBA568F152F1 /* ASProgressHud-dummy.m */; };
 		62783ABE44EA19DD7AF504220137FC12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */; };
-		78EEC1CF2977B8107DBCE313BCA9DE6D /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8BE1471D40A4B95BF3A3944C42B655 /* WeekView.swift */; };
+		63CF619DCBE746972C22047AC3D86FE4 /* google_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C3760673D8FE33307013DBAE331D9B /* google_20.png */; };
+		649ED39E517259CC3C962C8241D373D5 /* flag_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E10565869BBC8BFC10BE6931F66899 /* flag_11.png */; };
+		6A61A8B69787E30C27F22A6BC860355A /* google_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 316F46F674981C982A2D1D6FA88B7BAF /* google_10.png */; };
+		6E513201C4B1D8E9FF45313BD318DCB0 /* google_26.png in Resources */ = {isa = PBXBuildFile; fileRef = C0C00144F871F4CB711D715871426C35 /* google_26.png */; };
+		78EEC1CF2977B8107DBCE313BCA9DE6D /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A1454E7A8CFBD6F96DBD8C1B21158 /* WeekView.swift */; };
+		7AAAA5A581BC72922E68884DD99C99BC /* default_09.png in Resources */ = {isa = PBXBuildFile; fileRef = B4B78CB3EB02E507FB2EA163AEB6387D /* default_09.png */; };
+		844665EF4D0CA62B7D5CCB3DFB0A3508 /* flag_07.png in Resources */ = {isa = PBXBuildFile; fileRef = E8479DBAE081A1514C7AFC283CB8839D /* flag_07.png */; };
+		86CA71A007752A47553546F25C3323F2 /* google_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 80BC9091C77A070681766A254D9DAA57 /* google_15.png */; };
+		89B1090CF6AFB32448B10DC22B764510 /* flag_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 8195E7CD4A1842CD7940F4058D5CDC62 /* flag_12.png */; };
 		89D8FD1EB0666920C2EA196814AA7E27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */; };
-		9254D51D86F769CB80B82EFA1DFF10D5 /* CalendarView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5966A6E4B0AA5768C46C7FDE1A00BC /* CalendarView-dummy.m */; };
+		8E1AB7742B8F68A18463F0AD52C228D1 /* default_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 0077CB5478F713F823A8A6195C4160AB /* default_16.png */; };
+		901B9146139ADC8F4F087256956F43CA /* google_23.png in Resources */ = {isa = PBXBuildFile; fileRef = B63B92EC0212A1A516BDAE4C9AC20803 /* google_23.png */; };
+		9167E4DC280A86C73F4E1C79D63C4BC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */; };
+		9254D51D86F769CB80B82EFA1DFF10D5 /* CalendarView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 670FC6A3972E439000F4B1037B5A7938 /* CalendarView-dummy.m */; };
+		93E1C5F99D4BB56C10E2EFC167C4EE5A /* google_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 877B3DA9821CAB9975DF635E2C10941F /* google_17.png */; };
 		944DEEA0CA794F93E0C929411B0DD871 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */; };
 		9A0022D3D3501212EF9EDDA1797B5B0D /* Pods-NobalaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D223D3A4915989473BC8FB88C183FE /* Pods-NobalaUITests-dummy.m */; };
-		9CC2A7251DAEA9865CD12913C709F951 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */; };
-		A24AABB5997DDE1452044D461FBD6DD9 /* SwiftMoment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A47CD2F5880F0D1FFAC063FBD8BE70E /* SwiftMoment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3145D8EDA8C290BE61D87DE1A62B2B3 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BCB8959EF2F8AFCDEE7DD39A6ACF1 /* Moment.swift */; };
-		AE0100913BDCE445D8B7743246C6586C /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A955F568D3E6C2CDDFF565FDEC17E /* Duration.swift */; };
+		9A9FB7FB0B1DDA7683F63FC6DACF8204 /* default_08.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1ED686B5A038515D7BC73FF71AE5FA /* default_08.png */; };
+		9DE66C4603DCB97E169B8F4D2D62E052 /* google_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 721A3198A799C56DD7AADA1BABEC02F1 /* google_02.png */; };
+		9F98B1902E900A8053923BB77AC0A093 /* google_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7D273328E9F4E27C78448E495F644F /* google_11.png */; };
+		A18FB9FC343AD423DD5B54A14D534560 /* flag_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 583CF7585DC72870C52AEE83989030F3 /* flag_06.png */; };
+		A24AABB5997DDE1452044D461FBD6DD9 /* SwiftMoment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6964DCD108FE204C2F1CF63FD5932CB /* SwiftMoment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3145D8EDA8C290BE61D87DE1A62B2B3 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48804180C0BC2F8BF3ACD4B0B98D6094 /* Moment.swift */; };
+		A91F3DB21C7F662AEDF7F54555ADE10D /* flag_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 1707A44B82847088085C7E03EDEAD503 /* flag_01.png */; };
+		AE0100913BDCE445D8B7743246C6586C /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88A432B642AF0359BD8F7855061472 /* Duration.swift */; };
 		B1B691766BB6EEBC433A1B2EFA05DFD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */; };
 		B4D31539DA43F96EFAB534435ABED834 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6829B741F3C9A303B69D1FEBBA3D9606 /* UIKit.framework */; };
-		C599444BF9EBED1592C76DD56D81FEA4 /* Pods-Nobala-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A6CB56D5BD7F662783356741A04DDF /* Pods-Nobala-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC1B0AB47BB3609E0961AE8470B6F191 /* CalendarView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE53680CE6962E784E9E65AEC1BC8BF4 /* CalendarView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7B8B175749B48E0552273D1C4ABB2A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96EE429FE863E6E911D11403FD97548 /* Extensions.swift */; };
-		EE1BECA22E8D0280C8D35F78B24C41EA /* Pods-Nobala-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F62E78F0D451D1DC44C80F34E0FA5D /* Pods-Nobala-dummy.m */; };
+		B91BB4BBCB0A7098E90581996151C845 /* flag_03.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9F704A6E29AF81F87CB61AB06E5B54 /* flag_03.png */; };
+		BCA94280BF92900D8D248F376D9D73C8 /* google_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AAB0F72E7EE925A3CBF5493E44E0DB7 /* google_25.png */; };
+		C2CDA2FFA4996AD0CECB7B9A4055A739 /* default_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 76A9AA8564C0E266EDE4209AAE41556A /* default_03.png */; };
+		C8A05435361B8E3BAD730F8B50863C2B /* default_06.png in Resources */ = {isa = PBXBuildFile; fileRef = A52CEDFF1D3EC9027E3A8F884E924E16 /* default_06.png */; };
+		CA9071F62CACA07391CAEB9B79629F9D /* flag_19.png in Resources */ = {isa = PBXBuildFile; fileRef = 60BB48BF496E55558E2F4179AF3A7E08 /* flag_19.png */; };
+		CC1B0AB47BB3609E0961AE8470B6F191 /* CalendarView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF583576475F38BDCC9828B961E73B5 /* CalendarView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D15CEB6700F43CBB98726EF0151F84AF /* google_24.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C90F7248A256796C5D824CED6FFD1ED /* google_24.png */; };
+		D495657DFBAC1A2539F517A0D45BB74B /* google_16.png in Resources */ = {isa = PBXBuildFile; fileRef = B4A18A4BF5029FFAB04245F6A907D554 /* google_16.png */; };
+		D4FF12859DD345EB939F3318E67902C4 /* google_00.png in Resources */ = {isa = PBXBuildFile; fileRef = AA64136A72D4F341F953E71EDF498658 /* google_00.png */; };
+		D5FF9A79A409719DA1B669C1CC905EE4 /* google_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E43636B2323E78248D6A938D7913FDD /* google_09.png */; };
+		D684FBEF79411842E8D8BD1B21A94114 /* flag_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B8BF6B01D7727DAFFD7CAE101DC265B /* flag_02.png */; };
+		D7B8B175749B48E0552273D1C4ABB2A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846C94F56CC91C46AF3B60A5C63953D /* Extensions.swift */; };
+		DBF253BFA7E2449DEA70EDBD32587A8D /* default_02.png in Resources */ = {isa = PBXBuildFile; fileRef = C93D7F9F5CAEE645D2A496EF46921C96 /* default_02.png */; };
+		E31A5407D5309E0D93762841FCAFBC4E /* google_28.png in Resources */ = {isa = PBXBuildFile; fileRef = 78F5A834308EEDAADAE2EFDD19ECA609 /* google_28.png */; };
+		E3AAD103B4FB23D6C8B04BABB6957D2E /* google_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 29391D809286A38354909B9040A4265C /* google_03.png */; };
+		E3C81949C454124299FB169F98097C02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */; };
+		E775532FC4820600754DC7D114D64D18 /* default_00.png in Resources */ = {isa = PBXBuildFile; fileRef = E60F27C535CC640EB8580D7CCFBDD310 /* default_00.png */; };
+		E8A6B0D8A9730C3B2008EE652CFDEF21 /* google_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 642755BB17C07FD0195BA00D1BB22EB7 /* google_18.png */; };
+		EB0FEEA35F3AEDE7AD7380A89CA36E91 /* google_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE8E8730428502463CA97DC4BBBEB92 /* google_06.png */; };
+		ECBBB6E663BCAB127CD9F7833C823680 /* default_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 705EFDCB93B31578AB1AE55829270F6E /* default_12.png */; };
+		ED8DA293FFADA570F0D6248095408952 /* google_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECCE5106C42139965276701CF099DE1 /* google_07.png */; };
+		EF8B85A2B2AD2F7120BB1BAB55B46441 /* Pods-Nobala-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A6CB56D5BD7F662783356741A04DDF /* Pods-Nobala-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F36B3C25BFACC9380B939141A8CAE981 /* google_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 2948CA2592D9DD824138FD38ABFD7A8F /* google_05.png */; };
+		F709ACECF0EF8D360300FBC14F4A3CFA /* default_04.png in Resources */ = {isa = PBXBuildFile; fileRef = BBFC326ACCC9ED8049B598E8E4C64F94 /* default_04.png */; };
+		FD0F490D36F82A22E03A1E22FA317351 /* default_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 495DC03DB3B124BEAE9D91DFFF5383A3 /* default_17.png */; };
+		FDD36FECF7DA145D6975B58FB3240394 /* google_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B6329EDBF5B807AED50E76709F8D15E /* google_14.png */; };
+		FEE173C935CBB2D8C0BB94D993DCA851 /* google_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AFB69B4AC18B235E7E2E668C1DC6058 /* google_04.png */; };
+		FFF296789866BFB2A0B24F1432D456E1 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CE2724E6933AC7D3DCF1DD8F6F713FC /* Resources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8D84C8727FB89B9F325CE77F5DC8300F /* PBXContainerItemProxy */ = {
+		0353C5FC7AE66C6A5A6137EC80641007 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A249CF9CC83EF996380469C8249B2013;
 			remoteInfo = CalendarView;
 		};
-		BB05E31A2585BD4A4129E4FAF04FECF7 /* PBXContainerItemProxy */ = {
+		0B3D9D549E65BFF9487818BE5B7D152C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F789B79A806D38997C9F6F5DC0950B;
+			remoteInfo = "ASProgressHud-Resources";
+		};
+		1F0146BEF9F53E446FE96A296F91E662 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A21DCB995841FE970CCB507D94F822D9;
 			remoteInfo = SwiftMoment;
+		};
+		5CEF6512B8F60F5AA82DA3AD65846D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2CE449260E767692A3078142937C25D;
+			remoteInfo = ASProgressHud;
 		};
 		C212A310ED81EF7C8C983084530A575B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -71,79 +158,157 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03102B2B252819A05FDC7DEE99E9704D /* EasyCast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyCast.swift; path = CalendarView/CalendarView/Classes/EasyCast.swift; sourceTree = "<group>"; };
+		0077CB5478F713F823A8A6195C4160AB /* default_16.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_16.png; path = Pod/Assets/Default/default_16.png; sourceTree = "<group>"; };
 		05652E3F87A650D9102DA0F186A2DEBD /* Pods-Nobala-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Nobala-frameworks.sh"; sourceTree = "<group>"; };
-		08DC066395D47AECA6B490512168FA32 /* CalendarView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CalendarView.xcconfig; sourceTree = "<group>"; };
-		0E28DFA1507A7220C14BD60B859B7A73 /* CalendarView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BB06304781AA89D467D97ACB12CCE1 /* CalendarView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A749C233962EC528E527D407480E7A7 /* default_13.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_13.png; path = Pod/Assets/Default/default_13.png; sourceTree = "<group>"; };
+		0A7D273328E9F4E27C78448E495F644F /* google_11.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_11.png; path = Pod/Assets/Google/google_11.png; sourceTree = "<group>"; };
+		0B8BF6B01D7727DAFFD7CAE101DC265B /* flag_02.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_02.png; path = Pod/Assets/Flag/flag_02.png; sourceTree = "<group>"; };
+		0BAEAC55401D3C5EAFB8F7A87E71D511 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = CalendarView/CalendarView/Classes/ContentView.swift; sourceTree = "<group>"; };
+		0E43636B2323E78248D6A938D7913FDD /* google_09.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_09.png; path = Pod/Assets/Google/google_09.png; sourceTree = "<group>"; };
 		11BAA64FF099596D23F99154DE4126EC /* Pods-NobalaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NobalaTests.release.xcconfig"; sourceTree = "<group>"; };
+		12E10565869BBC8BFC10BE6931F66899 /* flag_11.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_11.png; path = Pod/Assets/Flag/flag_11.png; sourceTree = "<group>"; };
 		13530C17E69D60E34E122695BCC0D789 /* Pods-NobalaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NobalaTests-frameworks.sh"; sourceTree = "<group>"; };
 		13E3EAB7CDE9A3F836001A20B4667253 /* Pods-NobalaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NobalaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1CFD84B8CE3E86FE05BC4DAEC0378709 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = SwiftMoment/SwiftMoment/Operators.swift; sourceTree = "<group>"; };
+		1707A44B82847088085C7E03EDEAD503 /* flag_01.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_01.png; path = Pod/Assets/Flag/flag_01.png; sourceTree = "<group>"; };
+		17FAFC47C61C4FB575536D343DBA461B /* default_15.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_15.png; path = Pod/Assets/Default/default_15.png; sourceTree = "<group>"; };
+		1A312598F1ED25AF609F1472EA5BF3C6 /* flag_16.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_16.png; path = Pod/Assets/Flag/flag_16.png; sourceTree = "<group>"; };
+		1C33A414349498D5DD22FF1A8A5347DC /* SwiftMoment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftMoment.h; path = SwiftMoment/SwiftMoment/SwiftMoment.h; sourceTree = "<group>"; };
+		1CC6934B842E67A7DB2C8225FE870F7D /* DayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayView.swift; path = CalendarView/CalendarView/Classes/DayView.swift; sourceTree = "<group>"; };
+		1DE8E8730428502463CA97DC4BBBEB92 /* google_06.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_06.png; path = Pod/Assets/Google/google_06.png; sourceTree = "<group>"; };
+		1ECCE5106C42139965276701CF099DE1 /* google_07.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_07.png; path = Pod/Assets/Google/google_07.png; sourceTree = "<group>"; };
+		1F5588A02E2C1FF28F10B2C8A43F74C4 /* flag_17.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_17.png; path = Pod/Assets/Flag/flag_17.png; sourceTree = "<group>"; };
 		20EB683A2655A81F96895E55380EE6D5 /* Pods-NobalaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NobalaTests-dummy.m"; sourceTree = "<group>"; };
-		220BCB8959EF2F8AFCDEE7DD39A6ACF1 /* Moment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Moment.swift; path = SwiftMoment/SwiftMoment/Moment.swift; sourceTree = "<group>"; };
-		2495B4152AEA61AADA6D5369F0C3D02E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2112F33CAA06D48C166D471B41B20A7A /* google_21.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_21.png; path = Pod/Assets/Google/google_21.png; sourceTree = "<group>"; };
+		248F614DE1FC67E51EB8DFC029BA6D65 /* flag_14.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_14.png; path = Pod/Assets/Flag/flag_14.png; sourceTree = "<group>"; };
 		2720675BC8C8431B273FAABAD30AC349 /* Pods-NobalaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NobalaTests.modulemap"; sourceTree = "<group>"; };
-		2C5966A6E4B0AA5768C46C7FDE1A00BC /* CalendarView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CalendarView-dummy.m"; sourceTree = "<group>"; };
-		38EB01546D564DBCADB7DCD4362B3FE1 /* MonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonthView.swift; path = CalendarView/CalendarView/Classes/MonthView.swift; sourceTree = "<group>"; };
+		2823DDE007267D2E1E0FC6AAD932A828 /* default_07.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_07.png; path = Pod/Assets/Default/default_07.png; sourceTree = "<group>"; };
+		28D7E2C9C9892FC1B535E266A8D6D6F9 /* flag_18.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_18.png; path = Pod/Assets/Flag/flag_18.png; sourceTree = "<group>"; };
+		29391D809286A38354909B9040A4265C /* google_03.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_03.png; path = Pod/Assets/Google/google_03.png; sourceTree = "<group>"; };
+		2948CA2592D9DD824138FD38ABFD7A8F /* google_05.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_05.png; path = Pod/Assets/Google/google_05.png; sourceTree = "<group>"; };
+		2B0AD1953D7648EBE9BB72CB8220A284 /* flag_13.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_13.png; path = Pod/Assets/Flag/flag_13.png; sourceTree = "<group>"; };
+		2C01E05085EB5D264E20FA15E79AE97A /* Pods_Nobala.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nobala.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D132A7183B7E7E7C30658535D6C1E5D /* Pods_NobalaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		316F46F674981C982A2D1D6FA88B7BAF /* google_10.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_10.png; path = Pod/Assets/Google/google_10.png; sourceTree = "<group>"; };
+		3736EAC8811D358D240CC1C8DD0A87B0 /* MonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonthView.swift; path = CalendarView/CalendarView/Classes/MonthView.swift; sourceTree = "<group>"; };
+		38C1C0C9B7030FD0C0F7F9EF1C8E7234 /* ResourceBundle-Resources-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Resources-Info.plist"; sourceTree = "<group>"; };
 		3A6A338D24B3F77E4632ED4817FA04FA /* Pods-NobalaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NobalaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		417130C2FC87A4845D71DE657BFE2BDC /* CalendarView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CalendarView-prefix.pch"; sourceTree = "<group>"; };
+		3B36311205D8FE13845FC55D920D4276 /* default_11.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_11.png; path = Pod/Assets/Default/default_11.png; sourceTree = "<group>"; };
+		3E283DC400D12CBA7D9EFBA568F152F1 /* ASProgressHud-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASProgressHud-dummy.m"; sourceTree = "<group>"; };
+		3E6EC1633CF86A1177BB0C864F5AD923 /* default_05.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_05.png; path = Pod/Assets/Default/default_05.png; sourceTree = "<group>"; };
+		3EEB71B4E4724A09000282338D1D75F5 /* flag_04.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_04.png; path = Pod/Assets/Flag/flag_04.png; sourceTree = "<group>"; };
+		3F99135CE1D767C93BC0BBBF740DA035 /* flag_00.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_00.png; path = Pod/Assets/Flag/flag_00.png; sourceTree = "<group>"; };
+		48804180C0BC2F8BF3ACD4B0B98D6094 /* Moment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Moment.swift; path = SwiftMoment/SwiftMoment/Moment.swift; sourceTree = "<group>"; };
+		4891D6A2612E2685933E5E8AF092C2AD /* flag_08.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_08.png; path = Pod/Assets/Flag/flag_08.png; sourceTree = "<group>"; };
 		48D223D3A4915989473BC8FB88C183FE /* Pods-NobalaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NobalaUITests-dummy.m"; sourceTree = "<group>"; };
-		4A505F99DE6D87F6E05C4FA4253BA9F4 /* SwiftMoment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMoment-dummy.m"; sourceTree = "<group>"; };
-		4D4FE69BB2D380F8F7280EA24F659951 /* ResourceBundle-CalendarView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CalendarView-Info.plist"; sourceTree = "<group>"; };
+		495DC03DB3B124BEAE9D91DFFF5383A3 /* default_17.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_17.png; path = Pod/Assets/Default/default_17.png; sourceTree = "<group>"; };
+		49F6DE9A4A50E03437206C04A29A602D /* SwiftMoment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMoment-prefix.pch"; sourceTree = "<group>"; };
+		4AAB0F72E7EE925A3CBF5493E44E0DB7 /* google_25.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_25.png; path = Pod/Assets/Google/google_25.png; sourceTree = "<group>"; };
+		4B44CAD9D9B45282070BF829DDEC37F0 /* google_08.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_08.png; path = Pod/Assets/Google/google_08.png; sourceTree = "<group>"; };
+		4E88A432B642AF0359BD8F7855061472 /* Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Duration.swift; path = SwiftMoment/SwiftMoment/Duration.swift; sourceTree = "<group>"; };
+		4E92866C38B9871C39634FCEEBA0FF1C /* flag_15.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_15.png; path = Pod/Assets/Flag/flag_15.png; sourceTree = "<group>"; };
+		4FF44A40F5F2E0934424A96646C6C15A /* ResourceBundle-CalendarView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CalendarView-Info.plist"; sourceTree = "<group>"; };
 		5125FDE91F8F3C573FEE877B40854953 /* Pods-NobalaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NobalaTests-resources.sh"; sourceTree = "<group>"; };
 		51FF962CFA2E4B419727AEE2DB689D11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5226300DBAA4CA2832EB7A3E83E1D82B /* CalendarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalendarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52184EFEF1BD60C28B758EA83FA5ADB3 /* SwiftMoment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftMoment.modulemap; sourceTree = "<group>"; };
+		5315E42BB2C58DB25F6185EC91BF0E6F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53F62E78F0D451D1DC44C80F34E0FA5D /* Pods-Nobala-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Nobala-dummy.m"; sourceTree = "<group>"; };
 		57B47E4676AC720D012C8CB4F57C4F17 /* Pods-Nobala.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Nobala.release.xcconfig"; sourceTree = "<group>"; };
-		5842EC8DD4100D8E1AC1E09596C1D25A /* Pods_NobalaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57E32D1766F75ADE10700C342B9B23FE /* google_01.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_01.png; path = Pod/Assets/Google/google_01.png; sourceTree = "<group>"; };
+		583CF7585DC72870C52AEE83989030F3 /* flag_06.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_06.png; path = Pod/Assets/Flag/flag_06.png; sourceTree = "<group>"; };
+		5B79A9E3BD6170194212768D61038E52 /* ASProgressHud-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASProgressHud-umbrella.h"; sourceTree = "<group>"; };
+		6017980646B7221891FD9EE51747AEDC /* SwiftMoment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMoment-dummy.m"; sourceTree = "<group>"; };
+		60BB48BF496E55558E2F4179AF3A7E08 /* flag_19.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_19.png; path = Pod/Assets/Flag/flag_19.png; sourceTree = "<group>"; };
+		60D1A8C686244225CB7C708206A73F86 /* SwiftMoment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMoment.xcconfig; sourceTree = "<group>"; };
 		60D6A26EB60DAC820A7355D210AB3190 /* Pods-Nobala-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Nobala-acknowledgements.markdown"; sourceTree = "<group>"; };
-		63E4B6D19B9108E039730614AED00A9E /* SwiftMoment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMoment-prefix.pch"; sourceTree = "<group>"; };
+		642755BB17C07FD0195BA00D1BB22EB7 /* google_18.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_18.png; path = Pod/Assets/Google/google_18.png; sourceTree = "<group>"; };
 		66C13753ACE52DCD4EC75FE754AEBB3B /* Pods-NobalaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NobalaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		670FC6A3972E439000F4B1037B5A7938 /* CalendarView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CalendarView-dummy.m"; sourceTree = "<group>"; };
 		6829B741F3C9A303B69D1FEBBA3D9606 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		6A47CD2F5880F0D1FFAC063FBD8BE70E /* SwiftMoment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMoment-umbrella.h"; sourceTree = "<group>"; };
-		75BBFDC3DF1AE9860831C709B0F15521 /* CalendarView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CalendarView.modulemap; sourceTree = "<group>"; };
+		6AFB69B4AC18B235E7E2E668C1DC6058 /* google_04.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_04.png; path = Pod/Assets/Google/google_04.png; sourceTree = "<group>"; };
+		6B6329EDBF5B807AED50E76709F8D15E /* google_14.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_14.png; path = Pod/Assets/Google/google_14.png; sourceTree = "<group>"; };
+		6EADC33C2D84D15CF71565C877F7B0E4 /* google_13.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_13.png; path = Pod/Assets/Google/google_13.png; sourceTree = "<group>"; };
+		705EFDCB93B31578AB1AE55829270F6E /* default_12.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_12.png; path = Pod/Assets/Default/default_12.png; sourceTree = "<group>"; };
+		721A3198A799C56DD7AADA1BABEC02F1 /* google_02.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_02.png; path = Pod/Assets/Google/google_02.png; sourceTree = "<group>"; };
+		73CCF323F691A2E4B81F2526C28123F8 /* google_27.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_27.png; path = Pod/Assets/Google/google_27.png; sourceTree = "<group>"; };
 		7634C3E4E59DC36E17598289DF7BC1C4 /* Pods-NobalaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NobalaUITests.modulemap"; sourceTree = "<group>"; };
 		76A51C8B56CADA87610C06C382CE2B8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76A9AA8564C0E266EDE4209AAE41556A /* default_03.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_03.png; path = Pod/Assets/Default/default_03.png; sourceTree = "<group>"; };
+		77F25F8C1BD4759B327B5D23111694A8 /* flag_09.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_09.png; path = Pod/Assets/Flag/flag_09.png; sourceTree = "<group>"; };
+		78F5A834308EEDAADAE2EFDD19ECA609 /* google_28.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_28.png; path = Pod/Assets/Google/google_28.png; sourceTree = "<group>"; };
+		793A1454E7A8CFBD6F96DBD8C1B21158 /* WeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeekView.swift; path = CalendarView/CalendarView/Classes/WeekView.swift; sourceTree = "<group>"; };
+		79B4EF2E4B18DEFDDEB161C26F33D45B /* Pods_NobalaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA942B3A33510D0CC02A0F8AE9C0903 /* Pods-NobalaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NobalaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		800F3DC175C6D5DFEEF132A403C829A5 /* Pods-NobalaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NobalaUITests-umbrella.h"; sourceTree = "<group>"; };
+		80BC9091C77A070681766A254D9DAA57 /* google_15.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_15.png; path = Pod/Assets/Google/google_15.png; sourceTree = "<group>"; };
+		8195E7CD4A1842CD7940F4058D5CDC62 /* flag_12.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_12.png; path = Pod/Assets/Flag/flag_12.png; sourceTree = "<group>"; };
 		8294C38A36B1E3AB7200306429F39C09 /* Pods-Nobala-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Nobala-resources.sh"; sourceTree = "<group>"; };
 		8434C23A6EAEA787BE2F3176960B9B31 /* Pods-NobalaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NobalaUITests-frameworks.sh"; sourceTree = "<group>"; };
-		868363208BF3B422E3A49410934814D2 /* Pods_NobalaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		86F1F1B1C1404822F21A81C2119765B0 /* SwiftMoment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftMoment.h; path = SwiftMoment/SwiftMoment/SwiftMoment.h; sourceTree = "<group>"; };
+		877B3DA9821CAB9975DF635E2C10941F /* google_17.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_17.png; path = Pod/Assets/Google/google_17.png; sourceTree = "<group>"; };
+		8809DB9B8B53417BD13C376A5FECEE66 /* default_10.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_10.png; path = Pod/Assets/Default/default_10.png; sourceTree = "<group>"; };
 		8C2EC55DFF52F527831CF62D7B308BAB /* Pods-Nobala-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Nobala-acknowledgements.plist"; sourceTree = "<group>"; };
-		8E74E92FFF1AA5334606024D90A446BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C90F7248A256796C5D824CED6FFD1ED /* google_24.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_24.png; path = Pod/Assets/Google/google_24.png; sourceTree = "<group>"; };
+		8CE2724E6933AC7D3DCF1DD8F6F713FC /* Resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Resources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B0F98A377CE0354D4665D8803BF9AB /* Pods-NobalaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NobalaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		936A955F568D3E6C2CDDFF565FDEC17E /* Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Duration.swift; path = SwiftMoment/SwiftMoment/Duration.swift; sourceTree = "<group>"; };
+		931FDAB897119BA54FA42C488BE9151E /* ASProgressHud.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ASProgressHud.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94F554F97DC21EAB7D20FD2AEC592A1A /* SwiftMoment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftMoment.modulemap; sourceTree = "<group>"; };
-		A709AB23863E21C883ED8071B97269E6 /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A75A627DB666EAA76196A84DEBEA3A22 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = CalendarView/CalendarView/Classes/ContentView.swift; sourceTree = "<group>"; };
-		AF9EAD387D0B14F82D3559A59C9E4EB0 /* SwiftMoment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMoment.xcconfig; sourceTree = "<group>"; };
+		96C3760673D8FE33307013DBAE331D9B /* google_20.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_20.png; path = Pod/Assets/Google/google_20.png; sourceTree = "<group>"; };
+		99415BF61AF3B77A6A15F7C9DA7A7B96 /* google_29.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_29.png; path = Pod/Assets/Google/google_29.png; sourceTree = "<group>"; };
+		9CCC778FC3B83694CB6DADA9D4DE219F /* google_22.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_22.png; path = Pod/Assets/Google/google_22.png; sourceTree = "<group>"; };
+		A3BB3764ECC1C217B467A3297762D710 /* ASProgressHud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASProgressHud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52CEDFF1D3EC9027E3A8F884E924E16 /* default_06.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_06.png; path = Pod/Assets/Default/default_06.png; sourceTree = "<group>"; };
+		A54B21B47604BA38DCBE1A008F5B3974 /* google_12.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_12.png; path = Pod/Assets/Google/google_12.png; sourceTree = "<group>"; };
+		A631E4A0C9C1C2FEB9C0835DC742E9A4 /* flag_05.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_05.png; path = Pod/Assets/Flag/flag_05.png; sourceTree = "<group>"; };
+		AA64136A72D4F341F953E71EDF498658 /* google_00.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_00.png; path = Pod/Assets/Google/google_00.png; sourceTree = "<group>"; };
+		ACD5D280942D934422EB182E90C87EE6 /* CalendarView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CalendarView.xcconfig; sourceTree = "<group>"; };
+		AF9F704A6E29AF81F87CB61AB06E5B54 /* flag_03.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_03.png; path = Pod/Assets/Flag/flag_03.png; sourceTree = "<group>"; };
+		B4A18A4BF5029FFAB04245F6A907D554 /* google_16.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_16.png; path = Pod/Assets/Google/google_16.png; sourceTree = "<group>"; };
+		B4B78CB3EB02E507FB2EA163AEB6387D /* default_09.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_09.png; path = Pod/Assets/Default/default_09.png; sourceTree = "<group>"; };
 		B4E38D41E9B9621D27383C270104B7BB /* Pods-NobalaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NobalaTests-umbrella.h"; sourceTree = "<group>"; };
-		BE9E5BAE53E99998B07A606299EC7745 /* Pods_Nobala.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nobala.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F0D9FE8E1E533157C78F00B8C7E107 /* ASProgressHud.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASProgressHud.xcconfig; sourceTree = "<group>"; };
+		B63B92EC0212A1A516BDAE4C9AC20803 /* google_23.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_23.png; path = Pod/Assets/Google/google_23.png; sourceTree = "<group>"; };
+		BBFC326ACCC9ED8049B598E8E4C64F94 /* default_04.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_04.png; path = Pod/Assets/Default/default_04.png; sourceTree = "<group>"; };
+		BE190DFB26DDF044D6FCF789E8986751 /* flag_10.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_10.png; path = Pod/Assets/Flag/flag_10.png; sourceTree = "<group>"; };
+		C0C00144F871F4CB711D715871426C35 /* google_26.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_26.png; path = Pod/Assets/Google/google_26.png; sourceTree = "<group>"; };
+		C3DCF07840E27640F2C096A7B8C38A1D /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = SwiftMoment/SwiftMoment/Operators.swift; sourceTree = "<group>"; };
 		C8AEB580E54C0047F40230E64DDC059D /* Pods-Nobala.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Nobala.debug.xcconfig"; sourceTree = "<group>"; };
+		C93D7F9F5CAEE645D2A496EF46921C96 /* default_02.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_02.png; path = Pod/Assets/Default/default_02.png; sourceTree = "<group>"; };
 		CCB8923F494E760BF538D48FBCAE4992 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE53680CE6962E784E9E65AEC1BC8BF4 /* CalendarView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CalendarView-umbrella.h"; sourceTree = "<group>"; };
+		CE4C093DD5F130017E5C4FC57573137E /* CalendarView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CalendarView.modulemap; sourceTree = "<group>"; };
+		CF138D5DAE5E30C409C205FC12B5C974 /* TimeUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeUnit.swift; path = SwiftMoment/SwiftMoment/TimeUnit.swift; sourceTree = "<group>"; };
+		D2418DFDD5F245467F86EF30F716F2F1 /* ASProgressHud.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASProgressHud.swift; path = Pod/Classes/ASProgressHud.swift; sourceTree = "<group>"; };
+		D2B50350E7BD37ABE4FCAA4E42501190 /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D8827783040C00AC69074997016EBD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4F621A414B2F144E974D2562C10DCAC /* default_14.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_14.png; path = Pod/Assets/Default/default_14.png; sourceTree = "<group>"; };
+		D505842228C917D2A31E91B99537B440 /* google_19.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_19.png; path = Pod/Assets/Google/google_19.png; sourceTree = "<group>"; };
+		D55AEAC63EF4D00DD44BCB53EB2ABF99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6964DCD108FE204C2F1CF63FD5932CB /* SwiftMoment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMoment-umbrella.h"; sourceTree = "<group>"; };
+		D846C94F56CC91C46AF3B60A5C63953D /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftMoment/SwiftMoment/Extensions.swift; sourceTree = "<group>"; };
 		D9A6CB56D5BD7F662783356741A04DDF /* Pods-Nobala-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Nobala-umbrella.h"; sourceTree = "<group>"; };
-		D9CD334F42E3888E3BCEDDA98D2BB4DD /* TimeUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeUnit.swift; path = SwiftMoment/SwiftMoment/TimeUnit.swift; sourceTree = "<group>"; };
-		DB8BE1471D40A4B95BF3A3944C42B655 /* WeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeekView.swift; path = CalendarView/CalendarView/Classes/WeekView.swift; sourceTree = "<group>"; };
+		DF238BD07B7BAB0E5BAECA42CDCEB470 /* CalendarView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CalendarView-prefix.pch"; sourceTree = "<group>"; };
 		E5D5D7E1C9BD043ED8C133DC18A35144 /* Pods-NobalaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NobalaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E60F27C535CC640EB8580D7CCFBDD310 /* default_00.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_00.png; path = Pod/Assets/Default/default_00.png; sourceTree = "<group>"; };
 		E6624A81B56320BE6745E55F8A954B2F /* Pods-NobalaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NobalaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E66F80EBF0FDDD4074444408A70BD6AB /* Pods-NobalaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NobalaUITests-resources.sh"; sourceTree = "<group>"; };
-		E96EE429FE863E6E911D11403FD97548 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftMoment/SwiftMoment/Extensions.swift; sourceTree = "<group>"; };
-		E9B638D78E0EB434E18D2BB9425AF905 /* CalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = CalendarView/CalendarView/Classes/CalendarView.swift; sourceTree = "<group>"; };
+		E8479DBAE081A1514C7AFC283CB8839D /* flag_07.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_07.png; path = Pod/Assets/Flag/flag_07.png; sourceTree = "<group>"; };
+		EAEED3090D051ABDEEB1E8F31A66E78E /* EasyCast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyCast.swift; path = CalendarView/CalendarView/Classes/EasyCast.swift; sourceTree = "<group>"; };
+		EC1ED686B5A038515D7BC73FF71AE5FA /* default_08.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_08.png; path = Pod/Assets/Default/default_08.png; sourceTree = "<group>"; };
 		EF2EA0309FE3DE0AD407EB3C9E1B8FEC /* Pods-Nobala.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Nobala.modulemap"; sourceTree = "<group>"; };
 		F244B8A8DFE4E07DC6ADB0AA5A1B4E01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F61A489D45190C15D8D16CAFF57441AF /* default_01.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_01.png; path = Pod/Assets/Default/default_01.png; sourceTree = "<group>"; };
+		F62E48E92B189E25629F0ED6213C2CF5 /* CalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = CalendarView/CalendarView/Classes/CalendarView.swift; sourceTree = "<group>"; };
+		FB4E97D93FC9BB3E5B82111AF34EE6C9 /* CalendarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalendarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9D187E38447519B97C9ADBBEB628C8 /* ASProgressHud-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASProgressHud-prefix.pch"; sourceTree = "<group>"; };
 		FD22125E84BE8721EA3E324E3CA9857C /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD807B890F3B4A955B3C49546A4D6ADE /* DayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayView.swift; path = CalendarView/CalendarView/Classes/DayView.swift; sourceTree = "<group>"; };
+		FEF583576475F38BDCC9828B961E73B5 /* CalendarView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CalendarView-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0BD32109E560D9CF4E3CE5F886CE5EC8 /* Frameworks */ = {
+		6039B77073D51C1C873A4FB8BC6D0489 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CC2A7251DAEA9865CD12913C709F951 /* Foundation.framework in Frameworks */,
+				E3C81949C454124299FB169F98097C02 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,35 +353,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1AABF285E9C352EF35EF489157B7883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9167E4DC280A86C73F4E1C79D63C4BC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4BD49DA64B4B53AE32CDA583745630A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		061FFEE819A7E7FB19E946441AE17EAE /* CalendarView */ = {
+		1A6BA1327E844B74EBFD9D9FD04F20E2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E9B638D78E0EB434E18D2BB9425AF905 /* CalendarView.swift */,
-				A75A627DB666EAA76196A84DEBEA3A22 /* ContentView.swift */,
-				FD807B890F3B4A955B3C49546A4D6ADE /* DayView.swift */,
-				03102B2B252819A05FDC7DEE99E9704D /* EasyCast.swift */,
-				38EB01546D564DBCADB7DCD4362B3FE1 /* MonthView.swift */,
-				DB8BE1471D40A4B95BF3A3944C42B655 /* WeekView.swift */,
-				C2D015D41458C1108818D2D40C58FE89 /* Support Files */,
-			);
-			path = CalendarView;
-			sourceTree = "<group>";
-		};
-		0D753C0CECD204C101AC2E3EAD300974 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8E74E92FFF1AA5334606024D90A446BD /* Info.plist */,
-				94F554F97DC21EAB7D20FD2AEC592A1A /* SwiftMoment.modulemap */,
-				AF9EAD387D0B14F82D3559A59C9E4EB0 /* SwiftMoment.xcconfig */,
-				4A505F99DE6D87F6E05C4FA4253BA9F4 /* SwiftMoment-dummy.m */,
-				63E4B6D19B9108E039730614AED00A9E /* SwiftMoment-prefix.pch */,
-				6A47CD2F5880F0D1FFAC063FBD8BE70E /* SwiftMoment-umbrella.h */,
+				931FDAB897119BA54FA42C488BE9151E /* ASProgressHud.modulemap */,
+				B5F0D9FE8E1E533157C78F00B8C7E107 /* ASProgressHud.xcconfig */,
+				3E283DC400D12CBA7D9EFBA568F152F1 /* ASProgressHud-dummy.m */,
+				FB9D187E38447519B97C9ADBBEB628C8 /* ASProgressHud-prefix.pch */,
+				5B79A9E3BD6170194212768D61038E52 /* ASProgressHud-umbrella.h */,
+				5315E42BB2C58DB25F6185EC91BF0E6F /* Info.plist */,
+				38C1C0C9B7030FD0C0F7F9EF1C8E7234 /* ResourceBundle-Resources-Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftMoment";
+			path = "../Target Support Files/ASProgressHud";
 			sourceTree = "<group>";
 		};
 		385AB5BA9EBE978F83C20BEDA88B9E04 /* Pods-NobalaUITests */ = {
@@ -255,13 +422,112 @@
 			path = "Target Support Files/Pods-NobalaTests";
 			sourceTree = "<group>";
 		};
+		4AC92C42B4697C1B40A56EA361F3D4FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5289DAB484DCE30762020AE318E467B /* ASProgressHud */,
+				7054ACCF08C6C9E58833666928ED92F7 /* CalendarView */,
+				A3B3A8AE8AFBEF3CA42AF33E424D8EE1 /* SwiftMoment */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		64EE9BD93C89E8EEE761D0ABD0E74720 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E60F27C535CC640EB8580D7CCFBDD310 /* default_00.png */,
+				F61A489D45190C15D8D16CAFF57441AF /* default_01.png */,
+				C93D7F9F5CAEE645D2A496EF46921C96 /* default_02.png */,
+				76A9AA8564C0E266EDE4209AAE41556A /* default_03.png */,
+				BBFC326ACCC9ED8049B598E8E4C64F94 /* default_04.png */,
+				3E6EC1633CF86A1177BB0C864F5AD923 /* default_05.png */,
+				A52CEDFF1D3EC9027E3A8F884E924E16 /* default_06.png */,
+				2823DDE007267D2E1E0FC6AAD932A828 /* default_07.png */,
+				EC1ED686B5A038515D7BC73FF71AE5FA /* default_08.png */,
+				B4B78CB3EB02E507FB2EA163AEB6387D /* default_09.png */,
+				8809DB9B8B53417BD13C376A5FECEE66 /* default_10.png */,
+				3B36311205D8FE13845FC55D920D4276 /* default_11.png */,
+				705EFDCB93B31578AB1AE55829270F6E /* default_12.png */,
+				0A749C233962EC528E527D407480E7A7 /* default_13.png */,
+				D4F621A414B2F144E974D2562C10DCAC /* default_14.png */,
+				17FAFC47C61C4FB575536D343DBA461B /* default_15.png */,
+				0077CB5478F713F823A8A6195C4160AB /* default_16.png */,
+				495DC03DB3B124BEAE9D91DFFF5383A3 /* default_17.png */,
+				3F99135CE1D767C93BC0BBBF740DA035 /* flag_00.png */,
+				1707A44B82847088085C7E03EDEAD503 /* flag_01.png */,
+				0B8BF6B01D7727DAFFD7CAE101DC265B /* flag_02.png */,
+				AF9F704A6E29AF81F87CB61AB06E5B54 /* flag_03.png */,
+				3EEB71B4E4724A09000282338D1D75F5 /* flag_04.png */,
+				A631E4A0C9C1C2FEB9C0835DC742E9A4 /* flag_05.png */,
+				583CF7585DC72870C52AEE83989030F3 /* flag_06.png */,
+				E8479DBAE081A1514C7AFC283CB8839D /* flag_07.png */,
+				4891D6A2612E2685933E5E8AF092C2AD /* flag_08.png */,
+				77F25F8C1BD4759B327B5D23111694A8 /* flag_09.png */,
+				BE190DFB26DDF044D6FCF789E8986751 /* flag_10.png */,
+				12E10565869BBC8BFC10BE6931F66899 /* flag_11.png */,
+				8195E7CD4A1842CD7940F4058D5CDC62 /* flag_12.png */,
+				2B0AD1953D7648EBE9BB72CB8220A284 /* flag_13.png */,
+				248F614DE1FC67E51EB8DFC029BA6D65 /* flag_14.png */,
+				4E92866C38B9871C39634FCEEBA0FF1C /* flag_15.png */,
+				1A312598F1ED25AF609F1472EA5BF3C6 /* flag_16.png */,
+				1F5588A02E2C1FF28F10B2C8A43F74C4 /* flag_17.png */,
+				28D7E2C9C9892FC1B535E266A8D6D6F9 /* flag_18.png */,
+				60BB48BF496E55558E2F4179AF3A7E08 /* flag_19.png */,
+				AA64136A72D4F341F953E71EDF498658 /* google_00.png */,
+				57E32D1766F75ADE10700C342B9B23FE /* google_01.png */,
+				721A3198A799C56DD7AADA1BABEC02F1 /* google_02.png */,
+				29391D809286A38354909B9040A4265C /* google_03.png */,
+				6AFB69B4AC18B235E7E2E668C1DC6058 /* google_04.png */,
+				2948CA2592D9DD824138FD38ABFD7A8F /* google_05.png */,
+				1DE8E8730428502463CA97DC4BBBEB92 /* google_06.png */,
+				1ECCE5106C42139965276701CF099DE1 /* google_07.png */,
+				4B44CAD9D9B45282070BF829DDEC37F0 /* google_08.png */,
+				0E43636B2323E78248D6A938D7913FDD /* google_09.png */,
+				316F46F674981C982A2D1D6FA88B7BAF /* google_10.png */,
+				0A7D273328E9F4E27C78448E495F644F /* google_11.png */,
+				A54B21B47604BA38DCBE1A008F5B3974 /* google_12.png */,
+				6EADC33C2D84D15CF71565C877F7B0E4 /* google_13.png */,
+				6B6329EDBF5B807AED50E76709F8D15E /* google_14.png */,
+				80BC9091C77A070681766A254D9DAA57 /* google_15.png */,
+				B4A18A4BF5029FFAB04245F6A907D554 /* google_16.png */,
+				877B3DA9821CAB9975DF635E2C10941F /* google_17.png */,
+				642755BB17C07FD0195BA00D1BB22EB7 /* google_18.png */,
+				D505842228C917D2A31E91B99537B440 /* google_19.png */,
+				96C3760673D8FE33307013DBAE331D9B /* google_20.png */,
+				2112F33CAA06D48C166D471B41B20A7A /* google_21.png */,
+				9CCC778FC3B83694CB6DADA9D4DE219F /* google_22.png */,
+				B63B92EC0212A1A516BDAE4C9AC20803 /* google_23.png */,
+				8C90F7248A256796C5D824CED6FFD1ED /* google_24.png */,
+				4AAB0F72E7EE925A3CBF5493E44E0DB7 /* google_25.png */,
+				C0C00144F871F4CB711D715871426C35 /* google_26.png */,
+				73CCF323F691A2E4B81F2526C28123F8 /* google_27.png */,
+				78F5A834308EEDAADAE2EFDD19ECA609 /* google_28.png */,
+				99415BF61AF3B77A6A15F7C9DA7A7B96 /* google_29.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7054ACCF08C6C9E58833666928ED92F7 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				F62E48E92B189E25629F0ED6213C2CF5 /* CalendarView.swift */,
+				0BAEAC55401D3C5EAFB8F7A87E71D511 /* ContentView.swift */,
+				1CC6934B842E67A7DB2C8225FE870F7D /* DayView.swift */,
+				EAEED3090D051ABDEEB1E8F31A66E78E /* EasyCast.swift */,
+				3736EAC8811D358D240CC1C8DD0A87B0 /* MonthView.swift */,
+				793A1454E7A8CFBD6F96DBD8C1B21158 /* WeekView.swift */,
+				AAA6AB1D32A5D2207635B3055E865921 /* Support Files */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				8AD35ED3060B1F46E89CF030D8AA3EA0 /* Frameworks */,
-				D8032E87CA8897A7CB77D9CB1C54B290 /* Pods */,
-				B35B541DBAC7AEB76692230814B2E7BD /* Products */,
+				4AC92C42B4697C1B40A56EA361F3D4FB /* Pods */,
+				9910D8A45B367676F39836F46D0EB92B /* Products */,
 				D2D99514CBC1B8BD64AEB462E6022FAA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -273,20 +539,6 @@
 				BE7FD02C75F7A5D43DBC8FE47151B830 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		903256AFE838AB1FE723C8D7EEC6A466 /* SwiftMoment */ = {
-			isa = PBXGroup;
-			children = (
-				936A955F568D3E6C2CDDFF565FDEC17E /* Duration.swift */,
-				E96EE429FE863E6E911D11403FD97548 /* Extensions.swift */,
-				220BCB8959EF2F8AFCDEE7DD39A6ACF1 /* Moment.swift */,
-				1CFD84B8CE3E86FE05BC4DAEC0378709 /* Operators.swift */,
-				86F1F1B1C1404822F21A81C2119765B0 /* SwiftMoment.h */,
-				D9CD334F42E3888E3BCEDDA98D2BB4DD /* TimeUnit.swift */,
-				0D753C0CECD204C101AC2E3EAD300974 /* Support Files */,
-			);
-			path = SwiftMoment;
 			sourceTree = "<group>";
 		};
 		94E69373D8E0B572C9CE8760BFB285CA /* Pods-Nobala */ = {
@@ -307,17 +559,48 @@
 			path = "Target Support Files/Pods-Nobala";
 			sourceTree = "<group>";
 		};
-		B35B541DBAC7AEB76692230814B2E7BD /* Products */ = {
+		9910D8A45B367676F39836F46D0EB92B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E28DFA1507A7220C14BD60B859B7A73 /* CalendarView.bundle */,
-				5226300DBAA4CA2832EB7A3E83E1D82B /* CalendarView.framework */,
-				BE9E5BAE53E99998B07A606299EC7745 /* Pods_Nobala.framework */,
-				5842EC8DD4100D8E1AC1E09596C1D25A /* Pods_NobalaTests.framework */,
-				868363208BF3B422E3A49410934814D2 /* Pods_NobalaUITests.framework */,
-				A709AB23863E21C883ED8071B97269E6 /* SwiftMoment.framework */,
+				A3BB3764ECC1C217B467A3297762D710 /* ASProgressHud.framework */,
+				05BB06304781AA89D467D97ACB12CCE1 /* CalendarView.bundle */,
+				FB4E97D93FC9BB3E5B82111AF34EE6C9 /* CalendarView.framework */,
+				2C01E05085EB5D264E20FA15E79AE97A /* Pods_Nobala.framework */,
+				2D132A7183B7E7E7C30658535D6C1E5D /* Pods_NobalaTests.framework */,
+				79B4EF2E4B18DEFDDEB161C26F33D45B /* Pods_NobalaUITests.framework */,
+				8CE2724E6933AC7D3DCF1DD8F6F713FC /* Resources.bundle */,
+				D2B50350E7BD37ABE4FCAA4E42501190 /* SwiftMoment.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A3B3A8AE8AFBEF3CA42AF33E424D8EE1 /* SwiftMoment */ = {
+			isa = PBXGroup;
+			children = (
+				4E88A432B642AF0359BD8F7855061472 /* Duration.swift */,
+				D846C94F56CC91C46AF3B60A5C63953D /* Extensions.swift */,
+				48804180C0BC2F8BF3ACD4B0B98D6094 /* Moment.swift */,
+				C3DCF07840E27640F2C096A7B8C38A1D /* Operators.swift */,
+				1C33A414349498D5DD22FF1A8A5347DC /* SwiftMoment.h */,
+				CF138D5DAE5E30C409C205FC12B5C974 /* TimeUnit.swift */,
+				EC263311A18A7BD9FA231C3377504749 /* Support Files */,
+			);
+			path = SwiftMoment;
+			sourceTree = "<group>";
+		};
+		AAA6AB1D32A5D2207635B3055E865921 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C093DD5F130017E5C4FC57573137E /* CalendarView.modulemap */,
+				ACD5D280942D934422EB182E90C87EE6 /* CalendarView.xcconfig */,
+				670FC6A3972E439000F4B1037B5A7938 /* CalendarView-dummy.m */,
+				DF238BD07B7BAB0E5BAECA42CDCEB470 /* CalendarView-prefix.pch */,
+				FEF583576475F38BDCC9828B961E73B5 /* CalendarView-umbrella.h */,
+				D4D8827783040C00AC69074997016EBD /* Info.plist */,
+				4FF44A40F5F2E0934424A96646C6C15A /* ResourceBundle-CalendarView-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CalendarView";
 			sourceTree = "<group>";
 		};
 		BE7FD02C75F7A5D43DBC8FE47151B830 /* iOS */ = {
@@ -327,21 +610,6 @@
 				6829B741F3C9A303B69D1FEBBA3D9606 /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		C2D015D41458C1108818D2D40C58FE89 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				75BBFDC3DF1AE9860831C709B0F15521 /* CalendarView.modulemap */,
-				08DC066395D47AECA6B490512168FA32 /* CalendarView.xcconfig */,
-				2C5966A6E4B0AA5768C46C7FDE1A00BC /* CalendarView-dummy.m */,
-				417130C2FC87A4845D71DE657BFE2BDC /* CalendarView-prefix.pch */,
-				CE53680CE6962E784E9E65AEC1BC8BF4 /* CalendarView-umbrella.h */,
-				2495B4152AEA61AADA6D5369F0C3D02E /* Info.plist */,
-				4D4FE69BB2D380F8F7280EA24F659951 /* ResourceBundle-CalendarView-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CalendarView";
 			sourceTree = "<group>";
 		};
 		D2D99514CBC1B8BD64AEB462E6022FAA /* Targets Support Files */ = {
@@ -354,18 +622,41 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D8032E87CA8897A7CB77D9CB1C54B290 /* Pods */ = {
+		EC263311A18A7BD9FA231C3377504749 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				061FFEE819A7E7FB19E946441AE17EAE /* CalendarView */,
-				903256AFE838AB1FE723C8D7EEC6A466 /* SwiftMoment */,
+				D55AEAC63EF4D00DD44BCB53EB2ABF99 /* Info.plist */,
+				52184EFEF1BD60C28B758EA83FA5ADB3 /* SwiftMoment.modulemap */,
+				60D1A8C686244225CB7C708206A73F86 /* SwiftMoment.xcconfig */,
+				6017980646B7221891FD9EE51747AEDC /* SwiftMoment-dummy.m */,
+				49F6DE9A4A50E03437206C04A29A602D /* SwiftMoment-prefix.pch */,
+				D6964DCD108FE204C2F1CF63FD5932CB /* SwiftMoment-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftMoment";
+			sourceTree = "<group>";
+		};
+		F5289DAB484DCE30762020AE318E467B /* ASProgressHud */ = {
+			isa = PBXGroup;
+			children = (
+				D2418DFDD5F245467F86EF30F716F2F1 /* ASProgressHud.swift */,
+				64EE9BD93C89E8EEE761D0ABD0E74720 /* Resources */,
+				1A6BA1327E844B74EBFD9D9FD04F20E2 /* Support Files */,
+			);
+			path = ASProgressHud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3644544E11BF612ECA6EBDD886C0A719 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				389B173006C07ADBE38096CB13F775D2 /* ASProgressHud-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		38938B58EE9AB88C4E1E36C69E2D815B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,11 +682,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2FAB9338DF8DF6B30A5E9774702A439 /* Headers */ = {
+		7A37C8FA3BAED0B7EC19205EB1800BB7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C599444BF9EBED1592C76DD56D81FEA4 /* Pods-Nobala-umbrella.h in Headers */,
+				EF8B85A2B2AD2F7120BB1BAB55B46441 /* Pods-Nobala-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,24 +701,22 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0A243BD782E8D11F5EF562633CB59E3A /* Pods-Nobala */ = {
+		32F789B79A806D38997C9F6F5DC0950B /* ASProgressHud-Resources */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1843E15F60C4B4FF1BB9A5E3BF58AB9E /* Build configuration list for PBXNativeTarget "Pods-Nobala" */;
+			buildConfigurationList = 03201581BA511D48A086A604CCC38F24 /* Build configuration list for PBXNativeTarget "ASProgressHud-Resources" */;
 			buildPhases = (
-				D72664F534166229985050424B4248F0 /* Sources */,
-				0BD32109E560D9CF4E3CE5F886CE5EC8 /* Frameworks */,
-				A2FAB9338DF8DF6B30A5E9774702A439 /* Headers */,
+				DCC3B35B06CAEDEEE0EF8BC2C215AEAD /* Sources */,
+				E4BD49DA64B4B53AE32CDA583745630A /* Frameworks */,
+				0829FC8DE9CDF793BBFE04F1117F504A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5B122F952806E65467CA25FB6582FE5E /* PBXTargetDependency */,
-				54BD88CD2628088DEE52A0355804F390 /* PBXTargetDependency */,
 			);
-			name = "Pods-Nobala";
-			productName = "Pods-Nobala";
-			productReference = BE9E5BAE53E99998B07A606299EC7745 /* Pods_Nobala.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "ASProgressHud-Resources";
+			productName = "ASProgressHud-Resources";
+			productReference = 8CE2724E6933AC7D3DCF1DD8F6F713FC /* Resources.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		41638D9B170F774D9F650F63B192526A /* CalendarView-CalendarView */ = {
 			isa = PBXNativeTarget;
@@ -443,7 +732,7 @@
 			);
 			name = "CalendarView-CalendarView";
 			productName = "CalendarView-CalendarView";
-			productReference = 0E28DFA1507A7220C14BD60B859B7A73 /* CalendarView.bundle */;
+			productReference = 05BB06304781AA89D467D97ACB12CCE1 /* CalendarView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		4AC80B3D7C1E854CE1C2E3E9C983191C /* Pods-NobalaTests */ = {
@@ -460,7 +749,27 @@
 			);
 			name = "Pods-NobalaTests";
 			productName = "Pods-NobalaTests";
-			productReference = 5842EC8DD4100D8E1AC1E09596C1D25A /* Pods_NobalaTests.framework */;
+			productReference = 2D132A7183B7E7E7C30658535D6C1E5D /* Pods_NobalaTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C5AA45CF2F4D1DD42661A5FC6CBDF0B /* Pods-Nobala */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72AF019836C7364C674DB83CEA6870B1 /* Build configuration list for PBXNativeTarget "Pods-Nobala" */;
+			buildPhases = (
+				831D2C5945247CBBFF8028D5B71794D3 /* Sources */,
+				6039B77073D51C1C873A4FB8BC6D0489 /* Frameworks */,
+				7A37C8FA3BAED0B7EC19205EB1800BB7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C0EEC086BCE629E48B0271869AFE8CE /* PBXTargetDependency */,
+				73D31C70F823C4CA34BB19B2DFCE599B /* PBXTargetDependency */,
+				B8E16C21E93ECE89BE8D2683B5E51B65 /* PBXTargetDependency */,
+			);
+			name = "Pods-Nobala";
+			productName = "Pods-Nobala";
+			productReference = 2C01E05085EB5D264E20FA15E79AE97A /* Pods_Nobala.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A21DCB995841FE970CCB507D94F822D9 /* SwiftMoment */ = {
@@ -477,7 +786,7 @@
 			);
 			name = SwiftMoment;
 			productName = SwiftMoment;
-			productReference = A709AB23863E21C883ED8071B97269E6 /* SwiftMoment.framework */;
+			productReference = D2B50350E7BD37ABE4FCAA4E42501190 /* SwiftMoment.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A249CF9CC83EF996380469C8249B2013 /* CalendarView */ = {
@@ -497,7 +806,7 @@
 			);
 			name = CalendarView;
 			productName = CalendarView;
-			productReference = 5226300DBAA4CA2832EB7A3E83E1D82B /* CalendarView.framework */;
+			productReference = FB4E97D93FC9BB3E5B82111AF34EE6C9 /* CalendarView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C3CA5FEC2D4A20CC16F097B3DAC07BB0 /* Pods-NobalaUITests */ = {
@@ -514,7 +823,26 @@
 			);
 			name = "Pods-NobalaUITests";
 			productName = "Pods-NobalaUITests";
-			productReference = 868363208BF3B422E3A49410934814D2 /* Pods_NobalaUITests.framework */;
+			productReference = 79B4EF2E4B18DEFDDEB161C26F33D45B /* Pods_NobalaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F2CE449260E767692A3078142937C25D /* ASProgressHud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CDB0137E741D220422DB4CADEF2432 /* Build configuration list for PBXNativeTarget "ASProgressHud" */;
+			buildPhases = (
+				9B2C98145D4F0F66E4865324683067C0 /* Sources */,
+				C1AABF285E9C352EF35EF489157B7883 /* Frameworks */,
+				0C0DE90FFDF184412034BB78742C47DF /* Resources */,
+				3644544E11BF612ECA6EBDD886C0A719 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D5973D7051C107B90762A71DA1899BF /* PBXTargetDependency */,
+			);
+			name = ASProgressHud;
+			productName = ASProgressHud;
+			productReference = A3BB3764ECC1C217B467A3297762D710 /* ASProgressHud.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -534,13 +862,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B35B541DBAC7AEB76692230814B2E7BD /* Products */;
+			productRefGroup = 9910D8A45B367676F39836F46D0EB92B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				F2CE449260E767692A3078142937C25D /* ASProgressHud */,
+				32F789B79A806D38997C9F6F5DC0950B /* ASProgressHud-Resources */,
 				A249CF9CC83EF996380469C8249B2013 /* CalendarView */,
 				41638D9B170F774D9F650F63B192526A /* CalendarView-CalendarView */,
-				0A243BD782E8D11F5EF562633CB59E3A /* Pods-Nobala */,
+				7C5AA45CF2F4D1DD42661A5FC6CBDF0B /* Pods-Nobala */,
 				4AC80B3D7C1E854CE1C2E3E9C983191C /* Pods-NobalaTests */,
 				C3CA5FEC2D4A20CC16F097B3DAC07BB0 /* Pods-NobalaUITests */,
 				A21DCB995841FE970CCB507D94F822D9 /* SwiftMoment */,
@@ -549,6 +879,89 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0829FC8DE9CDF793BBFE04F1117F504A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E775532FC4820600754DC7D114D64D18 /* default_00.png in Resources */,
+				05B556E8072FF6042C483E7EA8D64D30 /* default_01.png in Resources */,
+				DBF253BFA7E2449DEA70EDBD32587A8D /* default_02.png in Resources */,
+				C2CDA2FFA4996AD0CECB7B9A4055A739 /* default_03.png in Resources */,
+				F709ACECF0EF8D360300FBC14F4A3CFA /* default_04.png in Resources */,
+				0FA940766C270A42F1A8F35EAAC5E669 /* default_05.png in Resources */,
+				C8A05435361B8E3BAD730F8B50863C2B /* default_06.png in Resources */,
+				35C86168F6CB121CBF09A689F87D0788 /* default_07.png in Resources */,
+				9A9FB7FB0B1DDA7683F63FC6DACF8204 /* default_08.png in Resources */,
+				7AAAA5A581BC72922E68884DD99C99BC /* default_09.png in Resources */,
+				0F98DE0885CEF9639EBE61D1D3CB6FC2 /* default_10.png in Resources */,
+				062E087E0A6DFFF875375713B9B9747E /* default_11.png in Resources */,
+				ECBBB6E663BCAB127CD9F7833C823680 /* default_12.png in Resources */,
+				5ACD97174A065EC6BE6B082A9401C1BC /* default_13.png in Resources */,
+				083486801D227AF056B8075E7E84EE63 /* default_14.png in Resources */,
+				317D7DE4D6DCCA8CB30307D4C2348B3E /* default_15.png in Resources */,
+				8E1AB7742B8F68A18463F0AD52C228D1 /* default_16.png in Resources */,
+				FD0F490D36F82A22E03A1E22FA317351 /* default_17.png in Resources */,
+				0ADECAC3AFA1F84A608EA72421F117B4 /* flag_00.png in Resources */,
+				A91F3DB21C7F662AEDF7F54555ADE10D /* flag_01.png in Resources */,
+				D684FBEF79411842E8D8BD1B21A94114 /* flag_02.png in Resources */,
+				B91BB4BBCB0A7098E90581996151C845 /* flag_03.png in Resources */,
+				3082AD730910DDF142D1E80898100681 /* flag_04.png in Resources */,
+				339E9D1DA846B5E21FC7DE0F4866CA7D /* flag_05.png in Resources */,
+				A18FB9FC343AD423DD5B54A14D534560 /* flag_06.png in Resources */,
+				844665EF4D0CA62B7D5CCB3DFB0A3508 /* flag_07.png in Resources */,
+				21B66FB52643DC48F456717F4090E3E0 /* flag_08.png in Resources */,
+				26496D6D3040FF081C34CAE8271611B0 /* flag_09.png in Resources */,
+				5E8AAD7E31650D0929445145F053F1A0 /* flag_10.png in Resources */,
+				649ED39E517259CC3C962C8241D373D5 /* flag_11.png in Resources */,
+				89B1090CF6AFB32448B10DC22B764510 /* flag_12.png in Resources */,
+				19946CC96C0CE4BA6294F937F8DA5C0D /* flag_13.png in Resources */,
+				0AB7F72676FE2C368C8669C6B5183C97 /* flag_14.png in Resources */,
+				38FABFB2476A66F6440560D3B0E73C0F /* flag_15.png in Resources */,
+				119DEC8FE0D7CAA51234AB4622FAAD04 /* flag_16.png in Resources */,
+				109A94F3D7843A08DBCEEFC7E1B46A09 /* flag_17.png in Resources */,
+				2AE391EE02D503373341FBA8B5396173 /* flag_18.png in Resources */,
+				CA9071F62CACA07391CAEB9B79629F9D /* flag_19.png in Resources */,
+				D4FF12859DD345EB939F3318E67902C4 /* google_00.png in Resources */,
+				23382EC919012D227A5356C7C0E8A784 /* google_01.png in Resources */,
+				9DE66C4603DCB97E169B8F4D2D62E052 /* google_02.png in Resources */,
+				E3AAD103B4FB23D6C8B04BABB6957D2E /* google_03.png in Resources */,
+				FEE173C935CBB2D8C0BB94D993DCA851 /* google_04.png in Resources */,
+				F36B3C25BFACC9380B939141A8CAE981 /* google_05.png in Resources */,
+				EB0FEEA35F3AEDE7AD7380A89CA36E91 /* google_06.png in Resources */,
+				ED8DA293FFADA570F0D6248095408952 /* google_07.png in Resources */,
+				3B8CC789A281BFBEF3431722D6C37C1F /* google_08.png in Resources */,
+				D5FF9A79A409719DA1B669C1CC905EE4 /* google_09.png in Resources */,
+				6A61A8B69787E30C27F22A6BC860355A /* google_10.png in Resources */,
+				9F98B1902E900A8053923BB77AC0A093 /* google_11.png in Resources */,
+				0C9657A95617BDEC595B9CFCCDA058C4 /* google_12.png in Resources */,
+				483B9508B70C5FB041C04D9C0EF9CC74 /* google_13.png in Resources */,
+				FDD36FECF7DA145D6975B58FB3240394 /* google_14.png in Resources */,
+				86CA71A007752A47553546F25C3323F2 /* google_15.png in Resources */,
+				D495657DFBAC1A2539F517A0D45BB74B /* google_16.png in Resources */,
+				93E1C5F99D4BB56C10E2EFC167C4EE5A /* google_17.png in Resources */,
+				E8A6B0D8A9730C3B2008EE652CFDEF21 /* google_18.png in Resources */,
+				1D08AAE806F1D8DF02A8FA3074CBC89E /* google_19.png in Resources */,
+				63CF619DCBE746972C22047AC3D86FE4 /* google_20.png in Resources */,
+				2EDE4B19CF9465886C2D1F95E42497B7 /* google_21.png in Resources */,
+				30B99CCC782DB8C468FE168098795541 /* google_22.png in Resources */,
+				901B9146139ADC8F4F087256956F43CA /* google_23.png in Resources */,
+				D15CEB6700F43CBB98726EF0151F84AF /* google_24.png in Resources */,
+				BCA94280BF92900D8D248F376D9D73C8 /* google_25.png in Resources */,
+				6E513201C4B1D8E9FF45313BD318DCB0 /* google_26.png in Resources */,
+				1611092877CB0617B76C2E6566BA32B0 /* google_27.png in Resources */,
+				E31A5407D5309E0D93762841FCAFBC4E /* google_28.png in Resources */,
+				2DA169587CDAA1E8A296E07475E0CE30 /* google_29.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0DE90FFDF184412034BB78742C47DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF296789866BFB2A0B24F1432D456E1 /* Resources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31165A49A2A4A9363C21630FACAE5D19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -588,6 +1001,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		831D2C5945247CBBFF8028D5B71794D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1505DA772CE177274295DED7EB476D05 /* Pods-Nobala-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B2C98145D4F0F66E4865324683067C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB01510F176DE8A93B5356AB4348E4E /* ASProgressHud-dummy.m in Sources */,
+				54BBF19A677C5D57A2AE2BF5DA0C31F5 /* ASProgressHud.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3ECB74BA168B4393EE57817A409ABC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -603,11 +1033,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D72664F534166229985050424B4248F0 /* Sources */ = {
+		DCC3B35B06CAEDEEE0EF8BC2C215AEAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE1BECA22E8D0280C8D35F78B24C41EA /* Pods-Nobala-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,29 +1057,41 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3D5973D7051C107B90762A71DA1899BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ASProgressHud-Resources";
+			target = 32F789B79A806D38997C9F6F5DC0950B /* ASProgressHud-Resources */;
+			targetProxy = 0B3D9D549E65BFF9487818BE5B7D152C /* PBXContainerItemProxy */;
+		};
 		489A982E89AA89A17739AC356B3D65F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftMoment;
 			target = A21DCB995841FE970CCB507D94F822D9 /* SwiftMoment */;
 			targetProxy = D1A063AF9C40FCD4CFD795752708DA1D /* PBXContainerItemProxy */;
 		};
-		54BD88CD2628088DEE52A0355804F390 /* PBXTargetDependency */ = {
+		4C0EEC086BCE629E48B0271869AFE8CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftMoment;
-			target = A21DCB995841FE970CCB507D94F822D9 /* SwiftMoment */;
-			targetProxy = BB05E31A2585BD4A4129E4FAF04FECF7 /* PBXContainerItemProxy */;
+			name = ASProgressHud;
+			target = F2CE449260E767692A3078142937C25D /* ASProgressHud */;
+			targetProxy = 5CEF6512B8F60F5AA82DA3AD65846D7D /* PBXContainerItemProxy */;
 		};
-		5B122F952806E65467CA25FB6582FE5E /* PBXTargetDependency */ = {
+		73D31C70F823C4CA34BB19B2DFCE599B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CalendarView;
 			target = A249CF9CC83EF996380469C8249B2013 /* CalendarView */;
-			targetProxy = 8D84C8727FB89B9F325CE77F5DC8300F /* PBXContainerItemProxy */;
+			targetProxy = 0353C5FC7AE66C6A5A6137EC80641007 /* PBXContainerItemProxy */;
 		};
 		B2EA9733185A9897DFD29A28783402B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "CalendarView-CalendarView";
 			target = 41638D9B170F774D9F650F63B192526A /* CalendarView-CalendarView */;
 			targetProxy = C212A310ED81EF7C8C983084530A575B /* PBXContainerItemProxy */;
+		};
+		B8E16C21E93ECE89BE8D2683B5E51B65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftMoment;
+			target = A21DCB995841FE970CCB507D94F822D9 /* SwiftMoment */;
+			targetProxy = 1F0146BEF9F53E446FE96A296F91E662 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -730,9 +1171,42 @@
 			};
 			name = Debug;
 		};
+		06FB3DDC74BB89B60FDD80B45FEE91F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57B47E4676AC720D012C8CB4F57C4F17 /* Pods-Nobala.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Nobala/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Nobala/Pods-Nobala.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Nobala;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		175367A85C0C61FD3DE151F0AC3DC6AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF9EAD387D0B14F82D3559A59C9E4EB0 /* SwiftMoment.xcconfig */;
+			baseConfigurationReference = 60D1A8C686244225CB7C708206A73F86 /* SwiftMoment.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -762,7 +1236,7 @@
 		};
 		2BDF7B4E574316716EA598F9801021E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08DC066395D47AECA6B490512168FA32 /* CalendarView.xcconfig */;
+			baseConfigurationReference = ACD5D280942D934422EB182E90C87EE6 /* CalendarView.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CalendarView";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -777,7 +1251,36 @@
 			};
 			name = Release;
 		};
-		4ACCB061EAAA6CC83D63A412127B13C8 /* Debug */ = {
+		55E6B5ADFE0627C7686E808AFC6424C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F0D9FE8E1E533157C78F00B8C7E107 /* ASProgressHud.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ASProgressHud/ASProgressHud-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASProgressHud/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ASProgressHud/ASProgressHud.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ASProgressHud;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		75D4D2769F8FA0316D1D3D4AB628BF85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8AEB580E54C0047F40230E64DDC059D /* Pods-Nobala.debug.xcconfig */;
 			buildSettings = {
@@ -810,39 +1313,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		50C561393CF110D4077F15CD6F8F28B8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57B47E4676AC720D012C8CB4F57C4F17 /* Pods-Nobala.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Nobala/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Nobala/Pods-Nobala.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Nobala;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		798312B167841F9B4EEF73CCD70A7635 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -943,9 +1413,39 @@
 			};
 			name = Release;
 		};
+		9C7A96F7B5EEA861E9CFB3F620880885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F0D9FE8E1E533157C78F00B8C7E107 /* ASProgressHud.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ASProgressHud/ASProgressHud-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASProgressHud/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ASProgressHud/ASProgressHud.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ASProgressHud;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9CC2C7B943CE6911ED7CC9B8A8CF7EB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08DC066395D47AECA6B490512168FA32 /* CalendarView.xcconfig */;
+			baseConfigurationReference = ACD5D280942D934422EB182E90C87EE6 /* CalendarView.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CalendarView";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -962,7 +1462,7 @@
 		};
 		9D0FB222EB5B552827C113A324BFFBDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08DC066395D47AECA6B490512168FA32 /* CalendarView.xcconfig */;
+			baseConfigurationReference = ACD5D280942D934422EB182E90C87EE6 /* CalendarView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -992,7 +1492,7 @@
 		};
 		A034100BC5E8F3DA94DBFE406FF0DBB9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF9EAD387D0B14F82D3559A59C9E4EB0 /* SwiftMoment.xcconfig */;
+			baseConfigurationReference = 60D1A8C686244225CB7C708206A73F86 /* SwiftMoment.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1021,7 +1521,7 @@
 		};
 		BD2CE4B666E1229A1533D69107D0461E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08DC066395D47AECA6B490512168FA32 /* CalendarView.xcconfig */;
+			baseConfigurationReference = ACD5D280942D934422EB182E90C87EE6 /* CalendarView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1086,14 +1586,48 @@
 			};
 			name = Release;
 		};
+		C99A07B47EA472C26EC5B2D853B2EB74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F0D9FE8E1E533157C78F00B8C7E107 /* ASProgressHud.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ASProgressHud";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ASProgressHud/ResourceBundle-Resources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Resources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D755B7F7EA947ECAD93897C5DB3BE3EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F0D9FE8E1E533157C78F00B8C7E107 /* ASProgressHud.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ASProgressHud";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ASProgressHud/ResourceBundle-Resources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Resources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1843E15F60C4B4FF1BB9A5E3BF58AB9E /* Build configuration list for PBXNativeTarget "Pods-Nobala" */ = {
+		03201581BA511D48A086A604CCC38F24 /* Build configuration list for PBXNativeTarget "ASProgressHud-Resources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4ACCB061EAAA6CC83D63A412127B13C8 /* Debug */,
-				50C561393CF110D4077F15CD6F8F28B8 /* Release */,
+				C99A07B47EA472C26EC5B2D853B2EB74 /* Debug */,
+				D755B7F7EA947ECAD93897C5DB3BE3EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1112,6 +1646,15 @@
 			buildConfigurations = (
 				175367A85C0C61FD3DE151F0AC3DC6AC /* Debug */,
 				A034100BC5E8F3DA94DBFE406FF0DBB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72AF019836C7364C674DB83CEA6870B1 /* Build configuration list for PBXNativeTarget "Pods-Nobala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D4D2769F8FA0316D1D3D4AB628BF85 /* Debug */,
+				06FB3DDC74BB89B60FDD80B45FEE91F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1148,6 +1691,15 @@
 			buildConfigurations = (
 				8AEF197866C944B0BE8E6D221A002878 /* Debug */,
 				9C44A757C95F3EFDCE7A3F75DB669429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CDB0137E741D220422DB4CADEF2432 /* Build configuration list for PBXNativeTarget "ASProgressHud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C7A96F7B5EEA861E9CFB3F620880885 /* Debug */,
+				55E6B5ADFE0627C7686E808AFC6424C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

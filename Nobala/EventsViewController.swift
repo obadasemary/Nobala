@@ -49,7 +49,8 @@ class EventsViewController: UIViewController, CalendarViewDelegate, ViewWebServi
         view.addSubview(calendar)
     }
     
-    @IBAction func goToHome(sender: AnyObject) {
+    @IBAction func goToHome(sender: AnyObject)
+    {
         
         self.dismissViewControllerAnimated(true, completion: nil)
         self.navigationController?.popViewControllerAnimated(true)
