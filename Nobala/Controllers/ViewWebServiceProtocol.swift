@@ -8,9 +8,9 @@
 
 import UIKit
 
- protocol ViewWebServiceProtocol {
+protocol ViewWebServiceProtocol {
     
-    func onReceiveNews(news: [News])
+    optional func onReceiveNews(news: [News])
     func onReceiveEvents(events: [Event])
     func onReceiveMainPages(mainPages: [MainPages])
 }
