@@ -38,7 +38,7 @@ extension NobalaClient {
                     newsObject._title = news["Title"] as! String
                     newsObject._description = news["Description"] as! String
                     newsObject._details = news["Details"] as! String
-                    newsObject._photo = news["Photo"] as! String
+                    newsObject._imageUrl = news["ImageUrl"] as! String
                     newsObject._orderId = news["OrderId"] as! Int
                     newsObject._isdeleted = news["Isdeleted"] as! Bool
 //                    newsObject._updateDate = news["UpdateDate"] as! String

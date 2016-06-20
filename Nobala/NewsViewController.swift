@@ -8,6 +8,7 @@
 
 import UIKit
 import ASProgressHud
+import Kingfisher
 
 class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource {
     
@@ -40,9 +41,7 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
     }
     
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
-        
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.newsArray.count
     }
     
@@ -53,6 +52,18 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
         tableViewCell.NewsTitle.text = newsArray[indexPath.row]._title
         
         tableViewCell.NewsText.text = newsArray[indexPath.row]._description
+        
+        dispatch_async(dispatch_get_main_queue()) { 
+            
+            ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+
+            tableViewCell.NewsPhoto.kf_setImageWithURL(NSURL(string: self.newsArray[indexPath.row]._imageUrl)!, placeholderImage: nil)
+            
+            ASProgressHud.hideHUDForView(self.view, animated: true)
+        }
+        
+        
+        
         return tableViewCell
     }
     

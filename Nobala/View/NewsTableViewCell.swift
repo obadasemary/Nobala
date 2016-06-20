@@ -11,13 +11,9 @@ import UIKit
 class NewsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var NewsPhoto: UIImageView!
-    
     @IBOutlet weak var NewsTitle: UILabel!
-    
     @IBOutlet weak var NewsText: UILabel!
-    
-    
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,5 +24,4 @@ class NewsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }

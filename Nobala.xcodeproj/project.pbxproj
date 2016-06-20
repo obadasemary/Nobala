@@ -238,12 +238,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF106C131D0D5D270053130C /* Build configuration list for PBXNativeTarget "Nobala" */;
 			buildPhases = (
+				3CD5DB3B5A6EDEE24C191230 /* 📦 Check Pods Manifest.lock */,
 				1664B8E4CB867E8E6C8EEB80 /* [CP] Check Pods Manifest.lock */,
 				AF106BE71D0D5D260053130C /* Sources */,
 				AF106BE81D0D5D260053130C /* Frameworks */,
 				AF106BE91D0D5D260053130C /* Resources */,
 				7B55FC63E8C3B37527744418 /* [CP] Embed Pods Frameworks */,
 				418A7ED01D0C93760E992F1D /* [CP] Copy Pods Resources */,
+				43785FB6B07025829F333D9C /* 📦 Embed Pods Frameworks */,
+				36CD5449FA5C4CCBAB028C87 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,12 +261,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF106C161D0D5D270053130C /* Build configuration list for PBXNativeTarget "NobalaTests" */;
 			buildPhases = (
+				C121782506A701CE01391431 /* 📦 Check Pods Manifest.lock */,
 				A6A763EE53FB97A41E168204 /* [CP] Check Pods Manifest.lock */,
 				AF106BFB1D0D5D270053130C /* Sources */,
 				AF106BFC1D0D5D270053130C /* Frameworks */,
 				AF106BFD1D0D5D270053130C /* Resources */,
 				23D0F4BA1385D3344732DFD7 /* [CP] Embed Pods Frameworks */,
 				E654742DD92D4A144F4EE143 /* [CP] Copy Pods Resources */,
+				3247DFC672EED94DDADBB8C2 /* 📦 Embed Pods Frameworks */,
+				7BF549235C7CD3700084028D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,11 +285,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF106C191D0D5D270053130C /* Build configuration list for PBXNativeTarget "NobalaUITests" */;
 			buildPhases = (
+				7E709C1C36A6F79FCAF321F5 /* 📦 Check Pods Manifest.lock */,
 				C706194E4137806D723223BA /* [CP] Check Pods Manifest.lock */,
 				AF106C061D0D5D270053130C /* Sources */,
 				AF106C071D0D5D270053130C /* Frameworks */,
 				AF106C081D0D5D270053130C /* Resources */,
 				B7EBD48DCC77526AA2FB2BC8 /* [CP] Copy Pods Resources */,
+				EE7D5B05CA9D09109716239C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -399,6 +407,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3247DFC672EED94DDADBB8C2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36CD5449FA5C4CCBAB028C87 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nobala/Pods-Nobala-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CD5DB3B5A6EDEE24C191230 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		418A7ED01D0C93760E992F1D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,6 +467,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nobala/Pods-Nobala-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		43785FB6B07025829F333D9C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nobala/Pods-Nobala-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7B55FC63E8C3B37527744418 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,6 +495,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nobala/Pods-Nobala-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BF549235C7CD3700084028D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E709C1C36A6F79FCAF321F5 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A6A763EE53FB97A41E168204 /* [CP] Check Pods Manifest.lock */ = {
@@ -459,6 +557,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C121782506A701CE01391431 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		C706194E4137806D723223BA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -487,6 +600,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE7D5B05CA9D09109716239C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

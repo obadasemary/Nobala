@@ -15,7 +15,7 @@ class News
     var _title : String = ""
     var _description : String = ""
     var _details : String = ""
-    var _photo : String = ""
+    var _imageUrl : String = ""
     var _orderId : Int = 0
     var _isdeleted : Bool
     var _createdDate : String = ""
@@ -57,7 +57,7 @@ class News
         self._title = ""
         self._description = ""
         self._details = ""
-        self._photo = ""
+        self._imageUrl = ""
         self._orderId = 0
         self._isdeleted = true
         self._createdDate = ""

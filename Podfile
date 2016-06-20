@@ -8,6 +8,8 @@ target 'Nobala' do
   # Pods for Nobala
   pod "CalendarView"
   pod "ASProgressHud"
+  pod 'Kingfisher', '~> 2.4'
+  
   target 'NobalaTests' do
     inherit! :search_paths
     # Pods for testing
