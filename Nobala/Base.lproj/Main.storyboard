@@ -290,6 +290,9 @@
                     <navigationItem key="navigationItem" id="vdp-VD-4UG">
                         <barButtonItem key="leftBarButtonItem" image="list" id="s7u-fS-BL5">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="toggle:" destination="wBN-0l-szh" id="cvU-am-guX"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="house" id="gzk-kc-7lf">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -545,10 +548,30 @@
             </objects>
             <point key="canvasLocation" x="1189" y="1817"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Left View Controller-->
+        <scene sceneID="Amk-2u-fwu">
+            <objects>
+                <viewController storyboardIdentifier="LeftMenuController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xMF-Kj-YnU" customClass="leftViewController" customModule="Nobala" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hMR-yr-riB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news" id="Obn-D3-opg">
+                                <rect key="frame" x="0.0" y="32" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdb-JZ-pIN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="-239"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
         <scene sceneID="a01-q7-XTC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HqQ-Vt-z3p" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HqQ-Vt-z3p" customClass="ENSideMenuNavigationController" customModule="ENSwiftSideMenu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="BtG-CL-vQO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

@@ -9,8 +9,8 @@
 import UIKit
 import ASProgressHud
 import Kingfisher
-
-class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource {
+import ENSwiftSideMenu
+class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource, ENSideMenuDelegate {
     
     @IBOutlet weak var newsTableView: UITableView!
     
@@ -18,22 +18,60 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
     var newsArray = [News]()
     var selectedNews:News = News()
     var newsDetailsView:NewsDetailsViewController = NewsDetailsViewController()
+    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    var window: UIWindow?
     
+    var sideMenu:ENSideMenu?
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        NSThread.sleepForTimeInterval(0.05)
+
+        let leftView = storyboard?.instantiateViewControllerWithIdentifier("LeftMenuController") as!leftViewController
+        sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftView, menuPosition: .Left)
+        self.sideMenu!.delegate = self
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.sideMenuController()?.sideMenu?.delegate = self
+
         ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
         
         let logo = UIImage(named: "newsIcon.png")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
         
-        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.clientObject = NobalaClient.sharedInstance()
         self.clientObject?.webServiceProtocol = self
+        
 
     }
+    func sideMenuWillOpen() {
+        print("sideMenuWillOpen")
+    }
     
+    
+    @IBAction func toggle(sender: AnyObject)
+    {
+        if ((self.sideMenu?.isMenuOpen) == false)
+        {
+            self.sideMenu?.showSideMenu()
+
+        }
+        else
+        {
+            self.sideMenu?.hideSideMenu()
+        }
+    }
+//    @IBAction func showLeftMenu(sender: AnyObject)
+//    {
+//    
+//        showSideMenuView()
+////        toggleSideMenuView()
+////        self.controller.toggle("right")
+//    }
     @IBAction func goToHome(sender: AnyObject) {
         
         self.dismissViewControllerAnimated(true, completion: nil)

@@ -7,13 +7,23 @@
 //
 
 import UIKit
-
+import DualSlideMenu
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+   
+    var storyboard: UIStoryboard?
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+//        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        
+//        
+//        let leftView = storyboard?.instantiateViewControllerWithIdentifier("LeftMenuController")
+//        let mainView = storyboard?.instantiateViewControllerWithIdentifier("mainScreen")
+//        let controller = DualSlideMenuViewController(mainViewController: mainView!, leftMenuViewController: leftView!)
+//        window!.rootViewController = controller
 
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         

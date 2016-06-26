@@ -8,136 +8,139 @@
 
 /* Begin PBXBuildFile section */
 		01B622D241E5F05D138ABA211BFE703A /* Pods-NobalaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 800F3DC175C6D5DFEEF132A403C829A5 /* Pods-NobalaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05B556E8072FF6042C483E7EA8D64D30 /* default_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F8D67650D97CAA38182211F4728C9F4 /* default_01.png */; };
-		062E087E0A6DFFF875375713B9B9747E /* default_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 849B780E9528FAC03787EA9B410F51D7 /* default_11.png */; };
-		083486801D227AF056B8075E7E84EE63 /* default_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 17ECB897D81250217C17EA871D1262F6 /* default_14.png */; };
-		0AB7F72676FE2C368C8669C6B5183C97 /* flag_14.png in Resources */ = {isa = PBXBuildFile; fileRef = C527F015BB5AF3EB1FE33895919731AB /* flag_14.png */; };
-		0ADECAC3AFA1F84A608EA72421F117B4 /* flag_00.png in Resources */ = {isa = PBXBuildFile; fileRef = BBD4BDB7EB99144D3AE0A9810B3F7A91 /* flag_00.png */; };
-		0C9657A95617BDEC595B9CFCCDA058C4 /* google_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A861C46AED0A1ABED35E220A172F0B1 /* google_12.png */; };
-		0F98DE0885CEF9639EBE61D1D3CB6FC2 /* default_10.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C38B3F222F8C13ED57F7B0983817E8 /* default_10.png */; };
-		0FA940766C270A42F1A8F35EAAC5E669 /* default_05.png in Resources */ = {isa = PBXBuildFile; fileRef = E257C9EDE9E0274DA1D8B758954B4325 /* default_05.png */; };
-		109A94F3D7843A08DBCEEFC7E1B46A09 /* flag_17.png in Resources */ = {isa = PBXBuildFile; fileRef = C821D59E1F979E497D8118F8260E7304 /* flag_17.png */; };
-		119DEC8FE0D7CAA51234AB4622FAAD04 /* flag_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 2367896FECA321F81BAC4F63CE1C305F /* flag_16.png */; };
-		134B250E1864D43B166253EDACB84BC7 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416825D296B3215A5BB814D5C04278D /* MonthView.swift */; };
-		15BA79E5FA73F611878C81C807D8BCCE /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820D4C9BCD6B347AA222783CA0AC628 /* TimeUnit.swift */; };
-		1611092877CB0617B76C2E6566BA32B0 /* google_27.png in Resources */ = {isa = PBXBuildFile; fileRef = 437493AFD49060A5AA5D0B52F13394EA /* google_27.png */; };
-		19946CC96C0CE4BA6294F937F8DA5C0D /* flag_13.png in Resources */ = {isa = PBXBuildFile; fileRef = E109E5B6BAB55A333A38E9D9C3D3DB62 /* flag_13.png */; };
-		1D08AAE806F1D8DF02A8FA3074CBC89E /* google_19.png in Resources */ = {isa = PBXBuildFile; fileRef = 22819BCCE1D08FD19BAC7900DA0FDDBE /* google_19.png */; };
-		1E6F81F9ACB5C9FB512B10C3B1D1B200 /* SwiftMoment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F86E1662DA07DAC6D6DE2E869AA448B2 /* SwiftMoment-dummy.m */; };
-		21B66FB52643DC48F456717F4090E3E0 /* flag_08.png in Resources */ = {isa = PBXBuildFile; fileRef = C86C8B1BFD4A12E24BA5DC78B49B31DA /* flag_08.png */; };
-		23382EC919012D227A5356C7C0E8A784 /* google_01.png in Resources */ = {isa = PBXBuildFile; fileRef = E117BAD67BFA26D60225AD59FA103A2F /* google_01.png */; };
-		26496D6D3040FF081C34CAE8271611B0 /* flag_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4D004D482C52F00545DB17A3545F92 /* flag_09.png */; };
-		29A8059D1E03301AE6B275705F53476F /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDFE21B222B668D9FB55C1D2175CBFD /* DayView.swift */; };
-		2AE391EE02D503373341FBA8B5396173 /* flag_18.png in Resources */ = {isa = PBXBuildFile; fileRef = B3EE488B29108F804A1B7536F923425E /* flag_18.png */; };
-		2DA169587CDAA1E8A296E07475E0CE30 /* google_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B0021DFA40E188D7EAEB146982E0E /* google_29.png */; };
-		2EDE4B19CF9465886C2D1F95E42497B7 /* google_21.png in Resources */ = {isa = PBXBuildFile; fileRef = 8466411944BCBA2B3FBB5FC86B58E986 /* google_21.png */; };
-		3082AD730910DDF142D1E80898100681 /* flag_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 2700DE9E4FC50891D44A487B33A91BD9 /* flag_04.png */; };
-		30B99CCC782DB8C468FE168098795541 /* google_22.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E989214F32039A7442DC5D3E17BED39 /* google_22.png */; };
-		310A90FDC7A4108847C8DB448296EC9B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496052E0ECBDF9B0960D7BF51CA447B /* Image.swift */; };
-		317D7DE4D6DCCA8CB30307D4C2348B3E /* default_15.png in Resources */ = {isa = PBXBuildFile; fileRef = C415F649452757583559DD08C2FF0F90 /* default_15.png */; };
-		31F79FD06C4D65347700058189649A68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92008668386364A36AD564C549ED8E2E /* Foundation.framework */; };
-		32ABD43D364C9C8FCCE029D04D09209E /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58AD9031634472BE3B71806168C6420 /* UIButton+Kingfisher.swift */; };
-		339E9D1DA846B5E21FC7DE0F4866CA7D /* flag_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 023540672F9B9F68787AE98ACEA514EE /* flag_05.png */; };
-		35C86168F6CB121CBF09A689F87D0788 /* default_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D359689A1F2DF54E9FB1C61CB08363 /* default_07.png */; };
-		389B173006C07ADBE38096CB13F775D2 /* ASProgressHud-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34592D8476941FA0ABAF0455E7BB0A8F /* ASProgressHud-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38CA5C1A02AC17DCC99BD4BA3C3AB45B /* SwiftMoment.h in Headers */ = {isa = PBXBuildFile; fileRef = EE2051C12659CBEBBA46866F8068E9DD /* SwiftMoment.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38FABFB2476A66F6440560D3B0E73C0F /* flag_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 634467073E430DFB770E64B4F3F416E4 /* flag_15.png */; };
-		3B8CC789A281BFBEF3431722D6C37C1F /* google_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 1555CCCDDCC6D4F28EEB3CE7E196D026 /* google_08.png */; };
-		3BAAA9F34A62F442CF68D4F24549175C /* EasyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4799354FEBE5D815CDB7AD0497046E9 /* EasyCast.swift */; };
-		3E8FB8F421EF490807B09EFBA62FD286 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD22618CC2ACD7CAE99A3D81D9630D4F /* ImageCache.swift */; };
-		3FB4A1460429FE7B4C0E397309BCBCDF /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BDD7C05613787C69AE1DC95E7186A /* Resource.swift */; };
+		04A8629FB5BE1A860AEA48C5ACEE5035 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18222179D64F3C2D1D1A33FD06CE10CA /* ENSideMenu.swift */; };
+		05B556E8072FF6042C483E7EA8D64D30 /* default_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 694DA2586482D7D3A16E3DADA27E7BAD /* default_01.png */; };
+		062E087E0A6DFFF875375713B9B9747E /* default_11.png in Resources */ = {isa = PBXBuildFile; fileRef = D874C5FDCFC9153A9F067C3F05C382ED /* default_11.png */; };
+		083486801D227AF056B8075E7E84EE63 /* default_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E39B3C51D4140692095A909D8C91628 /* default_14.png */; };
+		0AB7F72676FE2C368C8669C6B5183C97 /* flag_14.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A64A9D9928A86797C20E4319D68BB6 /* flag_14.png */; };
+		0ADECAC3AFA1F84A608EA72421F117B4 /* flag_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 9959564D500A1CE4941DAA7B6F11559E /* flag_00.png */; };
+		0C9657A95617BDEC595B9CFCCDA058C4 /* google_12.png in Resources */ = {isa = PBXBuildFile; fileRef = D803C0EAB315599C43A573805AC192E9 /* google_12.png */; };
+		0ED677DEA532DEC78C2CA65753237CB6 /* Pods-Nobala-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A6CB56D5BD7F662783356741A04DDF /* Pods-Nobala-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F98DE0885CEF9639EBE61D1D3CB6FC2 /* default_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 5147DB5998A78F09DC16718C5EC04FA4 /* default_10.png */; };
+		0FA940766C270A42F1A8F35EAAC5E669 /* default_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA19AEC462EBD68C534B3356B4487D9 /* default_05.png */; };
+		109A94F3D7843A08DBCEEFC7E1B46A09 /* flag_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 15581EC41184A861CBBB1B02A7537239 /* flag_17.png */; };
+		119DEC8FE0D7CAA51234AB4622FAAD04 /* flag_16.png in Resources */ = {isa = PBXBuildFile; fileRef = B89CB744965521F37C4721E3DCE138FD /* flag_16.png */; };
+		134B250E1864D43B166253EDACB84BC7 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB1A42CE0C392EC04B72DAB0E1E9826 /* MonthView.swift */; };
+		15BA79E5FA73F611878C81C807D8BCCE /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6ABF880B82180C498F465E81E80753 /* TimeUnit.swift */; };
+		1611092877CB0617B76C2E6566BA32B0 /* google_27.png in Resources */ = {isa = PBXBuildFile; fileRef = E76A7620A2A77B5BE6B96A117543DE01 /* google_27.png */; };
+		19946CC96C0CE4BA6294F937F8DA5C0D /* flag_13.png in Resources */ = {isa = PBXBuildFile; fileRef = FC36BDFF034EEF7BF388FA6B870716A7 /* flag_13.png */; };
+		1D08AAE806F1D8DF02A8FA3074CBC89E /* google_19.png in Resources */ = {isa = PBXBuildFile; fileRef = 381056F431A44620F43EE75DDCFDACA5 /* google_19.png */; };
+		1DB5015CDC9C3532B12CAC4270061810 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92008668386364A36AD564C549ED8E2E /* Foundation.framework */; };
+		1E6F81F9ACB5C9FB512B10C3B1D1B200 /* SwiftMoment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC60FBB3932E6266FACE6F8D1FCF5C0 /* SwiftMoment-dummy.m */; };
+		21B66FB52643DC48F456717F4090E3E0 /* flag_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EA98AB96AE60448B22858A6BF106865 /* flag_08.png */; };
+		23382EC919012D227A5356C7C0E8A784 /* google_01.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC9E5ECF940BDCFA3D9F4387ABF9403 /* google_01.png */; };
+		2623A0E8B768FAA0724EC5CDD2318F02 /* DualSlideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE6F746427E758697F544A31DF74422 /* DualSlideMenu-dummy.m */; };
+		26496D6D3040FF081C34CAE8271611B0 /* flag_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 245C8384FE90E8CD7B116652CC7D78D6 /* flag_09.png */; };
+		29A8059D1E03301AE6B275705F53476F /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB04DEE4C4F4CF4920E171815D56371 /* DayView.swift */; };
+		2AE391EE02D503373341FBA8B5396173 /* flag_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB08E0AF288829CE6C1ABE5F86B207F /* flag_18.png */; };
+		2DA169587CDAA1E8A296E07475E0CE30 /* google_29.png in Resources */ = {isa = PBXBuildFile; fileRef = D03F8EA8FB74741922CDACE4EBA3F8F2 /* google_29.png */; };
+		2EDE4B19CF9465886C2D1F95E42497B7 /* google_21.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F8B0E168254F97277E0E71BF56223A /* google_21.png */; };
+		3082AD730910DDF142D1E80898100681 /* flag_04.png in Resources */ = {isa = PBXBuildFile; fileRef = F412AFD19E52449561FC568B5632D391 /* flag_04.png */; };
+		30B99CCC782DB8C468FE168098795541 /* google_22.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1F40D994AB1FFD3FED598C9D6EF3F8 /* google_22.png */; };
+		310A90FDC7A4108847C8DB448296EC9B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC575514578E9041D3343E3C002BEDF /* Image.swift */; };
+		317D7DE4D6DCCA8CB30307D4C2348B3E /* default_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FD9DA9188C01B5C233362FEAB88BAA /* default_15.png */; };
+		32ABD43D364C9C8FCCE029D04D09209E /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD07942D696656D465FAEE5F2790F21 /* UIButton+Kingfisher.swift */; };
+		339E9D1DA846B5E21FC7DE0F4866CA7D /* flag_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 5509354D04E427E08EE4B70A79ABAEE6 /* flag_05.png */; };
+		35A91F695119B9AFA1175AFE59E3542C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92008668386364A36AD564C549ED8E2E /* Foundation.framework */; };
+		35C86168F6CB121CBF09A689F87D0788 /* default_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 68220F1D7806555817584E2217ECE814 /* default_07.png */; };
+		389B173006C07ADBE38096CB13F775D2 /* ASProgressHud-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2BA3F273FFEF57AFF9A143FE1454F77 /* ASProgressHud-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38CA5C1A02AC17DCC99BD4BA3C3AB45B /* SwiftMoment.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CB0C8B93D3A40EC0C81B2CCC6E924C /* SwiftMoment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38FABFB2476A66F6440560D3B0E73C0F /* flag_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 6651EFD07D8D4B61A461466480B41813 /* flag_15.png */; };
+		39190DEF0F3BA2F9036E69F8924F6087 /* DualSlideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26E63557AC33FEFFEFE915EB667C20A5 /* DualSlideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B8CC789A281BFBEF3431722D6C37C1F /* google_08.png in Resources */ = {isa = PBXBuildFile; fileRef = A8A440A78B6A8E159B9DE8E95651E080 /* google_08.png */; };
+		3BAAA9F34A62F442CF68D4F24549175C /* EasyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A364132494412025C27FD58F868D6 /* EasyCast.swift */; };
+		3E8FB8F421EF490807B09EFBA62FD286 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4DB11CA0C3371D9D98F36DA766A4AA /* ImageCache.swift */; };
+		3FB4A1460429FE7B4C0E397309BCBCDF /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68051CC2D09B73C9A27FCB9E2FFE340 /* Resource.swift */; };
+		403DB6E967693727F0056E555C804A6F /* ENSwiftSideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B68E28F7A267479FEE37B1C7C8F9459 /* ENSwiftSideMenu-dummy.m */; };
 		432E087D0FB7BBBD518A79702D51B5A7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6AC2332A6FE020DC8B8BEB2D81326E /* CFNetwork.framework */; };
-		47082C15955512F8DE46118A66DFB9BC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C47A5D99CDBC0926B450885FEADDF /* CalendarView.swift */; };
-		483B9508B70C5FB041C04D9C0EF9CC74 /* google_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F71C306F6644DF083444A5D49BEFFDD /* google_13.png */; };
+		47082C15955512F8DE46118A66DFB9BC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0750F4CA643519E308FFB1EC20D25231 /* CalendarView.swift */; };
+		483B9508B70C5FB041C04D9C0EF9CC74 /* google_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 085F430715794362B6D6C164B5B6C381 /* google_13.png */; };
 		4BBAA62688253728B96ECC9C8D13C790 /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054F80C704E1A3CF2B46E7F8A551287A /* SwiftMoment.framework */; };
 		50580829B2ED6797C3BE2EFDAFC99F2F /* Pods-NobalaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4E38D41E9B9621D27383C270104B7BB /* Pods-NobalaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50792157C04EA162C4F0B238225E8725 /* Pods-NobalaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB683A2655A81F96895E55380EE6D5 /* Pods-NobalaTests-dummy.m */; };
-		54BBF19A677C5D57A2AE2BF5DA0C31F5 /* ASProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1A450E5741169F04D5966A2E8C3D0B /* ASProgressHud.swift */; };
-		56FE5D74532B004DA868EC97878E9E6C /* Pods-Nobala-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A6CB56D5BD7F662783356741A04DDF /* Pods-Nobala-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		597C28F5AE6422A7E718838559A48FC0 /* CalendarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56541EAC944E50F7ECF852B54879094C /* CalendarView.bundle */; };
-		5A7ADE0B32A113CFC84F5FBFC8BDE4FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CCEBB3EE389E58E3AAD14D45A26C2D /* ContentView.swift */; };
-		5ACD97174A065EC6BE6B082A9401C1BC /* default_13.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A66277E4ED1ACF41FD28D360396393 /* default_13.png */; };
-		5D20D1029EA3E4FD008A69B26E91D775 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9FEF7918CE5850CECCC684978887D /* Operators.swift */; };
-		5E8AAD7E31650D0929445145F053F1A0 /* flag_10.png in Resources */ = {isa = PBXBuildFile; fileRef = E0284FC9A318FF1264D72CA0F7F086C6 /* flag_10.png */; };
-		5EB01510F176DE8A93B5356AB4348E4E /* ASProgressHud-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 416A796A8172FADBD612C229B059FB8A /* ASProgressHud-dummy.m */; };
+		54BBF19A677C5D57A2AE2BF5DA0C31F5 /* ASProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6BAE263C50BFC1B79DD4ADA932D41F /* ASProgressHud.swift */; };
+		597C28F5AE6422A7E718838559A48FC0 /* CalendarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6F1E5D5C23B6D4BE2898E1029F2B1C14 /* CalendarView.bundle */; };
+		5A7ADE0B32A113CFC84F5FBFC8BDE4FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6912DFE4C64E7192AA1B36284085F54B /* ContentView.swift */; };
+		5A97F1DD535F85D944B04C0A923CFE3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92008668386364A36AD564C549ED8E2E /* Foundation.framework */; };
+		5ACD97174A065EC6BE6B082A9401C1BC /* default_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 627AA77793A0014155734915B7792A62 /* default_13.png */; };
+		5D20D1029EA3E4FD008A69B26E91D775 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00950CD55978C92E9710F3400579DE43 /* Operators.swift */; };
+		5E8AAD7E31650D0929445145F053F1A0 /* flag_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 8613A3E58F25C3CF47E9CCCD29356A85 /* flag_10.png */; };
+		5EB01510F176DE8A93B5356AB4348E4E /* ASProgressHud-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4A182C6CDA8D8044082DC224224D36 /* ASProgressHud-dummy.m */; };
 		62783ABE44EA19DD7AF504220137FC12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92008668386364A36AD564C549ED8E2E /* Foundation.framework */; };
-		63CF619DCBE746972C22047AC3D86FE4 /* google_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C23CB9065A63C61D6BE8B171EBAB8A0 /* google_20.png */; };
-		64838934323F6E2F0E4FAA8531DA62A8 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10F316A86E3C179ADA540455BC4B50 /* Kingfisher-dummy.m */; };
-		649ED39E517259CC3C962C8241D373D5 /* flag_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DD9D62E2D4B2C580762279404940141 /* flag_11.png */; };
-		6A61A8B69787E30C27F22A6BC860355A /* google_10.png in Resources */ = {isa = PBXBuildFile; fileRef = D797A3EBAB752DC3252984F7613DC98C /* google_10.png */; };
-		6E513201C4B1D8E9FF45313BD318DCB0 /* google_26.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C0238144AC94E7587B8010CA420D74 /* google_26.png */; };
-		72E1B5591824D32038BD38C0A1A0090C /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDD52C2091925B84CDB3BECD3BB271 /* ImagePrefetcher.swift */; };
-		78EEC1CF2977B8107DBCE313BCA9DE6D /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F312EF782E44B16C8906E360532DD /* WeekView.swift */; };
-		7AAAA5A581BC72922E68884DD99C99BC /* default_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 1282B98E4E5EBD7FDFD991DBA775814F /* default_09.png */; };
+		63CF619DCBE746972C22047AC3D86FE4 /* google_20.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB432D3BC2BF9C44B195C4850EF108F /* google_20.png */; };
+		64838934323F6E2F0E4FAA8531DA62A8 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B61A5BB123E632D0FC6BEC54C6AE90F3 /* Kingfisher-dummy.m */; };
+		649ED39E517259CC3C962C8241D373D5 /* flag_11.png in Resources */ = {isa = PBXBuildFile; fileRef = C0B8E06437228AF4834942EDBB3E13CE /* flag_11.png */; };
+		6A61A8B69787E30C27F22A6BC860355A /* google_10.png in Resources */ = {isa = PBXBuildFile; fileRef = EB94A54CACC05519BA8A1D2975FE7F93 /* google_10.png */; };
+		6E513201C4B1D8E9FF45313BD318DCB0 /* google_26.png in Resources */ = {isa = PBXBuildFile; fileRef = B924E821C7537356CB0BAFE5B73AF41E /* google_26.png */; };
+		72E1B5591824D32038BD38C0A1A0090C /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23E217F37E7725BE4AC4C7F191185C /* ImagePrefetcher.swift */; };
+		78EEC1CF2977B8107DBCE313BCA9DE6D /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19191E9D7531D4AA79CDFD3BC5734DC /* WeekView.swift */; };
+		7AAAA5A581BC72922E68884DD99C99BC /* default_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 5041A64DDECD3E381C252858809874D7 /* default_09.png */; };
 		841AF3229990A74085C9EA1595715634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92008668386364A36AD564C549ED8E2E /* Foundation.framework */; };
-		844665EF4D0CA62B7D5CCB3DFB0A3508 /* flag_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 359B0F57F79655F2551B174E6BF157DC /* flag_07.png */; };
-		86CA71A007752A47553546F25C3323F2 /* google_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 349ADC082B6407A803923115E238C682 /* google_15.png */; };
-		89B1090CF6AFB32448B10DC22B764510 /* flag_12.png in Resources */ = {isa = PBXBuildFile; fileRef = D61DB2A43B7B156F8807051D49009FEF /* flag_12.png */; };
+		844665EF4D0CA62B7D5CCB3DFB0A3508 /* flag_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 716C3D346D43A3FB8E36D81D78209ADC /* flag_07.png */; };
+		86CA71A007752A47553546F25C3323F2 /* google_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE42EEA8FE6F3D1A638E3BD9033D31C /* google_15.png */; };
+		877881DF65396F1BA821A8516971CA5E /* Pods-Nobala-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F62E78F0D451D1DC44C80F34E0FA5D /* Pods-Nobala-dummy.m */; };
+		89B1090CF6AFB32448B10DC22B764510 /* flag_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 7439D62BD3E58176AAA655A26C2C1BBC /* flag_12.png */; };
 		89D8FD1EB0666920C2EA196814AA7E27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92008668386364A36AD564C549ED8E2E /* Foundation.framework */; };
-		8B24ECCCF1CD0B0AEE746EC3F915DD2A /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08B6E49D05218C76427324C4D34FBAD /* ImageView+Kingfisher.swift */; };
-		8E1AB7742B8F68A18463F0AD52C228D1 /* default_16.png in Resources */ = {isa = PBXBuildFile; fileRef = B6316843FF834424C8E353443E47BC8C /* default_16.png */; };
-		901B9146139ADC8F4F087256956F43CA /* google_23.png in Resources */ = {isa = PBXBuildFile; fileRef = F616DB7C5DDE774AB1278281FDC1CF70 /* google_23.png */; };
+		8B24ECCCF1CD0B0AEE746EC3F915DD2A /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B94795B02EE55128B80DE47D3D3D90B /* ImageView+Kingfisher.swift */; };
+		8E1AB7742B8F68A18463F0AD52C228D1 /* default_16.png in Resources */ = {isa = PBXBuildFile; fileRef = E764ADB416035E97B699ADDBDB7347DC /* default_16.png */; };
+		901B9146139ADC8F4F087256956F43CA /* google_23.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F812087EE9207259E99092BF31E3AC /* google_23.png */; };
 		9167E4DC280A86C73F4E1C79D63C4BC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92008668386364A36AD564C549ED8E2E /* Foundation.framework */; };
-		92110ED7F86CFE4E019D0487F6D89D0E /* Pods-Nobala-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F62E78F0D451D1DC44C80F34E0FA5D /* Pods-Nobala-dummy.m */; };
-		9254D51D86F769CB80B82EFA1DFF10D5 /* CalendarView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8C2D655555614C3B7B029910FC2C08 /* CalendarView-dummy.m */; };
-		92B58E5A6CBE8D8BE77252C768AE4CCF /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82805F4D1C9803F18A3208F65D5C3296 /* KingfisherManager.swift */; };
-		93E1C5F99D4BB56C10E2EFC167C4EE5A /* google_17.png in Resources */ = {isa = PBXBuildFile; fileRef = B1BD53E945737DC8214ACE51A7A2C9CE /* google_17.png */; };
+		9254D51D86F769CB80B82EFA1DFF10D5 /* CalendarView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 877EB0EDA8AF0F83FF5259017747C376 /* CalendarView-dummy.m */; };
+		92B58E5A6CBE8D8BE77252C768AE4CCF /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA789075644D6942D2BF436CB1B038A /* KingfisherManager.swift */; };
+		93E1C5F99D4BB56C10E2EFC167C4EE5A /* google_17.png in Resources */ = {isa = PBXBuildFile; fileRef = C55E45D27E904B1244A6C238630AB516 /* google_17.png */; };
 		944DEEA0CA794F93E0C929411B0DD871 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92008668386364A36AD564C549ED8E2E /* Foundation.framework */; };
-		9567294B3163F26B82541F05433A355E /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5EE8478B1D8430D30C5D623E679564B /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9567294B3163F26B82541F05433A355E /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C12DA51709B0672624BE9D8C5FCF344 /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A0022D3D3501212EF9EDDA1797B5B0D /* Pods-NobalaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D223D3A4915989473BC8FB88C183FE /* Pods-NobalaUITests-dummy.m */; };
-		9A9FB7FB0B1DDA7683F63FC6DACF8204 /* default_08.png in Resources */ = {isa = PBXBuildFile; fileRef = B05AC59741F296DC8D7B0F3A72EC1ABE /* default_08.png */; };
-		9C66E71E39965349D16D84946D52B074 /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF79B2A8C70008434F093AE697FEB038 /* ThreadHelper.swift */; };
-		9DE66C4603DCB97E169B8F4D2D62E052 /* google_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C52B83B1E881C2CEEB3E51139033FC4 /* google_02.png */; };
-		9F98B1902E900A8053923BB77AC0A093 /* google_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D4869C8900632C5DA36956E808A389D /* google_11.png */; };
-		A18FB9FC343AD423DD5B54A14D534560 /* flag_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 5816698C528A55A9581F3C46AD1BDC3C /* flag_06.png */; };
-		A24AABB5997DDE1452044D461FBD6DD9 /* SwiftMoment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54055B93A1C5AA41659D4E3FCD98863A /* SwiftMoment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3145D8EDA8C290BE61D87DE1A62B2B3 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A07B9406DCEB7C96A3577E0D26D22 /* Moment.swift */; };
-		A91F3DB21C7F662AEDF7F54555ADE10D /* flag_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BF680E1CCC562CF9C1D5DA5372AF986 /* flag_01.png */; };
-		AE0100913BDCE445D8B7743246C6586C /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947286109E723BBBA6456BE5745EB1F /* Duration.swift */; };
+		9A9FB7FB0B1DDA7683F63FC6DACF8204 /* default_08.png in Resources */ = {isa = PBXBuildFile; fileRef = F8EDCD7DE75D961F409BDD5DC59BA448 /* default_08.png */; };
+		9C66E71E39965349D16D84946D52B074 /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A89FFF1B40A4C79CAEE1C6A5B439AE9 /* ThreadHelper.swift */; };
+		9DE66C4603DCB97E169B8F4D2D62E052 /* google_02.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6EA820C370A5C79A29AFD9660A2B90 /* google_02.png */; };
+		9F98B1902E900A8053923BB77AC0A093 /* google_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB7C84BC011C1A16A02E56BA8138244 /* google_11.png */; };
+		A18FB9FC343AD423DD5B54A14D534560 /* flag_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 657391B97905326D8A65C7C45349A95B /* flag_06.png */; };
+		A24AABB5997DDE1452044D461FBD6DD9 /* SwiftMoment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AFCF77EAF9C996D902D6CA5572497FD /* SwiftMoment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3145D8EDA8C290BE61D87DE1A62B2B3 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97211275EEEB5752D56BAE3394957497 /* Moment.swift */; };
+		A91F3DB21C7F662AEDF7F54555ADE10D /* flag_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 88EF469668C1D7E3025162646E94B07D /* flag_01.png */; };
+		AE0100913BDCE445D8B7743246C6586C /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8771EF92E8CD98E13094E0F5B5CFBF2 /* Duration.swift */; };
 		B1B691766BB6EEBC433A1B2EFA05DFD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92008668386364A36AD564C549ED8E2E /* Foundation.framework */; };
-		B269CF8D2FE78AB70482D446509BC26D /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E019D6C99C363080F72CF78763448B5 /* KingfisherOptionsInfo.swift */; };
+		B269CF8D2FE78AB70482D446509BC26D /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9FB8BFA2474E4A44EDDFDFB8549144 /* KingfisherOptionsInfo.swift */; };
 		B4D31539DA43F96EFAB534435ABED834 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0854EF6A6713BEDB102B2D8C66C2E02F /* UIKit.framework */; };
-		B91BB4BBCB0A7098E90581996151C845 /* flag_03.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3F780E921F172620757EB70D829A66 /* flag_03.png */; };
-		BCA94280BF92900D8D248F376D9D73C8 /* google_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 13FD929798CF60D2A5950D52CD5DD39F /* google_25.png */; };
-		C2CDA2FFA4996AD0CECB7B9A4055A739 /* default_03.png in Resources */ = {isa = PBXBuildFile; fileRef = B963392A4517BC6E3AC5A303D35B6856 /* default_03.png */; };
-		C8A05435361B8E3BAD730F8B50863C2B /* default_06.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F002860208129CB52511BCF560944 /* default_06.png */; };
-		CA9071F62CACA07391CAEB9B79629F9D /* flag_19.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44F2DA8F79BE84AACEE7F19B037379 /* flag_19.png */; };
-		CC1B0AB47BB3609E0961AE8470B6F191 /* CalendarView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C03E6917BF16E1ADBC19B940E7DEFA9 /* CalendarView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEC7C23226EA400A86338DC8BB6D8B42 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EAC332D66098EA35BBD5D2A25D2C8 /* ImageTransition.swift */; };
-		D15CEB6700F43CBB98726EF0151F84AF /* google_24.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C3A71151D57A95093B354C62C374BB /* google_24.png */; };
-		D2DA661DAC321C3CD4E3FD7B82625926 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3427A48DE58EACE08A1B430B9011507F /* String+MD5.swift */; };
-		D495657DFBAC1A2539F517A0D45BB74B /* google_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 1667322EE010C1AF23D6721F8506AFDC /* google_16.png */; };
-		D4FF12859DD345EB939F3318E67902C4 /* google_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 5640C788DB09A12678DA4792FF685EB4 /* google_00.png */; };
-		D5FF9A79A409719DA1B669C1CC905EE4 /* google_09.png in Resources */ = {isa = PBXBuildFile; fileRef = BCEBD427F6B28F05129C597E9FE083A3 /* google_09.png */; };
-		D684FBEF79411842E8D8BD1B21A94114 /* flag_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F20AE232E7D3C6F8CA7E6CD200EAED1 /* flag_02.png */; };
-		D7B8B175749B48E0552273D1C4ABB2A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7960D77AD20CB890376DB29DD7DD7 /* Extensions.swift */; };
-		DBF253BFA7E2449DEA70EDBD32587A8D /* default_02.png in Resources */ = {isa = PBXBuildFile; fileRef = A1BFE7AE54966014238B8977BD27BA7B /* default_02.png */; };
-		E170CD6AABB3FD64A0E67869BC754CAE /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF3A092D8C09FA6BB5453B7A90A79EE /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E31A5407D5309E0D93762841FCAFBC4E /* google_28.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2B6E3C8404D23BA401542411CBAEDC /* google_28.png */; };
-		E3AAD103B4FB23D6C8B04BABB6957D2E /* google_03.png in Resources */ = {isa = PBXBuildFile; fileRef = E67771BC727F5978E9321C858F2807C4 /* google_03.png */; };
-		E775532FC4820600754DC7D114D64D18 /* default_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 843F0CED2ED770DD2C2814476793D44A /* default_00.png */; };
-		E8A6B0D8A9730C3B2008EE652CFDEF21 /* google_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A8E977B4E9E099992AD899F7C47558 /* google_18.png */; };
-		EB0FEEA35F3AEDE7AD7380A89CA36E91 /* google_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 414769E7F524390BFA0CE414A1295D45 /* google_06.png */; };
-		EBF96620CA96640415496F8DDE06E4D3 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89494397C3A8B88A13F7135EBFDBFC1 /* AnimatedImageView.swift */; };
-		ECBBB6E663BCAB127CD9F7833C823680 /* default_12.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF738ACFD939D6C6285553371D4B4A6 /* default_12.png */; };
-		ED8DA293FFADA570F0D6248095408952 /* google_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF56AA23FE7A7D2605B7612BFC4C995 /* google_07.png */; };
-		F36B3C25BFACC9380B939141A8CAE981 /* google_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EAB87ED3AA9D433D0AFCF0EF3C9ECC8 /* google_05.png */; };
-		F709ACECF0EF8D360300FBC14F4A3CFA /* default_04.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3D8A8B81CC53A55C7E113095260738 /* default_04.png */; };
-		FD0F490D36F82A22E03A1E22FA317351 /* default_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1C9E85B07099D81C02AAC495492D7 /* default_17.png */; };
-		FDD36FECF7DA145D6975B58FB3240394 /* google_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CECA321779C5DE8FA94F4D1B320E85C /* google_14.png */; };
-		FEE173C935CBB2D8C0BB94D993DCA851 /* google_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FA2F444194DC88386420BA9AE834AA /* google_04.png */; };
-		FFC369D4E11EBC6D0DF34C19561E0D70 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4207984104C6954639C1503C704C3243 /* ImageDownloader.swift */; };
-		FFF296789866BFB2A0B24F1432D456E1 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D16AE0186E1FD49C4058DB89F06F490 /* Resources.bundle */; };
+		B91BB4BBCB0A7098E90581996151C845 /* flag_03.png in Resources */ = {isa = PBXBuildFile; fileRef = EAF0D8906C59945FD0B720E6ECE3D0FD /* flag_03.png */; };
+		BCA94280BF92900D8D248F376D9D73C8 /* google_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DF7D4B50F6C765790E4D392D96B2B55 /* google_25.png */; };
+		C2CDA2FFA4996AD0CECB7B9A4055A739 /* default_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DECECE14BF87826B5B8179347622042 /* default_03.png */; };
+		C8A05435361B8E3BAD730F8B50863C2B /* default_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 91D52FB76A57E299D823A4ECB84B3A06 /* default_06.png */; };
+		CA9071F62CACA07391CAEB9B79629F9D /* flag_19.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A1E7C1DAFA38DAF5EA3C2D0CFD9840D /* flag_19.png */; };
+		CC1B0AB47BB3609E0961AE8470B6F191 /* CalendarView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB69007DBBD440DBD58B3E61E0D42BA2 /* CalendarView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEC7C23226EA400A86338DC8BB6D8B42 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD89CFCE976D9CFC636A14AD5E2BEED /* ImageTransition.swift */; };
+		D00CE40FF4F39E1E85EC2047EDA7111B /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1BAE1C4428849C80854A0BCD8D7596 /* ENSideMenuNavigationController.swift */; };
+		D15CEB6700F43CBB98726EF0151F84AF /* google_24.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EA96E7C599295797AE4FFF2C3274C32 /* google_24.png */; };
+		D2DA661DAC321C3CD4E3FD7B82625926 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D85D451E85E412C6ABBF28215E0E70 /* String+MD5.swift */; };
+		D495657DFBAC1A2539F517A0D45BB74B /* google_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 285A44ECE5845BB6F7FF39F7A8152F46 /* google_16.png */; };
+		D4FF12859DD345EB939F3318E67902C4 /* google_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BC60D18A4F2CDEF21E8AFBF9E2DBFA0 /* google_00.png */; };
+		D5FF9A79A409719DA1B669C1CC905EE4 /* google_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E3C2469EE8A41F616CD175DB0D61D6 /* google_09.png */; };
+		D684FBEF79411842E8D8BD1B21A94114 /* flag_02.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5AB35B219A1E940BC8ADF5B83F17E7 /* flag_02.png */; };
+		D7B8B175749B48E0552273D1C4ABB2A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939ED15105529BF4E9011BE9083A639 /* Extensions.swift */; };
+		DBF253BFA7E2449DEA70EDBD32587A8D /* default_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B804BD9741E9301768F7173E5806CE5 /* default_02.png */; };
+		E170CD6AABB3FD64A0E67869BC754CAE /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A61AEF05A578D17550DBFAD27A194A /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E31A5407D5309E0D93762841FCAFBC4E /* google_28.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E05D0D1BC3667384F879FD48B83E3BD /* google_28.png */; };
+		E3AAD103B4FB23D6C8B04BABB6957D2E /* google_03.png in Resources */ = {isa = PBXBuildFile; fileRef = FE54682E9AEEF9836DC2EA3F14DE5B6D /* google_03.png */; };
+		E775532FC4820600754DC7D114D64D18 /* default_00.png in Resources */ = {isa = PBXBuildFile; fileRef = EB75C261707305C8A426CC5AD0EE3FF0 /* default_00.png */; };
+		E8A6B0D8A9730C3B2008EE652CFDEF21 /* google_18.png in Resources */ = {isa = PBXBuildFile; fileRef = C0089094485FB5B1928CE7363ABE9D67 /* google_18.png */; };
+		EAF2C621354C83034BD57D2046372F09 /* DualSlideMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9712A88E73688992B56852FF0D054DC2 /* DualSlideMenu.bundle */; };
+		EB0FEEA35F3AEDE7AD7380A89CA36E91 /* google_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 440D84B876D591B3C2ECFD8D69A15A38 /* google_06.png */; };
+		EBF96620CA96640415496F8DDE06E4D3 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92E783B880A045A58AA89091B587F1 /* AnimatedImageView.swift */; };
+		ECBBB6E663BCAB127CD9F7833C823680 /* default_12.png in Resources */ = {isa = PBXBuildFile; fileRef = EA55A0810F714847ED418963EE5FC8C5 /* default_12.png */; };
+		ED8DA293FFADA570F0D6248095408952 /* google_07.png in Resources */ = {isa = PBXBuildFile; fileRef = D3062B158606BC8C2BA03B4A4F97D81D /* google_07.png */; };
+		F36B3C25BFACC9380B939141A8CAE981 /* google_05.png in Resources */ = {isa = PBXBuildFile; fileRef = A40347F63A1E9CE1EF59E67AF6B40B3F /* google_05.png */; };
+		F649040232A414C5F026E84DA57B7888 /* DualSlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC29FDBFEBA7E5D95D19CA8451911F /* DualSlideMenuViewController.swift */; };
+		F709ACECF0EF8D360300FBC14F4A3CFA /* default_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FC69D999DBF85A89DE88F29042945 /* default_04.png */; };
+		FD0F490D36F82A22E03A1E22FA317351 /* default_17.png in Resources */ = {isa = PBXBuildFile; fileRef = A4279B2137CC12D579958DA7842C8C4C /* default_17.png */; };
+		FDC6924DD3176F2A1D6BD505AC9DCA7D /* ENSwiftSideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9000B122114A60B31F6017BF6E8C2DF2 /* ENSwiftSideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDD36FECF7DA145D6975B58FB3240394 /* google_14.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9D322F94EB9654E5223C38BEC55846 /* google_14.png */; };
+		FEE173C935CBB2D8C0BB94D993DCA851 /* google_04.png in Resources */ = {isa = PBXBuildFile; fileRef = B450069B70844DA29515E7CD40B6915A /* google_04.png */; };
+		FFC369D4E11EBC6D0DF34C19561E0D70 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3367C3576D5520DF8A321984BD2F80 /* ImageDownloader.swift */; };
+		FFF296789866BFB2A0B24F1432D456E1 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAF694A74548F5226DBDBBA3A7946 /* Resources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		012E9F70A84C2B255C6B345E7BC06F4A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E96E13C4D3B5B5FC0651440734C2BF4D;
-			remoteInfo = Kingfisher;
-		};
 		0B3D9D549E65BFF9487818BE5B7D152C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -145,19 +148,47 @@
 			remoteGlobalIDString = 32F789B79A806D38997C9F6F5DC0950B;
 			remoteInfo = "ASProgressHud-Resources";
 		};
-		3570D4FD8BF09FC1E9CDF59D66011EC1 /* PBXContainerItemProxy */ = {
+		0ED561DEF84DD8A0CFCE4546397D5340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A249CF9CC83EF996380469C8249B2013;
+			remoteInfo = CalendarView;
+		};
+		4C075DBAE735C1573D3A00DFB302572F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E96E13C4D3B5B5FC0651440734C2BF4D;
+			remoteInfo = Kingfisher;
+		};
+		656E0BC8E9D7E193592D86C3F94C0EF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8364974FB0BFFC16DBA404533C5673E1;
+			remoteInfo = "DualSlideMenu-DualSlideMenu";
+		};
+		700F4F44C82163F802E5B3C2632D9197 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F2CE449260E767692A3078142937C25D;
 			remoteInfo = ASProgressHud;
 		};
-		88327D571EF8593F99B2DB82DBA39865 /* PBXContainerItemProxy */ = {
+		B3BD3580D004306BB70D213983490321 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A249CF9CC83EF996380469C8249B2013;
-			remoteInfo = CalendarView;
+			remoteGlobalIDString = 5E40B80F0FA7BDA9FBB0AB7DDCD07249;
+			remoteInfo = ENSwiftSideMenu;
+		};
+		BA3F49B6E1D8165088C196BC8255CF05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A21DCB995841FE970CCB507D94F822D9;
+			remoteInfo = SwiftMoment;
 		};
 		C212A310ED81EF7C8C983084530A575B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -166,14 +197,14 @@
 			remoteGlobalIDString = 41638D9B170F774D9F650F63B192526A;
 			remoteInfo = "CalendarView-CalendarView";
 		};
-		D1A063AF9C40FCD4CFD795752708DA1D /* PBXContainerItemProxy */ = {
+		C4F0B6048366BF9D59F91548B232110D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A21DCB995841FE970CCB507D94F822D9;
-			remoteInfo = SwiftMoment;
+			remoteGlobalIDString = 3CD051F30FC64AA061484269D84720EE;
+			remoteInfo = DualSlideMenu;
 		};
-		E6D0BD5FA9B395AA15AABC9424B0E802 /* PBXContainerItemProxy */ = {
+		D1A063AF9C40FCD4CFD795752708DA1D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -183,174 +214,208 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		003E90F3FA67E735495DED02D67E0D4D /* ASProgressHud.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ASProgressHud.modulemap; sourceTree = "<group>"; };
-		011A9DFAA63014311370588BF8DE914B /* ASProgressHud-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASProgressHud-prefix.pch"; sourceTree = "<group>"; };
-		023540672F9B9F68787AE98ACEA514EE /* flag_05.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_05.png; path = Pod/Assets/Flag/flag_05.png; sourceTree = "<group>"; };
+		00950CD55978C92E9710F3400579DE43 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = SwiftMoment/SwiftMoment/Operators.swift; sourceTree = "<group>"; };
+		036655EF97222BA7DCB7BFCD44894FC3 /* ResourceBundle-DualSlideMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DualSlideMenu-Info.plist"; sourceTree = "<group>"; };
 		054F80C704E1A3CF2B46E7F8A551287A /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05652E3F87A650D9102DA0F186A2DEBD /* Pods-Nobala-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Nobala-frameworks.sh"; sourceTree = "<group>"; };
+		0750F4CA643519E308FFB1EC20D25231 /* CalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = CalendarView/CalendarView/Classes/CalendarView.swift; sourceTree = "<group>"; };
 		0854EF6A6713BEDB102B2D8C66C2E02F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		0A1A450E5741169F04D5966A2E8C3D0B /* ASProgressHud.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASProgressHud.swift; path = Pod/Classes/ASProgressHud.swift; sourceTree = "<group>"; };
-		0BF680E1CCC562CF9C1D5DA5372AF986 /* flag_01.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_01.png; path = Pod/Assets/Flag/flag_01.png; sourceTree = "<group>"; };
-		0FD1C9E85B07099D81C02AAC495492D7 /* default_17.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_17.png; path = Pod/Assets/Default/default_17.png; sourceTree = "<group>"; };
+		085F430715794362B6D6C164B5B6C381 /* google_13.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_13.png; path = Pod/Assets/Google/google_13.png; sourceTree = "<group>"; };
+		0DF7D4B50F6C765790E4D392D96B2B55 /* google_25.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_25.png; path = Pod/Assets/Google/google_25.png; sourceTree = "<group>"; };
 		11BAA64FF099596D23F99154DE4126EC /* Pods-NobalaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NobalaTests.release.xcconfig"; sourceTree = "<group>"; };
-		11D359689A1F2DF54E9FB1C61CB08363 /* default_07.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_07.png; path = Pod/Assets/Default/default_07.png; sourceTree = "<group>"; };
-		1282B98E4E5EBD7FDFD991DBA775814F /* default_09.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_09.png; path = Pod/Assets/Default/default_09.png; sourceTree = "<group>"; };
 		13530C17E69D60E34E122695BCC0D789 /* Pods-NobalaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NobalaTests-frameworks.sh"; sourceTree = "<group>"; };
 		13E3EAB7CDE9A3F836001A20B4667253 /* Pods-NobalaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NobalaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		13FD929798CF60D2A5950D52CD5DD39F /* google_25.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_25.png; path = Pod/Assets/Google/google_25.png; sourceTree = "<group>"; };
-		1555CCCDDCC6D4F28EEB3CE7E196D026 /* google_08.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_08.png; path = Pod/Assets/Google/google_08.png; sourceTree = "<group>"; };
-		1609614E3B79FBA9EB168658DB4F2576 /* Pods_Nobala.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nobala.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1667322EE010C1AF23D6721F8506AFDC /* google_16.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_16.png; path = Pod/Assets/Google/google_16.png; sourceTree = "<group>"; };
-		17ECB897D81250217C17EA871D1262F6 /* default_14.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_14.png; path = Pod/Assets/Default/default_14.png; sourceTree = "<group>"; };
-		1D4869C8900632C5DA36956E808A389D /* google_11.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_11.png; path = Pod/Assets/Google/google_11.png; sourceTree = "<group>"; };
-		1D8C2D655555614C3B7B029910FC2C08 /* CalendarView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CalendarView-dummy.m"; sourceTree = "<group>"; };
-		1E4D004D482C52F00545DB17A3545F92 /* flag_09.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_09.png; path = Pod/Assets/Flag/flag_09.png; sourceTree = "<group>"; };
-		1F20AE232E7D3C6F8CA7E6CD200EAED1 /* flag_02.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_02.png; path = Pod/Assets/Flag/flag_02.png; sourceTree = "<group>"; };
-		1FB17E2DF96AFD127913F2F91A2443EB /* ResourceBundle-Resources-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Resources-Info.plist"; sourceTree = "<group>"; };
-		1FB4341CC8F9621B5F0C5540D42DA2A4 /* CalendarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalendarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15581EC41184A861CBBB1B02A7537239 /* flag_17.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_17.png; path = Pod/Assets/Flag/flag_17.png; sourceTree = "<group>"; };
+		18222179D64F3C2D1D1A33FD06CE10CA /* ENSideMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ENSideMenu.swift; path = Library/ENSideMenu.swift; sourceTree = "<group>"; };
+		1939ED15105529BF4E9011BE9083A639 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftMoment/SwiftMoment/Extensions.swift; sourceTree = "<group>"; };
+		1A29577AFF4D4644AACE8D1222BE768C /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
+		1BC60D18A4F2CDEF21E8AFBF9E2DBFA0 /* google_00.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_00.png; path = Pod/Assets/Google/google_00.png; sourceTree = "<group>"; };
+		1D6BAE263C50BFC1B79DD4ADA932D41F /* ASProgressHud.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASProgressHud.swift; path = Pod/Classes/ASProgressHud.swift; sourceTree = "<group>"; };
+		1E05D0D1BC3667384F879FD48B83E3BD /* google_28.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_28.png; path = Pod/Assets/Google/google_28.png; sourceTree = "<group>"; };
+		1E39B3C51D4140692095A909D8C91628 /* default_14.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_14.png; path = Pod/Assets/Default/default_14.png; sourceTree = "<group>"; };
 		20EB683A2655A81F96895E55380EE6D5 /* Pods-NobalaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NobalaTests-dummy.m"; sourceTree = "<group>"; };
-		22819BCCE1D08FD19BAC7900DA0FDDBE /* google_19.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_19.png; path = Pod/Assets/Google/google_19.png; sourceTree = "<group>"; };
-		2367896FECA321F81BAC4F63CE1C305F /* flag_16.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_16.png; path = Pod/Assets/Flag/flag_16.png; sourceTree = "<group>"; };
-		2700DE9E4FC50891D44A487B33A91BD9 /* flag_04.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_04.png; path = Pod/Assets/Flag/flag_04.png; sourceTree = "<group>"; };
+		20EEE0F844FB4092383BAD858E1441D0 /* DualSlideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DualSlideMenu-prefix.pch"; sourceTree = "<group>"; };
+		245C8384FE90E8CD7B116652CC7D78D6 /* flag_09.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_09.png; path = Pod/Assets/Flag/flag_09.png; sourceTree = "<group>"; };
+		26E63557AC33FEFFEFE915EB667C20A5 /* DualSlideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DualSlideMenu-umbrella.h"; sourceTree = "<group>"; };
 		2720675BC8C8431B273FAABAD30AC349 /* Pods-NobalaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NobalaTests.modulemap"; sourceTree = "<group>"; };
-		277F312EF782E44B16C8906E360532DD /* WeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeekView.swift; path = CalendarView/CalendarView/Classes/WeekView.swift; sourceTree = "<group>"; };
-		29F9FEF7918CE5850CECCC684978887D /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = SwiftMoment/SwiftMoment/Operators.swift; sourceTree = "<group>"; };
-		2A0821A036F789861AE4F1A511C5F666 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		316D1F80D27D90A36B667C5B2755B8A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32C0238144AC94E7587B8010CA420D74 /* google_26.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_26.png; path = Pod/Assets/Google/google_26.png; sourceTree = "<group>"; };
-		3427A48DE58EACE08A1B430B9011507F /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
-		34592D8476941FA0ABAF0455E7BB0A8F /* ASProgressHud-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASProgressHud-umbrella.h"; sourceTree = "<group>"; };
-		349ADC082B6407A803923115E238C682 /* google_15.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_15.png; path = Pod/Assets/Google/google_15.png; sourceTree = "<group>"; };
-		359B0F57F79655F2551B174E6BF157DC /* flag_07.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_07.png; path = Pod/Assets/Flag/flag_07.png; sourceTree = "<group>"; };
+		285A44ECE5845BB6F7FF39F7A8152F46 /* google_16.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_16.png; path = Pod/Assets/Google/google_16.png; sourceTree = "<group>"; };
+		289D50B82D9E551426E4304FDEF05660 /* ENSwiftSideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ENSwiftSideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB04DEE4C4F4CF4920E171815D56371 /* DayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayView.swift; path = CalendarView/CalendarView/Classes/DayView.swift; sourceTree = "<group>"; };
+		2C12DA51709B0672624BE9D8C5FCF344 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
+		2C60EF5E2B80EFF96FDAF7EEF0744040 /* SwiftMoment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftMoment.modulemap; sourceTree = "<group>"; };
+		2D449EA45FB8F8A1A3271F7BB15C4262 /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
+		31BEC888104019E76CDBFE0D7FCBF2ED /* CalendarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalendarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		359E2461E9555A6EA0F4B6704E589420 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		381056F431A44620F43EE75DDCFDACA5 /* google_19.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_19.png; path = Pod/Assets/Google/google_19.png; sourceTree = "<group>"; };
 		3A6A338D24B3F77E4632ED4817FA04FA /* Pods-NobalaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NobalaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		3A861C46AED0A1ABED35E220A172F0B1 /* google_12.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_12.png; path = Pod/Assets/Google/google_12.png; sourceTree = "<group>"; };
-		3DF3A092D8C09FA6BB5453B7A90A79EE /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
-		414769E7F524390BFA0CE414A1295D45 /* google_06.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_06.png; path = Pod/Assets/Google/google_06.png; sourceTree = "<group>"; };
-		416A796A8172FADBD612C229B059FB8A /* ASProgressHud-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASProgressHud-dummy.m"; sourceTree = "<group>"; };
-		42071A169E991CEBC24E6DE8D3159669 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kingfisher.modulemap; sourceTree = "<group>"; };
-		4207984104C6954639C1503C704C3243 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
-		437493AFD49060A5AA5D0B52F13394EA /* google_27.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_27.png; path = Pod/Assets/Google/google_27.png; sourceTree = "<group>"; };
-		477096C4033A8C5FD0CD2DCBA8C6103F /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
+		3D1BAE1C4428849C80854A0BCD8D7596 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ENSideMenuNavigationController.swift; path = Library/ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		3DB6C8D5D017CBC9725C6670A2939F2C /* ASProgressHud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASProgressHud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB08E0AF288829CE6C1ABE5F86B207F /* flag_18.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_18.png; path = Pod/Assets/Flag/flag_18.png; sourceTree = "<group>"; };
+		440D84B876D591B3C2ECFD8D69A15A38 /* google_06.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_06.png; path = Pod/Assets/Google/google_06.png; sourceTree = "<group>"; };
+		44D286FDCE606337F92AEC75845584A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47AEB1C60CC277954904A99988E02FE9 /* DualSlideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DualSlideMenu.xcconfig; sourceTree = "<group>"; };
 		48D223D3A4915989473BC8FB88C183FE /* Pods-NobalaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NobalaUITests-dummy.m"; sourceTree = "<group>"; };
-		4947286109E723BBBA6456BE5745EB1F /* Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Duration.swift; path = SwiftMoment/SwiftMoment/Duration.swift; sourceTree = "<group>"; };
+		4A1E7C1DAFA38DAF5EA3C2D0CFD9840D /* flag_19.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_19.png; path = Pod/Assets/Flag/flag_19.png; sourceTree = "<group>"; };
+		4A23E217F37E7725BE4AC4C7F191185C /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/ImagePrefetcher.swift; sourceTree = "<group>"; };
+		4AFCF77EAF9C996D902D6CA5572497FD /* SwiftMoment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMoment-umbrella.h"; sourceTree = "<group>"; };
+		4D8FC69D999DBF85A89DE88F29042945 /* default_04.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_04.png; path = Pod/Assets/Default/default_04.png; sourceTree = "<group>"; };
+		4DE3FF56B6872CB2F5D14A68666E5552 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5041A64DDECD3E381C252858809874D7 /* default_09.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_09.png; path = Pod/Assets/Default/default_09.png; sourceTree = "<group>"; };
+		50E3C2469EE8A41F616CD175DB0D61D6 /* google_09.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_09.png; path = Pod/Assets/Google/google_09.png; sourceTree = "<group>"; };
 		5125FDE91F8F3C573FEE877B40854953 /* Pods-NobalaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NobalaTests-resources.sh"; sourceTree = "<group>"; };
+		5147DB5998A78F09DC16718C5EC04FA4 /* default_10.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_10.png; path = Pod/Assets/Default/default_10.png; sourceTree = "<group>"; };
 		51FF962CFA2E4B419727AEE2DB689D11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53F62E78F0D451D1DC44C80F34E0FA5D /* Pods-Nobala-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Nobala-dummy.m"; sourceTree = "<group>"; };
-		54055B93A1C5AA41659D4E3FCD98863A /* SwiftMoment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMoment-umbrella.h"; sourceTree = "<group>"; };
-		5640C788DB09A12678DA4792FF685EB4 /* google_00.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_00.png; path = Pod/Assets/Google/google_00.png; sourceTree = "<group>"; };
-		56541EAC944E50F7ECF852B54879094C /* CalendarView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		5706A04624AC95EF8A3EA1F2787692BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		544C4727C9A078E3D79BFE864C6E4774 /* DualSlideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DualSlideMenu.modulemap; sourceTree = "<group>"; };
+		5509354D04E427E08EE4B70A79ABAEE6 /* flag_05.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_05.png; path = Pod/Assets/Flag/flag_05.png; sourceTree = "<group>"; };
 		57B47E4676AC720D012C8CB4F57C4F17 /* Pods-Nobala.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Nobala.release.xcconfig"; sourceTree = "<group>"; };
-		5816698C528A55A9581F3C46AD1BDC3C /* flag_06.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_06.png; path = Pod/Assets/Flag/flag_06.png; sourceTree = "<group>"; };
-		58DAE6F6CD6F7FD38097F19DDA671473 /* SwiftMoment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMoment-prefix.pch"; sourceTree = "<group>"; };
-		5C23CB9065A63C61D6BE8B171EBAB8A0 /* google_20.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_20.png; path = Pod/Assets/Google/google_20.png; sourceTree = "<group>"; };
 		5C6AC2332A6FE020DC8B8BEB2D81326E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		5CDFE21B222B668D9FB55C1D2175CBFD /* DayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayView.swift; path = CalendarView/CalendarView/Classes/DayView.swift; sourceTree = "<group>"; };
-		5D16AE0186E1FD49C4058DB89F06F490 /* Resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Resources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E019D6C99C363080F72CF78763448B5 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		5CB7C84BC011C1A16A02E56BA8138244 /* google_11.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_11.png; path = Pod/Assets/Google/google_11.png; sourceTree = "<group>"; };
+		5CD07942D696656D465FAEE5F2790F21 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		5FE42EEA8FE6F3D1A638E3BD9033D31C /* google_15.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_15.png; path = Pod/Assets/Google/google_15.png; sourceTree = "<group>"; };
+		60999D54E1997C0728312ECC8A6460D6 /* CalendarView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CalendarView-prefix.pch"; sourceTree = "<group>"; };
 		60D6A26EB60DAC820A7355D210AB3190 /* Pods-Nobala-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Nobala-acknowledgements.markdown"; sourceTree = "<group>"; };
-		634467073E430DFB770E64B4F3F416E4 /* flag_15.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_15.png; path = Pod/Assets/Flag/flag_15.png; sourceTree = "<group>"; };
-		63FA2F444194DC88386420BA9AE834AA /* google_04.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_04.png; path = Pod/Assets/Google/google_04.png; sourceTree = "<group>"; };
+		627AA77793A0014155734915B7792A62 /* default_13.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_13.png; path = Pod/Assets/Default/default_13.png; sourceTree = "<group>"; };
+		657391B97905326D8A65C7C45349A95B /* flag_06.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_06.png; path = Pod/Assets/Flag/flag_06.png; sourceTree = "<group>"; };
+		6651EFD07D8D4B61A461466480B41813 /* flag_15.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_15.png; path = Pod/Assets/Flag/flag_15.png; sourceTree = "<group>"; };
 		66C13753ACE52DCD4EC75FE754AEBB3B /* Pods-NobalaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NobalaTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		69F9550ED2EBCE5C6B20AD5960A166E0 /* ResourceBundle-CalendarView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CalendarView-Info.plist"; sourceTree = "<group>"; };
-		6A4549645EDDC54CD834DF45345D14B8 /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C52B83B1E881C2CEEB3E51139033FC4 /* google_02.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_02.png; path = Pod/Assets/Google/google_02.png; sourceTree = "<group>"; };
-		6D10F316A86E3C179ADA540455BC4B50 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
-		6F71C306F6644DF083444A5D49BEFFDD /* google_13.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_13.png; path = Pod/Assets/Google/google_13.png; sourceTree = "<group>"; };
-		70238AB22226BAD9DAC19846D4A55194 /* CalendarView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CalendarView-prefix.pch"; sourceTree = "<group>"; };
+		68220F1D7806555817584E2217ECE814 /* default_07.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_07.png; path = Pod/Assets/Default/default_07.png; sourceTree = "<group>"; };
+		6912DFE4C64E7192AA1B36284085F54B /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = CalendarView/CalendarView/Classes/ContentView.swift; sourceTree = "<group>"; };
+		694DA2586482D7D3A16E3DADA27E7BAD /* default_01.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_01.png; path = Pod/Assets/Default/default_01.png; sourceTree = "<group>"; };
+		6BE6F746427E758697F544A31DF74422 /* DualSlideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DualSlideMenu-dummy.m"; sourceTree = "<group>"; };
+		6F03E2D33248341EDE35A9C5F5D8B259 /* Pods_NobalaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1E5D5C23B6D4BE2898E1029F2B1C14 /* CalendarView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		716C3D346D43A3FB8E36D81D78209ADC /* flag_07.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_07.png; path = Pod/Assets/Flag/flag_07.png; sourceTree = "<group>"; };
+		71FD9DA9188C01B5C233362FEAB88BAA /* default_15.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_15.png; path = Pod/Assets/Default/default_15.png; sourceTree = "<group>"; };
+		7439D62BD3E58176AAA655A26C2C1BBC /* flag_12.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_12.png; path = Pod/Assets/Flag/flag_12.png; sourceTree = "<group>"; };
 		7634C3E4E59DC36E17598289DF7BC1C4 /* Pods-NobalaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NobalaUITests.modulemap"; sourceTree = "<group>"; };
-		7C3DD47015584DAF053E3FAE8E0CAB99 /* SwiftMoment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMoment.xcconfig; sourceTree = "<group>"; };
-		7CECA321779C5DE8FA94F4D1B320E85C /* google_14.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_14.png; path = Pod/Assets/Google/google_14.png; sourceTree = "<group>"; };
-		7D9EAC332D66098EA35BBD5D2A25D2C8 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
-		7DE7960D77AD20CB890376DB29DD7DD7 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftMoment/SwiftMoment/Extensions.swift; sourceTree = "<group>"; };
-		7DF56AA23FE7A7D2605B7612BFC4C995 /* google_07.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_07.png; path = Pod/Assets/Google/google_07.png; sourceTree = "<group>"; };
-		7E989214F32039A7442DC5D3E17BED39 /* google_22.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_22.png; path = Pod/Assets/Google/google_22.png; sourceTree = "<group>"; };
+		7CA789075644D6942D2BF436CB1B038A /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
+		7DC60FBB3932E6266FACE6F8D1FCF5C0 /* SwiftMoment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMoment-dummy.m"; sourceTree = "<group>"; };
+		7F7F101149A030D03AB7646C4D2D4B16 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FA942B3A33510D0CC02A0F8AE9C0903 /* Pods-NobalaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NobalaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		800F3DC175C6D5DFEEF132A403C829A5 /* Pods-NobalaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NobalaUITests-umbrella.h"; sourceTree = "<group>"; };
-		81CCEBB3EE389E58E3AAD14D45A26C2D /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = CalendarView/CalendarView/Classes/ContentView.swift; sourceTree = "<group>"; };
-		82805F4D1C9803F18A3208F65D5C3296 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
+		8140BD27D149CF612A78B4BF97F6F84A /* SwiftMoment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMoment-prefix.pch"; sourceTree = "<group>"; };
+		81ACA8C8DFF040889FC3013CA19E1B8F /* ENSwiftSideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ENSwiftSideMenu.xcconfig; sourceTree = "<group>"; };
 		8294C38A36B1E3AB7200306429F39C09 /* Pods-Nobala-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Nobala-resources.sh"; sourceTree = "<group>"; };
 		8434C23A6EAEA787BE2F3176960B9B31 /* Pods-NobalaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NobalaUITests-frameworks.sh"; sourceTree = "<group>"; };
-		843F0CED2ED770DD2C2814476793D44A /* default_00.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_00.png; path = Pod/Assets/Default/default_00.png; sourceTree = "<group>"; };
-		8466411944BCBA2B3FBB5FC86B58E986 /* google_21.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_21.png; path = Pod/Assets/Google/google_21.png; sourceTree = "<group>"; };
-		8496052E0ECBDF9B0960D7BF51CA447B /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
-		849B780E9528FAC03787EA9B410F51D7 /* default_11.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_11.png; path = Pod/Assets/Default/default_11.png; sourceTree = "<group>"; };
-		88A8E977B4E9E099992AD899F7C47558 /* google_18.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_18.png; path = Pod/Assets/Google/google_18.png; sourceTree = "<group>"; };
-		8C03E6917BF16E1ADBC19B940E7DEFA9 /* CalendarView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CalendarView-umbrella.h"; sourceTree = "<group>"; };
+		8613A3E58F25C3CF47E9CCCD29356A85 /* flag_10.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_10.png; path = Pod/Assets/Flag/flag_10.png; sourceTree = "<group>"; };
+		862D09B3BF025FF7ACFCC183DE089059 /* CalendarView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CalendarView.modulemap; sourceTree = "<group>"; };
+		872DC67BEBB4FB61E3114618C474BF42 /* CalendarView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CalendarView.xcconfig; sourceTree = "<group>"; };
+		877EB0EDA8AF0F83FF5259017747C376 /* CalendarView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CalendarView-dummy.m"; sourceTree = "<group>"; };
+		88EF469668C1D7E3025162646E94B07D /* flag_01.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_01.png; path = Pod/Assets/Flag/flag_01.png; sourceTree = "<group>"; };
+		8A89FFF1B40A4C79CAEE1C6A5B439AE9 /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
+		8B68E28F7A267479FEE37B1C7C8F9459 /* ENSwiftSideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ENSwiftSideMenu-dummy.m"; sourceTree = "<group>"; };
+		8B94795B02EE55128B80DE47D3D3D90B /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
 		8C2EC55DFF52F527831CF62D7B308BAB /* Pods-Nobala-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Nobala-acknowledgements.plist"; sourceTree = "<group>"; };
-		8DD9D62E2D4B2C580762279404940141 /* flag_11.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_11.png; path = Pod/Assets/Flag/flag_11.png; sourceTree = "<group>"; };
+		8C92E783B880A045A58AA89091B587F1 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/AnimatedImageView.swift; sourceTree = "<group>"; };
+		8DA19AEC462EBD68C534B3356B4487D9 /* default_05.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_05.png; path = Pod/Assets/Default/default_05.png; sourceTree = "<group>"; };
+		8DECECE14BF87826B5B8179347622042 /* default_03.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_03.png; path = Pod/Assets/Default/default_03.png; sourceTree = "<group>"; };
+		8E3FB072C8BEF61497D4BB11901F24CC /* ResourceBundle-CalendarView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CalendarView-Info.plist"; sourceTree = "<group>"; };
+		9000B122114A60B31F6017BF6E8C2DF2 /* ENSwiftSideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ENSwiftSideMenu-umbrella.h"; sourceTree = "<group>"; };
 		90B0F98A377CE0354D4665D8803BF9AB /* Pods-NobalaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NobalaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		91D52FB76A57E299D823A4ECB84B3A06 /* default_06.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_06.png; path = Pod/Assets/Default/default_06.png; sourceTree = "<group>"; };
 		92008668386364A36AD564C549ED8E2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94C3A71151D57A95093B354C62C374BB /* google_24.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_24.png; path = Pod/Assets/Google/google_24.png; sourceTree = "<group>"; };
-		9D9B0021DFA40E188D7EAEB146982E0E /* google_29.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_29.png; path = Pod/Assets/Google/google_29.png; sourceTree = "<group>"; };
-		9E7FC0221B329F57B746BBEFB2E34910 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EAB87ED3AA9D433D0AFCF0EF3C9ECC8 /* google_05.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_05.png; path = Pod/Assets/Google/google_05.png; sourceTree = "<group>"; };
-		9EE17E776FA4BDB6D1D5E500C33EE706 /* CalendarView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CalendarView.modulemap; sourceTree = "<group>"; };
-		9F8D67650D97CAA38182211F4728C9F4 /* default_01.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_01.png; path = Pod/Assets/Default/default_01.png; sourceTree = "<group>"; };
-		A1BFE7AE54966014238B8977BD27BA7B /* default_02.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_02.png; path = Pod/Assets/Default/default_02.png; sourceTree = "<group>"; };
-		A820D4C9BCD6B347AA222783CA0AC628 /* TimeUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeUnit.swift; path = SwiftMoment/SwiftMoment/TimeUnit.swift; sourceTree = "<group>"; };
-		AF2B6E3C8404D23BA401542411CBAEDC /* google_28.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_28.png; path = Pod/Assets/Google/google_28.png; sourceTree = "<group>"; };
-		B05AC59741F296DC8D7B0F3A72EC1ABE /* default_08.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_08.png; path = Pod/Assets/Default/default_08.png; sourceTree = "<group>"; };
-		B0C38B3F222F8C13ED57F7B0983817E8 /* default_10.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_10.png; path = Pod/Assets/Default/default_10.png; sourceTree = "<group>"; };
-		B1BD53E945737DC8214ACE51A7A2C9CE /* google_17.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_17.png; path = Pod/Assets/Google/google_17.png; sourceTree = "<group>"; };
-		B3EE488B29108F804A1B7536F923425E /* flag_18.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_18.png; path = Pod/Assets/Flag/flag_18.png; sourceTree = "<group>"; };
+		95F17C1653B53453CBF20C98110DBB0C /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9712A88E73688992B56852FF0D054DC2 /* DualSlideMenu.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DualSlideMenu.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		97211275EEEB5752D56BAE3394957497 /* Moment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Moment.swift; path = SwiftMoment/SwiftMoment/Moment.swift; sourceTree = "<group>"; };
+		9959564D500A1CE4941DAA7B6F11559E /* flag_00.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_00.png; path = Pod/Assets/Flag/flag_00.png; sourceTree = "<group>"; };
+		9B804BD9741E9301768F7173E5806CE5 /* default_02.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_02.png; path = Pod/Assets/Default/default_02.png; sourceTree = "<group>"; };
+		9EA96E7C599295797AE4FFF2C3274C32 /* google_24.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_24.png; path = Pod/Assets/Google/google_24.png; sourceTree = "<group>"; };
+		9EA98AB96AE60448B22858A6BF106865 /* flag_08.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_08.png; path = Pod/Assets/Flag/flag_08.png; sourceTree = "<group>"; };
+		A40347F63A1E9CE1EF59E67AF6B40B3F /* google_05.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_05.png; path = Pod/Assets/Google/google_05.png; sourceTree = "<group>"; };
+		A4279B2137CC12D579958DA7842C8C4C /* default_17.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_17.png; path = Pod/Assets/Default/default_17.png; sourceTree = "<group>"; };
+		A631A34A96BEC282DBD07E57C9A82FCE /* SwiftMoment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMoment.xcconfig; sourceTree = "<group>"; };
+		A6D85D451E85E412C6ABBF28215E0E70 /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
+		A77116B4C74825E94B0C3BC15379D19F /* ENSwiftSideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ENSwiftSideMenu-prefix.pch"; sourceTree = "<group>"; };
+		A8A440A78B6A8E159B9DE8E95651E080 /* google_08.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_08.png; path = Pod/Assets/Google/google_08.png; sourceTree = "<group>"; };
+		AB69007DBBD440DBD58B3E61E0D42BA2 /* CalendarView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CalendarView-umbrella.h"; sourceTree = "<group>"; };
+		AD6ABF880B82180C498F465E81E80753 /* TimeUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeUnit.swift; path = SwiftMoment/SwiftMoment/TimeUnit.swift; sourceTree = "<group>"; };
+		AEC9E5ECF940BDCFA3D9F4387ABF9403 /* google_01.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_01.png; path = Pod/Assets/Google/google_01.png; sourceTree = "<group>"; };
+		B19038BA5EF98A7FB549CC4F36EAC08F /* DualSlideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DualSlideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2BA3F273FFEF57AFF9A143FE1454F77 /* ASProgressHud-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASProgressHud-umbrella.h"; sourceTree = "<group>"; };
+		B450069B70844DA29515E7CD40B6915A /* google_04.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_04.png; path = Pod/Assets/Google/google_04.png; sourceTree = "<group>"; };
 		B4E38D41E9B9621D27383C270104B7BB /* Pods-NobalaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NobalaTests-umbrella.h"; sourceTree = "<group>"; };
-		B58AD9031634472BE3B71806168C6420 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
-		B6316843FF834424C8E353443E47BC8C /* default_16.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_16.png; path = Pod/Assets/Default/default_16.png; sourceTree = "<group>"; };
-		B6D4430747486919AD635942976DC893 /* ASProgressHud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASProgressHud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B89494397C3A8B88A13F7135EBFDBFC1 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/AnimatedImageView.swift; sourceTree = "<group>"; };
-		B963392A4517BC6E3AC5A303D35B6856 /* default_03.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_03.png; path = Pod/Assets/Default/default_03.png; sourceTree = "<group>"; };
-		BA836B89FF4AB914EDE99C96263CF841 /* Pods_NobalaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBD4BDB7EB99144D3AE0A9810B3F7A91 /* flag_00.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_00.png; path = Pod/Assets/Flag/flag_00.png; sourceTree = "<group>"; };
-		BC3F780E921F172620757EB70D829A66 /* flag_03.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_03.png; path = Pod/Assets/Flag/flag_03.png; sourceTree = "<group>"; };
-		BCEBD427F6B28F05129C597E9FE083A3 /* google_09.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_09.png; path = Pod/Assets/Google/google_09.png; sourceTree = "<group>"; };
-		C0A66277E4ED1ACF41FD28D360396393 /* default_13.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_13.png; path = Pod/Assets/Default/default_13.png; sourceTree = "<group>"; };
-		C415F649452757583559DD08C2FF0F90 /* default_15.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_15.png; path = Pod/Assets/Default/default_15.png; sourceTree = "<group>"; };
-		C4FB4394A32AF98CEFD173A87B5A6247 /* CalendarView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CalendarView.xcconfig; sourceTree = "<group>"; };
-		C527F015BB5AF3EB1FE33895919731AB /* flag_14.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_14.png; path = Pod/Assets/Flag/flag_14.png; sourceTree = "<group>"; };
-		C678A610D7C4496C9DAB75B92A52186B /* SwiftMoment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftMoment.modulemap; sourceTree = "<group>"; };
-		C821D59E1F979E497D8118F8260E7304 /* flag_17.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_17.png; path = Pod/Assets/Flag/flag_17.png; sourceTree = "<group>"; };
-		C82C47A5D99CDBC0926B450885FEADDF /* CalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = CalendarView/CalendarView/Classes/CalendarView.swift; sourceTree = "<group>"; };
-		C86C8B1BFD4A12E24BA5DC78B49B31DA /* flag_08.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_08.png; path = Pod/Assets/Flag/flag_08.png; sourceTree = "<group>"; };
+		B61A5BB123E632D0FC6BEC54C6AE90F3 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
+		B7CB0C8B93D3A40EC0C81B2CCC6E924C /* SwiftMoment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftMoment.h; path = SwiftMoment/SwiftMoment/SwiftMoment.h; sourceTree = "<group>"; };
+		B89CB744965521F37C4721E3DCE138FD /* flag_16.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_16.png; path = Pod/Assets/Flag/flag_16.png; sourceTree = "<group>"; };
+		B924E821C7537356CB0BAFE5B73AF41E /* google_26.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_26.png; path = Pod/Assets/Google/google_26.png; sourceTree = "<group>"; };
+		BA9D322F94EB9654E5223C38BEC55846 /* google_14.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_14.png; path = Pod/Assets/Google/google_14.png; sourceTree = "<group>"; };
+		C0089094485FB5B1928CE7363ABE9D67 /* google_18.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_18.png; path = Pod/Assets/Google/google_18.png; sourceTree = "<group>"; };
+		C0B8E06437228AF4834942EDBB3E13CE /* flag_11.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_11.png; path = Pod/Assets/Flag/flag_11.png; sourceTree = "<group>"; };
+		C19191E9D7531D4AA79CDFD3BC5734DC /* WeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeekView.swift; path = CalendarView/CalendarView/Classes/WeekView.swift; sourceTree = "<group>"; };
+		C37D1BD6CF3BD403B585F9BED4AE63AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C42A364132494412025C27FD58F868D6 /* EasyCast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyCast.swift; path = CalendarView/CalendarView/Classes/EasyCast.swift; sourceTree = "<group>"; };
+		C55E45D27E904B1244A6C238630AB516 /* google_17.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_17.png; path = Pod/Assets/Google/google_17.png; sourceTree = "<group>"; };
+		C5A540A08D72F244C47BE4F95AB7B5E1 /* ResourceBundle-Resources-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Resources-Info.plist"; sourceTree = "<group>"; };
+		C8ADAF694A74548F5226DBDBBA3A7946 /* Resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Resources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8AEB580E54C0047F40230E64DDC059D /* Pods-Nobala.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Nobala.debug.xcconfig"; sourceTree = "<group>"; };
-		C8EBF34F9E777BAB41AFD706894B3328 /* Pods_NobalaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC44F2DA8F79BE84AACEE7F19B037379 /* flag_19.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_19.png; path = Pod/Assets/Flag/flag_19.png; sourceTree = "<group>"; };
 		CCB8923F494E760BF538D48FBCAE4992 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D06F002860208129CB52511BCF560944 /* default_06.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_06.png; path = Pod/Assets/Default/default_06.png; sourceTree = "<group>"; };
-		D61DB2A43B7B156F8807051D49009FEF /* flag_12.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_12.png; path = Pod/Assets/Flag/flag_12.png; sourceTree = "<group>"; };
-		D797A3EBAB752DC3252984F7613DC98C /* google_10.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_10.png; path = Pod/Assets/Google/google_10.png; sourceTree = "<group>"; };
+		D03F8EA8FB74741922CDACE4EBA3F8F2 /* google_29.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_29.png; path = Pod/Assets/Google/google_29.png; sourceTree = "<group>"; };
+		D059E85F4579574EB8DE5623BDAD8368 /* ASProgressHud.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASProgressHud.xcconfig; sourceTree = "<group>"; };
+		D2F812087EE9207259E99092BF31E3AC /* google_23.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_23.png; path = Pod/Assets/Google/google_23.png; sourceTree = "<group>"; };
+		D3062B158606BC8C2BA03B4A4F97D81D /* google_07.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_07.png; path = Pod/Assets/Google/google_07.png; sourceTree = "<group>"; };
+		D5E225E3B600CE8FE2441A37B052B577 /* ENSwiftSideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ENSwiftSideMenu.modulemap; sourceTree = "<group>"; };
+		D803C0EAB315599C43A573805AC192E9 /* google_12.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_12.png; path = Pod/Assets/Google/google_12.png; sourceTree = "<group>"; };
+		D874C5FDCFC9153A9F067C3F05C382ED /* default_11.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_11.png; path = Pod/Assets/Default/default_11.png; sourceTree = "<group>"; };
 		D9A6CB56D5BD7F662783356741A04DDF /* Pods-Nobala-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Nobala-umbrella.h"; sourceTree = "<group>"; };
-		DD22618CC2ACD7CAE99A3D81D9630D4F /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
-		E0284FC9A318FF1264D72CA0F7F086C6 /* flag_10.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_10.png; path = Pod/Assets/Flag/flag_10.png; sourceTree = "<group>"; };
-		E08B6E49D05218C76427324C4D34FBAD /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
-		E109E5B6BAB55A333A38E9D9C3D3DB62 /* flag_13.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_13.png; path = Pod/Assets/Flag/flag_13.png; sourceTree = "<group>"; };
-		E117BAD67BFA26D60225AD59FA103A2F /* google_01.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_01.png; path = Pod/Assets/Google/google_01.png; sourceTree = "<group>"; };
-		E19DD25D6A906ABC349DBF096F3AD19A /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
-		E257C9EDE9E0274DA1D8B758954B4325 /* default_05.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_05.png; path = Pod/Assets/Default/default_05.png; sourceTree = "<group>"; };
-		E3BDD52C2091925B84CDB3BECD3BB271 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/ImagePrefetcher.swift; sourceTree = "<group>"; };
-		E416825D296B3215A5BB814D5C04278D /* MonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonthView.swift; path = CalendarView/CalendarView/Classes/MonthView.swift; sourceTree = "<group>"; };
-		E4799354FEBE5D815CDB7AD0497046E9 /* EasyCast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyCast.swift; path = CalendarView/CalendarView/Classes/EasyCast.swift; sourceTree = "<group>"; };
+		D9F8B0E168254F97277E0E71BF56223A /* google_21.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_21.png; path = Pod/Assets/Google/google_21.png; sourceTree = "<group>"; };
+		DAD89CFCE976D9CFC636A14AD5E2BEED /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
+		DB331ED574925B1A929A3E6994EF4C6B /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB8391095C06610DB825DBFAEE66DEB5 /* Pods_NobalaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC22A9CA19FDBA312085C34EAB0B1FBD /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kingfisher.modulemap; sourceTree = "<group>"; };
+		DD4A182C6CDA8D8044082DC224224D36 /* ASProgressHud-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASProgressHud-dummy.m"; sourceTree = "<group>"; };
+		DD4CB4E83792CCFB4EDF7B3FB7D44D24 /* ASProgressHud-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASProgressHud-prefix.pch"; sourceTree = "<group>"; };
+		DD5AB35B219A1E940BC8ADF5B83F17E7 /* flag_02.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_02.png; path = Pod/Assets/Flag/flag_02.png; sourceTree = "<group>"; };
+		DD9FB8BFA2474E4A44EDDFDFB8549144 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		E037FDA42F6D89479411E0BA8E7CD73F /* Pods_Nobala.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nobala.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0A64A9D9928A86797C20E4319D68BB6 /* flag_14.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_14.png; path = Pod/Assets/Flag/flag_14.png; sourceTree = "<group>"; };
+		E0A6789E14F5A635523905B1A136CD7C /* ASProgressHud.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ASProgressHud.modulemap; sourceTree = "<group>"; };
+		E2A61AEF05A578D17550DBFAD27A194A /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
 		E5D5D7E1C9BD043ED8C133DC18A35144 /* Pods-NobalaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NobalaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E5EE8478B1D8430D30C5D623E679564B /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
 		E6624A81B56320BE6745E55F8A954B2F /* Pods-NobalaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NobalaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E66F80EBF0FDDD4074444408A70BD6AB /* Pods-NobalaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NobalaUITests-resources.sh"; sourceTree = "<group>"; };
-		E67771BC727F5978E9321C858F2807C4 /* google_03.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_03.png; path = Pod/Assets/Google/google_03.png; sourceTree = "<group>"; };
-		EE2051C12659CBEBBA46866F8068E9DD /* SwiftMoment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftMoment.h; path = SwiftMoment/SwiftMoment/SwiftMoment.h; sourceTree = "<group>"; };
+		E68051CC2D09B73C9A27FCB9E2FFE340 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
+		E764ADB416035E97B699ADDBDB7347DC /* default_16.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_16.png; path = Pod/Assets/Default/default_16.png; sourceTree = "<group>"; };
+		E76A7620A2A77B5BE6B96A117543DE01 /* google_27.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_27.png; path = Pod/Assets/Google/google_27.png; sourceTree = "<group>"; };
+		E8771EF92E8CD98E13094E0F5B5CFBF2 /* Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Duration.swift; path = SwiftMoment/SwiftMoment/Duration.swift; sourceTree = "<group>"; };
+		EA55A0810F714847ED418963EE5FC8C5 /* default_12.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_12.png; path = Pod/Assets/Default/default_12.png; sourceTree = "<group>"; };
+		EA64443FC9FAFDCFABED3734A99CD19D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF0D8906C59945FD0B720E6ECE3D0FD /* flag_03.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_03.png; path = Pod/Assets/Flag/flag_03.png; sourceTree = "<group>"; };
+		EB75C261707305C8A426CC5AD0EE3FF0 /* default_00.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_00.png; path = Pod/Assets/Default/default_00.png; sourceTree = "<group>"; };
+		EB94A54CACC05519BA8A1D2975FE7F93 /* google_10.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_10.png; path = Pod/Assets/Google/google_10.png; sourceTree = "<group>"; };
+		EBBC29FDBFEBA7E5D95D19CA8451911F /* DualSlideMenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DualSlideMenuViewController.swift; path = Pod/Classes/DualSlideMenuViewController.swift; sourceTree = "<group>"; };
+		ECB432D3BC2BF9C44B195C4850EF108F /* google_20.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_20.png; path = Pod/Assets/Google/google_20.png; sourceTree = "<group>"; };
+		ED6EA820C370A5C79A29AFD9660A2B90 /* google_02.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_02.png; path = Pod/Assets/Google/google_02.png; sourceTree = "<group>"; };
+		EE4DB11CA0C3371D9D98F36DA766A4AA /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
 		EF2EA0309FE3DE0AD407EB3C9E1B8FEC /* Pods-Nobala.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Nobala.modulemap"; sourceTree = "<group>"; };
-		EF3D8A8B81CC53A55C7E113095260738 /* default_04.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_04.png; path = Pod/Assets/Default/default_04.png; sourceTree = "<group>"; };
-		EF79B2A8C70008434F093AE697FEB038 /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
 		F244B8A8DFE4E07DC6ADB0AA5A1B4E01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F498D4BB8B5B8C380266A8C36EA51AE3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F616DB7C5DDE774AB1278281FDC1CF70 /* google_23.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_23.png; path = Pod/Assets/Google/google_23.png; sourceTree = "<group>"; };
-		F81BDD7C05613787C69AE1DC95E7186A /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
-		F86E1662DA07DAC6D6DE2E869AA448B2 /* SwiftMoment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMoment-dummy.m"; sourceTree = "<group>"; };
-		F8761CFC4E3E9FE771D5F725BB671A6B /* ASProgressHud.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASProgressHud.xcconfig; sourceTree = "<group>"; };
-		F94A07B9406DCEB7C96A3577E0D26D22 /* Moment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Moment.swift; path = SwiftMoment/SwiftMoment/Moment.swift; sourceTree = "<group>"; };
-		FBF738ACFD939D6C6285553371D4B4A6 /* default_12.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_12.png; path = Pod/Assets/Default/default_12.png; sourceTree = "<group>"; };
+		F412AFD19E52449561FC568B5632D391 /* flag_04.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_04.png; path = Pod/Assets/Flag/flag_04.png; sourceTree = "<group>"; };
+		F8EDCD7DE75D961F409BDD5DC59BA448 /* default_08.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_08.png; path = Pod/Assets/Default/default_08.png; sourceTree = "<group>"; };
+		FB3367C3576D5520DF8A321984BD2F80 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
+		FBC575514578E9041D3343E3C002BEDF /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
+		FC36BDFF034EEF7BF388FA6B870716A7 /* flag_13.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flag_13.png; path = Pod/Assets/Flag/flag_13.png; sourceTree = "<group>"; };
+		FCB1A42CE0C392EC04B72DAB0E1E9826 /* MonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonthView.swift; path = CalendarView/CalendarView/Classes/MonthView.swift; sourceTree = "<group>"; };
+		FD1F40D994AB1FFD3FED598C9D6EF3F8 /* google_22.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_22.png; path = Pod/Assets/Google/google_22.png; sourceTree = "<group>"; };
+		FE54682E9AEEF9836DC2EA3F14DE5B6D /* google_03.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = google_03.png; path = Pod/Assets/Google/google_03.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0D982B90202BCDCB5AE0EEC27A154B0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686176857E418E2FF36741A3951A8A8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A97F1DD535F85D944B04C0A923CFE3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83B4167F9890413D10AA3C55CD44F51B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,11 +441,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A67C9BF2863B2A51228F25210E570EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A91F695119B9AFA1175AFE59E3542C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA36ABA049F54E15B477316A638C2AE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				62783ABE44EA19DD7AF504220137FC12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B010E5D9163221ECC8A6CCB78D5ED56A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DB5015CDC9C3532B12CAC4270061810 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,45 +497,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F667E5B34DA08AD3F032953625F5A8A7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				31F79FD06C4D65347700058189649A68 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2125C264439C37FCB7C0F22BEFB37A37 /* CalendarView */ = {
+		1040728F76D96237F4673BBE052052AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C82C47A5D99CDBC0926B450885FEADDF /* CalendarView.swift */,
-				81CCEBB3EE389E58E3AAD14D45A26C2D /* ContentView.swift */,
-				5CDFE21B222B668D9FB55C1D2175CBFD /* DayView.swift */,
-				E4799354FEBE5D815CDB7AD0497046E9 /* EasyCast.swift */,
-				E416825D296B3215A5BB814D5C04278D /* MonthView.swift */,
-				277F312EF782E44B16C8906E360532DD /* WeekView.swift */,
-				6A45675576B73056B920279F2DFAD4BD /* Support Files */,
-			);
-			path = CalendarView;
-			sourceTree = "<group>";
-		};
-		221C2F93EB04B8BABC589809AED8C6EF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B6D4430747486919AD635942976DC893 /* ASProgressHud.framework */,
-				56541EAC944E50F7ECF852B54879094C /* CalendarView.bundle */,
-				1FB4341CC8F9621B5F0C5540D42DA2A4 /* CalendarView.framework */,
-				2A0821A036F789861AE4F1A511C5F666 /* Kingfisher.framework */,
-				1609614E3B79FBA9EB168658DB4F2576 /* Pods_Nobala.framework */,
-				BA836B89FF4AB914EDE99C96263CF841 /* Pods_NobalaTests.framework */,
-				C8EBF34F9E777BAB41AFD706894B3328 /* Pods_NobalaUITests.framework */,
-				5D16AE0186E1FD49C4058DB89F06F490 /* Resources.bundle */,
-				6A4549645EDDC54CD834DF45345D14B8 /* SwiftMoment.framework */,
+				3DB6C8D5D017CBC9725C6670A2939F2C /* ASProgressHud.framework */,
+				6F1E5D5C23B6D4BE2898E1029F2B1C14 /* CalendarView.bundle */,
+				31BEC888104019E76CDBFE0D7FCBF2ED /* CalendarView.framework */,
+				9712A88E73688992B56852FF0D054DC2 /* DualSlideMenu.bundle */,
+				B19038BA5EF98A7FB549CC4F36EAC08F /* DualSlideMenu.framework */,
+				289D50B82D9E551426E4304FDEF05660 /* ENSwiftSideMenu.framework */,
+				DB331ED574925B1A929A3E6994EF4C6B /* Kingfisher.framework */,
+				E037FDA42F6D89479411E0BA8E7CD73F /* Pods_Nobala.framework */,
+				6F03E2D33248341EDE35A9C5F5D8B259 /* Pods_NobalaTests.framework */,
+				DB8391095C06610DB825DBFAEE66DEB5 /* Pods_NobalaUITests.framework */,
+				C8ADAF694A74548F5226DBDBBA3A7946 /* Resources.bundle */,
+				95F17C1653B53453CBF20C98110DBB0C /* SwiftMoment.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		150AF71324D39C4238ED1C58C98971B6 /* SwiftMoment */ = {
+			isa = PBXGroup;
+			children = (
+				E8771EF92E8CD98E13094E0F5B5CFBF2 /* Duration.swift */,
+				1939ED15105529BF4E9011BE9083A639 /* Extensions.swift */,
+				97211275EEEB5752D56BAE3394957497 /* Moment.swift */,
+				00950CD55978C92E9710F3400579DE43 /* Operators.swift */,
+				B7CB0C8B93D3A40EC0C81B2CCC6E924C /* SwiftMoment.h */,
+				AD6ABF880B82180C498F465E81E80753 /* TimeUnit.swift */,
+				B745104736E01BC6A7D77F6BF419CBE6 /* Support Files */,
+			);
+			path = SwiftMoment;
+			sourceTree = "<group>";
+		};
+		3069B3C4FA643C70AAC9543D7574DA7C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				544C4727C9A078E3D79BFE864C6E4774 /* DualSlideMenu.modulemap */,
+				47AEB1C60CC277954904A99988E02FE9 /* DualSlideMenu.xcconfig */,
+				6BE6F746427E758697F544A31DF74422 /* DualSlideMenu-dummy.m */,
+				20EEE0F844FB4092383BAD858E1441D0 /* DualSlideMenu-prefix.pch */,
+				26E63557AC33FEFFEFE915EB667C20A5 /* DualSlideMenu-umbrella.h */,
+				44D286FDCE606337F92AEC75845584A4 /* Info.plist */,
+				036655EF97222BA7DCB7BFCD44894FC3 /* ResourceBundle-DualSlideMenu-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DualSlideMenu";
 			sourceTree = "<group>";
 		};
 		385AB5BA9EBE978F83C20BEDA88B9E04 /* Pods-NobalaUITests */ = {
@@ -475,6 +566,16 @@
 			path = "Target Support Files/Pods-NobalaUITests";
 			sourceTree = "<group>";
 		};
+		3B9216EB0E69CD55AD2C830FB67DE1BD /* ENSwiftSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				18222179D64F3C2D1D1A33FD06CE10CA /* ENSideMenu.swift */,
+				3D1BAE1C4428849C80854A0BCD8D7596 /* ENSideMenuNavigationController.swift */,
+				D834B371A2832F97339FBB451A515086 /* Support Files */,
+			);
+			path = ENSwiftSideMenu;
+			sourceTree = "<group>";
+		};
 		42AD1DEAB5F4A04E528C98A9B7709B3B /* Pods-NobalaTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,123 +594,27 @@
 			path = "Target Support Files/Pods-NobalaTests";
 			sourceTree = "<group>";
 		};
-		5B8FA2E014598BBB9945063F207CFAAF /* Support Files */ = {
+		4F35B781B027313BD2563F5BA4820436 /* DualSlideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				F498D4BB8B5B8C380266A8C36EA51AE3 /* Info.plist */,
-				C678A610D7C4496C9DAB75B92A52186B /* SwiftMoment.modulemap */,
-				7C3DD47015584DAF053E3FAE8E0CAB99 /* SwiftMoment.xcconfig */,
-				F86E1662DA07DAC6D6DE2E869AA448B2 /* SwiftMoment-dummy.m */,
-				58DAE6F6CD6F7FD38097F19DDA671473 /* SwiftMoment-prefix.pch */,
-				54055B93A1C5AA41659D4E3FCD98863A /* SwiftMoment-umbrella.h */,
+				EBBC29FDBFEBA7E5D95D19CA8451911F /* DualSlideMenuViewController.swift */,
+				3069B3C4FA643C70AAC9543D7574DA7C /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftMoment";
+			path = DualSlideMenu;
 			sourceTree = "<group>";
 		};
-		5D6F2548D9DA06C00DD293FC7362F8D0 /* Resources */ = {
+		60C5B6AE1A0E1923B2BD81BA5998C775 /* CalendarView */ = {
 			isa = PBXGroup;
 			children = (
-				843F0CED2ED770DD2C2814476793D44A /* default_00.png */,
-				9F8D67650D97CAA38182211F4728C9F4 /* default_01.png */,
-				A1BFE7AE54966014238B8977BD27BA7B /* default_02.png */,
-				B963392A4517BC6E3AC5A303D35B6856 /* default_03.png */,
-				EF3D8A8B81CC53A55C7E113095260738 /* default_04.png */,
-				E257C9EDE9E0274DA1D8B758954B4325 /* default_05.png */,
-				D06F002860208129CB52511BCF560944 /* default_06.png */,
-				11D359689A1F2DF54E9FB1C61CB08363 /* default_07.png */,
-				B05AC59741F296DC8D7B0F3A72EC1ABE /* default_08.png */,
-				1282B98E4E5EBD7FDFD991DBA775814F /* default_09.png */,
-				B0C38B3F222F8C13ED57F7B0983817E8 /* default_10.png */,
-				849B780E9528FAC03787EA9B410F51D7 /* default_11.png */,
-				FBF738ACFD939D6C6285553371D4B4A6 /* default_12.png */,
-				C0A66277E4ED1ACF41FD28D360396393 /* default_13.png */,
-				17ECB897D81250217C17EA871D1262F6 /* default_14.png */,
-				C415F649452757583559DD08C2FF0F90 /* default_15.png */,
-				B6316843FF834424C8E353443E47BC8C /* default_16.png */,
-				0FD1C9E85B07099D81C02AAC495492D7 /* default_17.png */,
-				BBD4BDB7EB99144D3AE0A9810B3F7A91 /* flag_00.png */,
-				0BF680E1CCC562CF9C1D5DA5372AF986 /* flag_01.png */,
-				1F20AE232E7D3C6F8CA7E6CD200EAED1 /* flag_02.png */,
-				BC3F780E921F172620757EB70D829A66 /* flag_03.png */,
-				2700DE9E4FC50891D44A487B33A91BD9 /* flag_04.png */,
-				023540672F9B9F68787AE98ACEA514EE /* flag_05.png */,
-				5816698C528A55A9581F3C46AD1BDC3C /* flag_06.png */,
-				359B0F57F79655F2551B174E6BF157DC /* flag_07.png */,
-				C86C8B1BFD4A12E24BA5DC78B49B31DA /* flag_08.png */,
-				1E4D004D482C52F00545DB17A3545F92 /* flag_09.png */,
-				E0284FC9A318FF1264D72CA0F7F086C6 /* flag_10.png */,
-				8DD9D62E2D4B2C580762279404940141 /* flag_11.png */,
-				D61DB2A43B7B156F8807051D49009FEF /* flag_12.png */,
-				E109E5B6BAB55A333A38E9D9C3D3DB62 /* flag_13.png */,
-				C527F015BB5AF3EB1FE33895919731AB /* flag_14.png */,
-				634467073E430DFB770E64B4F3F416E4 /* flag_15.png */,
-				2367896FECA321F81BAC4F63CE1C305F /* flag_16.png */,
-				C821D59E1F979E497D8118F8260E7304 /* flag_17.png */,
-				B3EE488B29108F804A1B7536F923425E /* flag_18.png */,
-				CC44F2DA8F79BE84AACEE7F19B037379 /* flag_19.png */,
-				5640C788DB09A12678DA4792FF685EB4 /* google_00.png */,
-				E117BAD67BFA26D60225AD59FA103A2F /* google_01.png */,
-				6C52B83B1E881C2CEEB3E51139033FC4 /* google_02.png */,
-				E67771BC727F5978E9321C858F2807C4 /* google_03.png */,
-				63FA2F444194DC88386420BA9AE834AA /* google_04.png */,
-				9EAB87ED3AA9D433D0AFCF0EF3C9ECC8 /* google_05.png */,
-				414769E7F524390BFA0CE414A1295D45 /* google_06.png */,
-				7DF56AA23FE7A7D2605B7612BFC4C995 /* google_07.png */,
-				1555CCCDDCC6D4F28EEB3CE7E196D026 /* google_08.png */,
-				BCEBD427F6B28F05129C597E9FE083A3 /* google_09.png */,
-				D797A3EBAB752DC3252984F7613DC98C /* google_10.png */,
-				1D4869C8900632C5DA36956E808A389D /* google_11.png */,
-				3A861C46AED0A1ABED35E220A172F0B1 /* google_12.png */,
-				6F71C306F6644DF083444A5D49BEFFDD /* google_13.png */,
-				7CECA321779C5DE8FA94F4D1B320E85C /* google_14.png */,
-				349ADC082B6407A803923115E238C682 /* google_15.png */,
-				1667322EE010C1AF23D6721F8506AFDC /* google_16.png */,
-				B1BD53E945737DC8214ACE51A7A2C9CE /* google_17.png */,
-				88A8E977B4E9E099992AD899F7C47558 /* google_18.png */,
-				22819BCCE1D08FD19BAC7900DA0FDDBE /* google_19.png */,
-				5C23CB9065A63C61D6BE8B171EBAB8A0 /* google_20.png */,
-				8466411944BCBA2B3FBB5FC86B58E986 /* google_21.png */,
-				7E989214F32039A7442DC5D3E17BED39 /* google_22.png */,
-				F616DB7C5DDE774AB1278281FDC1CF70 /* google_23.png */,
-				94C3A71151D57A95093B354C62C374BB /* google_24.png */,
-				13FD929798CF60D2A5950D52CD5DD39F /* google_25.png */,
-				32C0238144AC94E7587B8010CA420D74 /* google_26.png */,
-				437493AFD49060A5AA5D0B52F13394EA /* google_27.png */,
-				AF2B6E3C8404D23BA401542411CBAEDC /* google_28.png */,
-				9D9B0021DFA40E188D7EAEB146982E0E /* google_29.png */,
+				0750F4CA643519E308FFB1EC20D25231 /* CalendarView.swift */,
+				6912DFE4C64E7192AA1B36284085F54B /* ContentView.swift */,
+				2BB04DEE4C4F4CF4920E171815D56371 /* DayView.swift */,
+				C42A364132494412025C27FD58F868D6 /* EasyCast.swift */,
+				FCB1A42CE0C392EC04B72DAB0E1E9826 /* MonthView.swift */,
+				C19191E9D7531D4AA79CDFD3BC5734DC /* WeekView.swift */,
+				E368649617E6EAB6813A843E584DCD93 /* Support Files */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		5E5BAFA91BC25AFBED1284CDC4F7CE8E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				003E90F3FA67E735495DED02D67E0D4D /* ASProgressHud.modulemap */,
-				F8761CFC4E3E9FE771D5F725BB671A6B /* ASProgressHud.xcconfig */,
-				416A796A8172FADBD612C229B059FB8A /* ASProgressHud-dummy.m */,
-				011A9DFAA63014311370588BF8DE914B /* ASProgressHud-prefix.pch */,
-				34592D8476941FA0ABAF0455E7BB0A8F /* ASProgressHud-umbrella.h */,
-				316D1F80D27D90A36B667C5B2755B8A8 /* Info.plist */,
-				1FB17E2DF96AFD127913F2F91A2443EB /* ResourceBundle-Resources-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ASProgressHud";
-			sourceTree = "<group>";
-		};
-		6A45675576B73056B920279F2DFAD4BD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9EE17E776FA4BDB6D1D5E500C33EE706 /* CalendarView.modulemap */,
-				C4FB4394A32AF98CEFD173A87B5A6247 /* CalendarView.xcconfig */,
-				1D8C2D655555614C3B7B029910FC2C08 /* CalendarView-dummy.m */,
-				70238AB22226BAD9DAC19846D4A55194 /* CalendarView-prefix.pch */,
-				8C03E6917BF16E1ADBC19B940E7DEFA9 /* CalendarView-umbrella.h */,
-				9E7FC0221B329F57B746BBEFB2E34910 /* Info.plist */,
-				69F9550ED2EBCE5C6B20AD5960A166E0 /* ResourceBundle-CalendarView-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CalendarView";
+			path = CalendarView;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -617,8 +622,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				F15493538B197EE0362EBCFF5B83FE21 /* Frameworks */,
-				AD3C75C87C66A022DAFF6DC8D4D5EC62 /* Pods */,
-				221C2F93EB04B8BABC589809AED8C6EF /* Products */,
+				B89AD52ACCEF996697584F30BFE24A45 /* Pods */,
+				1040728F76D96237F4673BBE052052AE /* Products */,
 				D2D99514CBC1B8BD64AEB462E6022FAA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -641,23 +646,65 @@
 			path = "Target Support Files/Pods-Nobala";
 			sourceTree = "<group>";
 		};
-		AC6D47D5AB217117A6A5383BEB5F0DF2 /* ASProgressHud */ = {
+		AC41C897EFAAEF8F3CEB53B3FDAE83E7 /* Kingfisher */ = {
 			isa = PBXGroup;
 			children = (
-				0A1A450E5741169F04D5966A2E8C3D0B /* ASProgressHud.swift */,
-				5D6F2548D9DA06C00DD293FC7362F8D0 /* Resources */,
-				5E5BAFA91BC25AFBED1284CDC4F7CE8E /* Support Files */,
+				8C92E783B880A045A58AA89091B587F1 /* AnimatedImageView.swift */,
+				FBC575514578E9041D3343E3C002BEDF /* Image.swift */,
+				EE4DB11CA0C3371D9D98F36DA766A4AA /* ImageCache.swift */,
+				FB3367C3576D5520DF8A321984BD2F80 /* ImageDownloader.swift */,
+				4A23E217F37E7725BE4AC4C7F191185C /* ImagePrefetcher.swift */,
+				DAD89CFCE976D9CFC636A14AD5E2BEED /* ImageTransition.swift */,
+				8B94795B02EE55128B80DE47D3D3D90B /* ImageView+Kingfisher.swift */,
+				E2A61AEF05A578D17550DBFAD27A194A /* Kingfisher.h */,
+				7CA789075644D6942D2BF436CB1B038A /* KingfisherManager.swift */,
+				DD9FB8BFA2474E4A44EDDFDFB8549144 /* KingfisherOptionsInfo.swift */,
+				E68051CC2D09B73C9A27FCB9E2FFE340 /* Resource.swift */,
+				A6D85D451E85E412C6ABBF28215E0E70 /* String+MD5.swift */,
+				8A89FFF1B40A4C79CAEE1C6A5B439AE9 /* ThreadHelper.swift */,
+				5CD07942D696656D465FAEE5F2790F21 /* UIButton+Kingfisher.swift */,
+				B4A401788806409CF942504721AC67C8 /* Support Files */,
 			);
-			path = ASProgressHud;
+			path = Kingfisher;
 			sourceTree = "<group>";
 		};
-		AD3C75C87C66A022DAFF6DC8D4D5EC62 /* Pods */ = {
+		B4A401788806409CF942504721AC67C8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AC6D47D5AB217117A6A5383BEB5F0DF2 /* ASProgressHud */,
-				2125C264439C37FCB7C0F22BEFB37A37 /* CalendarView */,
-				ED8033BE6FFA5FB61E2AAC801D87A7B2 /* Kingfisher */,
-				DAE1B59D528F18EA778A480138BB8828 /* SwiftMoment */,
+				EA64443FC9FAFDCFABED3734A99CD19D /* Info.plist */,
+				DC22A9CA19FDBA312085C34EAB0B1FBD /* Kingfisher.modulemap */,
+				1A29577AFF4D4644AACE8D1222BE768C /* Kingfisher.xcconfig */,
+				B61A5BB123E632D0FC6BEC54C6AE90F3 /* Kingfisher-dummy.m */,
+				2D449EA45FB8F8A1A3271F7BB15C4262 /* Kingfisher-prefix.pch */,
+				2C12DA51709B0672624BE9D8C5FCF344 /* Kingfisher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Kingfisher";
+			sourceTree = "<group>";
+		};
+		B745104736E01BC6A7D77F6BF419CBE6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C37D1BD6CF3BD403B585F9BED4AE63AD /* Info.plist */,
+				2C60EF5E2B80EFF96FDAF7EEF0744040 /* SwiftMoment.modulemap */,
+				A631A34A96BEC282DBD07E57C9A82FCE /* SwiftMoment.xcconfig */,
+				7DC60FBB3932E6266FACE6F8D1FCF5C0 /* SwiftMoment-dummy.m */,
+				8140BD27D149CF612A78B4BF97F6F84A /* SwiftMoment-prefix.pch */,
+				4AFCF77EAF9C996D902D6CA5572497FD /* SwiftMoment-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftMoment";
+			sourceTree = "<group>";
+		};
+		B89AD52ACCEF996697584F30BFE24A45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA18447E81A28A48A59282C273788D95 /* ASProgressHud */,
+				60C5B6AE1A0E1923B2BD81BA5998C775 /* CalendarView */,
+				4F35B781B027313BD2563F5BA4820436 /* DualSlideMenu */,
+				3B9216EB0E69CD55AD2C830FB67DE1BD /* ENSwiftSideMenu */,
+				AC41C897EFAAEF8F3CEB53B3FDAE83E7 /* Kingfisher */,
+				150AF71324D39C4238ED1C58C98971B6 /* SwiftMoment */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -672,6 +719,95 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		D619C3084B592697F9B0A5D16B424959 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB75C261707305C8A426CC5AD0EE3FF0 /* default_00.png */,
+				694DA2586482D7D3A16E3DADA27E7BAD /* default_01.png */,
+				9B804BD9741E9301768F7173E5806CE5 /* default_02.png */,
+				8DECECE14BF87826B5B8179347622042 /* default_03.png */,
+				4D8FC69D999DBF85A89DE88F29042945 /* default_04.png */,
+				8DA19AEC462EBD68C534B3356B4487D9 /* default_05.png */,
+				91D52FB76A57E299D823A4ECB84B3A06 /* default_06.png */,
+				68220F1D7806555817584E2217ECE814 /* default_07.png */,
+				F8EDCD7DE75D961F409BDD5DC59BA448 /* default_08.png */,
+				5041A64DDECD3E381C252858809874D7 /* default_09.png */,
+				5147DB5998A78F09DC16718C5EC04FA4 /* default_10.png */,
+				D874C5FDCFC9153A9F067C3F05C382ED /* default_11.png */,
+				EA55A0810F714847ED418963EE5FC8C5 /* default_12.png */,
+				627AA77793A0014155734915B7792A62 /* default_13.png */,
+				1E39B3C51D4140692095A909D8C91628 /* default_14.png */,
+				71FD9DA9188C01B5C233362FEAB88BAA /* default_15.png */,
+				E764ADB416035E97B699ADDBDB7347DC /* default_16.png */,
+				A4279B2137CC12D579958DA7842C8C4C /* default_17.png */,
+				9959564D500A1CE4941DAA7B6F11559E /* flag_00.png */,
+				88EF469668C1D7E3025162646E94B07D /* flag_01.png */,
+				DD5AB35B219A1E940BC8ADF5B83F17E7 /* flag_02.png */,
+				EAF0D8906C59945FD0B720E6ECE3D0FD /* flag_03.png */,
+				F412AFD19E52449561FC568B5632D391 /* flag_04.png */,
+				5509354D04E427E08EE4B70A79ABAEE6 /* flag_05.png */,
+				657391B97905326D8A65C7C45349A95B /* flag_06.png */,
+				716C3D346D43A3FB8E36D81D78209ADC /* flag_07.png */,
+				9EA98AB96AE60448B22858A6BF106865 /* flag_08.png */,
+				245C8384FE90E8CD7B116652CC7D78D6 /* flag_09.png */,
+				8613A3E58F25C3CF47E9CCCD29356A85 /* flag_10.png */,
+				C0B8E06437228AF4834942EDBB3E13CE /* flag_11.png */,
+				7439D62BD3E58176AAA655A26C2C1BBC /* flag_12.png */,
+				FC36BDFF034EEF7BF388FA6B870716A7 /* flag_13.png */,
+				E0A64A9D9928A86797C20E4319D68BB6 /* flag_14.png */,
+				6651EFD07D8D4B61A461466480B41813 /* flag_15.png */,
+				B89CB744965521F37C4721E3DCE138FD /* flag_16.png */,
+				15581EC41184A861CBBB1B02A7537239 /* flag_17.png */,
+				3FB08E0AF288829CE6C1ABE5F86B207F /* flag_18.png */,
+				4A1E7C1DAFA38DAF5EA3C2D0CFD9840D /* flag_19.png */,
+				1BC60D18A4F2CDEF21E8AFBF9E2DBFA0 /* google_00.png */,
+				AEC9E5ECF940BDCFA3D9F4387ABF9403 /* google_01.png */,
+				ED6EA820C370A5C79A29AFD9660A2B90 /* google_02.png */,
+				FE54682E9AEEF9836DC2EA3F14DE5B6D /* google_03.png */,
+				B450069B70844DA29515E7CD40B6915A /* google_04.png */,
+				A40347F63A1E9CE1EF59E67AF6B40B3F /* google_05.png */,
+				440D84B876D591B3C2ECFD8D69A15A38 /* google_06.png */,
+				D3062B158606BC8C2BA03B4A4F97D81D /* google_07.png */,
+				A8A440A78B6A8E159B9DE8E95651E080 /* google_08.png */,
+				50E3C2469EE8A41F616CD175DB0D61D6 /* google_09.png */,
+				EB94A54CACC05519BA8A1D2975FE7F93 /* google_10.png */,
+				5CB7C84BC011C1A16A02E56BA8138244 /* google_11.png */,
+				D803C0EAB315599C43A573805AC192E9 /* google_12.png */,
+				085F430715794362B6D6C164B5B6C381 /* google_13.png */,
+				BA9D322F94EB9654E5223C38BEC55846 /* google_14.png */,
+				5FE42EEA8FE6F3D1A638E3BD9033D31C /* google_15.png */,
+				285A44ECE5845BB6F7FF39F7A8152F46 /* google_16.png */,
+				C55E45D27E904B1244A6C238630AB516 /* google_17.png */,
+				C0089094485FB5B1928CE7363ABE9D67 /* google_18.png */,
+				381056F431A44620F43EE75DDCFDACA5 /* google_19.png */,
+				ECB432D3BC2BF9C44B195C4850EF108F /* google_20.png */,
+				D9F8B0E168254F97277E0E71BF56223A /* google_21.png */,
+				FD1F40D994AB1FFD3FED598C9D6EF3F8 /* google_22.png */,
+				D2F812087EE9207259E99092BF31E3AC /* google_23.png */,
+				9EA96E7C599295797AE4FFF2C3274C32 /* google_24.png */,
+				0DF7D4B50F6C765790E4D392D96B2B55 /* google_25.png */,
+				B924E821C7537356CB0BAFE5B73AF41E /* google_26.png */,
+				E76A7620A2A77B5BE6B96A117543DE01 /* google_27.png */,
+				1E05D0D1BC3667384F879FD48B83E3BD /* google_28.png */,
+				D03F8EA8FB74741922CDACE4EBA3F8F2 /* google_29.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D834B371A2832F97339FBB451A515086 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5E225E3B600CE8FE2441A37B052B577 /* ENSwiftSideMenu.modulemap */,
+				81ACA8C8DFF040889FC3013CA19E1B8F /* ENSwiftSideMenu.xcconfig */,
+				8B68E28F7A267479FEE37B1C7C8F9459 /* ENSwiftSideMenu-dummy.m */,
+				A77116B4C74825E94B0C3BC15379D19F /* ENSwiftSideMenu-prefix.pch */,
+				9000B122114A60B31F6017BF6E8C2DF2 /* ENSwiftSideMenu-umbrella.h */,
+				4DE3FF56B6872CB2F5D14A68666E5552 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ENSwiftSideMenu";
+			sourceTree = "<group>";
+		};
 		D8AFF62E1FFCD11D45257073AEE604F9 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -682,40 +818,44 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		DAE1B59D528F18EA778A480138BB8828 /* SwiftMoment */ = {
+		DA18447E81A28A48A59282C273788D95 /* ASProgressHud */ = {
 			isa = PBXGroup;
 			children = (
-				4947286109E723BBBA6456BE5745EB1F /* Duration.swift */,
-				7DE7960D77AD20CB890376DB29DD7DD7 /* Extensions.swift */,
-				F94A07B9406DCEB7C96A3577E0D26D22 /* Moment.swift */,
-				29F9FEF7918CE5850CECCC684978887D /* Operators.swift */,
-				EE2051C12659CBEBBA46866F8068E9DD /* SwiftMoment.h */,
-				A820D4C9BCD6B347AA222783CA0AC628 /* TimeUnit.swift */,
-				5B8FA2E014598BBB9945063F207CFAAF /* Support Files */,
+				1D6BAE263C50BFC1B79DD4ADA932D41F /* ASProgressHud.swift */,
+				D619C3084B592697F9B0A5D16B424959 /* Resources */,
+				DA67444527EF8EFB69021690DFF134DD /* Support Files */,
 			);
-			path = SwiftMoment;
+			path = ASProgressHud;
 			sourceTree = "<group>";
 		};
-		ED8033BE6FFA5FB61E2AAC801D87A7B2 /* Kingfisher */ = {
+		DA67444527EF8EFB69021690DFF134DD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B89494397C3A8B88A13F7135EBFDBFC1 /* AnimatedImageView.swift */,
-				8496052E0ECBDF9B0960D7BF51CA447B /* Image.swift */,
-				DD22618CC2ACD7CAE99A3D81D9630D4F /* ImageCache.swift */,
-				4207984104C6954639C1503C704C3243 /* ImageDownloader.swift */,
-				E3BDD52C2091925B84CDB3BECD3BB271 /* ImagePrefetcher.swift */,
-				7D9EAC332D66098EA35BBD5D2A25D2C8 /* ImageTransition.swift */,
-				E08B6E49D05218C76427324C4D34FBAD /* ImageView+Kingfisher.swift */,
-				3DF3A092D8C09FA6BB5453B7A90A79EE /* Kingfisher.h */,
-				82805F4D1C9803F18A3208F65D5C3296 /* KingfisherManager.swift */,
-				5E019D6C99C363080F72CF78763448B5 /* KingfisherOptionsInfo.swift */,
-				F81BDD7C05613787C69AE1DC95E7186A /* Resource.swift */,
-				3427A48DE58EACE08A1B430B9011507F /* String+MD5.swift */,
-				EF79B2A8C70008434F093AE697FEB038 /* ThreadHelper.swift */,
-				B58AD9031634472BE3B71806168C6420 /* UIButton+Kingfisher.swift */,
-				FF75056F20A624B87BFB38DAF7B424A8 /* Support Files */,
+				E0A6789E14F5A635523905B1A136CD7C /* ASProgressHud.modulemap */,
+				D059E85F4579574EB8DE5623BDAD8368 /* ASProgressHud.xcconfig */,
+				DD4A182C6CDA8D8044082DC224224D36 /* ASProgressHud-dummy.m */,
+				DD4CB4E83792CCFB4EDF7B3FB7D44D24 /* ASProgressHud-prefix.pch */,
+				B2BA3F273FFEF57AFF9A143FE1454F77 /* ASProgressHud-umbrella.h */,
+				359E2461E9555A6EA0F4B6704E589420 /* Info.plist */,
+				C5A540A08D72F244C47BE4F95AB7B5E1 /* ResourceBundle-Resources-Info.plist */,
 			);
-			path = Kingfisher;
+			name = "Support Files";
+			path = "../Target Support Files/ASProgressHud";
+			sourceTree = "<group>";
+		};
+		E368649617E6EAB6813A843E584DCD93 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				862D09B3BF025FF7ACFCC183DE089059 /* CalendarView.modulemap */,
+				872DC67BEBB4FB61E3114618C474BF42 /* CalendarView.xcconfig */,
+				877EB0EDA8AF0F83FF5259017747C376 /* CalendarView-dummy.m */,
+				60999D54E1997C0728312ECC8A6460D6 /* CalendarView-prefix.pch */,
+				AB69007DBBD440DBD58B3E61E0D42BA2 /* CalendarView-umbrella.h */,
+				7F7F101149A030D03AB7646C4D2D4B16 /* Info.plist */,
+				8E3FB072C8BEF61497D4BB11901F24CC /* ResourceBundle-CalendarView-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CalendarView";
 			sourceTree = "<group>";
 		};
 		F15493538B197EE0362EBCFF5B83FE21 /* Frameworks */ = {
@@ -725,20 +865,6 @@
 				D8AFF62E1FFCD11D45257073AEE604F9 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FF75056F20A624B87BFB38DAF7B424A8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5706A04624AC95EF8A3EA1F2787692BC /* Info.plist */,
-				42071A169E991CEBC24E6DE8D3159669 /* Kingfisher.modulemap */,
-				477096C4033A8C5FD0CD2DCBA8C6103F /* Kingfisher.xcconfig */,
-				6D10F316A86E3C179ADA540455BC4B50 /* Kingfisher-dummy.m */,
-				E19DD25D6A906ABC349DBF096F3AD19A /* Kingfisher-prefix.pch */,
-				E5EE8478B1D8430D30C5D623E679564B /* Kingfisher-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Kingfisher";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -777,11 +903,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C056229A6E6DBE13402A45DF66917C28 /* Headers */ = {
+		894911C5DD87124269FAE189B37AED7F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56FE5D74532B004DA868EC97878E9E6C /* Pods-Nobala-umbrella.h in Headers */,
+				FDC6924DD3176F2A1D6BD505AC9DCA7D /* ENSwiftSideMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD6BA5CE3D31014AC851F28701343C39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39190DEF0F3BA2F9036E69F8924F6087 /* DualSlideMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB357B3D862B6706637A6B3A5A4D2A58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED677DEA532DEC78C2CA65753237CB6 /* Pods-Nobala-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,8 +961,27 @@
 			);
 			name = "ASProgressHud-Resources";
 			productName = "ASProgressHud-Resources";
-			productReference = 5D16AE0186E1FD49C4058DB89F06F490 /* Resources.bundle */;
+			productReference = C8ADAF694A74548F5226DBDBBA3A7946 /* Resources.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		3CD051F30FC64AA061484269D84720EE /* DualSlideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3036887189C27023948C2F01D9FBF0E /* Build configuration list for PBXNativeTarget "DualSlideMenu" */;
+			buildPhases = (
+				3DB69F07A688BCA09AAF60E7E50EE32A /* Sources */,
+				A67C9BF2863B2A51228F25210E570EDE /* Frameworks */,
+				DC2E5F7B598F876999B0F88BA3ABAAD5 /* Resources */,
+				BD6BA5CE3D31014AC851F28701343C39 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				386C43E3347686B99132C4B92F4681FC /* PBXTargetDependency */,
+			);
+			name = DualSlideMenu;
+			productName = DualSlideMenu;
+			productReference = B19038BA5EF98A7FB549CC4F36EAC08F /* DualSlideMenu.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		41638D9B170F774D9F650F63B192526A /* CalendarView-CalendarView */ = {
 			isa = PBXNativeTarget;
@@ -836,7 +997,7 @@
 			);
 			name = "CalendarView-CalendarView";
 			productName = "CalendarView-CalendarView";
-			productReference = 56541EAC944E50F7ECF852B54879094C /* CalendarView.bundle */;
+			productReference = 6F1E5D5C23B6D4BE2898E1029F2B1C14 /* CalendarView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		4AC80B3D7C1E854CE1C2E3E9C983191C /* Pods-NobalaTests */ = {
@@ -853,29 +1014,65 @@
 			);
 			name = "Pods-NobalaTests";
 			productName = "Pods-NobalaTests";
-			productReference = BA836B89FF4AB914EDE99C96263CF841 /* Pods_NobalaTests.framework */;
+			productReference = 6F03E2D33248341EDE35A9C5F5D8B259 /* Pods_NobalaTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		99DB01F34484E4CA630A27E9204BDCA1 /* Pods-Nobala */ = {
+		4BBEC83B18B937296FF6E60E6C108A0D /* Pods-Nobala */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2365C652164B62959CDEEB5AEB9198A2 /* Build configuration list for PBXNativeTarget "Pods-Nobala" */;
+			buildConfigurationList = D2C66FECDBC18E0A7BC49DA97C31B2B9 /* Build configuration list for PBXNativeTarget "Pods-Nobala" */;
 			buildPhases = (
-				2607C256CA85EDE088D30FD6F5A17ED7 /* Sources */,
-				F667E5B34DA08AD3F032953625F5A8A7 /* Frameworks */,
-				C056229A6E6DBE13402A45DF66917C28 /* Headers */,
+				E84778903F97CC32512A92A5C95C15DD /* Sources */,
+				686176857E418E2FF36741A3951A8A8E /* Frameworks */,
+				CB357B3D862B6706637A6B3A5A4D2A58 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AF0A9FE65D4E11D4B3D1F04E184DC53D /* PBXTargetDependency */,
-				E843273207F9FA890BA878EDC4FE5DE6 /* PBXTargetDependency */,
-				E97BD25972E8A2C4081F661555A11F5B /* PBXTargetDependency */,
-				983491F65D464A423EEB08B32B3D0285 /* PBXTargetDependency */,
+				CFA8B9679CF179F63819B3AAFC4A97F8 /* PBXTargetDependency */,
+				762A24AF5E5851CB1CFA79E9E95537DF /* PBXTargetDependency */,
+				A24A6E6ED78FE54D7D0D0E7FA66890BF /* PBXTargetDependency */,
+				0D74592D4FD7475FF704FEF5341B7364 /* PBXTargetDependency */,
+				4B10A6584D4EB38B03CD8BF7D04C55C6 /* PBXTargetDependency */,
+				9F3DFEF79A4268A55DD2070EAE5662FA /* PBXTargetDependency */,
 			);
 			name = "Pods-Nobala";
 			productName = "Pods-Nobala";
-			productReference = 1609614E3B79FBA9EB168658DB4F2576 /* Pods_Nobala.framework */;
+			productReference = E037FDA42F6D89479411E0BA8E7CD73F /* Pods_Nobala.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		5E40B80F0FA7BDA9FBB0AB7DDCD07249 /* ENSwiftSideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F523155C47A94F205A387E84DA2A41 /* Build configuration list for PBXNativeTarget "ENSwiftSideMenu" */;
+			buildPhases = (
+				8A4255B11406E9FA1C1DC3E47288AC36 /* Sources */,
+				B010E5D9163221ECC8A6CCB78D5ED56A /* Frameworks */,
+				894911C5DD87124269FAE189B37AED7F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ENSwiftSideMenu;
+			productName = ENSwiftSideMenu;
+			productReference = 289D50B82D9E551426E4304FDEF05660 /* ENSwiftSideMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8364974FB0BFFC16DBA404533C5673E1 /* DualSlideMenu-DualSlideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33695DCFACA847388FCD8976A124C225 /* Build configuration list for PBXNativeTarget "DualSlideMenu-DualSlideMenu" */;
+			buildPhases = (
+				987827D999AC27313F616FD2A2E3870B /* Sources */,
+				0D982B90202BCDCB5AE0EEC27A154B0A /* Frameworks */,
+				51B88E1790452BE7A932725913CD05B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DualSlideMenu-DualSlideMenu";
+			productName = "DualSlideMenu-DualSlideMenu";
+			productReference = 9712A88E73688992B56852FF0D054DC2 /* DualSlideMenu.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		A21DCB995841FE970CCB507D94F822D9 /* SwiftMoment */ = {
 			isa = PBXNativeTarget;
@@ -891,7 +1088,7 @@
 			);
 			name = SwiftMoment;
 			productName = SwiftMoment;
-			productReference = 6A4549645EDDC54CD834DF45345D14B8 /* SwiftMoment.framework */;
+			productReference = 95F17C1653B53453CBF20C98110DBB0C /* SwiftMoment.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A249CF9CC83EF996380469C8249B2013 /* CalendarView */ = {
@@ -911,7 +1108,7 @@
 			);
 			name = CalendarView;
 			productName = CalendarView;
-			productReference = 1FB4341CC8F9621B5F0C5540D42DA2A4 /* CalendarView.framework */;
+			productReference = 31BEC888104019E76CDBFE0D7FCBF2ED /* CalendarView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C3CA5FEC2D4A20CC16F097B3DAC07BB0 /* Pods-NobalaUITests */ = {
@@ -928,7 +1125,7 @@
 			);
 			name = "Pods-NobalaUITests";
 			productName = "Pods-NobalaUITests";
-			productReference = C8EBF34F9E777BAB41AFD706894B3328 /* Pods_NobalaUITests.framework */;
+			productReference = DB8391095C06610DB825DBFAEE66DEB5 /* Pods_NobalaUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E96E13C4D3B5B5FC0651440734C2BF4D /* Kingfisher */ = {
@@ -945,7 +1142,7 @@
 			);
 			name = Kingfisher;
 			productName = Kingfisher;
-			productReference = 2A0821A036F789861AE4F1A511C5F666 /* Kingfisher.framework */;
+			productReference = DB331ED574925B1A929A3E6994EF4C6B /* Kingfisher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F2CE449260E767692A3078142937C25D /* ASProgressHud */ = {
@@ -964,7 +1161,7 @@
 			);
 			name = ASProgressHud;
 			productName = ASProgressHud;
-			productReference = B6D4430747486919AD635942976DC893 /* ASProgressHud.framework */;
+			productReference = 3DB6C8D5D017CBC9725C6670A2939F2C /* ASProgressHud.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -984,7 +1181,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 221C2F93EB04B8BABC589809AED8C6EF /* Products */;
+			productRefGroup = 1040728F76D96237F4673BBE052052AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -992,8 +1189,11 @@
 				32F789B79A806D38997C9F6F5DC0950B /* ASProgressHud-Resources */,
 				A249CF9CC83EF996380469C8249B2013 /* CalendarView */,
 				41638D9B170F774D9F650F63B192526A /* CalendarView-CalendarView */,
+				3CD051F30FC64AA061484269D84720EE /* DualSlideMenu */,
+				8364974FB0BFFC16DBA404533C5673E1 /* DualSlideMenu-DualSlideMenu */,
+				5E40B80F0FA7BDA9FBB0AB7DDCD07249 /* ENSwiftSideMenu */,
 				E96E13C4D3B5B5FC0651440734C2BF4D /* Kingfisher */,
-				99DB01F34484E4CA630A27E9204BDCA1 /* Pods-Nobala */,
+				4BBEC83B18B937296FF6E60E6C108A0D /* Pods-Nobala */,
 				4AC80B3D7C1E854CE1C2E3E9C983191C /* Pods-NobalaTests */,
 				C3CA5FEC2D4A20CC16F097B3DAC07BB0 /* Pods-NobalaUITests */,
 				A21DCB995841FE970CCB507D94F822D9 /* SwiftMoment */,
@@ -1092,11 +1292,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51B88E1790452BE7A932725913CD05B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		801261530DF1CF65E0B3D007C5066B97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				597C28F5AE6422A7E718838559A48FC0 /* CalendarView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC2E5F7B598F876999B0F88BA3ABAAD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF2C621354C83034BD57D2046372F09 /* DualSlideMenu.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1111,14 +1326,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2607C256CA85EDE088D30FD6F5A17ED7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				92110ED7F86CFE4E019D0487F6D89D0E /* Pods-Nobala-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		392ED984EA3C713D11E90F1F2FA20F9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1129,6 +1336,32 @@
 				5D20D1029EA3E4FD008A69B26E91D775 /* Operators.swift in Sources */,
 				1E6F81F9ACB5C9FB512B10C3B1D1B200 /* SwiftMoment-dummy.m in Sources */,
 				15BA79E5FA73F611878C81C807D8BCCE /* TimeUnit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB69F07A688BCA09AAF60E7E50EE32A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2623A0E8B768FAA0724EC5CDD2318F02 /* DualSlideMenu-dummy.m in Sources */,
+				F649040232A414C5F026E84DA57B7888 /* DualSlideMenuViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4255B11406E9FA1C1DC3E47288AC36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A8629FB5BE1A860AEA48C5ACEE5035 /* ENSideMenu.swift in Sources */,
+				D00CE40FF4F39E1E85EC2047EDA7111B /* ENSideMenuNavigationController.swift in Sources */,
+				403DB6E967693727F0056E555C804A6F /* ENSwiftSideMenu-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		987827D999AC27313F616FD2A2E3870B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1184,6 +1417,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E84778903F97CC32512A92A5C95C15DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877881DF65396F1BA821A8516971CA5E /* Pods-Nobala-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9699F5C0CE4FD13E80DB24EC21793DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1201,6 +1442,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0D74592D4FD7475FF704FEF5341B7364 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ENSwiftSideMenu;
+			target = 5E40B80F0FA7BDA9FBB0AB7DDCD07249 /* ENSwiftSideMenu */;
+			targetProxy = B3BD3580D004306BB70D213983490321 /* PBXContainerItemProxy */;
+		};
+		386C43E3347686B99132C4B92F4681FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DualSlideMenu-DualSlideMenu";
+			target = 8364974FB0BFFC16DBA404533C5673E1 /* DualSlideMenu-DualSlideMenu */;
+			targetProxy = 656E0BC8E9D7E193592D86C3F94C0EF5 /* PBXContainerItemProxy */;
+		};
 		3D5973D7051C107B90762A71DA1899BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ASProgressHud-Resources";
@@ -1213,17 +1466,29 @@
 			target = A21DCB995841FE970CCB507D94F822D9 /* SwiftMoment */;
 			targetProxy = D1A063AF9C40FCD4CFD795752708DA1D /* PBXContainerItemProxy */;
 		};
-		983491F65D464A423EEB08B32B3D0285 /* PBXTargetDependency */ = {
+		4B10A6584D4EB38B03CD8BF7D04C55C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kingfisher;
+			target = E96E13C4D3B5B5FC0651440734C2BF4D /* Kingfisher */;
+			targetProxy = 4C075DBAE735C1573D3A00DFB302572F /* PBXContainerItemProxy */;
+		};
+		762A24AF5E5851CB1CFA79E9E95537DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CalendarView;
+			target = A249CF9CC83EF996380469C8249B2013 /* CalendarView */;
+			targetProxy = 0ED561DEF84DD8A0CFCE4546397D5340 /* PBXContainerItemProxy */;
+		};
+		9F3DFEF79A4268A55DD2070EAE5662FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftMoment;
 			target = A21DCB995841FE970CCB507D94F822D9 /* SwiftMoment */;
-			targetProxy = E6D0BD5FA9B395AA15AABC9424B0E802 /* PBXContainerItemProxy */;
+			targetProxy = BA3F49B6E1D8165088C196BC8255CF05 /* PBXContainerItemProxy */;
 		};
-		AF0A9FE65D4E11D4B3D1F04E184DC53D /* PBXTargetDependency */ = {
+		A24A6E6ED78FE54D7D0D0E7FA66890BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ASProgressHud;
-			target = F2CE449260E767692A3078142937C25D /* ASProgressHud */;
-			targetProxy = 3570D4FD8BF09FC1E9CDF59D66011EC1 /* PBXContainerItemProxy */;
+			name = DualSlideMenu;
+			target = 3CD051F30FC64AA061484269D84720EE /* DualSlideMenu */;
+			targetProxy = C4F0B6048366BF9D59F91548B232110D /* PBXContainerItemProxy */;
 		};
 		B2EA9733185A9897DFD29A28783402B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1231,17 +1496,11 @@
 			target = 41638D9B170F774D9F650F63B192526A /* CalendarView-CalendarView */;
 			targetProxy = C212A310ED81EF7C8C983084530A575B /* PBXContainerItemProxy */;
 		};
-		E843273207F9FA890BA878EDC4FE5DE6 /* PBXTargetDependency */ = {
+		CFA8B9679CF179F63819B3AAFC4A97F8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CalendarView;
-			target = A249CF9CC83EF996380469C8249B2013 /* CalendarView */;
-			targetProxy = 88327D571EF8593F99B2DB82DBA39865 /* PBXContainerItemProxy */;
-		};
-		E97BD25972E8A2C4081F661555A11F5B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Kingfisher;
-			target = E96E13C4D3B5B5FC0651440734C2BF4D /* Kingfisher */;
-			targetProxy = 012E9F70A84C2B255C6B345E7BC06F4A /* PBXContainerItemProxy */;
+			name = ASProgressHud;
+			target = F2CE449260E767692A3078142937C25D /* ASProgressHud */;
+			targetProxy = 700F4F44C82163F802E5B3C2632D9197 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1273,6 +1532,36 @@
 				PRODUCT_NAME = Pods_NobalaTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0248462443F4C39EAAAFE773809772F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47AEB1C60CC277954904A99988E02FE9 /* DualSlideMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DualSlideMenu/DualSlideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DualSlideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DualSlideMenu/DualSlideMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DualSlideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1321,9 +1610,39 @@
 			};
 			name = Debug;
 		};
+		1455E5528581885FF6860DE17B859CB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81ACA8C8DFF040889FC3013CA19E1B8F /* ENSwiftSideMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ENSwiftSideMenu/ENSwiftSideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ENSwiftSideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ENSwiftSideMenu/ENSwiftSideMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ENSwiftSideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		175367A85C0C61FD3DE151F0AC3DC6AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C3DD47015584DAF053E3FAE8E0CAB99 /* SwiftMoment.xcconfig */;
+			baseConfigurationReference = A631A34A96BEC282DBD07E57C9A82FCE /* SwiftMoment.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1351,116 +1670,7 @@
 			};
 			name = Debug;
 		};
-		249BE275FD6A26EB8075A4BDE9FA9298 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57B47E4676AC720D012C8CB4F57C4F17 /* Pods-Nobala.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Nobala/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Nobala/Pods-Nobala.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Nobala;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		294BDF1C43327E9F352EEE5F65016F5C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 477096C4033A8C5FD0CD2DCBA8C6103F /* Kingfisher.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Kingfisher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Kingfisher/Kingfisher.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Kingfisher;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2BDF7B4E574316716EA598F9801021E0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4FB4394A32AF98CEFD173A87B5A6247 /* CalendarView.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CalendarView";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/CalendarView/ResourceBundle-CalendarView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PRODUCT_NAME = CalendarView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		55E6B5ADFE0627C7686E808AFC6424C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8761CFC4E3E9FE771D5F725BB671A6B /* ASProgressHud.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ASProgressHud/ASProgressHud-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ASProgressHud/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ASProgressHud/ASProgressHud.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ASProgressHud;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		59E0B708990A277D1D081D44FF6A2A03 /* Debug */ = {
+		1D56B3B61543BAE527DA7F501552D27D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8AEB580E54C0047F40230E64DDC059D /* Pods-Nobala.debug.xcconfig */;
 			buildSettings = {
@@ -1493,6 +1703,132 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		294BDF1C43327E9F352EEE5F65016F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A29577AFF4D4644AACE8D1222BE768C /* Kingfisher.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kingfisher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kingfisher/Kingfisher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Kingfisher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2BDF7B4E574316716EA598F9801021E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 872DC67BEBB4FB61E3114618C474BF42 /* CalendarView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CalendarView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/CalendarView/ResourceBundle-CalendarView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_NAME = CalendarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		4BDBF0F0EC15E9A7FED12EBFC66BE698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47AEB1C60CC277954904A99988E02FE9 /* DualSlideMenu.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DualSlideMenu";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/DualSlideMenu/ResourceBundle-DualSlideMenu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = DualSlideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		55E6B5ADFE0627C7686E808AFC6424C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D059E85F4579574EB8DE5623BDAD8368 /* ASProgressHud.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ASProgressHud/ASProgressHud-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASProgressHud/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ASProgressHud/ASProgressHud.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ASProgressHud;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		771867376D0C6E6A8FCA8775E8E08A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57B47E4676AC720D012C8CB4F57C4F17 /* Pods-Nobala.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Nobala/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Nobala/Pods-Nobala.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Nobala;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		798312B167841F9B4EEF73CCD70A7635 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1562,7 +1898,7 @@
 		};
 		8CAEBA8AAC3E2804864DFBE6C1D6ACE1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 477096C4033A8C5FD0CD2DCBA8C6103F /* Kingfisher.xcconfig */;
+			baseConfigurationReference = 1A29577AFF4D4644AACE8D1222BE768C /* Kingfisher.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1624,7 +1960,7 @@
 		};
 		9C7A96F7B5EEA861E9CFB3F620880885 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8761CFC4E3E9FE771D5F725BB671A6B /* ASProgressHud.xcconfig */;
+			baseConfigurationReference = D059E85F4579574EB8DE5623BDAD8368 /* ASProgressHud.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1654,7 +1990,7 @@
 		};
 		9CC2C7B943CE6911ED7CC9B8A8CF7EB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4FB4394A32AF98CEFD173A87B5A6247 /* CalendarView.xcconfig */;
+			baseConfigurationReference = 872DC67BEBB4FB61E3114618C474BF42 /* CalendarView.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CalendarView";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1671,7 +2007,7 @@
 		};
 		9D0FB222EB5B552827C113A324BFFBDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4FB4394A32AF98CEFD173A87B5A6247 /* CalendarView.xcconfig */;
+			baseConfigurationReference = 872DC67BEBB4FB61E3114618C474BF42 /* CalendarView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1699,9 +2035,26 @@
 			};
 			name = Debug;
 		};
+		A02EB99D9F342F82E02584E020E1C158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47AEB1C60CC277954904A99988E02FE9 /* DualSlideMenu.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DualSlideMenu";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/DualSlideMenu/ResourceBundle-DualSlideMenu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = DualSlideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		A034100BC5E8F3DA94DBFE406FF0DBB9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C3DD47015584DAF053E3FAE8E0CAB99 /* SwiftMoment.xcconfig */;
+			baseConfigurationReference = A631A34A96BEC282DBD07E57C9A82FCE /* SwiftMoment.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1730,7 +2083,7 @@
 		};
 		BD2CE4B666E1229A1533D69107D0461E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4FB4394A32AF98CEFD173A87B5A6247 /* CalendarView.xcconfig */;
+			baseConfigurationReference = 872DC67BEBB4FB61E3114618C474BF42 /* CalendarView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1797,7 +2150,7 @@
 		};
 		C99A07B47EA472C26EC5B2D853B2EB74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8761CFC4E3E9FE771D5F725BB671A6B /* ASProgressHud.xcconfig */;
+			baseConfigurationReference = D059E85F4579574EB8DE5623BDAD8368 /* ASProgressHud.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ASProgressHud";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1814,7 +2167,7 @@
 		};
 		D755B7F7EA947ECAD93897C5DB3BE3EC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8761CFC4E3E9FE771D5F725BB671A6B /* ASProgressHud.xcconfig */;
+			baseConfigurationReference = D059E85F4579574EB8DE5623BDAD8368 /* ASProgressHud.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ASProgressHud";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1829,6 +2182,64 @@
 			};
 			name = Release;
 		};
+		F6152A0314BA801EFAE671DFF2B19B99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81ACA8C8DFF040889FC3013CA19E1B8F /* ENSwiftSideMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ENSwiftSideMenu/ENSwiftSideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ENSwiftSideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ENSwiftSideMenu/ENSwiftSideMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ENSwiftSideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB2CE0510D753F5CB1394751361F5953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47AEB1C60CC277954904A99988E02FE9 /* DualSlideMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DualSlideMenu/DualSlideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DualSlideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DualSlideMenu/DualSlideMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DualSlideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1837,15 +2248,6 @@
 			buildConfigurations = (
 				C99A07B47EA472C26EC5B2D853B2EB74 /* Debug */,
 				D755B7F7EA947ECAD93897C5DB3BE3EC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2365C652164B62959CDEEB5AEB9198A2 /* Build configuration list for PBXNativeTarget "Pods-Nobala" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				59E0B708990A277D1D081D44FF6A2A03 /* Debug */,
-				249BE275FD6A26EB8075A4BDE9FA9298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1868,11 +2270,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		33695DCFACA847388FCD8976A124C225 /* Build configuration list for PBXNativeTarget "DualSlideMenu-DualSlideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02EB99D9F342F82E02584E020E1C158 /* Debug */,
+				4BDBF0F0EC15E9A7FED12EBFC66BE698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		974339C44F3F3E4CBC7E9EEBAFAC444F /* Build configuration list for PBXNativeTarget "CalendarView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D0FB222EB5B552827C113A324BFFBDB /* Debug */,
 				BD2CE4B666E1229A1533D69107D0461E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3036887189C27023948C2F01D9FBF0E /* Build configuration list for PBXNativeTarget "DualSlideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0248462443F4C39EAAAFE773809772F7 /* Debug */,
+				FB2CE0510D753F5CB1394751361F5953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F523155C47A94F205A387E84DA2A41 /* Build configuration list for PBXNativeTarget "ENSwiftSideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1455E5528581885FF6860DE17B859CB9 /* Debug */,
+				F6152A0314BA801EFAE671DFF2B19B99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1900,6 +2329,15 @@
 			buildConfigurations = (
 				8AEF197866C944B0BE8E6D221A002878 /* Debug */,
 				9C44A757C95F3EFDCE7A3F75DB669429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C66FECDBC18E0A7BC49DA97C31B2B9 /* Build configuration list for PBXNativeTarget "Pods-Nobala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D56B3B61543BAE527DA7F501552D27D /* Debug */,
+				771867376D0C6E6A8FCA8775E8E08A7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

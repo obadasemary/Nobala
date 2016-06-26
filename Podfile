@@ -9,6 +9,8 @@ target 'Nobala' do
   pod "CalendarView"
   pod "ASProgressHud"
   pod 'Kingfisher', '~> 2.4'
+  pod 'DualSlideMenu', '~> 1.7'
+  pod 'ENSwiftSideMenu', '~> 0.1'
   
   target 'NobalaTests' do
     inherit! :search_paths
