@@ -85,5 +85,14 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
             print("btnAdvertisment")
         }
     }
+    
+    @IBAction func btnMonthEvents(sender: AnyObject) {
+        
+        
+        NobalaClient.sharedInstance().getMonthEvents(url + NobalaClient.Methods.getMonthEvents, dateString: "02/2016") { (success, error) in
+            
+            print("btnMonthEvents")
+        }
+    }
 }
 

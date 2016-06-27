@@ -322,4 +322,31 @@ extension NobalaClient {
         }
     }
     
+    // MARK: - GetMonthEvents
+    
+    func getMonthEvents(urlString: String, dateString: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+        
+        let url = urlString + "/" + dateString
+        
+        taskForGETMethod(url) { (result, error) in
+            
+            guard (error == nil) else {
+//                print("Error wooooow")
+                completionHandler(success: false, error: error)
+                return
+            }
+            
+            if let monthEvents = result as? NSArray {
+                
+                for monthEvent in monthEvents {
+                    
+                    let Title = monthEvent["Title"] as! String
+                    
+                    print(Title)
+                }
+                
+                completionHandler(success: true, error: nil)
+            }
+        }
+    }
 }

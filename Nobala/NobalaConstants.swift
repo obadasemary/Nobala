@@ -25,6 +25,7 @@ extension NobalaClient {
         static let getContactInfo = "GetContactInfo"
         static let getAdmissionsAndRegistrationo = "GetAdmissionsAndRegistrationo"
         static let getAdvertisment = "GetAdvertisment"
+        static let getMonthEvents = "GetMonthEvents"
     }
 
     // MARK: - URL Values
