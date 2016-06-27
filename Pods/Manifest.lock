@@ -1,27 +1,24 @@
 PODS:
   - ASProgressHud (0.0.3)
-  - CalendarView (1.1.2):
-    - SwiftMoment (~> 0.1)
   - DualSlideMenu (1.7.3)
   - ENSwiftSideMenu (0.1.1)
   - Kingfisher (2.4.1)
-  - SwiftMoment (0.4)
+  - VRGCalendarView (0.0.1)
 
 DEPENDENCIES:
   - ASProgressHud
-  - CalendarView
   - DualSlideMenu (~> 1.7)
   - ENSwiftSideMenu (~> 0.1)
   - Kingfisher (~> 2.4)
+  - VRGCalendarView (~> 0.0)
 
 SPEC CHECKSUMS:
   ASProgressHud: 6a921cac52428f75f0bbdd6d4c3f9e454818e6fd
-  CalendarView: 35d51b70586213604edec22a585d105273f6e191
   DualSlideMenu: 8e1c5255a95c3dcfc1c6dc470105278765f52093
   ENSwiftSideMenu: a934caefbe811e4925f172009349da4a49901307
   Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
-  SwiftMoment: e751c44be03a183fa6c949426d9473d26a66ef29
+  VRGCalendarView: f9d33791eed8be9ef69ac91e915277a1da7913e6
 
-PODFILE CHECKSUM: b533c8d403812732ed48d5d33e83469616855adb
+PODFILE CHECKSUM: c377a447b7c42c4e6d51eee478eb3fcc511af966
 
 COCOAPODS: 1.0.1

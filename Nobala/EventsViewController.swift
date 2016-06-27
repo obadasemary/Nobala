@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import CalendarView
-import SwiftMoment
-
-class EventsViewController: UIViewController, CalendarViewDelegate, ViewWebServiceProtocol {
+//import CalendarView
+//import SwiftMoment
+import VRGCalendarView
+class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalendarViewDelegate {
     
     @IBOutlet weak var calendarView: UIView!
     
@@ -42,13 +42,24 @@ class EventsViewController: UIViewController, CalendarViewDelegate, ViewWebServi
         self.clientObject = NobalaClient.sharedInstance()
         self.clientObject?.webServiceProtocol = self
         
-        let calendar = CalendarView()
-        calendar.frame = calendarView.frame
+//        let calendar = CalendarView()
+//        calendar.frame = calendarView.frame
+//        calendar.delegate = self
+//        CalendarView.dayTextColor = UIColor.grayColor()
+//        view.addSubview(calendar)
+      
+        let calendar = VRGCalendarView()
+        calendar.frame = self.calendarView.frame
         calendar.delegate = self
-        CalendarView.dayTextColor = UIColor.grayColor()
-        view.addSubview(calendar)
+        self.view.addSubview(calendar)
     }
-    
+    func calendarView(calendarView: VRGCalendarView!, switchedToMonth month: Int32, targetHeight: Float, animated: Bool) {
+        
+    }
+    func calendarView(calendarView: VRGCalendarView!, dateSelected date: NSDate!)
+    {
+        
+    }
     @IBAction func goToHome(sender: AnyObject)
     {
         
@@ -56,14 +67,15 @@ class EventsViewController: UIViewController, CalendarViewDelegate, ViewWebServi
         self.navigationController?.popViewControllerAnimated(true)
     }
     
-    func calendarDidSelectDate(date: Moment)
-    {
-        self.date.text = date.format("MMMM d, yyyy")
-    }
     
-    func calendarDidPageToDate(date: Moment)
-    {
-        
-        self.date.text = date.format("MMMM d, yyyy")
-    }
+//    func calendarDidSelectDate(date: Moment)
+//    {
+//        self.date.text = date.format("MMMM d, yyyy")
+//    }
+//    
+//    func calendarDidPageToDate(date: Moment)
+//    {
+//        
+//        self.date.text = date.format("MMMM d, yyyy")
+//    }
 }

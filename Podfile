@@ -6,11 +6,11 @@ target 'Nobala' do
   use_frameworks!
 
   # Pods for Nobala
-  pod "CalendarView"
   pod "ASProgressHud"
   pod 'Kingfisher', '~> 2.4'
   pod 'DualSlideMenu', '~> 1.7'
   pod 'ENSwiftSideMenu', '~> 0.1'
+  pod 'VRGCalendarView', '~> 0.0'
   
   target 'NobalaTests' do
     inherit! :search_paths

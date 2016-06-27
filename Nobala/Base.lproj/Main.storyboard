@@ -181,7 +181,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="woQ-mi-0uH">
-                                <rect key="frame" x="26" y="118" width="269" height="183"/>
+                                <rect key="frame" x="26" y="125" width="269" height="176"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T9i-9q-DNO">
