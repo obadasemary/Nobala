@@ -31,6 +31,7 @@
 		AFB086481D143FB200DB6266 /* MainPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086471D143FB200DB6266 /* MainPages.swift */; };
 		AFB9E4BC1D11605900C045EF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9E4BB1D11605900C045EF /* EventsViewController.swift */; };
 		B86FBFB47C3B16B26650B9EF /* Pods_NobalaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F8CDBB075E1BAE30EE1D7F /* Pods_NobalaUITests.framework */; };
+		C301D2801D2327FB00EF0AE6 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301D27F1D2327FB00EF0AE6 /* SocialViewController.swift */; };
 		F383F28FCA7528CD2D4DF9C1 /* Pods_NobalaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4633B310B0BE17B61B465026 /* Pods_NobalaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		AFB086471D143FB200DB6266 /* MainPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPages.swift; sourceTree = "<group>"; };
 		AFB9E4BB1D11605900C045EF /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		C301D27F1D2327FB00EF0AE6 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		E39CD8703F567072BB453856 /* Pods-NobalaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C7943EB1C7EF5503DCCD36 /* Pods-NobalaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +152,7 @@
 				AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */,
 				AFB9E4BB1D11605900C045EF /* EventsViewController.swift */,
 				AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */,
+				C301D27F1D2327FB00EF0AE6 /* SocialViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */,
 				418825F91D15A1BC002C2648 /* NewsDetailsViewController.swift in Sources */,
 				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,
+				C301D2801D2327FB00EF0AE6 /* SocialViewController.swift in Sources */,
 				418825F11D11C698002C2648 /* News.swift in Sources */,
 				AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */,
 			);
