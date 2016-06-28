@@ -10,6 +10,7 @@ import UIKit
 import ASProgressHud
 import Kingfisher
 import ENSwiftSideMenu
+
 class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource, ENSideMenuDelegate {
     
     @IBOutlet weak var newsTableView: UITableView!
