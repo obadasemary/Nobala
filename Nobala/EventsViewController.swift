@@ -14,7 +14,7 @@ import ENSwiftSideMenu
 
 class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalendarViewDelegate, ENSideMenuDelegate {
     
-    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
     var sideMenu:ENSideMenu?
 
     
@@ -72,7 +72,7 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
     
     // MARK: - SideMenuButton
     func sideMenuWillOpen() {
-        print("sideMenuWillOpen")
+        print("EventsSideMenuWillOpen")
     }
     
     @IBAction func toggle(sender: AnyObject)

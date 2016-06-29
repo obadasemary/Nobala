@@ -14,7 +14,7 @@ import ENSwiftSideMenu
 class ContactUsViewController: UIViewController, ENSideMenuDelegate {
     
     // MARK: - SideMenu
-    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
     var sideMenu:ENSideMenu?
 
     // MARK: - LifeCycle
@@ -31,7 +31,7 @@ class ContactUsViewController: UIViewController, ENSideMenuDelegate {
     {
         NSThread.sleepForTimeInterval(0.05)
         
-        let leftView = storyboard?.instantiateViewControllerWithIdentifier("LeftMenuController") as!leftViewController
+        let leftView = storyboard?.instantiateViewControllerWithIdentifier("LeftMenuController") as! leftViewController
         sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftView, menuPosition: .Left)
         self.sideMenu!.delegate = self
     }
@@ -44,7 +44,7 @@ class ContactUsViewController: UIViewController, ENSideMenuDelegate {
     
     // MARK: - SideMenuButton
     func sideMenuWillOpen() {
-        print("sideMenuWillOpen")
+        print("ContactUsSideMenuWillOpen")
     }
     
     @IBAction func toggle(sender: AnyObject)

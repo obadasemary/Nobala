@@ -14,7 +14,7 @@ import ENSwiftSideMenu
 class SocialViewController: UIViewController, ENSideMenuDelegate {
 
     // MARK: - SideMenu
-    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
     var sideMenu:ENSideMenu?
     
     // MARK: - LifeCycle
@@ -45,7 +45,7 @@ class SocialViewController: UIViewController, ENSideMenuDelegate {
     
     // MARK: - SideMenuButton
     func sideMenuWillOpen() {
-        print("sideMenuWillOpen")
+        print("SocialSideMenuWillOpen")
     }
     
     @IBAction func toggle(sender: AnyObject)

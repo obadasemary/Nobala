@@ -12,7 +12,7 @@ import ENSwiftSideMenu
 class KnowsUsViewController: UIViewController, ENSideMenuDelegate {
     
     // MARK: - SideMenu
-    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)    
+//    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)    
     var sideMenu:ENSideMenu?
 
     // MARK: - LifeCycle
@@ -41,7 +41,7 @@ class KnowsUsViewController: UIViewController, ENSideMenuDelegate {
     
     // MARK: - SideMenuButton
     func sideMenuWillOpen() {
-        print("sideMenuWillOpen")
+        print("KnowsUsSideMenuWillOpen")
     }
     
     @IBAction func toggle(sender: AnyObject)

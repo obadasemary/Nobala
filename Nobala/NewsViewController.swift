@@ -14,7 +14,7 @@ import ENSwiftSideMenu
 class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource, ENSideMenuDelegate {
     
     // MARK: - SideMenu
-    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
     var sideMenu:ENSideMenu?
     
     var window: UIWindow?
@@ -57,7 +57,7 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
     
     // MARK: - SideMenuButton
     func sideMenuWillOpen() {
-        print("sideMenuWillOpen")
+        print("NewsSideMenuWillOpen")
     }
     
     
