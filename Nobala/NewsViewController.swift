@@ -84,11 +84,7 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
     
     @IBAction func goToHome(sender: AnyObject) {
         
-//        self.dismissViewControllerAnimated(true, completion: nil)
-//        self.navigationController?.popViewControllerAnimated(true)
-        
         let secondViewController = self.storyboard!.instantiateViewControllerWithIdentifier("NobalaStory") as! NobalaViewController
-        
         self.navigationController!.pushViewController(secondViewController, animated: true)
     }
     

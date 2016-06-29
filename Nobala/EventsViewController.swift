@@ -98,14 +98,9 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
         
     }
     
-    @IBAction func goToHome(sender: AnyObject)
-    {
-        
-//        self.dismissViewControllerAnimated(true, completion: nil)
-//        self.navigationController?.popViewControllerAnimated(true)
+    @IBAction func goToHome(sender: AnyObject) {
         
         let secondViewController = self.storyboard!.instantiateViewControllerWithIdentifier("NobalaStory") as! NobalaViewController
-        
         self.navigationController!.pushViewController(secondViewController, animated: true)
     }
     

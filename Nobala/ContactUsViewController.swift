@@ -39,24 +39,9 @@ class ContactUsViewController: UIViewController, ENSideMenuDelegate {
     @IBAction func goToHome(sender: AnyObject) {
         
         print("goToHome")
-//        self.dismissViewControllerAnimated(true, completion: nil)
-//        self.navigationController?.popViewControllerAnimated(true)
-//        self.navigationController?.popToViewController(NobalaViewController, animated: true)
-        
-//        self.navigationController?.popToViewController(NobalaViewController, animated: true)
-        
-//        let switchViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NobalaStory") as! NobalaViewController
-
-
-//        let switchViewController = self.navigationController?.viewControllers[1] as! NobalaViewController
-        
-//        self.navigationController?.popToViewController(switchViewController, animated: true)
         
         let secondViewController = self.storyboard!.instantiateViewControllerWithIdentifier("NobalaStory") as! NobalaViewController
-        
         self.navigationController!.pushViewController(secondViewController, animated: true)
-
-
     }
     
     // MARK: - SideMenuButton

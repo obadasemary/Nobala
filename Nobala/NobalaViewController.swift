@@ -19,6 +19,13 @@ class NobalaViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationItem.leftBarButtonItem = nil
+        self.navigationItem.hidesBackButton = true
+    }
+    
     @IBAction func newsButtonClicked(sender: AnyObject)
     {
         NobalaClient.sharedInstance().get10News((url + NobalaClient.Methods.get10News))
