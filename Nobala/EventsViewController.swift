@@ -10,7 +10,13 @@ import UIKit
 //import CalendarView
 //import SwiftMoment
 import VRGCalendarView
-class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalendarViewDelegate {
+import ENSwiftSideMenu
+
+class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalendarViewDelegate, ENSideMenuDelegate {
+    
+    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    var sideMenu:ENSideMenu?
+
     
     @IBOutlet weak var calendarView: UIView!
     
@@ -31,6 +37,7 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
         
     }
     
+    // MARK: - LifeCycle
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -53,13 +60,44 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
         calendar.delegate = self
         self.view.addSubview(calendar)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        NSThread.sleepForTimeInterval(0.05)
+        
+        let leftView = storyboard?.instantiateViewControllerWithIdentifier("LeftMenuController")
+        sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftView!, menuPosition: .Left)
+        self.sideMenu?.delegate = self
+    }
+    
+    // MARK: - SideMenuButton
+    func sideMenuWillOpen() {
+        print("sideMenuWillOpen")
+    }
+    
+    @IBAction func toggle(sender: AnyObject)
+    {
+        if ((self.sideMenu?.isMenuOpen) == false)
+        {
+            self.sideMenu?.showSideMenu()
+            
+        }
+        else
+        {
+            self.sideMenu?.hideSideMenu()
+        }
+    }
+
+    
     func calendarView(calendarView: VRGCalendarView!, switchedToMonth month: Int32, targetHeight: Float, animated: Bool) {
         
     }
+    
     func calendarView(calendarView: VRGCalendarView!, dateSelected date: NSDate!)
     {
         
     }
+    
     @IBAction func goToHome(sender: AnyObject)
     {
         

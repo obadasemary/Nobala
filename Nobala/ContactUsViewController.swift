@@ -9,9 +9,15 @@
 import UIKit
 import SafariServices
 import ASProgressHud
+import ENSwiftSideMenu
 
-class ContactUsViewController: UIViewController {
+class ContactUsViewController: UIViewController, ENSideMenuDelegate {
+    
+    // MARK: - SideMenu
+    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    var sideMenu:ENSideMenu?
 
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,12 +26,40 @@ class ContactUsViewController: UIViewController {
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
     }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        NSThread.sleepForTimeInterval(0.05)
+        
+        let leftView = storyboard?.instantiateViewControllerWithIdentifier("LeftMenuController") as!leftViewController
+        sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftView, menuPosition: .Left)
+        self.sideMenu!.delegate = self
+    }
 
     @IBAction func goToHome(sender: AnyObject) {
         
         self.dismissViewControllerAnimated(true, completion: nil)
         self.navigationController?.popViewControllerAnimated(true)
     }
+    
+    // MARK: - SideMenuButton
+    func sideMenuWillOpen() {
+        print("sideMenuWillOpen")
+    }
+    
+    @IBAction func toggle(sender: AnyObject)
+    {
+        if ((self.sideMenu?.isMenuOpen) == false)
+        {
+            self.sideMenu?.showSideMenu()
+            
+        }
+        else
+        {
+            self.sideMenu?.hideSideMenu()
+        }
+    }
+
     
     @IBAction func phoneAction(sender: AnyObject) {
     }

@@ -13,25 +13,21 @@ import ENSwiftSideMenu
 
 class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource, ENSideMenuDelegate {
     
+    // MARK: - SideMenu
+    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    var sideMenu:ENSideMenu?
+    
+    var window: UIWindow?
+    
     @IBOutlet weak var newsTableView: UITableView!
     
     var clientObject: NobalaClient?
     var newsArray = [News]()
     var selectedNews:News = News()
     var newsDetailsView:NewsDetailsViewController = NewsDetailsViewController()
-    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-    var window: UIWindow?
     
-    var sideMenu:ENSideMenu?
     
-    override func viewWillAppear(animated: Bool)
-    {
-        NSThread.sleepForTimeInterval(0.05)
-
-        let leftView = storyboard?.instantiateViewControllerWithIdentifier("LeftMenuController") as!leftViewController
-        sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftView, menuPosition: .Left)
-        self.sideMenu!.delegate = self
-    }
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,6 +45,17 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
         
 
     }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        NSThread.sleepForTimeInterval(0.05)
+        
+        let leftView = storyboard?.instantiateViewControllerWithIdentifier("LeftMenuController") as!leftViewController
+        sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftView, menuPosition: .Left)
+        self.sideMenu!.delegate = self
+    }
+    
+    // MARK: - SideMenuButton
     func sideMenuWillOpen() {
         print("sideMenuWillOpen")
     }
@@ -66,6 +73,7 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
             self.sideMenu?.hideSideMenu()
         }
     }
+    
 //    @IBAction func showLeftMenu(sender: AnyObject)
 //    {
 //    
@@ -73,6 +81,7 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
 ////        toggleSideMenuView()
 ////        self.controller.toggle("right")
 //    }
+    
     @IBAction func goToHome(sender: AnyObject) {
         
         self.dismissViewControllerAnimated(true, completion: nil)

@@ -12,6 +12,7 @@ class NobalaViewController: UIViewController {
 
     var url = NobalaClient.Constants.BaseURL
 
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -150,6 +150,9 @@
                     <navigationItem key="navigationItem" id="di2-q1-nOf">
                         <barButtonItem key="leftBarButtonItem" image="list" id="lu9-n1-etb">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="toggle:" destination="0Ub-dj-UU5" id="IU2-nW-bJN"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="house" id="Lpw-13-ACp">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -201,6 +204,9 @@
                     <navigationItem key="navigationItem" id="aWv-Ty-3cN">
                         <barButtonItem key="leftBarButtonItem" image="list" id="Jl5-ZE-Rht">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="toggle:" destination="jk5-Do-0gb" id="7en-UH-GPe"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="house" id="cNS-Xo-SMr">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -496,6 +502,9 @@
                     <navigationItem key="navigationItem" id="WnV-Hg-jzq">
                         <barButtonItem key="leftBarButtonItem" image="list" id="fmO-cv-xaA">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="toggle:" destination="mw9-3u-oUh" id="ECY-1Y-SQ4"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="house" id="jcK-aK-JSs">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -534,6 +543,41 @@
                     <view key="view" contentMode="scaleToFill" id="hMR-yr-riB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wbh-12-1q0">
+                                <rect key="frame" x="28" y="345" width="128" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="socialMedia"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3og-5b-Vzl">
+                                <rect key="frame" x="28" y="20" width="128" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="knowUs"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cFE-bB-hsB">
+                                <rect key="frame" x="28" y="100" width="97" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="news"/>
+                                <connections>
+                                    <action selector="newsButtonClicked:" destination="TMz-fk-2yr" eventType="touchUpInside" id="rzY-Tn-4Ww"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wHy-go-pCz">
+                                <rect key="frame" x="28" y="181" width="119" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="events"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7X8-J3-QHl">
+                                <rect key="frame" x="28" y="262" width="107" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="contactUs"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VdU-gh-A8w">
+                                <rect key="frame" x="20" y="423" width="136" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="learning"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -614,6 +658,9 @@
                     <navigationItem key="navigationItem" id="YGm-qR-bxe">
                         <barButtonItem key="leftBarButtonItem" image="list" id="6nS-WB-O4y">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="toggle:" destination="BDW-Hc-rZj" id="8o3-JZ-e2k"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="house" id="dEl-kj-RbH">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
