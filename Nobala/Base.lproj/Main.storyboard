@@ -8,7 +8,7 @@
         <!--Nobala View Controller-->
         <scene sceneID="gkI-8Y-S0r">
             <objects>
-                <viewController id="TMz-fk-2yr" customClass="NobalaViewController" customModule="Nobala" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NobalaStory" id="TMz-fk-2yr" customClass="NobalaViewController" customModule="Nobala" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xtJ-iJ-HEo">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
