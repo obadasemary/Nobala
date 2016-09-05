@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController, ViewWebServiceProtocol {
     
@@ -92,6 +93,14 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
         NobalaClient.sharedInstance().getMonthEvents(url + NobalaClient.Methods.getMonthEvents, dateString: "02/2016") { (success, error) in
             
             print("btnMonthEvents")
+        }
+    }
+
+    @IBAction func btnGetAccessToken(sender: AnyObject) {
+
+        NobalaClient.sharedInstance().getAccessToken("111111111", password: "123") { (success, error) in
+            
+            print("btnGetAccessToken")
         }
     }
 }

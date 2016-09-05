@@ -16,6 +16,38 @@ extension NobalaClient {
         static let BaseURL = "http://api.nobala.edu.sa/api/NobalaMobile/"
     }
     
+    // MARK: - URLs
+    struct URLs {
+        
+        static let getAccessToken = "http://api.nobala.edu.sa/Token"
+        static let getCurrentHomeWork = "http://api.nobala.edu.sa/api/Exams/GeCurrentHomeWork"
+        static let getCurrentExams = "http://api.nobala.edu.sa/api/Exams/GetCurrentExams"
+        static let homeWorkStudentReport = "http://api.nobala.edu.sa/api/Exams/HomeWorkStudentReport?STARTDATE=" + NobalaClient.DATE.startDate + "&ENDDATE=" + NobalaClient.DATE.endDate
+        static let getStudyPlan = "http://api.nobala.edu.sa/api/section/GetStudyPalne"
+    }
+    
+    // MARK: - DATE
+    struct DATE {
+        
+        static let startDate = "1/2/2016"
+        static let endDate = "1/2/2016"
+    }
+    
+    // MARK: - ReturnURL
+    struct ReturnURL {
+        
+        static let getCurrentHomeWork = "http://registeration.nobala.edu.sa/ExamTokenRedirect?Token=" + Users.init().accessToken + "&ExamID="
+        static let getCurrentExams = "http://registeration.nobala.edu.sa/ExamTokenRedirect?Token=" + Users.init().accessToken + "&ExamID="
+    }
+    
+//    struct Token {
+//        
+//        let user: Users = Users()
+//        static let accessToken = user.accessToken
+////                static let accessToken = Users.userSharedInstance().accessToken
+//    }
+    
+    
     // MARK: - Methods
     struct Methods {
         

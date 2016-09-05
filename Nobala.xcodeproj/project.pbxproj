@@ -30,6 +30,7 @@
 		AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */; };
 		AFB086481D143FB200DB6266 /* MainPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086471D143FB200DB6266 /* MainPages.swift */; };
 		AFB9E4BC1D11605900C045EF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9E4BB1D11605900C045EF /* EventsViewController.swift */; };
+		AFD60D021D7D01360002ED14 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD60D011D7D01360002ED14 /* Users.swift */; };
 		B86FBFB47C3B16B26650B9EF /* Pods_NobalaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F8CDBB075E1BAE30EE1D7F /* Pods_NobalaUITests.framework */; };
 		C301D2801D2327FB00EF0AE6 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301D27F1D2327FB00EF0AE6 /* SocialViewController.swift */; };
 		F383F28FCA7528CD2D4DF9C1 /* Pods_NobalaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4633B310B0BE17B61B465026 /* Pods_NobalaTests.framework */; };
@@ -88,6 +89,7 @@
 		AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		AFB086471D143FB200DB6266 /* MainPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPages.swift; sourceTree = "<group>"; };
 		AFB9E4BB1D11605900C045EF /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		AFD60D011D7D01360002ED14 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		C301D27F1D2327FB00EF0AE6 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		E39CD8703F567072BB453856 /* Pods-NobalaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C7943EB1C7EF5503DCCD36 /* Pods-NobalaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				418825F01D11C698002C2648 /* News.swift */,
 				418825F21D12FD8D002C2648 /* Event.swift */,
 				AFB086471D143FB200DB6266 /* MainPages.swift */,
+				AFD60D011D7D01360002ED14 /* Users.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -635,6 +638,7 @@
 				418825F31D12FD8D002C2648 /* Event.swift in Sources */,
 				AFB086481D143FB200DB6266 /* MainPages.swift in Sources */,
 				AF106BF11D0D5D260053130C /* ViewController.swift in Sources */,
+				AFD60D021D7D01360002ED14 /* Users.swift in Sources */,
 				41EE79731D1F0227003B4025 /* leftViewController.swift in Sources */,
 				AFB9E4BC1D11605900C045EF /* EventsViewController.swift in Sources */,
 				AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */,

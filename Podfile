@@ -11,6 +11,7 @@ target 'Nobala' do
   pod 'DualSlideMenu', '~> 1.7'
   pod 'ENSwiftSideMenu', '~> 0.1'
   pod 'VRGCalendarView', '~> 0.0'
+  pod 'Alamofire', '~> 3.4'
   
   target 'NobalaTests' do
     inherit! :search_paths

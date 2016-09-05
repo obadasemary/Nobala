@@ -14,12 +14,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CalendarView-CalendarView.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CalendarView.xcscheme</key>
+		<key>DualSlideMenu-DualSlideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DualSlideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ENSwiftSideMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -44,7 +54,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftMoment.xcscheme</key>
+		<key>VRGCalendarView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,7 +67,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>41638D9B170F774D9F650F63B192526A</key>
+		<key>3CD051F30FC64AA061484269D84720EE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,22 +77,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>99DB01F34484E4CA630A27E9204BDCA1</key>
+		<key>5E40B80F0FA7BDA9FBB0AB7DDCD07249</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A21DCB995841FE970CCB507D94F822D9</key>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A249CF9CC83EF996380469C8249B2013</key>
+		<key>7EDA72FCF770040F91DDB48E35C7ECD1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8364974FB0BFFC16DBA404533C5673E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C3CA5FEC2D4A20CC16F097B3DAC07BB0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE7CC44AEB8AA5A32D9788121A883C54</key>
 		<dict>
 			<key>primary</key>
 			<true/>
