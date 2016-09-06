@@ -432,11 +432,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hfM-Om-eHM">
-                                <rect key="frame" x="20" y="518" width="112" height="30"/>
+                                <rect key="frame" x="20" y="482" width="112" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="getAccessToken"/>
                                 <connections>
                                     <action selector="btnGetAccessToken:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="l0j-sk-QAP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gbi-A5-tG1">
+                                <rect key="frame" x="20" y="518" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="getCurrentHomeWork"/>
+                                <connections>
+                                    <action selector="btnGetCurrentHomeWork:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="Z3e-hO-0Hk"/>
                                 </connections>
                             </button>
                         </subviews>

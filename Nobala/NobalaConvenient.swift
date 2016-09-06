@@ -371,6 +371,8 @@ extension NobalaClient {
                     let user: Users = Users()
                     
                     user.accessToken = result["access_token"] as! String
+                    NobalaClient.Token.accessToken = user.accessToken
+                    print("NobalaClient.Token \(NobalaClient.Token.accessToken)")
                     user.tokenType = result["token_type"] as! String
                     user.expiresIn = result["expires_in"] as! Int
                     user.refreshToken = result["refresh_token"] as! String
@@ -422,6 +424,25 @@ extension NobalaClient {
     }
     
     // MARK: - GetCurrentHomeWork
+    
+    
+    
+    func getCurrentHomeWork(accessToken: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+        
+//        let parameters = ["Authorization": "Bearer" + " " + accessToken]
+        let headers = ["Authorization": "Bearer " + accessToken]
+
+        
+        Alamofire.request(.POST, NobalaClient.URLs.getCurrentHomeWork, headers: headers).responseJSON { (response) in
+            
+            if let result = response.result.value {
+                
+                print(result)
+            }
+        }
+        
+        completionHandler(success: true, error: nil)
+    }
     
     // MARK: - GetCurrentExams
     

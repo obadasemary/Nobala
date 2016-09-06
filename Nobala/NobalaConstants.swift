@@ -36,16 +36,14 @@ extension NobalaClient {
     // MARK: - ReturnURL
     struct ReturnURL {
         
-        static let getCurrentHomeWork = "http://registeration.nobala.edu.sa/ExamTokenRedirect?Token=" + Users.init().accessToken + "&ExamID="
-        static let getCurrentExams = "http://registeration.nobala.edu.sa/ExamTokenRedirect?Token=" + Users.init().accessToken + "&ExamID="
+        static let getCurrentHomeWork = "http://registeration.nobala.edu.sa/ExamTokenRedirect?Token=" + NobalaClient.Token.accessToken + "&ExamID="
+        static let getCurrentExams = "http://registeration.nobala.edu.sa/ExamTokenRedirect?Token=" + NobalaClient.Token.accessToken + "&ExamID="
     }
     
-//    struct Token {
-//        
-//        let user: Users = Users()
-//        static let accessToken = user.accessToken
-////                static let accessToken = Users.userSharedInstance().accessToken
-//    }
+    struct Token {
+        
+        static var accessToken = ""
+    }
     
     
     // MARK: - Methods
