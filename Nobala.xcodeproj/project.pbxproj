@@ -25,6 +25,7 @@
 		AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C1D1D0D755C0053130C /* NobalaClient.swift */; };
 		AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C1F1D0D75760053130C /* NobalaConvenient.swift */; };
 		AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C211D0D75860053130C /* NobalaConstants.swift */; };
+		AF658F001D813B6C005914E9 /* HomeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF658EFF1D813B6C005914E9 /* HomeWork.swift */; };
 		AFB086421D13577600DB6266 /* NobalaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086411D13577600DB6266 /* NobalaViewController.swift */; };
 		AFB086441D1358F500DB6266 /* KnowsUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086431D1358F500DB6266 /* KnowsUsViewController.swift */; };
 		AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */; };
@@ -84,6 +85,7 @@
 		AF106C1D1D0D755C0053130C /* NobalaClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaClient.swift; sourceTree = "<group>"; };
 		AF106C1F1D0D75760053130C /* NobalaConvenient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConvenient.swift; sourceTree = "<group>"; };
 		AF106C211D0D75860053130C /* NobalaConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConstants.swift; sourceTree = "<group>"; };
+		AF658EFF1D813B6C005914E9 /* HomeWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWork.swift; sourceTree = "<group>"; };
 		AFB086411D13577600DB6266 /* NobalaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaViewController.swift; sourceTree = "<group>"; };
 		AFB086431D1358F500DB6266 /* KnowsUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowsUsViewController.swift; sourceTree = "<group>"; };
 		AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				418825F21D12FD8D002C2648 /* Event.swift */,
 				AFB086471D143FB200DB6266 /* MainPages.swift */,
 				AFD60D011D7D01360002ED14 /* Users.swift */,
+				AF658EFF1D813B6C005914E9 /* HomeWork.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -646,6 +649,7 @@
 				AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */,
 				AFB086441D1358F500DB6266 /* KnowsUsViewController.swift in Sources */,
 				AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */,
+				AF658F001D813B6C005914E9 /* HomeWork.swift in Sources */,
 				AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */,
 				418825F91D15A1BC002C2648 /* NewsDetailsViewController.swift in Sources */,
 				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,
