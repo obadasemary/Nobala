@@ -115,5 +115,14 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
             print("btnGetCurrentHomeWork")
         }
     }
+    
+    @IBAction func btnGetCurrentExams(sender: AnyObject) {
+        
+        NobalaClient.sharedInstance().getCurrentExams(NobalaClient.Token.accessToken) { (success, error) in
+            
+            print("btnGetCurrentExams")
+        }
+    }
+    
 }
 

@@ -1,9 +1,9 @@
 PODS:
-  - Alamofire (3.4.2)
+  - Alamofire (3.5.0)
   - ASProgressHud (0.0.3)
   - DualSlideMenu (1.7.3)
   - ENSwiftSideMenu (0.1.1)
-  - Kingfisher (2.5.0)
+  - Kingfisher (2.6.0)
   - VRGCalendarView (0.0.1)
 
 DEPENDENCIES:
@@ -15,11 +15,11 @@ DEPENDENCIES:
   - VRGCalendarView (~> 0.0)
 
 SPEC CHECKSUMS:
-  Alamofire: 6aa33201d20d069e1598891cf928883ff1888c7a
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
   ASProgressHud: 6a921cac52428f75f0bbdd6d4c3f9e454818e6fd
   DualSlideMenu: 8e1c5255a95c3dcfc1c6dc470105278765f52093
   ENSwiftSideMenu: a934caefbe811e4925f172009349da4a49901307
-  Kingfisher: d467bd710907ec9aa94aaddecaa5390aa3559819
+  Kingfisher: d84c5fd176ea86cc7b8aac65fd55feda6f70f130
   VRGCalendarView: f9d33791eed8be9ef69ac91e915277a1da7913e6
 
 PODFILE CHECKSUM: 954de391f6e3c815293fc21a053dd30895a0d283
