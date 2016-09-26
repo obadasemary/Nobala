@@ -331,15 +331,18 @@
 					AF106BEA1D0D5D260053130C = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = AEU29WHAF5;
+						LastSwiftMigration = 0800;
 					};
 					AF106BFE1D0D5D270053130C = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 6KNM32Y4FM;
+						LastSwiftMigration = 0800;
 						TestTargetID = AF106BEA1D0D5D260053130C;
 					};
 					AF106C091D0D5D270053130C = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 6KNM32Y4FM;
+						LastSwiftMigration = 0800;
 						TestTargetID = AF106BEA1D0D5D260053130C;
 					};
 				};
@@ -819,6 +822,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.Nobala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -836,6 +840,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.Nobala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -849,6 +854,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.NobalaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nobala.app/Nobala";
 			};
 			name = Debug;
@@ -862,6 +868,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.NobalaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nobala.app/Nobala";
 			};
 			name = Release;
@@ -874,6 +881,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.NobalaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Nobala;
 			};
 			name = Debug;
@@ -886,6 +894,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.NobalaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Nobala;
 			};
 			name = Release;
