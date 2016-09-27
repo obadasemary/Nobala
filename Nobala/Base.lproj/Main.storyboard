@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1MH-Vn-juD">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="C5P-Qp-pfh">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -376,7 +376,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WRi-Ce-d2v">
-                                <rect key="frame" x="122" y="125" width="77" height="30"/>
+                                <rect key="frame" x="122" y="20" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="get10News"/>
                                 <connections>
@@ -384,7 +384,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tGi-fT-5Co">
-                                <rect key="frame" x="109" y="177" width="103" height="30"/>
+                                <rect key="frame" x="109" y="72" width="103" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="getTop5Events"/>
                                 <connections>
@@ -392,7 +392,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UGO-zM-7xQ">
-                                <rect key="frame" x="111" y="234" width="98" height="30"/>
+                                <rect key="frame" x="111" y="129" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="getMainPages"/>
                                 <connections>
@@ -400,7 +400,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FSF-bQ-t1F">
-                                <rect key="frame" x="109" y="335" width="103" height="30"/>
+                                <rect key="frame" x="109" y="230" width="103" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="getContactInfo"/>
                                 <connections>
@@ -408,7 +408,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0KD-e3-MyY">
-                                <rect key="frame" x="51" y="387" width="219" height="30"/>
+                                <rect key="frame" x="51" y="282" width="219" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="getAdmissionsAndRegistrationo"/>
                                 <connections>
@@ -416,7 +416,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EyP-kI-dwV">
-                                <rect key="frame" x="103" y="444" width="114" height="30"/>
+                                <rect key="frame" x="103" y="339" width="114" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="getAdvertisment"/>
                                 <connections>
@@ -424,7 +424,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tgp-Gh-5Lp">
-                                <rect key="frame" x="104" y="288" width="113" height="30"/>
+                                <rect key="frame" x="104" y="183" width="113" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="getMonthEvents"/>
                                 <connections>
@@ -432,7 +432,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hfM-Om-eHM">
-                                <rect key="frame" x="20" y="482" width="112" height="30"/>
+                                <rect key="frame" x="20" y="377" width="112" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="getAccessToken"/>
                                 <connections>
@@ -440,11 +440,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gbi-A5-tG1">
-                                <rect key="frame" x="20" y="518" width="150" height="30"/>
+                                <rect key="frame" x="20" y="413" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="getCurrentHomeWork"/>
                                 <connections>
                                     <action selector="btnGetCurrentHomeWork:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="Z3e-hO-0Hk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3bW-3C-Lql">
+                                <rect key="frame" x="20" y="451" width="122" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="GetCurrentExams"/>
+                                <connections>
+                                    <action selector="btnGetCurrentExams:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="Q3t-QL-EHg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -454,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUp-NV-e0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1721" y="1817"/>
+            <point key="canvasLocation" x="1720" y="1751"/>
         </scene>
         <!--ContactUs-->
         <scene sceneID="io5-Xa-t1F">
@@ -533,24 +541,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pm8-2p-8oL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="671" y="875"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="KKb-w2-mQz">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1MH-Vn-juD" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1I1-5X-QYG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="C5P-Qp-pfh" kind="relationship" relationship="rootViewController" id="zj2-5n-kmf"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uLI-qh-SH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1189" y="1817"/>
         </scene>
         <!--Left View Controller-->
         <scene sceneID="Amk-2u-fwu">

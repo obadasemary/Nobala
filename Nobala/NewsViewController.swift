@@ -154,4 +154,16 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
     func onReceiveMainPages(mainPages: [MainPages]) {
         
     }
+    
+    func onGetAccessToken(users: [Users]) {
+        
+    }
+    
+    func onGetCurrentExams(exams: [Exams]) {
+        
+    }
+    
+    func onGetCurrentHomeWork(homework: [HomeWork]) {
+        
+    }
 }

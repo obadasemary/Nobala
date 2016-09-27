@@ -26,6 +26,7 @@
 		AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C1F1D0D75760053130C /* NobalaConvenient.swift */; };
 		AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C211D0D75860053130C /* NobalaConstants.swift */; };
 		AF658F001D813B6C005914E9 /* HomeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF658EFF1D813B6C005914E9 /* HomeWork.swift */; };
+		AF7256801D9A75A9001E0515 /* Exams.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72567F1D9A75A9001E0515 /* Exams.swift */; };
 		AFB086421D13577600DB6266 /* NobalaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086411D13577600DB6266 /* NobalaViewController.swift */; };
 		AFB086441D1358F500DB6266 /* KnowsUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086431D1358F500DB6266 /* KnowsUsViewController.swift */; };
 		AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */; };
@@ -86,6 +87,7 @@
 		AF106C1F1D0D75760053130C /* NobalaConvenient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConvenient.swift; sourceTree = "<group>"; };
 		AF106C211D0D75860053130C /* NobalaConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConstants.swift; sourceTree = "<group>"; };
 		AF658EFF1D813B6C005914E9 /* HomeWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWork.swift; sourceTree = "<group>"; };
+		AF72567F1D9A75A9001E0515 /* Exams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exams.swift; sourceTree = "<group>"; };
 		AFB086411D13577600DB6266 /* NobalaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaViewController.swift; sourceTree = "<group>"; };
 		AFB086431D1358F500DB6266 /* KnowsUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowsUsViewController.swift; sourceTree = "<group>"; };
 		AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				AFB086471D143FB200DB6266 /* MainPages.swift */,
 				AFD60D011D7D01360002ED14 /* Users.swift */,
 				AF658EFF1D813B6C005914E9 /* HomeWork.swift */,
+				AF72567F1D9A75A9001E0515 /* Exams.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -639,6 +642,7 @@
 				418825EF1D11C523002C2648 /* ViewWebServiceProtocol.swift in Sources */,
 				AFB086421D13577600DB6266 /* NobalaViewController.swift in Sources */,
 				418825F31D12FD8D002C2648 /* Event.swift in Sources */,
+				AF7256801D9A75A9001E0515 /* Exams.swift in Sources */,
 				AFB086481D143FB200DB6266 /* MainPages.swift in Sources */,
 				AF106BF11D0D5D260053130C /* ViewController.swift in Sources */,
 				AFD60D021D7D01360002ED14 /* Users.swift in Sources */,

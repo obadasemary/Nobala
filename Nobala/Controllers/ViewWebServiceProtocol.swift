@@ -13,4 +13,7 @@ protocol ViewWebServiceProtocol {
     func onReceiveNews(news: [News])
     func onReceiveEvents(events: [Event])
     func onReceiveMainPages(mainPages: [MainPages])
+    func onGetAccessToken(users: [Users])
+    func onGetCurrentHomeWork(homework: [HomeWork])
+    func onGetCurrentExams(exams: [Exams])
 }

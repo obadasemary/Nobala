@@ -37,6 +37,18 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
         
     }
     
+    func onGetAccessToken(users: [Users]) {
+        
+    }
+    
+    func onGetCurrentExams(exams: [Exams]) {
+        
+    }
+    
+    func onGetCurrentHomeWork(homework: [HomeWork]) {
+        
+    }
+    
     // MARK: - LifeCycle
     override func viewDidLoad()
     {
