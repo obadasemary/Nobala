@@ -24,6 +24,8 @@ extension NobalaClient {
         static let getCurrentExams = "http://api.nobala.edu.sa/api/Exams/GetCurrentExams"
         static let getHomeWorkStudentReport = "http://api.nobala.edu.sa/api/Exams/HomeWorkStudentReport?STARTDATE=" + NobalaClient.DATE.startDate + "&ENDDATE=" + NobalaClient.DATE.endDate
         static let getStudyPlan = "http://api.nobala.edu.sa/api/section/GetStudyPalne"
+        
+        static let getExamsTeacherFollowUp = "http://api.nobala.edu.sa/api/exams/ExamsTeacherFollowUp"
     }
     
     // MARK: - DATE

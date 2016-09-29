@@ -17,4 +17,5 @@ protocol ViewWebServiceProtocol {
     func onGetCurrentHomeWork(homework: [HomeWork])
     func onGetCurrentExams(exams: [Exams])
     func onGetHomeWorkStudentReport(report: [HomeWorkStudentReport])
+    func onExamsTeacherFollowUp(examsTeacherFollowUp: [ExamsTeacherFollowUp])
 }

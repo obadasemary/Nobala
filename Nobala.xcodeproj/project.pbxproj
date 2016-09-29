@@ -26,6 +26,7 @@
 		AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C1F1D0D75760053130C /* NobalaConvenient.swift */; };
 		AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C211D0D75860053130C /* NobalaConstants.swift */; };
 		AF658F001D813B6C005914E9 /* HomeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF658EFF1D813B6C005914E9 /* HomeWork.swift */; };
+		AF71CA0E1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF71CA0D1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift */; };
 		AF7256801D9A75A9001E0515 /* Exams.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72567F1D9A75A9001E0515 /* Exams.swift */; };
 		AF9A879A1D9D2C5D00B62337 /* HomeWorkStudentReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A87991D9D2C5D00B62337 /* HomeWorkStudentReport.swift */; };
 		AFB086421D13577600DB6266 /* NobalaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086411D13577600DB6266 /* NobalaViewController.swift */; };
@@ -88,6 +89,7 @@
 		AF106C1F1D0D75760053130C /* NobalaConvenient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConvenient.swift; sourceTree = "<group>"; };
 		AF106C211D0D75860053130C /* NobalaConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConstants.swift; sourceTree = "<group>"; };
 		AF658EFF1D813B6C005914E9 /* HomeWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWork.swift; sourceTree = "<group>"; };
+		AF71CA0D1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsTeacherFollowUp.swift; sourceTree = "<group>"; };
 		AF72567F1D9A75A9001E0515 /* Exams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exams.swift; sourceTree = "<group>"; };
 		AF9A87991D9D2C5D00B62337 /* HomeWorkStudentReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorkStudentReport.swift; sourceTree = "<group>"; };
 		AFB086411D13577600DB6266 /* NobalaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				AF658EFF1D813B6C005914E9 /* HomeWork.swift */,
 				AF72567F1D9A75A9001E0515 /* Exams.swift */,
 				AF9A87991D9D2C5D00B62337 /* HomeWorkStudentReport.swift */,
+				AF71CA0D1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -658,6 +661,7 @@
 				AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */,
 				AF658F001D813B6C005914E9 /* HomeWork.swift in Sources */,
 				AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */,
+				AF71CA0E1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift in Sources */,
 				418825F91D15A1BC002C2648 /* NewsDetailsViewController.swift in Sources */,
 				AF9A879A1D9D2C5D00B62337 /* HomeWorkStudentReport.swift in Sources */,
 				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,

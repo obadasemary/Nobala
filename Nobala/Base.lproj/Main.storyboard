@@ -463,6 +463,14 @@
                                     <action selector="btnGetHomeWorkStudentReport:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="3dP-kI-Ofb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iq1-AC-uca">
+                                <rect key="frame" x="20" y="436" width="163" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ExamsTeacherFollowUp"/>
+                                <connections>
+                                    <action selector="btnGetExamsTeacherFollowUp:" destination="C5P-Qp-pfh" eventType="touchUpInside" id="x6x-R8-FDA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

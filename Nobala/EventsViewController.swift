@@ -53,6 +53,10 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
         
     }
     
+    func onExamsTeacherFollowUp(examsTeacherFollowUp: [ExamsTeacherFollowUp]) {
+        
+    }
+    
     // MARK: - LifeCycle
     override func viewDidLoad()
     {

@@ -170,4 +170,8 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
     func onGetHomeWorkStudentReport(report: [HomeWorkStudentReport]) {
         
     }
+    
+    func onExamsTeacherFollowUp(examsTeacherFollowUp: [ExamsTeacherFollowUp]) {
+        
+    }
 }

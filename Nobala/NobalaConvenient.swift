@@ -692,4 +692,70 @@ extension NobalaClient {
     }
     
     // MARK: - GetStudyPlan
+    
+    
+    // MARK: - ExamsTeacherFollowUp
+    
+    func getExamsTeacherFollowUp(accessToken: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+        
+        let headers = ["Authorization": "Bearer " + accessToken]
+        
+        Alamofire.request(.POST, NobalaClient.URLs.getExamsTeacherFollowUp, headers: headers)
+            .validate(contentType: ["application/json"])
+            .responseJSON { (response) in
+            
+            if let result = response.result.value {
+                
+                if let resultArray = result as? NSArray {
+                    
+                    var newArray = [ExamsTeacherFollowUp]()
+                    
+                    for resultObj in resultArray {
+                        
+                        let examsTeacherFollowUp: ExamsTeacherFollowUp = ExamsTeacherFollowUp()
+                        
+                        examsTeacherFollowUp.FullNameAr = resultObj["FullNameAr"] as! String
+//                        examsTeacherFollowUp.FullNameEn = resultObj["FullNameEn"] as! String
+                        
+                        examsTeacherFollowUp.ScheduleName = resultObj["ScheduleName"] as! String
+                        examsTeacherFollowUp.ScheduleEndDate = resultObj["ScheduleEndDate"] as! String
+                        
+                        examsTeacherFollowUp.Score = resultObj["Score"] as! Int
+                        examsTeacherFollowUp.ExamTotalScore = resultObj["ExamTotalScore"] as! Int
+                        
+                        examsTeacherFollowUp.EndDate = resultObj["EndDate"] as! String
+                        
+                        examsTeacherFollowUp.ElapsedTime = resultObj["ElapsedTime"] as! Int
+                        examsTeacherFollowUp.ExamSheetID = resultObj["ExamSheetID"] as! Int
+                        examsTeacherFollowUp.StudentActualDuration = resultObj["StudentActualDuration"] as! Int
+                        
+                        print(examsTeacherFollowUp.FullNameAr)
+//                        print(examsTeacherFollowUp.FullNameEn)
+                        
+                        print(examsTeacherFollowUp.ScheduleName)
+                        print(examsTeacherFollowUp.ScheduleEndDate)
+                        
+                        print(examsTeacherFollowUp.Score)
+                        print(examsTeacherFollowUp.ExamTotalScore)
+                        
+                        print(examsTeacherFollowUp.EndDate)
+                        
+                        print(examsTeacherFollowUp.ElapsedTime)
+                        print(examsTeacherFollowUp.ExamSheetID)
+                        print(examsTeacherFollowUp.StudentActualDuration)
+                        
+                        print("***************************")
+                        
+                        newArray.append(examsTeacherFollowUp)
+                        
+                    }
+                    
+                    self.webServiceProtocol?.onExamsTeacherFollowUp(newArray)
+                }
+            }
+        }
+        
+        completionHandler(success: true, error: nil)
+    }
+    
 }
