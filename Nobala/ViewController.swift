@@ -42,6 +42,10 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
         
     }
     
+    func onGetHomeWorkStudentReport(report: [HomeWorkStudentReport]) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -127,6 +131,7 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
             print("btnGetCurrentHomeWork")
         }
     }
+    
     @IBAction func btnGetCurrentExams(sender: AnyObject) {
         
         NobalaClient.sharedInstance().getCurrentExams(NobalaClient.Token.accessToken) { (success, error) in
@@ -134,5 +139,12 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
             print("btnGetCurrentExams")
         }
     }
+    
+    @IBAction func btnGetHomeWorkStudentReport(sender: AnyObject) {
+        
+        NobalaClient.sharedInstance().getHomeWorkStudentReport(NobalaClient.Token.accessToken) { (success, error) in
+            
+            print("btnGetHomeWorkStudentReport")
+        }
+    }
 }
-

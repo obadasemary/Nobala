@@ -166,4 +166,8 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
     func onGetCurrentHomeWork(homework: [HomeWork]) {
         
     }
+    
+    func onGetHomeWorkStudentReport(report: [HomeWorkStudentReport]) {
+        
+    }
 }

@@ -49,6 +49,10 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
         
     }
     
+    func onGetHomeWorkStudentReport(report: [HomeWorkStudentReport]) {
+        
+    }
+    
     // MARK: - LifeCycle
     override func viewDidLoad()
     {

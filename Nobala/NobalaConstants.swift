@@ -22,7 +22,7 @@ extension NobalaClient {
         static let getAccessToken = "http://api.nobala.edu.sa/Token"
         static let getCurrentHomeWork = "http://api.nobala.edu.sa/api/Exams/GeCurrentHomeWork"
         static let getCurrentExams = "http://api.nobala.edu.sa/api/Exams/GetCurrentExams"
-        static let homeWorkStudentReport = "http://api.nobala.edu.sa/api/Exams/HomeWorkStudentReport?STARTDATE=" + NobalaClient.DATE.startDate + "&ENDDATE=" + NobalaClient.DATE.endDate
+        static let getHomeWorkStudentReport = "http://api.nobala.edu.sa/api/Exams/HomeWorkStudentReport?STARTDATE=" + NobalaClient.DATE.startDate + "&ENDDATE=" + NobalaClient.DATE.endDate
         static let getStudyPlan = "http://api.nobala.edu.sa/api/section/GetStudyPalne"
     }
     
