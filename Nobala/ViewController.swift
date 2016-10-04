@@ -118,7 +118,12 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
 
     @IBAction func btnGetAccessToken(sender: AnyObject) {
 
-        NobalaClient.sharedInstance().getAccessToken("111111111", password: "123") { (success, error) in
+        // Admin: 111111111
+        // Parent: 1000000000
+        // Student: 1100000000
+        // Teacher: 2000000000
+        
+        NobalaClient.sharedInstance().getAccessToken("1000000000", password: "123") { (success, error) in
             
             print("btnGetAccessToken")
         }

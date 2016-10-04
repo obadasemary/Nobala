@@ -34,6 +34,7 @@
 		AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */; };
 		AFB086481D143FB200DB6266 /* MainPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086471D143FB200DB6266 /* MainPages.swift */; };
 		AFB9E4BC1D11605900C045EF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9E4BB1D11605900C045EF /* EventsViewController.swift */; };
+		AFCA67941DA3D46200970D1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA67931DA3D46200970D1B /* LoginViewController.swift */; };
 		AFD60D021D7D01360002ED14 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD60D011D7D01360002ED14 /* Users.swift */; };
 		B86FBFB47C3B16B26650B9EF /* Pods_NobalaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F8CDBB075E1BAE30EE1D7F /* Pods_NobalaUITests.framework */; };
 		C301D2801D2327FB00EF0AE6 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301D27F1D2327FB00EF0AE6 /* SocialViewController.swift */; };
@@ -97,6 +98,7 @@
 		AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		AFB086471D143FB200DB6266 /* MainPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPages.swift; sourceTree = "<group>"; };
 		AFB9E4BB1D11605900C045EF /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		AFCA67931DA3D46200970D1B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AFD60D011D7D01360002ED14 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		C301D27F1D2327FB00EF0AE6 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		E39CD8703F567072BB453856 /* Pods-NobalaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				AFB9E4BB1D11605900C045EF /* EventsViewController.swift */,
 				AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */,
 				C301D27F1D2327FB00EF0AE6 /* SocialViewController.swift */,
+				AFCA67931DA3D46200970D1B /* LoginViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -657,6 +660,7 @@
 				AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */,
 				41D16C621D10384700EEB8A2 /* NewsTableViewCell.swift in Sources */,
 				AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */,
+				AFCA67941DA3D46200970D1B /* LoginViewController.swift in Sources */,
 				AFB086441D1358F500DB6266 /* KnowsUsViewController.swift in Sources */,
 				AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */,
 				AF658F001D813B6C005914E9 /* HomeWork.swift in Sources */,

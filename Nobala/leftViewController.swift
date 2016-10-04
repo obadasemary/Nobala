@@ -15,25 +15,6 @@ class leftViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        //Present new view controller
-//        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
-//        var destViewController : UIViewController
-//        switch () {
-//        case 0:
-//            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("KnowsUsStory")
-//            break
-//        case 1:
-//            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2")
-//            break
-//        case 2:
-//            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3")
-//            break
-//        default:
-//            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4")
-//            break
-//        }
-//        sideMenuController()?.setContentViewController(destViewController)
     }
 
     override func didReceiveMemoryWarning() {
@@ -87,14 +68,12 @@ class leftViewController: UIViewController {
         sideMenuController()?.setContentViewController(destViewController)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func loginBtnSlid(sender: AnyObject) {
+        
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
+        var destViewController : UIViewController
+        
+        destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LoginStory")
+        sideMenuController()?.setContentViewController(destViewController)
     }
-    */
-
 }

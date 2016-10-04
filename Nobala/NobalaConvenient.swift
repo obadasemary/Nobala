@@ -362,11 +362,11 @@ extension NobalaClient {
         
         
         Alamofire.request(.POST, NobalaClient.URLs.getAccessToken, parameters: parameters)
-            .responseJSON
-            {   response in
+            .responseJSON {   response in
                 
-                if let result = response.result.value
-                {
+                if let result = response.result.value {
+                    
+                    var newArray = [Users]()
                     
                     let user: Users = Users()
                     
@@ -395,6 +395,8 @@ extension NobalaClient {
                     print(user.issued)
                     print(user.expires)
                     
+                    newArray.append(user)
+                    
 //                    Users.userSharedInstance().accessToken = result["access_token"]
 //                    Users.userSharedInstance().tokenType = result["token_type"]
 //                    Users.userSharedInstance().expiresIn = result["expires_in"]
@@ -417,6 +419,8 @@ extension NobalaClient {
 //                    print(Users.userSharedInstance().userFullName)
 //                    print(Users.userSharedInstance().issued)
 //                    print(Users.userSharedInstance().expires)
+                    
+                    self.webServiceProtocol?.onGetAccessToken(newArray)
                 }
             }
         
