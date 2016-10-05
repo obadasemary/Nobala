@@ -57,6 +57,10 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
         
     }
     
+    func onFieldLogin() {
+        
+    }
+    
     // MARK: - LifeCycle
     override func viewDidLoad()
     {

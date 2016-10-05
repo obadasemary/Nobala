@@ -14,6 +14,7 @@ protocol ViewWebServiceProtocol {
     func onReceiveEvents(events: [Event])
     func onReceiveMainPages(mainPages: [MainPages])
     func onGetAccessToken(users: [Users])
+    func onFieldLogin()
     func onGetCurrentHomeWork(homework: [HomeWork])
     func onGetCurrentExams(exams: [Exams])
     func onGetHomeWorkStudentReport(report: [HomeWorkStudentReport])

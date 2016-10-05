@@ -174,4 +174,8 @@ class NewsViewController: UIViewController, ViewWebServiceProtocol, UITableViewD
     func onExamsTeacherFollowUp(examsTeacherFollowUp: [ExamsTeacherFollowUp]) {
         
     }
+    
+    func onFieldLogin() {
+        
+    }
 }

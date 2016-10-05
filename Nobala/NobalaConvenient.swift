@@ -366,6 +366,17 @@ extension NobalaClient {
                 
                 if let result = response.result.value {
                     
+                    if let error = result["error"] {
+                        
+                        let errorDescription = result["error_description"] as! String
+                        
+                        print(errorDescription)
+                        
+                        self.webServiceProtocol?.onFieldLogin()
+                        completionHandler(success: false, error: error as? NSError)
+                        return
+                    }
+                    
                     var newArray = [Users]()
                     
                     let user: Users = Users()

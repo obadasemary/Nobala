@@ -9,7 +9,7 @@
 import UIKit
 import ENSwiftSideMenu
 
-class LoginViewController: UIViewController, ENSideMenuDelegate {
+class LoginViewController: UIViewController, ENSideMenuDelegate, ViewWebServiceProtocol {
 
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -89,6 +89,47 @@ class LoginViewController: UIViewController, ENSideMenuDelegate {
         
         let secondViewController = self.storyboard!.instantiateViewControllerWithIdentifier("NobalaStory") as! NobalaViewController
         self.navigationController!.pushViewController(secondViewController, animated: true)
+    }
+    
+    
+    func onReceiveNews(news: [News]) {
+        
+    }
+    
+    func onReceiveEvents(events: [Event]) {
+        
+    }
+    
+    func onReceiveMainPages(mainPages: [MainPages]) {
+        
+    }
+    
+    func onGetAccessToken(users: [Users]) {
+        
+    }
+    
+    func onGetCurrentExams(exams: [Exams]) {
+        
+    }
+    
+    func onGetCurrentHomeWork(homework: [HomeWork]) {
+        
+    }
+    
+    func onGetHomeWorkStudentReport(report: [HomeWorkStudentReport]) {
+        
+    }
+    
+    func onExamsTeacherFollowUp(examsTeacherFollowUp: [ExamsTeacherFollowUp]) {
+        
+    }
+    
+    func onFieldLogin() {
+        
+        let alertController = UIAlertController(title: "Oops", message: "Pleas Make Sure Username & Password is correct", preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     /*

@@ -50,6 +50,10 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
         
     }
     
+    func onFieldLogin() {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
