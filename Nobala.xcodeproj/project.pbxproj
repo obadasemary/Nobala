@@ -28,6 +28,7 @@
 		AF658F001D813B6C005914E9 /* HomeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF658EFF1D813B6C005914E9 /* HomeWork.swift */; };
 		AF71CA0E1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF71CA0D1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift */; };
 		AF7256801D9A75A9001E0515 /* Exams.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72567F1D9A75A9001E0515 /* Exams.swift */; };
+		AF940BF71DA5651800937119 /* NobalaWebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF940BF61DA5651800937119 /* NobalaWebServiceProtocol.swift */; };
 		AF9A879A1D9D2C5D00B62337 /* HomeWorkStudentReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A87991D9D2C5D00B62337 /* HomeWorkStudentReport.swift */; };
 		AFB086421D13577600DB6266 /* NobalaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086411D13577600DB6266 /* NobalaViewController.swift */; };
 		AFB086441D1358F500DB6266 /* KnowsUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086431D1358F500DB6266 /* KnowsUsViewController.swift */; };
@@ -92,6 +93,7 @@
 		AF658EFF1D813B6C005914E9 /* HomeWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWork.swift; sourceTree = "<group>"; };
 		AF71CA0D1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsTeacherFollowUp.swift; sourceTree = "<group>"; };
 		AF72567F1D9A75A9001E0515 /* Exams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exams.swift; sourceTree = "<group>"; };
+		AF940BF61DA5651800937119 /* NobalaWebServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaWebServiceProtocol.swift; sourceTree = "<group>"; };
 		AF9A87991D9D2C5D00B62337 /* HomeWorkStudentReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorkStudentReport.swift; sourceTree = "<group>"; };
 		AFB086411D13577600DB6266 /* NobalaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaViewController.swift; sourceTree = "<group>"; };
 		AFB086431D1358F500DB6266 /* KnowsUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowsUsViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				418825EE1D11C523002C2648 /* ViewWebServiceProtocol.swift */,
+				AF940BF61DA5651800937119 /* NobalaWebServiceProtocol.swift */,
 				AFB086411D13577600DB6266 /* NobalaViewController.swift */,
 				AFB086431D1358F500DB6266 /* KnowsUsViewController.swift */,
 				AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */,
@@ -661,6 +664,7 @@
 				41D16C621D10384700EEB8A2 /* NewsTableViewCell.swift in Sources */,
 				AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */,
 				AFCA67941DA3D46200970D1B /* LoginViewController.swift in Sources */,
+				AF940BF71DA5651800937119 /* NobalaWebServiceProtocol.swift in Sources */,
 				AFB086441D1358F500DB6266 /* KnowsUsViewController.swift in Sources */,
 				AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */,
 				AF658F001D813B6C005914E9 /* HomeWork.swift in Sources */,

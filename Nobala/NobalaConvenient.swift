@@ -432,6 +432,7 @@ extension NobalaClient {
 //                    print(Users.userSharedInstance().expires)
                     
                     self.webServiceProtocol?.onGetAccessToken(newArray)
+//                    self.nobalaWebServiceProtocol?.onGetAccessToken(newArray(user))
                 }
             }
         

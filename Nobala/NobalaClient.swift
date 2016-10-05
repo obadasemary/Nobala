@@ -12,7 +12,8 @@ import UIKit
 class NobalaClient: NSObject {
     
     var session: NSURLSession
-    var webServiceProtocol:ViewWebServiceProtocol?
+    var webServiceProtocol: ViewWebServiceProtocol?
+    var nobalaWebServiceProtocol: NobalaWebServiceProtocol?
     
     override init() {
         session = NSURLSession.sharedSession()
