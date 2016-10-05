@@ -28,6 +28,12 @@ class LoginViewController: UIViewController, ENSideMenuDelegate, ViewWebServiceP
         
         let leftView = storyboard?.instantiateViewControllerWithIdentifier("LeftMenuController") as!leftViewController
         sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftView, menuPosition: .Left)
+        
+        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        let screenWidth = screenSize.width
+        
+        sideMenu?.menuWidth = screenWidth - 100
+        
         self.sideMenu!.delegate = self
     }
     
@@ -36,10 +42,10 @@ class LoginViewController: UIViewController, ENSideMenuDelegate, ViewWebServiceP
 
     @IBAction func LoginButton(sender: AnyObject) {
         
-        let username = usernameTextField.text
-        let password = passwordTextField.text!
+        guard let userName = usernameTextField.text where !userName.isEmpty,
+              let password = passwordTextField.text where !password.isEmpty
         
-        if username == "" || password == "" {
+        else {
             
             let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .Alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
@@ -49,11 +55,18 @@ class LoginViewController: UIViewController, ENSideMenuDelegate, ViewWebServiceP
             return
         }
         
-        NobalaClient.sharedInstance().getAccessToken(username!, password: password) { (success, error) in
+        NobalaClient.sharedInstance().getAccessToken(userName, password: password, completionHandler: { (success, errorMessage, user) in
+        
+            if !success {
             
-            if ((error) != nil) {
+                var message = "Unknown error, please try again"
                 
-                let alertController = UIAlertController(title: "Oops", message: "Pleas Make Sure Username & Password is correct", preferredStyle: .Alert)
+                if errorMessage == "invalid_grant" {
+                
+                    message = "Pleas Make Sure Username & Password is correct"
+                }
+                
+                let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
                 alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
                 
                 self.presentViewController(alertController, animated: true, completion: nil)
@@ -61,12 +74,22 @@ class LoginViewController: UIViewController, ENSideMenuDelegate, ViewWebServiceP
                 return
             }
             
-            if (success) {
-                let alertController = UIAlertController(title: "Wooow", message: "Login Success Your Username: \(username!) & Password: \(password)", preferredStyle: .Alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                
-                self.presentViewController(alertController, animated: true, completion: nil)
-            }
+            // You have the user
+            
+            user?.accessToken
+            
+            let alertController = UIAlertController(title: "Oops", message: user?.accessToken, preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            
+        }) { (error, errorMessage) in
+            
+            let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
         }
     }
     

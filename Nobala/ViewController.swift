@@ -127,10 +127,10 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
         // Student: 1100000000
         // Teacher: 2000000000
         
-        NobalaClient.sharedInstance().getAccessToken("1000000000", password: "123") { (success, error) in
-            
-            print("btnGetAccessToken")
-        }
+//        NobalaClient.sharedInstance().getAccessToken("1000000000", password: "123") { (success, error) in
+//            
+//            print("btnGetAccessToken")
+//        }
     }
     
     @IBAction func btnGetCurrentHomeWork(sender: AnyObject) {

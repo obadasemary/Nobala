@@ -353,7 +353,7 @@ extension NobalaClient {
     
     // MARK: - GetAccessToken
     
-    func getAccessToken(username: String, password: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+    func getAccessToken(username: String, password: String, completionHandler: (success: Bool, errorMessage: String?, user: Users?) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
         
         let parameters = ["grant_type": "password",
                           "username": username,
@@ -364,79 +364,59 @@ extension NobalaClient {
         Alamofire.request(.POST, NobalaClient.URLs.getAccessToken, parameters: parameters)
             .responseJSON {   response in
                 
-                if let result = response.result.value {
+                if let error = response.result.error {
                     
-                    if let error = result["error"] {
-                        
-                        let errorDescription = result["error_description"] as! String
-                        
-                        print(errorDescription)
-                        
-                        self.webServiceProtocol?.onFieldLogin()
-                        completionHandler(success: false, error: error as? NSError)
-                        return
-                    }
+                    fail(error: error, errorMessage: nil)
                     
-                    var newArray = [Users]()
-                    
-                    let user: Users = Users()
-                    
-                    user.accessToken = result["access_token"] as! String
-                    NobalaClient.Token.accessToken = user.accessToken
-                    print("NobalaClient.Token \(NobalaClient.Token.accessToken)")
-                    user.tokenType = result["token_type"] as! String
-                    user.expiresIn = result["expires_in"] as! Int
-                    user.refreshToken = result["refresh_token"] as! String
-                    user.asClientId = result["as:client_id"] as! String
-                    user.userName = result["userName"] as! String
-                    user.userTypeID = result["userTypeID"] as! String
-                    user.userFullName = result["userFullName"] as! String
-                    user.issued = result[".issued"] as! String
-                    user.expires = result[".expires"] as! String
-                    
-                    
-                    print(user.accessToken)
-                    print(user.tokenType)
-                    print(user.expiresIn)
-                    print(user.refreshToken)
-                    print(user.asClientId)
-                    print(user.userName)
-                    print(user.userTypeID)
-                    print(user.userFullName)
-                    print(user.issued)
-                    print(user.expires)
-                    
-                    newArray.append(user)
-                    
-//                    Users.userSharedInstance().accessToken = result["access_token"]
-//                    Users.userSharedInstance().tokenType = result["token_type"]
-//                    Users.userSharedInstance().expiresIn = result["expires_in"]
-//                    Users.userSharedInstance().refreshToken = result["refresh_token"]
-//                    Users.userSharedInstance().asClientId = result["as:client_id"]
-//                    Users.userSharedInstance().userName = result["userName"]
-//                    Users.userSharedInstance().userTypeID = result["userTypeID"]
-//                    Users.userSharedInstance().userFullName = result["userFullName"]
-//                    Users.userSharedInstance().issued = result[".issued"]
-//                    Users.userSharedInstance().expires = result[".expires"]
-//
-//
-//                    print(Users.userSharedInstance().accessToken)
-//                    print(Users.userSharedInstance().tokenType)
-//                    print(Users.userSharedInstance().expiresIn)
-//                    print(Users.userSharedInstance().refreshToken)
-//                    print(Users.userSharedInstance().asClientId)
-//                    print(Users.userSharedInstance().userName)
-//                    print(Users.userSharedInstance().userTypeID)
-//                    print(Users.userSharedInstance().userFullName)
-//                    print(Users.userSharedInstance().issued)
-//                    print(Users.userSharedInstance().expires)
-                    
-                    self.webServiceProtocol?.onGetAccessToken(newArray)
-//                    self.nobalaWebServiceProtocol?.onGetAccessToken(newArray(user))
+                    return
                 }
+
+                guard let result = response.result.value else {
+                    
+                    fail(error: response.result.error, errorMessage: nil)
+                    
+                    return
+                }
+                
+                if let error = result["error"] as? String {
+                    
+                    completionHandler(success: false, errorMessage: error, user:nil)
+
+                    return
+                }
+                
+                let user: Users = Users()
+                
+                user.accessToken = result["access_token"] as! String
+                
+                NobalaClient.Token.accessToken = user.accessToken
+                print("NobalaClient.Token \(NobalaClient.Token.accessToken)")
+                
+                user.tokenType = result["token_type"] as! String
+                user.expiresIn = result["expires_in"] as! Int
+                user.refreshToken = result["refresh_token"] as! String
+                user.asClientId = result["as:client_id"] as! String
+                user.userName = result["userName"] as! String
+                user.userTypeID = result["userTypeID"] as! String
+                user.userFullName = result["userFullName"] as! String
+                user.issued = result[".issued"] as! String
+                user.expires = result[".expires"] as! String
+                
+                
+                print(user.accessToken)
+                print(user.tokenType)
+                print(user.expiresIn)
+                print(user.refreshToken)
+                print(user.asClientId)
+                print(user.userName)
+                print(user.userTypeID)
+                print(user.userFullName)
+                print(user.issued)
+                print(user.expires)
+
+                completionHandler(success: true, errorMessage: nil, user:user)
+
             }
-        
-        completionHandler(success: true, error: nil)
     }
     
     // MARK: - GetCurrentHomeWork
