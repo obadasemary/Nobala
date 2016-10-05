@@ -35,6 +35,39 @@ class LoginViewController: UIViewController, ENSideMenuDelegate {
     }
 
     @IBAction func LoginButton(sender: AnyObject) {
+        
+        let username = usernameTextField.text
+        let password = passwordTextField.text!
+        
+        if username == "" || password == "" {
+            
+            let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            return
+        }
+        
+        NobalaClient.sharedInstance().getAccessToken(username!, password: password) { (success, error) in
+            
+            if ((error) != nil) {
+                
+                let alertController = UIAlertController(title: "Oops", message: "Pleas Make Sure Username & Password is correct", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+                return
+            }
+            
+            if (success) {
+                let alertController = UIAlertController(title: "Wooow", message: "Login Success Your Username: \(username!) & Password: \(password)", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+            }
+        }
     }
     
     // MARK: - SideMenuButton
