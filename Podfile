@@ -12,7 +12,7 @@ target 'Nobala' do
   pod 'ENSwiftSideMenu', '~> 0.1'
   pod 'VRGCalendarView', '~> 0.0'
   pod 'Alamofire', '~> 3.4'
-  
+  pod 'KeychainAccess' , '~> 2.4'
   target 'NobalaTests' do
     inherit! :search_paths
     # Pods for testing

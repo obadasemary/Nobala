@@ -8,11 +8,14 @@
 
 import UIKit
 import ENSwiftSideMenu
+import KeychainAccess
 
 class LoginViewController: UIViewController, ENSideMenuDelegate, ViewWebServiceProtocol {
 
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+     
     
     var sideMenu:ENSideMenu?
 
@@ -78,11 +81,24 @@ class LoginViewController: UIViewController, ENSideMenuDelegate, ViewWebServiceP
             
             user?.accessToken
             
-            let alertController = UIAlertController(title: "Oops", message: user?.accessToken, preferredStyle: .Alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            //Key Chain Implementation
+             let keychain = Keychain(service: "Noblaa.app")
             
-            self.presentViewController(alertController, animated: true, completion: nil)
+             keychain["auth_token"] = user?.accessToken
+             keychain["user_type"] = user?.userTypeID
+             keychain["userFName"] = user?.userFullName
             
+             //End of Key Chain Implementation
+     
+            
+            self.performSegueWithIdentifier("enterManagerArea", sender: self)
+            
+            
+//            let alertController = UIAlertController(title: "Oops", message: user?.accessToken, preferredStyle: .Alert)
+//            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+//            
+//            self.presentViewController(alertController, animated: true, completion: nil)
+//            
             
         }) { (error, errorMessage) in
             

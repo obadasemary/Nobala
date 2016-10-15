@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainAccess
 
 class leftViewController: UIViewController {
 
@@ -73,7 +74,31 @@ class leftViewController: UIViewController {
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
         var destViewController : UIViewController
         
-        destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LoginStory")
+        
+        let keychain = Keychain(service: "Noblaa.app")
+        if let Userauth_token : String = keychain["auth_token"] {
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("managerMainMenu")
+            
+            
+        } else  {
+            
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LoginStory")
+        }
+    
         sideMenuController()?.setContentViewController(destViewController)
     }
+    
+    
+    @IBAction func doLogOut(sender: UIButton) {
+        let keychain = Keychain(service: "Noblaa.app")
+        
+        keychain["auth_token"] = nil
+        keychain["user_type"] = nil
+        keychain["userFName"] = nil
+        
+        
+    }
+    
+    
+    
 }

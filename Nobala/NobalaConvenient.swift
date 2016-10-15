@@ -421,96 +421,98 @@ extension NobalaClient {
     
     // MARK: - GetCurrentHomeWork
     
-    func getCurrentHomeWork(accessToken: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+    func getCurrentHomeWork(accessToken: String, completionHandler: (success: Bool, errorMessage: String?, myHomeWork: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
         
 //        let parameters = ["Authorization": "Bearer" + " " + accessToken]
         let headers = ["Authorization": "Bearer " + accessToken]
 
         
         Alamofire.request(.POST, NobalaClient.URLs.getCurrentHomeWork, headers: headers).responseJSON { (response) in
-            
+            var work: NSArray = []
+           
             if let result = response.result.value {
                 
                 if let homeWorks = result as? NSArray {
-                    
-                    for homeWork in homeWorks {
+                    work = homeWorks
+//                    for homeWork in homeWorks {
+//                       
+//                        work.ExamScheduleID = homeWork["ExamScheduleID"] as! Int
+//                        work.FK_ExamID = homeWork["FK_ExamID"] as! Int
+//                        work.FK_UserID = homeWork["FK_UserID"] as! Int
+//                        work.FK_TrialTypeID = homeWork["FK_TrialTypeID"] as! Int
+//                        work.FK_AcademicYearID = homeWork["FK_AcademicYearID"] as! Int
+//                        
+//                        work.ScheduleName = homeWork["ScheduleName"] as! String
+//                        work.ScheduleTopic = homeWork["ScheduleTopic"] as! String
+//                        work.ScheduleStartDate = homeWork["ScheduleStartDate"] as! String
+//                        work.ScheduleEndDate = homeWork["ScheduleEndDate"] as! String
+//                        work.ResultPublicationDate = homeWork["ResultPublicationDate"] as! String
+//                        work.CreationDate = homeWork["CreationDate"] as! String
+//
+//                        work.IsArchived = homeWork["IsArchived"] as! Bool
+//                        work.IsLateAllowed = homeWork["IsLateAllowed"] as! Bool
+//                        
+////                        work.FK_ExamPeriodID = homeWork["FK_ExamPeriodID"] as! Int
+////                        work.MinimumTimeBeforeCloseExam = homeWork["MinimumTimeBeforeCloseExam"] as! Int
+////                        work.TargetStudents = homeWork["TargetStudents"] as! Int
+////                        work.FK_SubOrganizationsID = homeWork["FK_SubOrganizationsID"] as! Int
+////                        work.FK_GradeID = homeWork["FK_GradeID"] as! Int
+//                        
+//                        work.IsAttendantSelect = homeWork["IsAttendantSelect"] as! Bool
+//                        
+//                        work.ExamAttendanceID = homeWork["ExamAttendanceID"] as! Int
+//                        work.FK_SectionID = homeWork["FK_SectionID"] as! Int
+//                        
+////                        work.TeacheNameAr = homeWork["TeacheNameAr"] as! String
+////                        work.TeacheNameEn = homeWork["TeacheNameEn"] as! String
+//                        work.ExamsInstructions = homeWork["ExamsInstructions"] as! String
+//                        
+//                        work.ExamTypeID = homeWork["ExamTypeID"] as! Int
+//
+//                        print(work.ExamScheduleID)
+//                        print(work.FK_ExamID)
+//                        print(work.FK_UserID)
+//                        print(work.FK_TrialTypeID)
+//                        print(work.FK_AcademicYearID)
+//
+//                        print("work.ScheduleName" + work.ScheduleName)
+//                        print(work.ScheduleTopic)
+//                        print(work.ScheduleStartDate)
+//                        print(work.ScheduleEndDate)
+//                        print(work.ResultPublicationDate)
+//                        print(work.CreationDate)
+//                        
+//                        print(work.IsArchived)
+//                        print(work.IsLateAllowed)
+//
+////                        print(work.FK_ExamPeriodID)
+////                        print(work.MinimumTimeBeforeCloseExam)
+////                        print(work.TargetStudents)
+////                        print(work.FK_SubOrganizationsID)
+////                        print(work.FK_GradeID)
+//                        
+//                        print(work.IsAttendantSelect)
+//                        
+//                        print(work.ExamAttendanceID)
+//                        print(work.FK_SectionID)
+//                        
+////                        print(work.TeacheNameAr)
+////                        print(work.TeacheNameEn)
+//                        print(work.ExamsInstructions)
+//                        
+//                        print(work.ExamTypeID)
+//                        
+//                        print("***************************")
+//                         
                         
-                        let work: HomeWork = HomeWork()
-                        
-                        work.ExamScheduleID = homeWork["ExamScheduleID"] as! Int
-                        work.FK_ExamID = homeWork["FK_ExamID"] as! Int
-                        work.FK_UserID = homeWork["FK_UserID"] as! Int
-                        work.FK_TrialTypeID = homeWork["FK_TrialTypeID"] as! Int
-                        work.FK_AcademicYearID = homeWork["FK_AcademicYearID"] as! Int
-                        
-                        work.ScheduleName = homeWork["ScheduleName"] as! String
-                        work.ScheduleTopic = homeWork["ScheduleTopic"] as! String
-                        work.ScheduleStartDate = homeWork["ScheduleStartDate"] as! String
-                        work.ScheduleEndDate = homeWork["ScheduleEndDate"] as! String
-                        work.ResultPublicationDate = homeWork["ResultPublicationDate"] as! String
-                        work.CreationDate = homeWork["CreationDate"] as! String
-
-                        work.IsArchived = homeWork["IsArchived"] as! Bool
-                        work.IsLateAllowed = homeWork["IsLateAllowed"] as! Bool
-                        
-//                        work.FK_ExamPeriodID = homeWork["FK_ExamPeriodID"] as! Int
-//                        work.MinimumTimeBeforeCloseExam = homeWork["MinimumTimeBeforeCloseExam"] as! Int
-//                        work.TargetStudents = homeWork["TargetStudents"] as! Int
-//                        work.FK_SubOrganizationsID = homeWork["FK_SubOrganizationsID"] as! Int
-//                        work.FK_GradeID = homeWork["FK_GradeID"] as! Int
-                        
-                        work.IsAttendantSelect = homeWork["IsAttendantSelect"] as! Bool
-                        
-                        work.ExamAttendanceID = homeWork["ExamAttendanceID"] as! Int
-                        work.FK_SectionID = homeWork["FK_SectionID"] as! Int
-                        
-//                        work.TeacheNameAr = homeWork["TeacheNameAr"] as! String
-//                        work.TeacheNameEn = homeWork["TeacheNameEn"] as! String
-                        work.ExamsInstructions = homeWork["ExamsInstructions"] as! String
-                        
-                        work.ExamTypeID = homeWork["ExamTypeID"] as! Int
-                        
-                        print(work.ExamScheduleID)
-                        print(work.FK_ExamID)
-                        print(work.FK_UserID)
-                        print(work.FK_TrialTypeID)
-                        print(work.FK_AcademicYearID)
-
-                        print(work.ScheduleName)
-                        print(work.ScheduleTopic)
-                        print(work.ScheduleStartDate)
-                        print(work.ScheduleEndDate)
-                        print(work.ResultPublicationDate)
-                        print(work.CreationDate)
-                        
-                        print(work.IsArchived)
-                        print(work.IsLateAllowed)
-
-//                        print(work.FK_ExamPeriodID)
-//                        print(work.MinimumTimeBeforeCloseExam)
-//                        print(work.TargetStudents)
-//                        print(work.FK_SubOrganizationsID)
-//                        print(work.FK_GradeID)
-                        
-                        print(work.IsAttendantSelect)
-                        
-                        print(work.ExamAttendanceID)
-                        print(work.FK_SectionID)
-                        
-//                        print(work.TeacheNameAr)
-//                        print(work.TeacheNameEn)
-                        print(work.ExamsInstructions)
-                        
-                        print(work.ExamTypeID)
-                        
-                        print("***************************")
-                        
-                    }
+                       // completionHandler(success: true, errorMessage: nil, myHomeWork: HomeWork)
+                   // }
                 }
             }
+            completionHandler(success: true, errorMessage: nil, myHomeWork:work)
         }
         
-        completionHandler(success: true, error: nil)
+        //completionHandler(success: true, error:nil, myHomeWork: myh)
     }
     
     // MARK: - GetCurrentExams

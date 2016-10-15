@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 extension NobalaClient {
     
     // MARK: - Constants
@@ -31,8 +32,8 @@ extension NobalaClient {
     // MARK: - DATE
     struct DATE {
         
-        static let startDate = "1/2/2016"
-        static let endDate = "1/2/2016"
+        static let startDate = "1/2/2015"
+        static let endDate = "1/2/2017"
     }
     
     // MARK: - ReturnURL
@@ -45,6 +46,7 @@ extension NobalaClient {
     struct Token {
         
         static var accessToken = ""
+        
     }
     
     

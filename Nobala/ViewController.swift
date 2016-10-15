@@ -139,15 +139,15 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
 //        
 //        print(user.accessToken)
         
-        NobalaClient.sharedInstance().getCurrentHomeWork(NobalaClient.Token.accessToken) { (success, error) in
-            
-            print("btnGetCurrentHomeWork")
-        }
+//        NobalaClient.sharedInstance().getCurrentHomeWork( NobalaClient.Token.accessToken) { (success, error) in
+//            
+//            print("btnGetCurrentHomeWork")
+//        }
     }
     
     @IBAction func btnGetCurrentExams(sender: AnyObject) {
         
-        NobalaClient.sharedInstance().getCurrentExams(NobalaClient.Token.accessToken) { (success, error) in
+        NobalaClient.sharedInstance().getCurrentExams( NobalaClient.Token.accessToken) { (success, error) in
             
             print("btnGetCurrentExams")
         }
@@ -156,7 +156,7 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
     
     @IBAction func btnGetHomeWorkStudentReport(sender: AnyObject) {
         
-        NobalaClient.sharedInstance().getHomeWorkStudentReport(NobalaClient.Token.accessToken) { (success, error) in
+        NobalaClient.sharedInstance().getHomeWorkStudentReport( NobalaClient.Token.accessToken) { (success, error) in
             
             print("btnGetHomeWorkStudentReport")
         }
@@ -164,7 +164,7 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
     
     @IBAction func btnGetExamsTeacherFollowUp(sender: AnyObject) {
         
-        NobalaClient.sharedInstance().getExamsTeacherFollowUp(NobalaClient.Token.accessToken) { (success, error) in
+        NobalaClient.sharedInstance().getExamsTeacherFollowUp( NobalaClient.Token.accessToken) { (success, error) in
             
             print("btnGetExamsTeacherFollowUp")
         }

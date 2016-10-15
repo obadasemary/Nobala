@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import KeychainAccess
+
 
 class NobalaViewController: UIViewController {
 
+    @IBOutlet weak var LogBtn: UIButton!
     var url = NobalaClient.Constants.BaseURL
 
     // MARK: - LifeCycle
@@ -36,6 +39,32 @@ class NobalaViewController: UIViewController {
         }
     }
 
+    @IBAction func enterManagementArea(sender: UIButton) {
+      
+        let keychain = Keychain(service: "Noblaa.app")
+        if let Userauth_token : String = keychain["auth_token"] {
+            performSegueWithIdentifier("enterManagerArea", sender: self)
+            
+            } else  {
+            performSegueWithIdentifier("showLogin", sender: self)
+            
+            }
+       
+        
+        
+    }
+    
+    
+    
+    @IBAction func doLogOut(sender: UIButton) {
+        let keychain = Keychain(service: "Noblaa.app")
+        
+        keychain["auth_token"] = nil
+        keychain["user_type"] = nil
+        keychain["userFName"] = nil
+        
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
