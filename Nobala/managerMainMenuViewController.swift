@@ -19,13 +19,16 @@ var sideMenu:ENSideMenu?
 
     override func viewWillAppear(animated: Bool) {
         
+        NSThread.sleepForTimeInterval(0.05)
+        
         let leftView = storyboard?.instantiateViewControllerWithIdentifier("LeftMenuController") as!leftViewController
         sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftView, menuPosition: .Left)
         
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         let screenWidth = screenSize.width
         
-        sideMenu?.menuWidth = screenWidth - 100
+        //        sideMenu?.menuWidth = screenWidth - 100
+        sideMenu?.menuWidth = screenWidth * 0.75
         
         self.sideMenu!.delegate = self
     }

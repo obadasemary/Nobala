@@ -76,9 +76,10 @@ class leftViewController: UIViewController {
         
         
         let keychain = Keychain(service: "Noblaa.app")
+        
         if let Userauth_token : String = keychain["auth_token"] {
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("managerMainMenu")
             
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("managerMainMenu")
             
         } else  {
             
@@ -90,6 +91,7 @@ class leftViewController: UIViewController {
     
     
     @IBAction func doLogOut(sender: UIButton) {
+        
         let keychain = Keychain(service: "Noblaa.app")
         
         keychain["auth_token"] = nil
@@ -98,7 +100,4 @@ class leftViewController: UIViewController {
         
         
     }
-    
-    
-    
 }

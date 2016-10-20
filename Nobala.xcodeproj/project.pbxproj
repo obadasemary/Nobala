@@ -170,13 +170,13 @@
 				418825EE1D11C523002C2648 /* ViewWebServiceProtocol.swift */,
 				AF940BF61DA5651800937119 /* NobalaWebServiceProtocol.swift */,
 				AFB086411D13577600DB6266 /* NobalaViewController.swift */,
-				E3430A551DB0254C008BC6BB /* managerMainMenuViewController.swift */,
 				AFB086431D1358F500DB6266 /* KnowsUsViewController.swift */,
 				AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */,
 				AFB9E4BB1D11605900C045EF /* EventsViewController.swift */,
 				AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */,
 				C301D27F1D2327FB00EF0AE6 /* SocialViewController.swift */,
 				AFCA67931DA3D46200970D1B /* LoginViewController.swift */,
+				E3430A551DB0254C008BC6BB /* managerMainMenuViewController.swift */,
 				E3430A571DB02C5B008BC6BB /* homeWorkViewController.swift */,
 			);
 			name = Controller;

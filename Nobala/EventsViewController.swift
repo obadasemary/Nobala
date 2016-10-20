@@ -91,7 +91,14 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
         
         let leftView = storyboard?.instantiateViewControllerWithIdentifier("LeftMenuController")
         sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftView!, menuPosition: .Left)
-        self.sideMenu?.delegate = self
+        
+        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        let screenWidth = screenSize.width
+        
+        //        sideMenu?.menuWidth = screenWidth - 100
+        sideMenu?.menuWidth = screenWidth * 0.75
+        
+        self.sideMenu!.delegate = self
     }
     
     // MARK: - SideMenuButton
