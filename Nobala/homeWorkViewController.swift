@@ -26,19 +26,6 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     var hWArray = []
     var selectedhw:HomeWork = HomeWork()
     
-    
- 
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
- 
-    
-
-    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +34,7 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
         
         ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
         
-        let logo = UIImage(named: "newsIcon.png")
+        let logo = UIImage(named: "LoginTitle.png")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
         
@@ -55,118 +42,52 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
         self.clientObject = NobalaClient.sharedInstance()
         self.clientObject?.webServiceProtocol = self
         
-        /*
- 
- 
- 
- */
-        
-        
         let keychain = Keychain(service: "Noblaa.app")
         if let Userauth_token : String = keychain["auth_token"] {
-        NobalaClient.sharedInstance().getCurrentHomeWork(Userauth_token, completionHandler: { (success, errorMessage, myHomeWork) in
             
-            if !success {
+            NobalaClient.sharedInstance().getCurrentHomeWork(Userauth_token, completionHandler: { (success, errorMessage, myHomeWork) in
                 
-                var message = "Unknown error, please try again"
-                
-                if errorMessage == "invalid_Data" {
+                if !success {
                     
-                    message = "Pleas Make Sure  is correct"
+                    var message = "Unknown error, please try again"
+                    
+                    if errorMessage == "invalid_Data" {
+                        
+                        message = "Pleas Make Sure  is correct"
+                    }
+                    
+                    let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                    
+                    return
                 }
                 
-                let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                self.hWArray = myHomeWork
+                print(user )
+                 ASProgressHud.hideHUDForView(self.view, animated: true)
+                self.newsTableView.reloadData()
+                
+            }) { (error, errorMessage) in
+                
+                let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
                 alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
                 
                 self.presentViewController(alertController, animated: true, completion: nil)
-                
-                return
             }
-            
-            // You have the user
-            
-            
-            
-            
-            self.hWArray = myHomeWork
-            print(user )
-             ASProgressHud.hideHUDForView(self.view, animated: true)
-            self.newsTableView.reloadData()
-        
-            
-            
-        }) { (error, errorMessage) in
-            
-            let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-            
-            self.presentViewController(alertController, animated: true, completion: nil)
         }
-
-        
-        
-        
-        
-        }
-        
-        
-        
-        
-        //
-//        NobalaClient.sharedInstance().getCurrentHomeWork(NobalaClient.Token.accessToken,completionHandler : { (success, errorMessage,myHomeWorkdata)in
-//            
-//            if !success {
-//                
-//                var message = "Unknown error, please try again"
-//                
-//                if errorMessage == "invalid_grant" {
-//                    
-//                    message = "Pleas Make Sure Username & Password is correct"
-//                }
-//                
-//                let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
-//                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-//                
-//                self.presentViewController(alertController, animated: true, completion: nil)
-//                
-//                return
-//            } else {
-//                
-//                print("yes")
-//                
-//                
-//                ASProgressHud.hideHUDForView(self.view, animated: true)
-//                
-//                
-//            }
-//        })
-//        
-//  
-//            
- 
-
-        /*
- 
- 
- 
- */
-
-
-
-
     }
 
-    override func viewWillAppear(animated: Bool)
-    {
+    override func viewWillAppear(animated: Bool) {
+        
         NSThread.sleepForTimeInterval(0.05)
         
         let leftView = storyboard?.instantiateViewControllerWithIdentifier("LeftMenuController") as!leftViewController
         sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftView, menuPosition: .Left)
         
-        
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         let screenWidth = screenSize.width
-        
         
         //        sideMenu?.menuWidth = screenWidth - 100
         sideMenu?.menuWidth = screenWidth * 0.75
@@ -178,7 +99,6 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     func sideMenuWillOpen() {
         print("NewsSideMenuWillOpen")
     }
-    
     
     @IBAction func toggle(sender: AnyObject)
     {
@@ -192,14 +112,6 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
             self.sideMenu?.hideSideMenu()
         }
     }
-    
-    //    @IBAction func showLeftMenu(sender: AnyObject)
-    //    {
-    //
-    //        showSideMenuView()
-    ////        toggleSideMenuView()
-    ////        self.controller.toggle("right")
-    //    }
     
     @IBAction func goToHome(sender: AnyObject) {
         
@@ -216,6 +128,7 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
+        
         let row = indexPath.row
         let tableViewCell = self.newsTableView.dequeueReusableCellWithIdentifier("homeWorkCell", forIndexPath: indexPath) as! homeWorkTableViewCell
         
@@ -256,12 +169,6 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     
     func onReceiveNews(news: [News])
     {
-//        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-//            
-//            self.newsArray = news
-//            self.newsTableView.reloadData()
-//            ASProgressHud.hideHUDForView(self.view, animated: true)
-//        })
         
     }
     
@@ -283,6 +190,7 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     }
     
     func onGetCurrentHomeWork(homework: [HomeWork]) {
+        
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             
             self.hWArray = homework
@@ -304,10 +212,6 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     func onFieldLogin() {
         
     }
-
-    
-    
-    
 }
 
 

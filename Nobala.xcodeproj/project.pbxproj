@@ -35,6 +35,11 @@
 		AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */; };
 		AFB086481D143FB200DB6266 /* MainPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086471D143FB200DB6266 /* MainPages.swift */; };
 		AFB9E4BC1D11605900C045EF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9E4BB1D11605900C045EF /* EventsViewController.swift */; };
+		AFC6BC6C1DB9791300AA4E9C /* ExamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6BC6B1DB9791300AA4E9C /* ExamsViewController.swift */; };
+		AFC6BC6E1DB9793600AA4E9C /* HomeWorkReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6BC6D1DB9793600AA4E9C /* HomeWorkReportViewController.swift */; };
+		AFC6BC701DB9794F00AA4E9C /* ExamsReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6BC6F1DB9794F00AA4E9C /* ExamsReportViewController.swift */; };
+		AFC6BC721DB9797700AA4E9C /* LearningPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6BC711DB9797700AA4E9C /* LearningPlanViewController.swift */; };
+		AFC6BC741DB979AB00AA4E9C /* DailyHomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6BC731DB979AB00AA4E9C /* DailyHomeworkViewController.swift */; };
 		AFCA67941DA3D46200970D1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA67931DA3D46200970D1B /* LoginViewController.swift */; };
 		AFD60D021D7D01360002ED14 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD60D011D7D01360002ED14 /* Users.swift */; };
 		B86FBFB47C3B16B26650B9EF /* Pods_NobalaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F8CDBB075E1BAE30EE1D7F /* Pods_NobalaUITests.framework */; };
@@ -103,6 +108,11 @@
 		AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		AFB086471D143FB200DB6266 /* MainPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPages.swift; sourceTree = "<group>"; };
 		AFB9E4BB1D11605900C045EF /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		AFC6BC6B1DB9791300AA4E9C /* ExamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsViewController.swift; sourceTree = "<group>"; };
+		AFC6BC6D1DB9793600AA4E9C /* HomeWorkReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorkReportViewController.swift; sourceTree = "<group>"; };
+		AFC6BC6F1DB9794F00AA4E9C /* ExamsReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsReportViewController.swift; sourceTree = "<group>"; };
+		AFC6BC711DB9797700AA4E9C /* LearningPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningPlanViewController.swift; sourceTree = "<group>"; };
+		AFC6BC731DB979AB00AA4E9C /* DailyHomeworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyHomeworkViewController.swift; sourceTree = "<group>"; };
 		AFCA67931DA3D46200970D1B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AFD60D011D7D01360002ED14 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		C301D27F1D2327FB00EF0AE6 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +188,11 @@
 				AFCA67931DA3D46200970D1B /* LoginViewController.swift */,
 				E3430A551DB0254C008BC6BB /* managerMainMenuViewController.swift */,
 				E3430A571DB02C5B008BC6BB /* homeWorkViewController.swift */,
+				AFC6BC6B1DB9791300AA4E9C /* ExamsViewController.swift */,
+				AFC6BC6D1DB9793600AA4E9C /* HomeWorkReportViewController.swift */,
+				AFC6BC6F1DB9794F00AA4E9C /* ExamsReportViewController.swift */,
+				AFC6BC711DB9797700AA4E9C /* LearningPlanViewController.swift */,
+				AFC6BC731DB979AB00AA4E9C /* DailyHomeworkViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -680,14 +695,18 @@
 				AFB086421D13577600DB6266 /* NobalaViewController.swift in Sources */,
 				418825F31D12FD8D002C2648 /* Event.swift in Sources */,
 				AF7256801D9A75A9001E0515 /* Exams.swift in Sources */,
+				AFC6BC701DB9794F00AA4E9C /* ExamsReportViewController.swift in Sources */,
 				AFB086481D143FB200DB6266 /* MainPages.swift in Sources */,
 				E3430A5A1DB02FC5008BC6BB /* homeWorkTableViewCell.swift in Sources */,
+				AFC6BC741DB979AB00AA4E9C /* DailyHomeworkViewController.swift in Sources */,
 				AF106BF11D0D5D260053130C /* ViewController.swift in Sources */,
 				AFD60D021D7D01360002ED14 /* Users.swift in Sources */,
 				41EE79731D1F0227003B4025 /* leftViewController.swift in Sources */,
+				AFC6BC721DB9797700AA4E9C /* LearningPlanViewController.swift in Sources */,
 				AFB9E4BC1D11605900C045EF /* EventsViewController.swift in Sources */,
 				AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */,
 				41D16C621D10384700EEB8A2 /* NewsTableViewCell.swift in Sources */,
+				AFC6BC6C1DB9791300AA4E9C /* ExamsViewController.swift in Sources */,
 				AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */,
 				AFCA67941DA3D46200970D1B /* LoginViewController.swift in Sources */,
 				AF940BF71DA5651800937119 /* NobalaWebServiceProtocol.swift in Sources */,
@@ -699,6 +718,7 @@
 				AF71CA0E1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift in Sources */,
 				418825F91D15A1BC002C2648 /* NewsDetailsViewController.swift in Sources */,
 				AF9A879A1D9D2C5D00B62337 /* HomeWorkStudentReport.swift in Sources */,
+				AFC6BC6E1DB9793600AA4E9C /* HomeWorkReportViewController.swift in Sources */,
 				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,
 				C301D2801D2327FB00EF0AE6 /* SocialViewController.swift in Sources */,
 				418825F11D11C698002C2648 /* News.swift in Sources */,

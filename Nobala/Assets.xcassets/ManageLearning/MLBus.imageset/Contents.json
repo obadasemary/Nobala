@@ -2,15 +2,16 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "link.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "الحافلة المدرسية-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "الحافلة المدرسية.png",
       "scale" : "3x"
     }
   ],
