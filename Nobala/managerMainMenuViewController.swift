@@ -8,8 +8,12 @@
 
 import UIKit
 import ENSwiftSideMenu
+import KeychainAccess
   
 class managerMainMenuViewController: UIViewController, ENSideMenuDelegate  {
+    
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userType: UIImageView!
     
     var sideMenu:ENSideMenu?
     
@@ -19,6 +23,17 @@ class managerMainMenuViewController: UIViewController, ENSideMenuDelegate  {
         let logo = UIImage(named: "LoginTitle.png")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
+        
+        let keychain = Keychain(service: "Noblaa.app")
+        userName.text = keychain["userFName"]
+        
+        if keychain["user_type"]! == "1" {
+            userType.image = UIImage(named: "MLParant.png")
+        } else if keychain["user_type"]! == "2" {
+            userType.image = UIImage(named: "MLStudend.png")
+        } else {
+            userType.image = UIImage(named: "MLTeacher.png")
+        }
     }
 
     override func viewWillAppear(animated: Bool) {

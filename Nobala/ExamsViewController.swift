@@ -7,9 +7,19 @@
 //
 
 import UIKit
+import ASProgressHud
 import ENSwiftSideMenu
+import KeychainAccess
 
-class ExamsViewController: UIViewController, ENSideMenuDelegate {
+class ExamsViewController: UIViewController, ENSideMenuDelegate, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userType: UIImageView!
+    
+    @IBOutlet weak var examsTableView: UITableView!
+    
+    var examArray = []
+    var selectedExams: Exams = Exams()
     
     var sideMenu:ENSideMenu?
     
@@ -20,16 +30,60 @@ class ExamsViewController: UIViewController, ENSideMenuDelegate {
 
         self.sideMenuController()?.sideMenu?.delegate = self
         
+        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+        
         let logo = UIImage(named: "LoginTitle.png")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let alertController = UIAlertController(title: "Oops", message: "ExamsViewController", preferredStyle: .Alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        let keychain = Keychain(service: "Noblaa.app")
         
-        self.presentViewController(alertController, animated: true, completion: nil)
+        if let Userauth_token : String = keychain["auth_token"] {
+            
+            NobalaClient.sharedInstance().getCurrentExams(Userauth_token, completionHandler: { (success, errorMessage, myExams) in
+                
+                if !success {
+                    
+                    var message = "Unknown error, please try again"
+                    
+                    if errorMessage == "invalid_Data" {
+                        
+                        message = "Pleas Make Sure  is correct"
+                    }
+                    
+                    let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                    
+                    return
+                }
+                
+                self.examArray = myExams
+                
+                ASProgressHud.hideHUDForView(self.view, animated: true)
+                
+                self.examsTableView.reloadData()
+                
+                }, fail: { (error, errorMessage) in
+                    let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
+            })
+            
+            userName.text = keychain["userFName"]
+            
+            if keychain["user_type"]! == "1" {
+                userType.image = UIImage(named: "MLParant.png")
+            } else if keychain["user_type"]! == "2" {
+                userType.image = UIImage(named: "MLStudend.png")
+            } else {
+                userType.image = UIImage(named: "MLTeacher.png")
+            }
+        }
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -72,6 +126,21 @@ class ExamsViewController: UIViewController, ENSideMenuDelegate {
         self.navigationController!.pushViewController(secondViewController, animated: true)
     }
 
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(examArray.count)
+        return self.examArray.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let row = indexPath.row
+        let tableViewCell = self.examsTableView.dequeueReusableCellWithIdentifier("ExamsCell", forIndexPath: indexPath) as! ExamsTableViewCell
+        
+        tableViewCell.ExamsTitle.text = examArray[row].valueForKey("ScheduleName") as? String
+        tableViewCell.ExamsText.text = examArray[row].valueForKey("ScheduleEndDate") as? String
+        
+        return tableViewCell
+    }
     
 
     /*

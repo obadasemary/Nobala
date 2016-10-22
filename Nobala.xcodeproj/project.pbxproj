@@ -15,6 +15,7 @@
 		41EE79731D1F0227003B4025 /* leftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EE79721D1F0227003B4025 /* leftViewController.swift */; };
 		57CFB314DE50DA2BFD824FA0 /* Pods_Nobala.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6584049A7C858A374C3B44 /* Pods_Nobala.framework */; };
 		AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */; };
+		AF09BBDB1DBBEC4E00C4414F /* ExamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF09BBDA1DBBEC4E00C4414F /* ExamsTableViewCell.swift */; };
 		AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BEE1D0D5D260053130C /* AppDelegate.swift */; };
 		AF106BF11D0D5D260053130C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BF01D0D5D260053130C /* ViewController.swift */; };
 		AF106BF41D0D5D260053130C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF106BF21D0D5D260053130C /* Main.storyboard */; };
@@ -82,6 +83,7 @@
 		6EF4386AC8933116735F88D8 /* Pods-Nobala.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nobala.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nobala/Pods-Nobala.debug.xcconfig"; sourceTree = "<group>"; };
 		7EB0F448900B2FBAA7E40BDF /* Pods-NobalaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		AF09BBDA1DBBEC4E00C4414F /* ExamsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsTableViewCell.swift; sourceTree = "<group>"; };
 		AF106BEB1D0D5D260053130C /* Nobala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF106BEE1D0D5D260053130C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF106BF01D0D5D260053130C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				41D16C611D10384700EEB8A2 /* NewsTableViewCell.swift */,
 				418825F81D15A1BC002C2648 /* NewsDetailsViewController.swift */,
 				E3430A591DB02FC5008BC6BB /* homeWorkTableViewCell.swift */,
+				AF09BBDA1DBBEC4E00C4414F /* ExamsTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -701,6 +704,7 @@
 				AFC6BC741DB979AB00AA4E9C /* DailyHomeworkViewController.swift in Sources */,
 				AF106BF11D0D5D260053130C /* ViewController.swift in Sources */,
 				AFD60D021D7D01360002ED14 /* Users.swift in Sources */,
+				AF09BBDB1DBBEC4E00C4414F /* ExamsTableViewCell.swift in Sources */,
 				41EE79731D1F0227003B4025 /* leftViewController.swift in Sources */,
 				AFC6BC721DB9797700AA4E9C /* LearningPlanViewController.swift in Sources */,
 				AFB9E4BC1D11605900C045EF /* EventsViewController.swift in Sources */,

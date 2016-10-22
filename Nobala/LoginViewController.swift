@@ -87,13 +87,13 @@ class LoginViewController: UIViewController, ENSideMenuDelegate, ViewWebServiceP
             user?.accessToken
             
             //Key Chain Implementation
-             let keychain = Keychain(service: "Noblaa.app")
-            
-             keychain["auth_token"] = user?.accessToken
-             keychain["user_type"] = user?.userTypeID
-             keychain["userFName"] = user?.userFullName
-            
-             //End of Key Chain Implementation
+            let keychain = Keychain(service: "Noblaa.app")
+
+            keychain["auth_token"] = user?.accessToken
+            keychain["user_type"] = user?.userTypeID
+            keychain["userFName"] = user?.userFullName
+
+            //End of Key Chain Implementation
      
             
             self.performSegueWithIdentifier("enterManagerArea", sender: self)

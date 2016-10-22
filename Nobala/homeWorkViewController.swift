@@ -16,6 +16,9 @@ import KeychainAccess
 
 class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource, ENSideMenuDelegate {
     
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userType: UIImageView!
+    
     var sideMenu:ENSideMenu?
     
     var window: UIWindow?
@@ -39,10 +42,12 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
         self.navigationItem.titleView = imageView
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
         self.clientObject = NobalaClient.sharedInstance()
         self.clientObject?.webServiceProtocol = self
         
         let keychain = Keychain(service: "Noblaa.app")
+        
         if let Userauth_token : String = keychain["auth_token"] {
             
             NobalaClient.sharedInstance().getCurrentHomeWork(Userauth_token, completionHandler: { (success, errorMessage, myHomeWork) in
@@ -65,8 +70,9 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
                 }
                 
                 self.hWArray = myHomeWork
-                print(user )
-                 ASProgressHud.hideHUDForView(self.view, animated: true)
+                
+                ASProgressHud.hideHUDForView(self.view, animated: true)
+                
                 self.newsTableView.reloadData()
                 
             }) { (error, errorMessage) in
@@ -76,6 +82,16 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
                 
                 self.presentViewController(alertController, animated: true, completion: nil)
             }
+        }
+        
+        userName.text = keychain["userFName"]
+
+        if keychain["user_type"]! == "1" {
+            userType.image = UIImage(named: "MLParant.png")
+        } else if keychain["user_type"]! == "2" {
+            userType.image = UIImage(named: "MLStudend.png")
+        } else {
+            userType.image = UIImage(named: "MLTeacher.png")
         }
     }
 
@@ -121,42 +137,31 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("return self.hWArray.count" +  String (hWArray.count))
         return self.hWArray.count
         
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
-    {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        
         
         let row = indexPath.row
         let tableViewCell = self.newsTableView.dequeueReusableCellWithIdentifier("homeWorkCell", forIndexPath: indexPath) as! homeWorkTableViewCell
         
         tableViewCell.NewsTitle.text = hWArray[row].valueForKey("ScheduleName") as? String
         tableViewCell.NewsText.text = hWArray[row].valueForKey("ScheduleEndDate") as? String
-       
-        
-//        dispatch_async(dispatch_get_main_queue()) {
-//            
-////            ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
-////            ASProgressHud.hideHUDForView(self.view, animated: true)
-////        }
-        
-        
         
         return tableViewCell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
-    {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 //        performSegueWithIdentifier("showNewsDetailsSegue", sender: self)
 //        self.selectedNews = newsArray[indexPath.row]
 //        self.newsDetailsView.news = self.selectedNews
 //        //        self.newsDetailsView.newsDetailsTitle.text = self.selectedNews._title
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-    {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
 //        if (segue.identifier == "showNewsDetailsSegue")
 //        {
