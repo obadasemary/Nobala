@@ -8,8 +8,18 @@
 
 import UIKit
 import ENSwiftSideMenu
+import ASProgressHud
+import KeychainAccess
 
-class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate {
+class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userType: UIImageView!
+    
+    @IBOutlet weak var homeworkReportTableView: UITableView!
+    
+    var homeworkReoprtArray = []
+    var selectedHomeworkReport: HomeWorkStudentReport = HomeWorkStudentReport()
     
     var sideMenu:ENSideMenu?
     
@@ -26,10 +36,52 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate {
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let alertController = UIAlertController(title: "Oops", message: "HomeWorkReportViewController", preferredStyle: .Alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        let keychain = Keychain(service: "Noblaa.app")
         
-        self.presentViewController(alertController, animated: true, completion: nil)
+        if let Userauth_token : String = keychain["auth_token"] {
+            
+            NobalaClient.sharedInstance().getHomeWorkStudentReport(Userauth_token, completionHandler: { (success, errorMessage, myResult) in
+                
+                if !success {
+                    
+                    var message = "Unknown error, please try again"
+                    
+                    if errorMessage == "invalid_Data" {
+                        
+                        message = "Pleas Make Sure  is correct"
+                    }
+                    
+                    let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                    
+                    return
+                }
+                
+                self.homeworkReoprtArray = myResult
+                
+                ASProgressHud.hideHUDForView(self.view, animated: true)
+                
+                self.homeworkReportTableView.reloadData()
+
+                }, fail: { (error, errorMessage) in
+                    let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
+            })
+            
+            userName.text = keychain["userFName"]
+            
+            if keychain["user_type"]! == "1" {
+                userType.image = UIImage(named: "MLParant.png")
+            } else if keychain["user_type"]! == "2" {
+                userType.image = UIImage(named: "MLStudend.png")
+            } else {
+                userType.image = UIImage(named: "MLTeacher.png")
+            }
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -72,6 +124,22 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate {
         self.navigationController!.pushViewController(secondViewController, animated: true)
     }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return self.homeworkReoprtArray.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let row = indexPath.row
+        let tableViewCell = self.homeworkReportTableView.dequeueReusableCellWithIdentifier("HomeWorkReportCell", forIndexPath: indexPath) as! HomeWorkReportTableViewCell
+        
+        tableViewCell.HomeworkReportTitle.text = homeworkReoprtArray[row].valueForKey("ScheduleName") as? String
+        tableViewCell.HomeworkReportText.text = homeworkReoprtArray[row].valueForKey("ScheduleEndDate") as? String
+        tableViewCell.HomeworkReportDegree.text = String((homeworkReoprtArray[row].valueForKey("ExamSheetScore") as? Int)!)
+        
+        return tableViewCell
+    }
 
     /*
     // MARK: - Navigation

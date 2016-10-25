@@ -127,7 +127,6 @@ class ExamsViewController: UIViewController, ENSideMenuDelegate, UITableViewDele
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(examArray.count)
         return self.examArray.count
     }
     
