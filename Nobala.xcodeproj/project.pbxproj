@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		292ABB761DC16E8200CF002A /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 292ABB641DC16E8200CF002A /* .gitkeep */; };
+		292ABB771DC16E8200CF002A /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB661DC16E8200CF002A /* FXBlurView.m */; };
+		292ABB781DC16E8200CF002A /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB671DC16E8200CF002A /* InteractiveTransition.swift */; };
+		292ABB791DC16E8200CF002A /* PopupDialog+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB681DC16E8200CF002A /* PopupDialog+Keyboard.swift */; };
+		292ABB7A1DC16E8200CF002A /* PopupDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB691DC16E8200CF002A /* PopupDialog.swift */; };
+		292ABB7B1DC16E8200CF002A /* PopupDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB6A1DC16E8200CF002A /* PopupDialogButton.swift */; };
+		292ABB7C1DC16E8200CF002A /* PopupDialogContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB6B1DC16E8200CF002A /* PopupDialogContainerView.swift */; };
+		292ABB7D1DC16E8200CF002A /* PopupDialogDefaultButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB6C1DC16E8200CF002A /* PopupDialogDefaultButtons.swift */; };
+		292ABB7E1DC16E8200CF002A /* PopupDialogDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB6D1DC16E8200CF002A /* PopupDialogDefaultView.swift */; };
+		292ABB7F1DC16E8200CF002A /* PopupDialogDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB6E1DC16E8200CF002A /* PopupDialogDefaultViewController.swift */; };
+		292ABB801DC16E8200CF002A /* PopupDialogOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB6F1DC16E8200CF002A /* PopupDialogOverlayView.swift */; };
+		292ABB811DC16E8200CF002A /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB701DC16E8200CF002A /* PresentationController.swift */; };
+		292ABB821DC16E8200CF002A /* PresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB711DC16E8200CF002A /* PresentationManager.swift */; };
+		292ABB831DC16E8200CF002A /* TransitionAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB721DC16E8200CF002A /* TransitionAnimations.swift */; };
+		292ABB841DC16E8200CF002A /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB731DC16E8200CF002A /* TransitionAnimator.swift */; };
+		292ABB851DC16E8200CF002A /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB741DC16E8200CF002A /* UIView+Animations.swift */; };
+		292ABB861DC16E8200CF002A /* UIViewController+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB751DC16E8200CF002A /* UIViewController+Visibility.swift */; };
+		292ABB8A1DC16F8B00CF002A /* chooseDateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB881DC16F8B00CF002A /* chooseDateTimeViewController.swift */; };
+		292ABB8B1DC16F8B00CF002A /* SetTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB891DC16F8B00CF002A /* SetTimeViewController.swift */; };
 		418825EF1D11C523002C2648 /* ViewWebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418825EE1D11C523002C2648 /* ViewWebServiceProtocol.swift */; };
 		418825F11D11C698002C2648 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418825F01D11C698002C2648 /* News.swift */; };
 		418825F31D12FD8D002C2648 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418825F21D12FD8D002C2648 /* Event.swift */; };
@@ -74,6 +93,27 @@
 /* Begin PBXFileReference section */
 		19F8CDBB075E1BAE30EE1D7F /* Pods_NobalaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobalaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6584049A7C858A374C3B44 /* Pods_Nobala.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nobala.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		292ABB641DC16E8200CF002A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		292ABB651DC16E8200CF002A /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		292ABB661DC16E8200CF002A /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		292ABB671DC16E8200CF002A /* InteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveTransition.swift; sourceTree = "<group>"; };
+		292ABB681DC16E8200CF002A /* PopupDialog+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopupDialog+Keyboard.swift"; sourceTree = "<group>"; };
+		292ABB691DC16E8200CF002A /* PopupDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialog.swift; sourceTree = "<group>"; };
+		292ABB6A1DC16E8200CF002A /* PopupDialogButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialogButton.swift; sourceTree = "<group>"; };
+		292ABB6B1DC16E8200CF002A /* PopupDialogContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialogContainerView.swift; sourceTree = "<group>"; };
+		292ABB6C1DC16E8200CF002A /* PopupDialogDefaultButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialogDefaultButtons.swift; sourceTree = "<group>"; };
+		292ABB6D1DC16E8200CF002A /* PopupDialogDefaultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialogDefaultView.swift; sourceTree = "<group>"; };
+		292ABB6E1DC16E8200CF002A /* PopupDialogDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialogDefaultViewController.swift; sourceTree = "<group>"; };
+		292ABB6F1DC16E8200CF002A /* PopupDialogOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialogOverlayView.swift; sourceTree = "<group>"; };
+		292ABB701DC16E8200CF002A /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		292ABB711DC16E8200CF002A /* PresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationManager.swift; sourceTree = "<group>"; };
+		292ABB721DC16E8200CF002A /* TransitionAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimations.swift; sourceTree = "<group>"; };
+		292ABB731DC16E8200CF002A /* TransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
+		292ABB741DC16E8200CF002A /* UIView+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
+		292ABB751DC16E8200CF002A /* UIViewController+Visibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Visibility.swift"; sourceTree = "<group>"; };
+		292ABB871DC16EA700CF002A /* Nobala-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Nobala-Bridging-Header.h"; sourceTree = "<group>"; };
+		292ABB881DC16F8B00CF002A /* chooseDateTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chooseDateTimeViewController.swift; sourceTree = "<group>"; };
+		292ABB891DC16F8B00CF002A /* SetTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTimeViewController.swift; sourceTree = "<group>"; };
 		2C425AFED6CC1EB8D079BC25 /* Pods-NobalaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		418825EE1D11C523002C2648 /* ViewWebServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewWebServiceProtocol.swift; path = Controllers/ViewWebServiceProtocol.swift; sourceTree = "<group>"; };
 		418825F01D11C698002C2648 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = News.swift; path = Model/News.swift; sourceTree = "<group>"; };
@@ -159,6 +199,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		292ABB631DC16E8200CF002A /* PopUpDialog */ = {
+			isa = PBXGroup;
+			children = (
+				292ABB641DC16E8200CF002A /* .gitkeep */,
+				292ABB651DC16E8200CF002A /* FXBlurView.h */,
+				292ABB661DC16E8200CF002A /* FXBlurView.m */,
+				292ABB671DC16E8200CF002A /* InteractiveTransition.swift */,
+				292ABB681DC16E8200CF002A /* PopupDialog+Keyboard.swift */,
+				292ABB691DC16E8200CF002A /* PopupDialog.swift */,
+				292ABB6A1DC16E8200CF002A /* PopupDialogButton.swift */,
+				292ABB6B1DC16E8200CF002A /* PopupDialogContainerView.swift */,
+				292ABB6C1DC16E8200CF002A /* PopupDialogDefaultButtons.swift */,
+				292ABB6D1DC16E8200CF002A /* PopupDialogDefaultView.swift */,
+				292ABB6E1DC16E8200CF002A /* PopupDialogDefaultViewController.swift */,
+				292ABB6F1DC16E8200CF002A /* PopupDialogOverlayView.swift */,
+				292ABB701DC16E8200CF002A /* PresentationController.swift */,
+				292ABB711DC16E8200CF002A /* PresentationManager.swift */,
+				292ABB721DC16E8200CF002A /* TransitionAnimations.swift */,
+				292ABB731DC16E8200CF002A /* TransitionAnimator.swift */,
+				292ABB741DC16E8200CF002A /* UIView+Animations.swift */,
+				292ABB751DC16E8200CF002A /* UIViewController+Visibility.swift */,
+			);
+			path = PopUpDialog;
+			sourceTree = "<group>";
+		};
 		41D16C5C1D10311000EEB8A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +253,8 @@
 		AF0438861D10C28800CF6F2A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				292ABB881DC16F8B00CF002A /* chooseDateTimeViewController.swift */,
+				292ABB891DC16F8B00CF002A /* SetTimeViewController.swift */,
 				418825EE1D11C523002C2648 /* ViewWebServiceProtocol.swift */,
 				AF940BF61DA5651800937119 /* NobalaWebServiceProtocol.swift */,
 				AFB086411D13577600DB6266 /* NobalaViewController.swift */,
@@ -233,6 +300,8 @@
 		AF106BED1D0D5D260053130C /* Nobala */ = {
 			isa = PBXGroup;
 			children = (
+				292ABB871DC16EA700CF002A /* Nobala-Bridging-Header.h */,
+				292ABB631DC16E8200CF002A /* PopUpDialog */,
 				AF0438861D10C28800CF6F2A /* Controller */,
 				41D16C5C1D10311000EEB8A2 /* View */,
 				AF106C1C1D0D70FC0053130C /* Model */,
@@ -421,6 +490,7 @@
 				AF106BF91D0D5D260053130C /* LaunchScreen.storyboard in Resources */,
 				AF106BF61D0D5D260053130C /* Assets.xcassets in Resources */,
 				AF106BF41D0D5D260053130C /* Main.storyboard in Resources */,
+				292ABB761DC16E8200CF002A /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +583,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		418A7ED01D0C93760E992F1D /* [CP] Copy Pods Resources */ = {
@@ -588,7 +658,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A6A763EE53FB97A41E168204 /* [CP] Check Pods Manifest.lock */ = {
@@ -633,7 +703,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C706194E4137806D723223BA /* [CP] Check Pods Manifest.lock */ = {
@@ -703,16 +773,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292ABB8B1DC16F8B00CF002A /* SetTimeViewController.swift in Sources */,
 				418825EF1D11C523002C2648 /* ViewWebServiceProtocol.swift in Sources */,
 				AFB086421D13577600DB6266 /* NobalaViewController.swift in Sources */,
 				418825F31D12FD8D002C2648 /* Event.swift in Sources */,
 				AF7256801D9A75A9001E0515 /* Exams.swift in Sources */,
 				AFC6BC701DB9794F00AA4E9C /* ExamsReportViewController.swift in Sources */,
+				292ABB851DC16E8200CF002A /* UIView+Animations.swift in Sources */,
 				AFDDCD6D1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift in Sources */,
 				AFB086481D143FB200DB6266 /* MainPages.swift in Sources */,
+				292ABB8A1DC16F8B00CF002A /* chooseDateTimeViewController.swift in Sources */,
+				292ABB861DC16E8200CF002A /* UIViewController+Visibility.swift in Sources */,
 				E3430A5A1DB02FC5008BC6BB /* homeWorkTableViewCell.swift in Sources */,
 				AFC6BC741DB979AB00AA4E9C /* DailyHomeworkViewController.swift in Sources */,
 				AF106BF11D0D5D260053130C /* ViewController.swift in Sources */,
+				292ABB821DC16E8200CF002A /* PresentationManager.swift in Sources */,
 				AFD60D021D7D01360002ED14 /* Users.swift in Sources */,
 				AF09BBDB1DBBEC4E00C4414F /* ExamsTableViewCell.swift in Sources */,
 				41EE79731D1F0227003B4025 /* leftViewController.swift in Sources */,
@@ -721,9 +796,14 @@
 				AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */,
 				41D16C621D10384700EEB8A2 /* NewsTableViewCell.swift in Sources */,
 				AFC6BC6C1DB9791300AA4E9C /* ExamsViewController.swift in Sources */,
+				292ABB7D1DC16E8200CF002A /* PopupDialogDefaultButtons.swift in Sources */,
 				AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */,
 				AFCA67941DA3D46200970D1B /* LoginViewController.swift in Sources */,
 				AF940BF71DA5651800937119 /* NobalaWebServiceProtocol.swift in Sources */,
+				292ABB841DC16E8200CF002A /* TransitionAnimator.swift in Sources */,
+				292ABB791DC16E8200CF002A /* PopupDialog+Keyboard.swift in Sources */,
+				292ABB811DC16E8200CF002A /* PresentationController.swift in Sources */,
+				292ABB771DC16E8200CF002A /* FXBlurView.m in Sources */,
 				AFB086441D1358F500DB6266 /* KnowsUsViewController.swift in Sources */,
 				AFDDCD6F1DBF8E0200629C00 /* ExamsReportTableViewCell.swift in Sources */,
 				AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */,
@@ -733,13 +813,21 @@
 				AFCF4C311DC1246E00E8EF2D /* ExamStudentReport.swift in Sources */,
 				AF71CA0E1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift in Sources */,
 				418825F91D15A1BC002C2648 /* NewsDetailsViewController.swift in Sources */,
+				292ABB831DC16E8200CF002A /* TransitionAnimations.swift in Sources */,
 				AF9A879A1D9D2C5D00B62337 /* HomeWorkStudentReport.swift in Sources */,
 				AFC6BC6E1DB9793600AA4E9C /* HomeWorkReportViewController.swift in Sources */,
+				292ABB7B1DC16E8200CF002A /* PopupDialogButton.swift in Sources */,
 				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,
+				292ABB7F1DC16E8200CF002A /* PopupDialogDefaultViewController.swift in Sources */,
+				292ABB7E1DC16E8200CF002A /* PopupDialogDefaultView.swift in Sources */,
 				C301D2801D2327FB00EF0AE6 /* SocialViewController.swift in Sources */,
 				418825F11D11C698002C2648 /* News.swift in Sources */,
+				292ABB801DC16E8200CF002A /* PopupDialogOverlayView.swift in Sources */,
+				292ABB7A1DC16E8200CF002A /* PopupDialog.swift in Sources */,
+				292ABB7C1DC16E8200CF002A /* PopupDialogContainerView.swift in Sources */,
 				E3430A561DB0254C008BC6BB /* managerMainMenuViewController.swift in Sources */,
 				AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */,
+				292ABB781DC16E8200CF002A /* InteractiveTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -891,6 +979,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.Nobala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nobala/Nobala-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -907,6 +996,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.Nobala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nobala/Nobala-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

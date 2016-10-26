@@ -13,7 +13,10 @@ target 'Nobala' do
   pod 'VRGCalendarView', '~> 0.0'
   pod 'Alamofire', '~> 3.4'
   pod 'KeychainAccess' , '~> 2.4'
-  target 'NobalaTests' do
+  pod 'XLPagerTabStrip', '~> 4.0.2'
+
+
+target 'NobalaTests' do
     inherit! :search_paths
     # Pods for testing
   end
