@@ -11,12 +11,11 @@ import XLPagerTabStrip
 
 class SetTimeViewController: ButtonBarPagerTabStripViewController {
     weak var dialog: PopupDialog?
-    weak var containerController: FilteringSetupTableViewController?
+    weak var containerController: SetTimeViewControllerDelegate?
 
     override func viewDidLoad() {
         self.setButtonBarProperties()
         super.viewDidLoad()
-
     }
 
     override func didReceiveMemoryWarning() {

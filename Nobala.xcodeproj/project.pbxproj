@@ -26,6 +26,12 @@
 		292ABB861DC16E8200CF002A /* UIViewController+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB751DC16E8200CF002A /* UIViewController+Visibility.swift */; };
 		292ABB8A1DC16F8B00CF002A /* chooseDateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB881DC16F8B00CF002A /* chooseDateTimeViewController.swift */; };
 		292ABB8B1DC16F8B00CF002A /* SetTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB891DC16F8B00CF002A /* SetTimeViewController.swift */; };
+		292ABB941DC1749B00CF002A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 292ABB8D1DC1749B00CF002A /* LICENSE */; };
+		292ABB951DC1749B00CF002A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB8E1DC1749B00CF002A /* README.md */; };
+		292ABB961DC1749B00CF002A /* TZSpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB901DC1749B00CF002A /* TZSpacerView.swift */; };
+		292ABB971DC1749B00CF002A /* TZStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB911DC1749B00CF002A /* TZStackView.swift */; };
+		292ABB981DC1749B00CF002A /* TZStackViewAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB921DC1749B00CF002A /* TZStackViewAlignment.swift */; };
+		292ABB991DC1749B00CF002A /* TZStackViewDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB931DC1749B00CF002A /* TZStackViewDistribution.swift */; };
 		418825EF1D11C523002C2648 /* ViewWebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418825EE1D11C523002C2648 /* ViewWebServiceProtocol.swift */; };
 		418825F11D11C698002C2648 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418825F01D11C698002C2648 /* News.swift */; };
 		418825F31D12FD8D002C2648 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418825F21D12FD8D002C2648 /* Event.swift */; };
@@ -114,6 +120,12 @@
 		292ABB871DC16EA700CF002A /* Nobala-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Nobala-Bridging-Header.h"; sourceTree = "<group>"; };
 		292ABB881DC16F8B00CF002A /* chooseDateTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chooseDateTimeViewController.swift; sourceTree = "<group>"; };
 		292ABB891DC16F8B00CF002A /* SetTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTimeViewController.swift; sourceTree = "<group>"; };
+		292ABB8D1DC1749B00CF002A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		292ABB8E1DC1749B00CF002A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		292ABB901DC1749B00CF002A /* TZSpacerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TZSpacerView.swift; sourceTree = "<group>"; };
+		292ABB911DC1749B00CF002A /* TZStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TZStackView.swift; sourceTree = "<group>"; };
+		292ABB921DC1749B00CF002A /* TZStackViewAlignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TZStackViewAlignment.swift; sourceTree = "<group>"; };
+		292ABB931DC1749B00CF002A /* TZStackViewDistribution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TZStackViewDistribution.swift; sourceTree = "<group>"; };
 		2C425AFED6CC1EB8D079BC25 /* Pods-NobalaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		418825EE1D11C523002C2648 /* ViewWebServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewWebServiceProtocol.swift; path = Controllers/ViewWebServiceProtocol.swift; sourceTree = "<group>"; };
 		418825F01D11C698002C2648 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = News.swift; path = Model/News.swift; sourceTree = "<group>"; };
@@ -224,6 +236,36 @@
 			path = PopUpDialog;
 			sourceTree = "<group>";
 		};
+		292ABB8C1DC1749B00CF002A /* TZStackView */ = {
+			isa = PBXGroup;
+			children = (
+				292ABB8D1DC1749B00CF002A /* LICENSE */,
+				292ABB8E1DC1749B00CF002A /* README.md */,
+				292ABB8F1DC1749B00CF002A /* TZStackView */,
+			);
+			path = TZStackView;
+			sourceTree = "<group>";
+		};
+		292ABB8F1DC1749B00CF002A /* TZStackView */ = {
+			isa = PBXGroup;
+			children = (
+				292ABB901DC1749B00CF002A /* TZSpacerView.swift */,
+				292ABB911DC1749B00CF002A /* TZStackView.swift */,
+				292ABB921DC1749B00CF002A /* TZStackViewAlignment.swift */,
+				292ABB931DC1749B00CF002A /* TZStackViewDistribution.swift */,
+			);
+			path = TZStackView;
+			sourceTree = "<group>";
+		};
+		292ABB9A1DC1749F00CF002A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				292ABB8C1DC1749B00CF002A /* TZStackView */,
+				292ABB631DC16E8200CF002A /* PopUpDialog */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
 		41D16C5C1D10311000EEB8A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,7 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				292ABB871DC16EA700CF002A /* Nobala-Bridging-Header.h */,
-				292ABB631DC16E8200CF002A /* PopUpDialog */,
+				292ABB9A1DC1749F00CF002A /* Libraries */,
 				AF0438861D10C28800CF6F2A /* Controller */,
 				41D16C5C1D10311000EEB8A2 /* View */,
 				AF106C1C1D0D70FC0053130C /* Model */,
@@ -491,6 +533,7 @@
 				AF106BF61D0D5D260053130C /* Assets.xcassets in Resources */,
 				AF106BF41D0D5D260053130C /* Main.storyboard in Resources */,
 				292ABB761DC16E8200CF002A /* .gitkeep in Resources */,
+				292ABB941DC1749B00CF002A /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -791,9 +834,11 @@
 				AFD60D021D7D01360002ED14 /* Users.swift in Sources */,
 				AF09BBDB1DBBEC4E00C4414F /* ExamsTableViewCell.swift in Sources */,
 				41EE79731D1F0227003B4025 /* leftViewController.swift in Sources */,
+				292ABB981DC1749B00CF002A /* TZStackViewAlignment.swift in Sources */,
 				AFC6BC721DB9797700AA4E9C /* LearningPlanViewController.swift in Sources */,
 				AFB9E4BC1D11605900C045EF /* EventsViewController.swift in Sources */,
 				AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */,
+				292ABB961DC1749B00CF002A /* TZSpacerView.swift in Sources */,
 				41D16C621D10384700EEB8A2 /* NewsTableViewCell.swift in Sources */,
 				AFC6BC6C1DB9791300AA4E9C /* ExamsViewController.swift in Sources */,
 				292ABB7D1DC16E8200CF002A /* PopupDialogDefaultButtons.swift in Sources */,
@@ -811,11 +856,14 @@
 				AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */,
 				E3430A581DB02C5B008BC6BB /* homeWorkViewController.swift in Sources */,
 				AFCF4C311DC1246E00E8EF2D /* ExamStudentReport.swift in Sources */,
+				292ABB951DC1749B00CF002A /* README.md in Sources */,
 				AF71CA0E1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift in Sources */,
+				292ABB971DC1749B00CF002A /* TZStackView.swift in Sources */,
 				418825F91D15A1BC002C2648 /* NewsDetailsViewController.swift in Sources */,
 				292ABB831DC16E8200CF002A /* TransitionAnimations.swift in Sources */,
 				AF9A879A1D9D2C5D00B62337 /* HomeWorkStudentReport.swift in Sources */,
 				AFC6BC6E1DB9793600AA4E9C /* HomeWorkReportViewController.swift in Sources */,
+				292ABB991DC1749B00CF002A /* TZStackViewDistribution.swift in Sources */,
 				292ABB7B1DC16E8200CF002A /* PopupDialogButton.swift in Sources */,
 				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,
 				292ABB7F1DC16E8200CF002A /* PopupDialogDefaultViewController.swift in Sources */,

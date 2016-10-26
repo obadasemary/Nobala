@@ -9,6 +9,10 @@
 import UIKit
 import XLPagerTabStrip
 
+protocol SetTimeViewControllerDelegate: class {
+    func updateChosenTimes(date: NSDate, type: ChooseTimeViewType)
+}
+
 enum ChooseTimeViewType : Int {
     case From
     case To
@@ -16,7 +20,7 @@ enum ChooseTimeViewType : Int {
 
 class chooseDateTimeViewController: UIViewController, IndicatorInfoProvider {
     @IBOutlet weak var datePicker: UIDatePicker!
-    weak var containerController: FilteringSetupTableViewController?
+    weak var containerController: SetTimeViewControllerDelegate?
     var type: ChooseTimeViewType = .From
     
     override func viewDidLoad() {
