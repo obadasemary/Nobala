@@ -9,6 +9,10 @@
 import UIKit
 
 class ExamsReportTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var ExamText: UILabel!
+    @IBOutlet weak var ExamTitle: UILabel!
+    @IBOutlet weak var ExamDegree: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -470,11 +470,33 @@ extension NobalaClient {
             
             var newArray: NSArray = []
             
-            if let result = response.result.value {
+            if let results = response.result.value {
                 
-                if let results = result as? NSArray {
+                if let result = results as? NSArray {
                     
-                    newArray = results
+                    newArray = result
+                }
+            }
+            
+            completionHandler(success: true, errorMessage: nil, myResult: newArray)
+        }
+    }
+    
+    // MARK: - ExamsStudentReport
+    
+    func getExamsStudentReport(accessToken: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
+        
+        let headers = ["Authorization": "Bearer " + accessToken]
+        
+        Alamofire.request(.POST, NobalaClient.URLs.getExamsStudentReport, headers: headers).responseJSON { (response) in
+            
+            var newArray: NSArray = []
+            
+            if let results = response.result.value {
+                
+                if let result = results as? NSArray {
+                    
+                    newArray = result
                 }
             }
             

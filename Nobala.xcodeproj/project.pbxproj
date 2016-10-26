@@ -42,6 +42,7 @@
 		AFC6BC721DB9797700AA4E9C /* LearningPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6BC711DB9797700AA4E9C /* LearningPlanViewController.swift */; };
 		AFC6BC741DB979AB00AA4E9C /* DailyHomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6BC731DB979AB00AA4E9C /* DailyHomeworkViewController.swift */; };
 		AFCA67941DA3D46200970D1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA67931DA3D46200970D1B /* LoginViewController.swift */; };
+		AFCF4C311DC1246E00E8EF2D /* ExamStudentReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF4C301DC1246E00E8EF2D /* ExamStudentReport.swift */; };
 		AFD60D021D7D01360002ED14 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD60D011D7D01360002ED14 /* Users.swift */; };
 		AFDDCD6D1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDDCD6C1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift */; };
 		AFDDCD6F1DBF8E0200629C00 /* ExamsReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDDCD6E1DBF8E0200629C00 /* ExamsReportTableViewCell.swift */; };
@@ -118,6 +119,7 @@
 		AFC6BC711DB9797700AA4E9C /* LearningPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningPlanViewController.swift; sourceTree = "<group>"; };
 		AFC6BC731DB979AB00AA4E9C /* DailyHomeworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyHomeworkViewController.swift; sourceTree = "<group>"; };
 		AFCA67931DA3D46200970D1B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AFCF4C301DC1246E00E8EF2D /* ExamStudentReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamStudentReport.swift; sourceTree = "<group>"; };
 		AFD60D011D7D01360002ED14 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		AFDDCD6C1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorkReportTableViewCell.swift; sourceTree = "<group>"; };
 		AFDDCD6E1DBF8E0200629C00 /* ExamsReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsReportTableViewCell.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 				AF658EFF1D813B6C005914E9 /* HomeWork.swift */,
 				AF72567F1D9A75A9001E0515 /* Exams.swift */,
 				AF9A87991D9D2C5D00B62337 /* HomeWorkStudentReport.swift */,
+				AFCF4C301DC1246E00E8EF2D /* ExamStudentReport.swift */,
 				AF71CA0D1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift */,
 			);
 			name = Model;
@@ -727,6 +730,7 @@
 				AF658F001D813B6C005914E9 /* HomeWork.swift in Sources */,
 				AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */,
 				E3430A581DB02C5B008BC6BB /* homeWorkViewController.swift in Sources */,
+				AFCF4C311DC1246E00E8EF2D /* ExamStudentReport.swift in Sources */,
 				AF71CA0E1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift in Sources */,
 				418825F91D15A1BC002C2648 /* NewsDetailsViewController.swift in Sources */,
 				AF9A879A1D9D2C5D00B62337 /* HomeWorkStudentReport.swift in Sources */,

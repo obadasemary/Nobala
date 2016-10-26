@@ -30,6 +30,8 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
 
         self.sideMenuController()?.sideMenu?.delegate = self
         
+        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+        
         let logo = UIImage(named: "LoginTitle.png")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
