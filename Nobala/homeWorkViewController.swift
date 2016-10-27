@@ -156,7 +156,7 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     }
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        (cell as! homeWorkTableViewCell).attachmentImageView.tag = indexPath.row
+        (cell as! homeWorkTableViewCell).attachmentImageView.tag = hWArray[indexPath.row].valueForKey("FK_ExamID") as! Int
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
