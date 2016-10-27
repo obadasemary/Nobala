@@ -61,6 +61,7 @@
 		AFB086441D1358F500DB6266 /* KnowsUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086431D1358F500DB6266 /* KnowsUsViewController.swift */; };
 		AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */; };
 		AFB086481D143FB200DB6266 /* MainPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB086471D143FB200DB6266 /* MainPages.swift */; };
+		AFB252471DC28A6300E857A7 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB252461DC28A6300E857A7 /* PDFViewController.swift */; };
 		AFB9E4BC1D11605900C045EF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9E4BB1D11605900C045EF /* EventsViewController.swift */; };
 		AFC6BC6C1DB9791300AA4E9C /* ExamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6BC6B1DB9791300AA4E9C /* ExamsViewController.swift */; };
 		AFC6BC6E1DB9793600AA4E9C /* HomeWorkReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6BC6D1DB9793600AA4E9C /* HomeWorkReportViewController.swift */; };
@@ -70,6 +71,8 @@
 		AFCA67941DA3D46200970D1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA67931DA3D46200970D1B /* LoginViewController.swift */; };
 		AFCF4C311DC1246E00E8EF2D /* ExamStudentReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF4C301DC1246E00E8EF2D /* ExamStudentReport.swift */; };
 		AFCF4C371DC199D000E8EF2D /* ExamWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF4C361DC199D000E8EF2D /* ExamWebViewController.swift */; };
+		AFCF4C391DC221FF00E8EF2D /* LearningPlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF4C381DC221FF00E8EF2D /* LearningPlanTableViewCell.swift */; };
+		AFCF4C3B1DC233F500E8EF2D /* LearnPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF4C3A1DC233F500E8EF2D /* LearnPlan.swift */; };
 		AFD60D021D7D01360002ED14 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD60D011D7D01360002ED14 /* Users.swift */; };
 		AFDDCD6D1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDDCD6C1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift */; };
 		AFDDCD6F1DBF8E0200629C00 /* ExamsReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDDCD6E1DBF8E0200629C00 /* ExamsReportTableViewCell.swift */; };
@@ -167,6 +170,7 @@
 		AFB086431D1358F500DB6266 /* KnowsUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowsUsViewController.swift; sourceTree = "<group>"; };
 		AFB086451D13FC5800DB6266 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		AFB086471D143FB200DB6266 /* MainPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPages.swift; sourceTree = "<group>"; };
+		AFB252461DC28A6300E857A7 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		AFB9E4BB1D11605900C045EF /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		AFC6BC6B1DB9791300AA4E9C /* ExamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsViewController.swift; sourceTree = "<group>"; };
 		AFC6BC6D1DB9793600AA4E9C /* HomeWorkReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorkReportViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 		AFCA67931DA3D46200970D1B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AFCF4C301DC1246E00E8EF2D /* ExamStudentReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamStudentReport.swift; sourceTree = "<group>"; };
 		AFCF4C361DC199D000E8EF2D /* ExamWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamWebViewController.swift; sourceTree = "<group>"; };
+		AFCF4C381DC221FF00E8EF2D /* LearningPlanTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningPlanTableViewCell.swift; sourceTree = "<group>"; };
+		AFCF4C3A1DC233F500E8EF2D /* LearnPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnPlan.swift; sourceTree = "<group>"; };
 		AFD60D011D7D01360002ED14 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		AFDDCD6C1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorkReportTableViewCell.swift; sourceTree = "<group>"; };
 		AFDDCD6E1DBF8E0200629C00 /* ExamsReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsReportTableViewCell.swift; sourceTree = "<group>"; };
@@ -279,6 +285,8 @@
 				AF09BBDA1DBBEC4E00C4414F /* ExamsTableViewCell.swift */,
 				AFDDCD6C1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift */,
 				AFDDCD6E1DBF8E0200629C00 /* ExamsReportTableViewCell.swift */,
+				AFCF4C381DC221FF00E8EF2D /* LearningPlanTableViewCell.swift */,
+				AFB252461DC28A6300E857A7 /* PDFViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -397,6 +405,7 @@
 				AF9A87991D9D2C5D00B62337 /* HomeWorkStudentReport.swift */,
 				AFCF4C301DC1246E00E8EF2D /* ExamStudentReport.swift */,
 				AF71CA0D1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift */,
+				AFCF4C3A1DC233F500E8EF2D /* LearnPlan.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -838,6 +847,7 @@
 				AF106BF11D0D5D260053130C /* ViewController.swift in Sources */,
 				292ABB821DC16E8200CF002A /* PresentationManager.swift in Sources */,
 				AFD60D021D7D01360002ED14 /* Users.swift in Sources */,
+				AFCF4C391DC221FF00E8EF2D /* LearningPlanTableViewCell.swift in Sources */,
 				AF09BBDB1DBBEC4E00C4414F /* ExamsTableViewCell.swift in Sources */,
 				41EE79731D1F0227003B4025 /* leftViewController.swift in Sources */,
 				292ABB981DC1749B00CF002A /* TZStackViewAlignment.swift in Sources */,
@@ -860,6 +870,7 @@
 				AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */,
 				AF658F001D813B6C005914E9 /* HomeWork.swift in Sources */,
 				AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */,
+				AFCF4C3B1DC233F500E8EF2D /* LearnPlan.swift in Sources */,
 				E3430A581DB02C5B008BC6BB /* homeWorkViewController.swift in Sources */,
 				AFCF4C311DC1246E00E8EF2D /* ExamStudentReport.swift in Sources */,
 				AFCF4C371DC199D000E8EF2D /* ExamWebViewController.swift in Sources */,
@@ -875,6 +886,7 @@
 				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,
 				292ABB7F1DC16E8200CF002A /* PopupDialogDefaultViewController.swift in Sources */,
 				292ABB7E1DC16E8200CF002A /* PopupDialogDefaultView.swift in Sources */,
+				AFB252471DC28A6300E857A7 /* PDFViewController.swift in Sources */,
 				292ABB9C1DC183A500CF002A /* HomeWorkWebViewController.swift in Sources */,
 				C301D2801D2327FB00EF0AE6 /* SocialViewController.swift in Sources */,
 				418825F11D11C698002C2648 /* News.swift in Sources */,

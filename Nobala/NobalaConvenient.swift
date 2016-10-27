@@ -503,72 +503,36 @@ extension NobalaClient {
             completionHandler(success: true, errorMessage: nil, myResult: newArray)
         }
     }
-
-    
-//    func getHomeWorkStudentReport(accessToken: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
-//        
-//        let headers = ["Authorization": "Bearer " + accessToken]
-//        
-//        Alamofire.request(.POST, NobalaClient.URLs.getHomeWorkStudentReport, headers: headers).responseJSON { (response) in
-//            
-//            if let result = response.result.value {
-//                
-//                if let homeWorks = result as? NSArray {
-//                    
-//                    var newArray = [HomeWorkStudentReport]()
-//                    
-//                    for homeWork in homeWorks {
-//                        
-//                        let report: HomeWorkStudentReport = HomeWorkStudentReport()
-//                        
-//                        report.ExamScheduleID = homeWork["ExamScheduleID"] as! Int
-//                        report.TeacherID = homeWork["TeacherID"] as! Int
-//                        
-//                        report.ScheduleName = homeWork["ScheduleName"] as! String
-//                        report.TeacherNameAr = homeWork["TeacherNameAr"] as! String
-////                        report.TeacherNameEn = homeWork["TeacherNameEn"] as! String
-//                        
-//                        report.ScheduleStartDate = homeWork["ScheduleStartDate"] as! String
-//                        report.ScheduleEndDate = homeWork["ScheduleEndDate"] as! String
-//                        
-//                        report.FinalDegree = homeWork["FinalDegree"] as! Int
-//                        report.ExamID = homeWork["ExamID"] as! Int
-//                        report.ExamSheetScore = homeWork["ExamSheetScore"] as! Int
-//                        report.ExamTypeID = homeWork["ExamTypeID"] as! Int
-//                        report.isSchFinished = homeWork["isSchFinished"] as! Int
-//                        
-//                        print(report.ExamScheduleID)
-//                        print(report.TeacherID)
-//                        
-//                        print(report.ScheduleName)
-//                        print(report.TeacherNameAr)
-////                        print(report.TeacherNameEn)
-//                        
-//                        print(report.ScheduleStartDate)
-//                        print(report.ScheduleEndDate)
-//                        
-//                        print(report.FinalDegree)
-//                        print(report.ExamID)
-//                        print(report.ExamSheetScore)
-//                        print(report.ExamTypeID)
-//                        print(report.isSchFinished)                    
-//                        
-//                        print("***************************")
-//                        
-//                        newArray.append(report)
-//                        
-//                    }
-//                    
-//                    self.webServiceProtocol?.onGetHomeWorkStudentReport(newArray)
-//                }
-//            }
-//        }
-//        
-//        completionHandler(success: true, error: nil)
-//    }
     
     // MARK: - GetStudyPlan
     
+    func getLearnPlan(accessToken: String, SemsterID: String, UserTypeID: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
+        
+        let headers = ["Authorization": "Bearer " + accessToken]
+        
+        let parameters: [String: AnyObject] = [
+
+            "UserTypeID": UserTypeID,
+            "SemsterID": SemsterID,
+            "index": "0",
+            "limit": "10"
+        ]
+        
+        Alamofire.request(.POST, NobalaClient.URLs.getStudyPlan, parameters: parameters, encoding: .JSON, headers: headers).responseJSON { (response) in
+            
+            var newArray: NSArray = []
+            
+            if let results = response.result.value {
+                
+                if let result = results as? NSArray {
+                    
+                    newArray = result
+                }
+            }
+            
+            completionHandler(success: true, errorMessage: nil, myResult: newArray)
+        }
+    }
     
     // MARK: - ExamsTeacherFollowUp
     
