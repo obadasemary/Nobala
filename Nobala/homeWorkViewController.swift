@@ -18,7 +18,7 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userType: UIImageView!
-    
+    //    var selectedHomeWorkURLString = ""
     var sideMenu:ENSideMenu?
     
     var window: UIWindow?
@@ -85,7 +85,7 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
         }
         
         userName.text = keychain["userFName"]
-
+        
         if keychain["user_type"]! == "1" {
             userType.image = UIImage(named: "MLParant.png")
         } else if keychain["user_type"]! == "2" {
@@ -94,7 +94,7 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
             userType.image = UIImage(named: "MLTeacher.png")
         }
     }
-
+    
     override func viewWillAppear(animated: Bool) {
         
         NSThread.sleepForTimeInterval(0.05)
@@ -160,21 +160,32 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        performSegueWithIdentifier("showNewsDetailsSegue", sender: self)
-//        self.selectedNews = newsArray[indexPath.row]
-//        self.newsDetailsView.news = self.selectedNews
-//        //        self.newsDetailsView.newsDetailsTitle.text = self.selectedNews._title
+        //        performSegueWithIdentifier("showNewsDetailsSegue", sender: self)
+        //        self.selectedNews = newsArray[indexPath.row]
+        //        self.newsDetailsView.news = self.selectedNews
+        //        //        self.newsDetailsView.newsDetailsTitle.text = self.selectedNews._title
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-//        if (segue.identifier == "showNewsDetailsSegue")
-//        {
-//            
-//            // initialize new view controller and cast it as your view controller
-//            self.newsDetailsView = segue.destinationViewController as! NewsDetailsViewController
-//        }
-//        
+        if let segueID = segue.identifier {
+            switch segueID {
+            case "ViewHomeWorkWebViewController":
+                let dest = segue.destinationViewController as! HomeWorkWebViewController
+                if let url = NSURL(string: sender as! String) {
+                    dest.url = url
+                }
+            default:
+                break
+            }
+            //        if (segue.identifier == "showNewsDetailsSegue")
+            //        {
+            //
+            //            // initialize new view controller and cast it as your view controller
+            //            self.newsDetailsView = segue.destinationViewController as! NewsDetailsViewController
+            //        }
+            //
+        }
     }
     
     func onReceiveNews(news: [News])
@@ -226,6 +237,12 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     //MARK: cell delegation
     func openHomeworkWebView(ID: Int) {
         
+        let keychain = Keychain(service: "Noblaa.app")
+        
+        if let Userauth_token : String = keychain["auth_token"] {
+            let selectedHomeWorkURLString = "http://registeration.nobala.edu.sa/ExamTokenRedirect?Token=\(Userauth_token)&ExamID=\(ID)"
+            self.performSegueWithIdentifier("ViewHomeWorkWebViewController", sender: selectedHomeWorkURLString)
+        }
     }
 }
 

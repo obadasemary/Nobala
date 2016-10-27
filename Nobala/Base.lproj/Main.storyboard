@@ -1211,6 +1211,7 @@
                         <outlet property="newsTableView" destination="ba6-jp-jdY" id="M3L-p1-leJ"/>
                         <outlet property="userName" destination="4P5-RQ-tpj" id="hSC-ud-20k"/>
                         <outlet property="userType" destination="UHV-dF-weB" id="bwN-5N-VEp"/>
+                        <segue destination="dEC-Cs-w3n" kind="push" identifier="ViewHomeWorkWebViewController" id="7Qu-aN-rrK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xCo-se-jDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1721,6 +1722,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Maj-kD-zDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1267" y="2282"/>
+        </scene>
+        <!--Home Work Web View Controller-->
+        <scene sceneID="ms5-6I-pwC">
+            <objects>
+                <viewController id="dEC-Cs-w3n" customClass="HomeWorkWebViewController" customModule="Nobala" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="chy-As-dLF">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="Khy-5O-QyU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hW0-fH-2Ca"/>
+                    <connections>
+                        <outlet property="webView" destination="Khy-5O-QyU" id="tul-To-d6O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AwO-09-EKa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638" y="1536"/>
         </scene>
         <!--Choose Date Time View Controller-->
         <scene sceneID="SeP-lM-F4W">
