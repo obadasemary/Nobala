@@ -140,7 +140,7 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
         tableViewCell.HomeworkReportText.text = homeworkReoprtArray[row].valueForKey("ScheduleEndDate") as? String
         tableViewCell.HomeworkReportDegree.text = String((homeworkReoprtArray[row].valueForKey("ExamSheetScore") as? Int)!)
         
-        tableViewCell.contentView.viewWithTag(11)!.backgroundColor = Float(indexPath.row) % 2.0 == 0 ? UIColor.greenColor() : UIColor.blueColor()
+        tableViewCell.contentView.viewWithTag(11)!.backgroundColor = Float(indexPath.row) % 2.0 == 0 ? UIColor(red:0.94, green:0.95, blue:0.95, alpha:1.0) : UIColor(red:0.90, green:0.92, blue:0.94, alpha:1.0)
         
         return tableViewCell
     }

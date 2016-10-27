@@ -11,7 +11,7 @@ import ASProgressHud
 import ENSwiftSideMenu
 import KeychainAccess
 
-class ExamsViewController: UIViewController, ENSideMenuDelegate, UITableViewDelegate, UITableViewDataSource {
+class ExamsViewController: UIViewController, ENSideMenuDelegate, UITableViewDelegate, UITableViewDataSource, ExamsTableViewCellDelegate {
     
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userType: UIImageView!
@@ -137,10 +137,27 @@ class ExamsViewController: UIViewController, ENSideMenuDelegate, UITableViewDele
         
         tableViewCell.ExamsTitle.text = examArray[row].valueForKey("ScheduleName") as? String
         tableViewCell.ExamsText.text = examArray[row].valueForKey("ScheduleEndDate") as? String
+        tableViewCell.delegate = self
+        
+        tableViewCell.contentView.viewWithTag(11)!.backgroundColor = Float(indexPath.row) % 2.0 == 0 ? UIColor(red:0.94, green:0.95, blue:0.95, alpha:1.0) : UIColor(red:0.91, green:0.96, blue:0.99, alpha:1.0)
         
         return tableViewCell
     }
     
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        (cell as! ExamsTableViewCell).attachmentImageView.tag = examArray[indexPath.row].valueForKey("FK_ExamID") as! Int
+    }
+    
+    func openExamWebView(ID: Int) {
+        
+        let keychain = Keychain(service: "Noblaa.app")
+        
+        if let Userauth_token : String = keychain["auth_token"] {
+            let selectedHomeWorkURLString = "http://registeration.nobala.edu.sa/ExamTokenRedirect?Token=\(Userauth_token)&ExamID=\(ID)"
+            self.performSegueWithIdentifier("ViewExamWebViewController", sender: selectedHomeWorkURLString)
+        }
+    }
 
     /*
     // MARK: - Navigation

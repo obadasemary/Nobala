@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="HqQ-Vt-z3p">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="HqQ-Vt-z3p">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -360,9 +360,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ERsample" id="Qgu-7N-v9a">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HWRsample" id="Qgu-7N-v9a">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90588235294117647" green="0.95686274509803915" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -626,7 +627,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUp-NV-e0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1944" y="2197"/>
+            <point key="canvasLocation" x="2015" y="2186"/>
         </scene>
         <!--ContactUs-->
         <scene sceneID="io5-Xa-t1F">
@@ -1104,29 +1105,29 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="bFN-Zf-kF8">
-                                <rect key="frame" x="30" y="78" width="260" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="30" y="78" width="261" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HWicon" id="3Tv-fz-ePg">
-                                        <rect key="frame" x="234" y="5" width="20" height="20"/>
+                                        <rect key="frame" x="234.5" y="5" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الواجبات" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" id="Rf2-Wa-e2J">
-                                        <rect key="frame" x="166" y="4" width="60" height="21"/>
+                                        <rect key="frame" x="166.5" y="4" width="60" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تاريخ الإنتهاء" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" id="jbQ-bh-a5c">
-                                        <rect key="frame" x="56" y="-3" width="82.5" height="35"/>
+                                        <rect key="frame" x="56" y="0.0" width="83" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رابط" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" id="hDg-pX-EBh">
-                                        <rect key="frame" x="0.0" y="-3" width="34.5" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="34.5" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1136,41 +1137,41 @@
                                 <color key="backgroundColor" red="0.10007033497095108" green="0.73665314912796021" blue="0.61070448160171509" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="ba6-jp-jdY">
-                                <rect key="frame" x="29" y="116" width="261" height="358"/>
+                                <rect key="frame" x="30" y="116" width="260" height="358"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homeWorkCell" rowHeight="60" id="SvB-yI-elj" customClass="homeWorkTableViewCell" customModule="Nobala" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="261" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homeWorkCell" rowHeight="30" id="SvB-yI-elj" customClass="homeWorkTableViewCell" customModule="Nobala" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="260" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SvB-yI-elj" id="C2x-2i-JyH">
-                                            <rect key="frame" x="0.0" y="0.0" width="261" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="260" height="30"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="gzy-nk-y5P">
-                                                    <rect key="frame" x="0.0" y="0.0" width="261" height="60"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="260" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newsCellRectangle" id="jcR-c9-yE5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="261" height="61"/>
+                                                <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="jcR-c9-yE5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="260" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HWicon" id="zfk-bK-PiN">
-                                                    <rect key="frame" x="233" y="21" width="20" height="20"/>
+                                                    <rect key="frame" x="232" y="5" width="20" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الواجبات" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" id="2NT-wG-jMh">
-                                                    <rect key="frame" x="165" y="20" width="60" height="21"/>
+                                                    <rect key="frame" x="164.5" y="4.5" width="59.5" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HWlink" id="1tJ-Oc-fxA">
-                                                    <rect key="frame" x="8" y="21" width="20" height="20"/>
+                                                    <rect key="frame" x="8" y="5" width="20" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تاريخ الإنتهاء" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" id="fhk-Kb-AQW">
-                                                    <rect key="frame" x="49" y="12" width="83" height="35"/>
+                                                    <rect key="frame" x="49" y="-2.5" width="82.5" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1327,7 +1328,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="261" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newsCellRectangle" id="fN6-tB-163">
+                                                <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="fN6-tB-163">
                                                     <rect key="frame" x="0.0" y="0.0" width="261" height="61"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
@@ -1610,7 +1611,7 @@
                             </imageView>
                             <view contentMode="scaleToFill" id="HTA-HA-mUH">
                                 <rect key="frame" x="30" y="76" width="260" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EIcon1" id="CVk-CP-C3K">
                                         <rect key="frame" x="235" y="5" width="20" height="20"/>
@@ -1656,7 +1657,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="261" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newsCellRectangle" id="aHn-vp-ywB">
+                                                <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="aHn-vp-ywB">
                                                     <rect key="frame" x="0.0" y="0.0" width="261" height="61"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
@@ -1686,6 +1687,7 @@
                                         <connections>
                                             <outlet property="ExamsText" destination="5K9-nO-5GT" id="tP3-K9-hgg"/>
                                             <outlet property="ExamsTitle" destination="9d2-vH-chV" id="Wft-Yu-acg"/>
+                                            <outlet property="attachmentImageView" destination="s18-NF-mY0" id="g2X-qw-j8H"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1717,11 +1719,37 @@
                         <outlet property="examsTableView" destination="pGD-7D-53I" id="vsm-Oy-oNl"/>
                         <outlet property="userName" destination="xjm-pf-HZc" id="hRo-hz-o1B"/>
                         <outlet property="userType" destination="vPA-IH-5zE" id="uBX-JT-Ubt"/>
+                        <segue destination="vcd-Xe-6CO" kind="push" identifier="ViewExamWebViewController" id="SPh-b0-Nw3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Maj-kD-zDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1267" y="2282"/>
+        </scene>
+        <!--Exam Web View Controller-->
+        <scene sceneID="SmH-qh-QPs">
+            <objects>
+                <viewController id="vcd-Xe-6CO" customClass="ExamWebViewController" customModule="Nobala" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6af-Un-4Lo">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="nfn-L9-ncK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0vD-js-0xF"/>
+                    <connections>
+                        <outlet property="webView" destination="nfn-L9-ncK" id="54T-4e-hSX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n9H-HQ-gtt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638" y="2282"/>
         </scene>
         <!--Home Work Web View Controller-->
         <scene sceneID="ms5-6I-pwC">
@@ -1848,9 +1876,9 @@
         <image name="EIcon2" width="18" height="24"/>
         <image name="ERIcon1" width="25" height="30"/>
         <image name="ERIcon2" width="22" height="26"/>
-        <image name="ERsample" width="540" height="960"/>
         <image name="HWRIcon1" width="32" height="28"/>
         <image name="HWRIcon2" width="25" height="22"/>
+        <image name="HWRsample" width="540" height="960"/>
         <image name="HWicon" width="24" height="23"/>
         <image name="HWlink" width="17" height="16"/>
         <image name="KalmetMoshref" width="171" height="26"/>

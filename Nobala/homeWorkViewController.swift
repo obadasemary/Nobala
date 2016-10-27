@@ -138,19 +138,19 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.hWArray.count
-        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        
-        
         let row = indexPath.row
+        
         let tableViewCell = self.newsTableView.dequeueReusableCellWithIdentifier("homeWorkCell", forIndexPath: indexPath) as! homeWorkTableViewCell
         
         tableViewCell.NewsTitle.text = hWArray[row].valueForKey("ScheduleName") as? String
         tableViewCell.NewsText.text = hWArray[row].valueForKey("ScheduleEndDate") as? String
         tableViewCell.delegate = self
+        
+        tableViewCell.contentView.viewWithTag(11)!.backgroundColor = Float(indexPath.row) % 2.0 == 0 ? UIColor(red:0.94, green:0.95, blue:0.95, alpha:1.0) : UIColor(red:0.91, green:1.00, blue:0.98, alpha:1.0)
         
         return tableViewCell
     }
@@ -160,10 +160,7 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //        performSegueWithIdentifier("showNewsDetailsSegue", sender: self)
-        //        self.selectedNews = newsArray[indexPath.row]
-        //        self.newsDetailsView.news = self.selectedNews
-        //        //        self.newsDetailsView.newsDetailsTitle.text = self.selectedNews._title
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -178,13 +175,6 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
             default:
                 break
             }
-            //        if (segue.identifier == "showNewsDetailsSegue")
-            //        {
-            //
-            //            // initialize new view controller and cast it as your view controller
-            //            self.newsDetailsView = segue.destinationViewController as! NewsDetailsViewController
-            //        }
-            //
         }
     }
     

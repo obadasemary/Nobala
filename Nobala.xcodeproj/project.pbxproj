@@ -69,6 +69,7 @@
 		AFC6BC741DB979AB00AA4E9C /* DailyHomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6BC731DB979AB00AA4E9C /* DailyHomeworkViewController.swift */; };
 		AFCA67941DA3D46200970D1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA67931DA3D46200970D1B /* LoginViewController.swift */; };
 		AFCF4C311DC1246E00E8EF2D /* ExamStudentReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF4C301DC1246E00E8EF2D /* ExamStudentReport.swift */; };
+		AFCF4C371DC199D000E8EF2D /* ExamWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF4C361DC199D000E8EF2D /* ExamWebViewController.swift */; };
 		AFD60D021D7D01360002ED14 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD60D011D7D01360002ED14 /* Users.swift */; };
 		AFDDCD6D1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDDCD6C1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift */; };
 		AFDDCD6F1DBF8E0200629C00 /* ExamsReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDDCD6E1DBF8E0200629C00 /* ExamsReportTableViewCell.swift */; };
@@ -174,6 +175,7 @@
 		AFC6BC731DB979AB00AA4E9C /* DailyHomeworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyHomeworkViewController.swift; sourceTree = "<group>"; };
 		AFCA67931DA3D46200970D1B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AFCF4C301DC1246E00E8EF2D /* ExamStudentReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamStudentReport.swift; sourceTree = "<group>"; };
+		AFCF4C361DC199D000E8EF2D /* ExamWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamWebViewController.swift; sourceTree = "<group>"; };
 		AFD60D011D7D01360002ED14 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		AFDDCD6C1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorkReportTableViewCell.swift; sourceTree = "<group>"; };
 		AFDDCD6E1DBF8E0200629C00 /* ExamsReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsReportTableViewCell.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				AFC6BC711DB9797700AA4E9C /* LearningPlanViewController.swift */,
 				AFC6BC731DB979AB00AA4E9C /* DailyHomeworkViewController.swift */,
 				292ABB9B1DC183A500CF002A /* HomeWorkWebViewController.swift */,
+				AFCF4C361DC199D000E8EF2D /* ExamWebViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -629,7 +632,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		418A7ED01D0C93760E992F1D /* [CP] Copy Pods Resources */ = {
@@ -704,7 +707,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A6A763EE53FB97A41E168204 /* [CP] Check Pods Manifest.lock */ = {
@@ -749,7 +752,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C706194E4137806D723223BA /* [CP] Check Pods Manifest.lock */ = {
@@ -859,6 +862,7 @@
 				AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */,
 				E3430A581DB02C5B008BC6BB /* homeWorkViewController.swift in Sources */,
 				AFCF4C311DC1246E00E8EF2D /* ExamStudentReport.swift in Sources */,
+				AFCF4C371DC199D000E8EF2D /* ExamWebViewController.swift in Sources */,
 				292ABB951DC1749B00CF002A /* README.md in Sources */,
 				AF71CA0E1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift in Sources */,
 				292ABB971DC1749B00CF002A /* TZStackView.swift in Sources */,
