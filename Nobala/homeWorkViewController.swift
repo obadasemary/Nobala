@@ -14,7 +14,7 @@ import ENSwiftSideMenu
 import KeychainAccess
 
 
-class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource, ENSideMenuDelegate {
+class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource, ENSideMenuDelegate, homeWorkTableViewCellDelegate {
     
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userType: UIImageView!
@@ -150,8 +150,13 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
         
         tableViewCell.NewsTitle.text = hWArray[row].valueForKey("ScheduleName") as? String
         tableViewCell.NewsText.text = hWArray[row].valueForKey("ScheduleEndDate") as? String
+        tableViewCell.delegate = self
         
         return tableViewCell
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        (cell as! homeWorkTableViewCell).attachmentImageView.tag = indexPath.row
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -215,6 +220,11 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     }
     
     func onFieldLogin() {
+        
+    }
+    
+    //MARK: cell delegation
+    func openHomeworkWebView(ID: Int) {
         
     }
 }

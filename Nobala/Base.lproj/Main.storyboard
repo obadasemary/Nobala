@@ -1165,7 +1165,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HWlink" id="1tJ-Oc-fxA">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HWlink" id="1tJ-Oc-fxA">
                                                     <rect key="frame" x="8" y="21" width="20" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -1181,6 +1181,7 @@
                                         <connections>
                                             <outlet property="NewsText" destination="fhk-Kb-AQW" id="QWh-TY-igR"/>
                                             <outlet property="NewsTitle" destination="2NT-wG-jMh" id="RDv-sC-HOw"/>
+                                            <outlet property="attachmentImageView" destination="1tJ-Oc-fxA" id="dSz-ie-wxa"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

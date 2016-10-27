@@ -8,16 +8,27 @@
 
 import UIKit
 
+protocol homeWorkTableViewCellDelegate: class {
+    func openHomeworkWebView(ID: Int)
+}
+
 class homeWorkTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var NewsTitle: UILabel!
     @IBOutlet weak var NewsText: UILabel!
-   
+    @IBOutlet weak var attachmentImageView: UIImageView!
+    weak var delegate: homeWorkTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.attachmentImageTapped(_:)))
+        self.attachmentImageView.addGestureRecognizer(tapGesture)
+    }
+    
+    func attachmentImageTapped(gesture: UITapGestureRecognizer) {
+        self.delegate?.openHomeworkWebView(gesture.view!.tag)
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
