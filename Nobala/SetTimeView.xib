@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetTimeViewController" customModule="Nobala" customModuleProvider="target">
+            <connections>
+                <outlet property="datePicker" destination="vBO-ep-hgV" id="R25-O6-kxV"/>
+                <outlet property="view" destination="iN0-l3-epB" id="6J1-ai-xzs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOF-mv-EGP">
+                    <rect key="frame" x="0.0" y="180" width="300" height="40"/>
+                    <color key="backgroundColor" red="0.094117647058823528" green="0.14117647058823529" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="iTT-pr-xdE"/>
+                        <constraint firstAttribute="width" constant="300" id="wil-wE-cpH"/>
+                    </constraints>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="done" destination="-1" eventType="touchUpInside" id="6EP-SE-LZC"/>
+                    </connections>
+                </button>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="vBO-ep-hgV">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="erX-8E-8je"/>
+                        <constraint firstAttribute="width" constant="300" id="gYG-dJ-pdc"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="498228447.13362598">
+                        <!--2016-10-15 12:47:27 +0000-->
+                    </date>
+                    <locale key="locale" localeIdentifier="en"/>
+                    <connections>
+                        <action selector="datePickerValueChanged:" destination="-1" eventType="valueChanged" id="7pI-lg-7Wn"/>
+                    </connections>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JOF-mv-EGP" secondAttribute="bottom" id="Aw3-KK-e4Z"/>
+                <constraint firstItem="JOF-mv-EGP" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="F9B-es-azx"/>
+                <constraint firstItem="JOF-mv-EGP" firstAttribute="top" secondItem="vBO-ep-hgV" secondAttribute="bottom" id="FB9-sn-9tX"/>
+                <constraint firstItem="vBO-ep-hgV" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="JQA-UK-Gqg"/>
+                <constraint firstItem="JOF-mv-EGP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="a0m-NA-MGj"/>
+                <constraint firstItem="vBO-ep-hgV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dHE-Da-phH"/>
+                <constraint firstItem="vBO-ep-hgV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="e5o-AA-lH8"/>
+                <constraint firstItem="vBO-ep-hgV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tzD-dn-8uU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="328" y="400"/>
+        </view>
+    </objects>
+</document>

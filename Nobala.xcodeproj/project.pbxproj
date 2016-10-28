@@ -24,7 +24,6 @@
 		292ABB841DC16E8200CF002A /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB731DC16E8200CF002A /* TransitionAnimator.swift */; };
 		292ABB851DC16E8200CF002A /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB741DC16E8200CF002A /* UIView+Animations.swift */; };
 		292ABB861DC16E8200CF002A /* UIViewController+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB751DC16E8200CF002A /* UIViewController+Visibility.swift */; };
-		292ABB8A1DC16F8B00CF002A /* chooseDateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB881DC16F8B00CF002A /* chooseDateTimeViewController.swift */; };
 		292ABB8B1DC16F8B00CF002A /* SetTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB891DC16F8B00CF002A /* SetTimeViewController.swift */; };
 		292ABB941DC1749B00CF002A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 292ABB8D1DC1749B00CF002A /* LICENSE */; };
 		292ABB951DC1749B00CF002A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB8E1DC1749B00CF002A /* README.md */; };
@@ -33,6 +32,7 @@
 		292ABB981DC1749B00CF002A /* TZStackViewAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB921DC1749B00CF002A /* TZStackViewAlignment.swift */; };
 		292ABB991DC1749B00CF002A /* TZStackViewDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB931DC1749B00CF002A /* TZStackViewDistribution.swift */; };
 		292ABB9C1DC183A500CF002A /* HomeWorkWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ABB9B1DC183A500CF002A /* HomeWorkWebViewController.swift */; };
+		297F730E1DC3599C00D2E2B7 /* SetTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297F730D1DC3599C00D2E2B7 /* SetTimeView.xib */; };
 		418825EF1D11C523002C2648 /* ViewWebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418825EE1D11C523002C2648 /* ViewWebServiceProtocol.swift */; };
 		418825F11D11C698002C2648 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418825F01D11C698002C2648 /* News.swift */; };
 		418825F31D12FD8D002C2648 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418825F21D12FD8D002C2648 /* Event.swift */; };
@@ -123,7 +123,6 @@
 		292ABB741DC16E8200CF002A /* UIView+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
 		292ABB751DC16E8200CF002A /* UIViewController+Visibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Visibility.swift"; sourceTree = "<group>"; };
 		292ABB871DC16EA700CF002A /* Nobala-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Nobala-Bridging-Header.h"; sourceTree = "<group>"; };
-		292ABB881DC16F8B00CF002A /* chooseDateTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chooseDateTimeViewController.swift; sourceTree = "<group>"; };
 		292ABB891DC16F8B00CF002A /* SetTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTimeViewController.swift; sourceTree = "<group>"; };
 		292ABB8D1DC1749B00CF002A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		292ABB8E1DC1749B00CF002A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -132,6 +131,7 @@
 		292ABB921DC1749B00CF002A /* TZStackViewAlignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TZStackViewAlignment.swift; sourceTree = "<group>"; };
 		292ABB931DC1749B00CF002A /* TZStackViewDistribution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TZStackViewDistribution.swift; sourceTree = "<group>"; };
 		292ABB9B1DC183A500CF002A /* HomeWorkWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorkWebViewController.swift; sourceTree = "<group>"; };
+		297F730D1DC3599C00D2E2B7 /* SetTimeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetTimeView.xib; sourceTree = "<group>"; };
 		2C425AFED6CC1EB8D079BC25 /* Pods-NobalaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaUITests/Pods-NobalaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		418825EE1D11C523002C2648 /* ViewWebServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewWebServiceProtocol.swift; path = Controllers/ViewWebServiceProtocol.swift; sourceTree = "<group>"; };
 		418825F01D11C698002C2648 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = News.swift; path = Model/News.swift; sourceTree = "<group>"; };
@@ -287,6 +287,7 @@
 				AFDDCD6E1DBF8E0200629C00 /* ExamsReportTableViewCell.swift */,
 				AFCF4C381DC221FF00E8EF2D /* LearningPlanTableViewCell.swift */,
 				AFB252461DC28A6300E857A7 /* PDFViewController.swift */,
+				297F730D1DC3599C00D2E2B7 /* SetTimeView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -307,7 +308,6 @@
 		AF0438861D10C28800CF6F2A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				292ABB881DC16F8B00CF002A /* chooseDateTimeViewController.swift */,
 				292ABB891DC16F8B00CF002A /* SetTimeViewController.swift */,
 				418825EE1D11C523002C2648 /* ViewWebServiceProtocol.swift */,
 				AF940BF61DA5651800937119 /* NobalaWebServiceProtocol.swift */,
@@ -548,6 +548,7 @@
 				AF106BF61D0D5D260053130C /* Assets.xcassets in Resources */,
 				AF106BF41D0D5D260053130C /* Main.storyboard in Resources */,
 				292ABB761DC16E8200CF002A /* .gitkeep in Resources */,
+				297F730E1DC3599C00D2E2B7 /* SetTimeView.xib in Resources */,
 				292ABB941DC1749B00CF002A /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -840,7 +841,6 @@
 				292ABB851DC16E8200CF002A /* UIView+Animations.swift in Sources */,
 				AFDDCD6D1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift in Sources */,
 				AFB086481D143FB200DB6266 /* MainPages.swift in Sources */,
-				292ABB8A1DC16F8B00CF002A /* chooseDateTimeViewController.swift in Sources */,
 				292ABB861DC16E8200CF002A /* UIViewController+Visibility.swift in Sources */,
 				E3430A5A1DB02FC5008BC6BB /* homeWorkTableViewCell.swift in Sources */,
 				AFC6BC741DB979AB00AA4E9C /* DailyHomeworkViewController.swift in Sources */,

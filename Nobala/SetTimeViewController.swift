@@ -7,14 +7,30 @@
 //
 
 import UIKit
-import XLPagerTabStrip
 
-class SetTimeViewController: ButtonBarPagerTabStripViewController {
+protocol SetTimeViewControllerDelegate: class {
+    func updateChosenTimes(date: NSDate, type: ChooseTimeViewType)
+}
+
+enum ChooseTimeViewType : Int {
+    case From
+    case To
+}
+
+class SetTimeViewController: UIViewController {
     weak var dialog: PopupDialog?
     weak var containerController: SetTimeViewControllerDelegate?
+    var type: ChooseTimeViewType = .From
 
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    
+    @IBAction func datePickerValueChanged(sender: UIDatePicker) {
+        self.containerController?.updateChosenTimes(sender.date, type: self.type)
+    }
+    
     override func viewDidLoad() {
-        self.setButtonBarProperties()
         super.viewDidLoad()
     }
 
@@ -23,36 +39,6 @@ class SetTimeViewController: ButtonBarPagerTabStripViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewControllersForPagerTabStrip(pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        let fromViewController = self.storyboard!.instantiateViewControllerWithIdentifier("chooseDateTimeViewController") as! chooseDateTimeViewController
-        fromViewController.containerController = self.containerController
-        let toViewController = self.storyboard!.instantiateViewControllerWithIdentifier("chooseDateTimeViewController") as! chooseDateTimeViewController
-        toViewController.containerController = self.containerController
-        toViewController.type = .To
-        
-        return [fromViewController, toViewController]
-    }
-    
-    
-    func setButtonBarProperties() {
-        // ALL CODE FROM GITHUB PAGE
-        settings.style.selectedBarBackgroundColor = UIColor.whiteColor()
-        
-        // each buttonBar item is a UICollectionView cell of type ButtonBarViewCell
-        settings.style.buttonBarItemBackgroundColor = UIColor.clearColor()
-        if let font = UIFont(name: "GEFlow", size: 18) {
-            settings.style.buttonBarItemFont = font
-        }
-        // helps to determine the cell width, it represent the space before and after the title label
-        //        settings.style.buttonBarItemLeftRightMargin: CGFloat = 8
-        settings.style.buttonBarItemTitleColor = UIColor.whiteColor()
-        // in case the barView items do not fill the screen width this property stretch the cells to fill the screen
-        settings.style.buttonBarItemsShouldFillAvailiableWidth = true
-        
-        PagerTabStripBehaviour.Progressive(skipIntermediateViewControllers: true, elasticIndicatorLimit: true)
-        
-    }
-
     @IBAction func done() {
         
         self.dialog?.dismiss()
