@@ -42,7 +42,7 @@ class ExamsReportViewController: UIViewController, ENSideMenuDelegate, UITableVi
         
         if let Userauth_token : String = keychain["auth_token"] {
             
-            NobalaClient.sharedInstance().getHomeWorkStudentReport(Userauth_token, completionHandler: { (success, errorMessage, myResult) in
+            NobalaClient.sharedInstance().getExamsStudentReport(Userauth_token, completionHandler: { (success, errorMessage, myResult) in
                 
                 if !success {
                     

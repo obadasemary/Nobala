@@ -462,11 +462,13 @@ extension NobalaClient {
     
     // MARK: - HomeWorkStudentReport
     
-    func getHomeWorkStudentReport(accessToken: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
+    func getHomeWorkStudentReport(accessToken: String, startDate: String, endDate: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
         
         let headers = ["Authorization": "Bearer " + accessToken]
         
-        Alamofire.request(.POST, NobalaClient.URLs.getHomeWorkStudentReport, headers: headers).responseJSON { (response) in
+        let getHomeWorkStudentReport = "http://api.nobala.edu.sa/api/Exams/HomeWorkStudentReport?STARTDATE=" + startDate + "&ENDDATE=" + endDate
+        
+        Alamofire.request(.POST, getHomeWorkStudentReport, headers: headers).responseJSON { (response) in
             
             var newArray: NSArray = []
             

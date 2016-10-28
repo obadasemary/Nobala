@@ -166,13 +166,13 @@ class ViewController: UIViewController, ViewWebServiceProtocol {
     
     @IBAction func btnGetHomeWorkStudentReport(sender: AnyObject) {
         
-        NobalaClient.sharedInstance().getHomeWorkStudentReport(NobalaClient.Token.accessToken, completionHandler: { (success, errorMessage, myResult) in
-            
-            print("btnGetHomeWorkStudentReport")
-            }) { (error, errorMessage) in
-                
-                print("Error")
-        }
+//        NobalaClient.sharedInstance().getHomeWorkStudentReport(NobalaClient.Token.accessToken, completionHandler: { (success, errorMessage, myResult) in
+//            
+//            print("btnGetHomeWorkStudentReport")
+//            }) { (error, errorMessage) in
+//                
+//                print("Error")
+//        }
     }
     
     @IBAction func btnGetExamsTeacherFollowUp(sender: AnyObject) {

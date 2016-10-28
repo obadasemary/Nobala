@@ -21,6 +21,10 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
     var fromDate: NSDate?
     var toDate: NSDate?
     
+    var startDate: String?
+    var endDate: String?
+//        = "31/12/2016"
+    
     @IBOutlet weak var fromDateLabel: UILabel!
     @IBOutlet weak var toDateLabel: UILabel!
     
@@ -32,12 +36,12 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
     var window: UIWindow?
     var setTimeVC: SetTimeViewController?
     
+    let keychain = Keychain(service: "Noblaa.app")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.sideMenuController()?.sideMenu?.delegate = self
-        
-        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
         
         let logo = UIImage(named: "LoginTitle.png")
         let imageView = UIImageView(image:logo)
@@ -45,11 +49,26 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let keychain = Keychain(service: "Noblaa.app")
+        userName.text = keychain["userFName"]
+        
+        if keychain["user_type"]! == "1" {
+            userType.image = UIImage(named: "MLParant.png")
+        } else if keychain["user_type"]! == "2" {
+            userType.image = UIImage(named: "MLStudend.png")
+        } else {
+            userType.image = UIImage(named: "MLTeacher.png")
+        }
+        
+//        fetchHomeWorkReport()
+    }
+    
+    func fetchHomeWorkReport() {
+        
+        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
         
         if let Userauth_token : String = keychain["auth_token"] {
             
-            NobalaClient.sharedInstance().getHomeWorkStudentReport(Userauth_token, completionHandler: { (success, errorMessage, myResult) in
+            NobalaClient.sharedInstance().getHomeWorkStudentReport(Userauth_token, startDate: startDate!, endDate: endDate!, completionHandler: { (success, errorMessage, myResult) in
                 
                 if !success {
                     
@@ -73,7 +92,7 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
                 ASProgressHud.hideHUDForView(self.view, animated: true)
                 
                 self.homeworkReportTableView.reloadData()
-
+                
                 }, fail: { (error, errorMessage) in
                     let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
                     alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
@@ -81,16 +100,9 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
                     self.presentViewController(alertController, animated: true, completion: nil)
             })
             
-            userName.text = keychain["userFName"]
-            
-            if keychain["user_type"]! == "1" {
-                userType.image = UIImage(named: "MLParant.png")
-            } else if keychain["user_type"]! == "2" {
-                userType.image = UIImage(named: "MLStudend.png")
-            } else {
-                userType.image = UIImage(named: "MLTeacher.png")
-            }
         }
+        
+        ASProgressHud.hideHUDForView(self.view, animated: true)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -168,6 +180,8 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
         
         // Present dialog
         self.presentViewController(popup, animated: true, completion: nil)
+        
+        fetchHomeWorkReport()
     }
 
     func updateChosenTimes(date: NSDate, type: ChooseTimeViewType) {
@@ -179,10 +193,22 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
         case .To:
             toDate = date
             toDateLabel.text = formatter.stringFromDate(date)
+            
+            formatter.locale = NSLocale(localeIdentifier: "en")
+            formatter.dateFormat = "dd/MM/yyyy"
+            endDate = formatter.stringFromDate(date)
+            print("EndDate: \(endDate)")
+            
             break
         case .From:
             fromDate = date
             fromDateLabel.text = formatter.stringFromDate(date)
+            
+            formatter.locale = NSLocale(localeIdentifier: "en")
+            formatter.dateFormat = "dd/MM/yyyy"
+            startDate = formatter.stringFromDate(date)
+            print("StartDate: \(startDate)")
+            
             break
         }
     }
