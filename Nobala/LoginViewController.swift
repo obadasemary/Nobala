@@ -25,6 +25,8 @@ class LoginViewController: UIViewController, ENSideMenuDelegate, ViewWebServiceP
         let logo = UIImage(named: "LoginTitle.png")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
+        
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -176,15 +178,16 @@ class LoginViewController: UIViewController, ENSideMenuDelegate, ViewWebServiceP
         
         self.presentViewController(alertController, animated: true, completion: nil)
     }
+}
+
+extension UIViewController {
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
-    */
-
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }

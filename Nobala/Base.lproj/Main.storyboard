@@ -316,7 +316,7 @@
                                 <rect key="frame" x="37" y="345" width="221" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UXq-8V-lWy">
                                 <rect key="frame" x="35" y="461" width="46" height="30"/>
@@ -2298,6 +2298,6 @@
         <image name="youtube" width="57" height="57"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hI8-GG-vg3"/>
+        <segue reference="84t-2f-j1O"/>
     </inferredMetricsTieBreakers>
 </document>
