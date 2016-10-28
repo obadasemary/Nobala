@@ -486,11 +486,13 @@ extension NobalaClient {
     
     // MARK: - ExamsStudentReport
     
-    func getExamsStudentReport(accessToken: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
+    func getExamsStudentReport(accessToken: String, startDate: String, endDate: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
         
         let headers = ["Authorization": "Bearer " + accessToken]
         
-        Alamofire.request(.POST, NobalaClient.URLs.getExamsStudentReport, headers: headers).responseJSON { (response) in
+        let getExamsStudentReport = "http://api.nobala.edu.sa/api/Exams/ExamsStudentReport?STARTDATE=" + startDate + "&ENDDATE=" + endDate
+        
+        Alamofire.request(.POST, getExamsStudentReport, headers: headers).responseJSON { (response) in
             
             var newArray: NSArray = []
             
@@ -521,6 +523,35 @@ extension NobalaClient {
         ]
         
         Alamofire.request(.POST, NobalaClient.URLs.getStudyPlan, parameters: parameters, encoding: .JSON, headers: headers).responseJSON { (response) in
+            
+            var newArray: NSArray = []
+            
+            if let results = response.result.value {
+                
+                if let result = results as? NSArray {
+                    
+                    newArray = result
+                }
+            }
+            
+            completionHandler(success: true, errorMessage: nil, myResult: newArray)
+        }
+    }
+    
+    // MARK: - GetHomeWorkLogger
+    
+    func getHomeWorkLogger(accessToken: String, todayDate: String, UserID: String, UserTypeID: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
+        
+        let headers = ["Authorization": "Bearer " + accessToken]
+        
+        let parameters: [String: AnyObject] = [
+            
+            "UserTypeID": UserTypeID,
+            "UserID": "5479",
+            "Date": todayDate
+        ]
+        
+        Alamofire.request(.POST, NobalaClient.URLs.getHomeWorkLogger, parameters: parameters, encoding: .JSON, headers: headers).responseJSON { (response) in
             
             var newArray: NSArray = []
             

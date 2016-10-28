@@ -11,12 +11,22 @@ import ENSwiftSideMenu
 import ASProgressHud
 import KeychainAccess
 
-class ExamsReportViewController: UIViewController, ENSideMenuDelegate, UITableViewDelegate, UITableViewDataSource {
+class ExamsReportViewController: UIViewController, ENSideMenuDelegate, UITableViewDelegate, UITableViewDataSource, SetTimeViewControllerDelegate {
     
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userType: UIImageView!
     
     @IBOutlet weak var examReportTableView: UITableView!
+    
+    var fromDate: NSDate?
+    var toDate: NSDate?
+    
+    var startDate: String?
+    var endDate: String?
+    //        = "31/12/2016"
+    
+    @IBOutlet weak var fromDateLabel: UILabel!
+    @IBOutlet weak var toDateLabel: UILabel!
     
     var examReportArrary = []
     var selectedExamReport: ExamStudentReport = ExamStudentReport()
@@ -24,13 +34,14 @@ class ExamsReportViewController: UIViewController, ENSideMenuDelegate, UITableVi
     var sideMenu:ENSideMenu?
     
     var window: UIWindow?
+    var setTimeVC: SetTimeViewController?
+    
+    let keychain = Keychain(service: "Noblaa.app")
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.sideMenuController()?.sideMenu?.delegate = self
-        
-        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
         
         let logo = UIImage(named: "LoginTitle.png")
         let imageView = UIImageView(image:logo)
@@ -38,11 +49,29 @@ class ExamsReportViewController: UIViewController, ENSideMenuDelegate, UITableVi
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let keychain = Keychain(service: "Noblaa.app")
+        userName.text = keychain["userFName"]
+        
+        if keychain["user_type"]! == "1" {
+            userType.image = UIImage(named: "MLParant.png")
+        } else if keychain["user_type"]! == "2" {
+            userType.image = UIImage(named: "MLStudend.png")
+        } else {
+            userType.image = UIImage(named: "MLTeacher.png")
+        }
+        
+        
+    }
+    
+    func fetchExamReport() {
+        
+        // Do NOT call webservice if either of dates has no value
+        if nil == endDate || nil == startDate {return}
+        
+        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
         
         if let Userauth_token : String = keychain["auth_token"] {
             
-            NobalaClient.sharedInstance().getExamsStudentReport(Userauth_token, completionHandler: { (success, errorMessage, myResult) in
+            NobalaClient.sharedInstance().getExamsStudentReport(Userauth_token, startDate: startDate!, endDate: endDate!,completionHandler: { (success, errorMessage, myResult) in
                 
                 if !success {
                     
@@ -73,17 +102,9 @@ class ExamsReportViewController: UIViewController, ENSideMenuDelegate, UITableVi
                     
                     self.presentViewController(alertController, animated: true, completion: nil)
             })
-            
-            userName.text = keychain["userFName"]
-            
-            if keychain["user_type"]! == "1" {
-                userType.image = UIImage(named: "MLParant.png")
-            } else if keychain["user_type"]! == "2" {
-                userType.image = UIImage(named: "MLStudend.png")
-            } else {
-                userType.image = UIImage(named: "MLTeacher.png")
-            }
         }
+        
+        ASProgressHud.hideHUDForView(self.view, animated: true)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -146,6 +167,53 @@ class ExamsReportViewController: UIViewController, ENSideMenuDelegate, UITableVi
         return tableViewCell
     }
     
+    @IBAction func chooseTime(sender: UIButton) {
+        //        setTimeVC = self.storyboard?.instantiateViewControllerWithIdentifier("SetTimeViewController") as? SetTimeViewController
+        
+        setTimeVC = SetTimeViewController(nibName: "SetTimeView", bundle: NSBundle.mainBundle())
+        if sender.tag == 13 {
+            setTimeVC?.type = .To
+        }
+        setTimeVC!.containerController = self
+        
+        // Create the dialog
+        let popup = PopupDialog(viewController: setTimeVC!, transitionStyle: .BounceDown, buttonAlignment: .Horizontal, gestureDismissal: true)
+        
+        setTimeVC!.dialog = popup
+        
+        // Present dialog
+        self.presentViewController(popup, animated: true, completion: nil)
+    }
+    
+    func updateChosenTimes(date: NSDate, type: ChooseTimeViewType) {
+        
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd"
+        formatter.locale = NSLocale(localeIdentifier: "ar")
+        switch type {
+        case .To:
+            toDate = date
+            toDateLabel.text = formatter.stringFromDate(date)
+            
+            formatter.locale = NSLocale(localeIdentifier: "en")
+            formatter.dateFormat = "dd/MM/yyyy"
+            endDate = formatter.stringFromDate(date)
+            print("EndDate: \(endDate)")
+        case .From:
+            fromDate = date
+            fromDateLabel.text = formatter.stringFromDate(date)
+            
+            formatter.locale = NSLocale(localeIdentifier: "en")
+            formatter.dateFormat = "dd/MM/yyyy"
+            startDate = formatter.stringFromDate(date)
+            print("StartDate: \(startDate)")
+        }
+    }
+    
+    func refreshPresentedData() {
+        fetchExamReport()
+    }
+
 
     /*
     // MARK: - Navigation

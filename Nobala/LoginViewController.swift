@@ -92,6 +92,7 @@ class LoginViewController: UIViewController, ENSideMenuDelegate, ViewWebServiceP
             keychain["auth_token"] = user?.accessToken
             keychain["user_type"] = user?.userTypeID
             keychain["userFName"] = user?.userFullName
+            keychain["userTypeID"] = user?.userTypeID
 
             //End of Key Chain Implementation
      

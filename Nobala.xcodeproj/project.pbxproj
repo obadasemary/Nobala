@@ -41,6 +41,7 @@
 		41EE79731D1F0227003B4025 /* leftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EE79721D1F0227003B4025 /* leftViewController.swift */; };
 		57CFB314DE50DA2BFD824FA0 /* Pods_Nobala.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6584049A7C858A374C3B44 /* Pods_Nobala.framework */; };
 		AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */; };
+		AF06C2651DC3A7160093E94E /* DailyWorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF06C2641DC3A7160093E94E /* DailyWorkTableViewCell.swift */; };
 		AF09BBDB1DBBEC4E00C4414F /* ExamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF09BBDA1DBBEC4E00C4414F /* ExamsTableViewCell.swift */; };
 		AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BEE1D0D5D260053130C /* AppDelegate.swift */; };
 		AF106BF11D0D5D260053130C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BF01D0D5D260053130C /* ViewController.swift */; };
@@ -144,6 +145,7 @@
 		6EF4386AC8933116735F88D8 /* Pods-Nobala.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nobala.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nobala/Pods-Nobala.debug.xcconfig"; sourceTree = "<group>"; };
 		7EB0F448900B2FBAA7E40BDF /* Pods-NobalaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobalaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NobalaTests/Pods-NobalaTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF0438871D10C2CD00CF6F2A /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		AF06C2641DC3A7160093E94E /* DailyWorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyWorkTableViewCell.swift; sourceTree = "<group>"; };
 		AF09BBDA1DBBEC4E00C4414F /* ExamsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsTableViewCell.swift; sourceTree = "<group>"; };
 		AF106BEB1D0D5D260053130C /* Nobala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF106BEE1D0D5D260053130C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 				AFDDCD6E1DBF8E0200629C00 /* ExamsReportTableViewCell.swift */,
 				AFCF4C381DC221FF00E8EF2D /* LearningPlanTableViewCell.swift */,
 				AFB252461DC28A6300E857A7 /* PDFViewController.swift */,
+				AF06C2641DC3A7160093E94E /* DailyWorkTableViewCell.swift */,
 				297F730D1DC3599C00D2E2B7 /* SetTimeView.xib */,
 			);
 			name = View;
@@ -856,6 +859,7 @@
 				AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */,
 				292ABB961DC1749B00CF002A /* TZSpacerView.swift in Sources */,
 				41D16C621D10384700EEB8A2 /* NewsTableViewCell.swift in Sources */,
+				AF06C2651DC3A7160093E94E /* DailyWorkTableViewCell.swift in Sources */,
 				AFC6BC6C1DB9791300AA4E9C /* ExamsViewController.swift in Sources */,
 				292ABB7D1DC16E8200CF002A /* PopupDialogDefaultButtons.swift in Sources */,
 				AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */,
