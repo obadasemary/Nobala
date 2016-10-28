@@ -64,6 +64,9 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
     
     func fetchHomeWorkReport() {
         
+        // Do NOT call webservice if either of dates has no value
+        if nil == endDate || nil == startDate {return}
+        
         ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
         
         if let Userauth_token : String = keychain["auth_token"] {
@@ -180,8 +183,6 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
         
         // Present dialog
         self.presentViewController(popup, animated: true, completion: nil)
-        
-        fetchHomeWorkReport()
     }
 
     func updateChosenTimes(date: NSDate, type: ChooseTimeViewType) {
@@ -198,8 +199,6 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
             formatter.dateFormat = "dd/MM/yyyy"
             endDate = formatter.stringFromDate(date)
             print("EndDate: \(endDate)")
-            
-            break
         case .From:
             fromDate = date
             fromDateLabel.text = formatter.stringFromDate(date)
@@ -208,9 +207,11 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
             formatter.dateFormat = "dd/MM/yyyy"
             startDate = formatter.stringFromDate(date)
             print("StartDate: \(startDate)")
-            
-            break
         }
+    }
+    
+    func refreshPresentedData() {
+        fetchHomeWorkReport()
     }
     
     /*

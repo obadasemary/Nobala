@@ -10,6 +10,7 @@ import UIKit
 
 protocol SetTimeViewControllerDelegate: class {
     func updateChosenTimes(date: NSDate, type: ChooseTimeViewType)
+    func refreshPresentedData()
 }
 
 enum ChooseTimeViewType : Int {
@@ -40,7 +41,7 @@ class SetTimeViewController: UIViewController {
     }
     
     @IBAction func done() {
-        
+        self.containerController?.refreshPresentedData()
         self.dialog?.dismiss()
     }
     /*
