@@ -11,12 +11,18 @@ import ENSwiftSideMenu
 import ASProgressHud
 import KeychainAccess
 
-class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITableViewDelegate, UITableViewDataSource {
+class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITableViewDelegate, UITableViewDataSource, SetTimeViewControllerDelegate {
     
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userType: UIImageView!
     
     @IBOutlet weak var homeworkReportTableView: UITableView!
+    
+    var fromDate: NSDate?
+    var toDate: NSDate?
+    
+    @IBOutlet weak var fromDateLabel: UILabel!
+    @IBOutlet weak var toDateLabel: UILabel!
     
     var homeworkReoprtArray = []
     var selectedHomeworkReport: HomeWorkStudentReport = HomeWorkStudentReport()
@@ -24,7 +30,8 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
     var sideMenu:ENSideMenu?
     
     var window: UIWindow?
-
+    var setTimeVC: SetTimeViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -144,7 +151,42 @@ class HomeWorkReportViewController: UIViewController, ENSideMenuDelegate, UITabl
         
         return tableViewCell
     }
+    
+    @IBAction func chooseTime(sender: UIButton) {
+//        setTimeVC = self.storyboard?.instantiateViewControllerWithIdentifier("SetTimeViewController") as? SetTimeViewController
+        
+        setTimeVC = SetTimeViewController(nibName: "SetTimeView", bundle: NSBundle.mainBundle())
+        if sender.tag == 13 {
+            setTimeVC?.type = .To
+        }
+        setTimeVC!.containerController = self
+        
+        // Create the dialog
+        let popup = PopupDialog(viewController: setTimeVC!, transitionStyle: .BounceDown, buttonAlignment: .Horizontal, gestureDismissal: true)
+        
+        setTimeVC!.dialog = popup
+        
+        // Present dialog
+        self.presentViewController(popup, animated: true, completion: nil)
+    }
 
+    func updateChosenTimes(date: NSDate, type: ChooseTimeViewType) {
+        
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd"
+        formatter.locale = NSLocale(localeIdentifier: "ar")
+        switch type {
+        case .To:
+            toDate = date
+            toDateLabel.text = formatter.stringFromDate(date)
+            break
+        case .From:
+            fromDate = date
+            fromDateLabel.text = formatter.stringFromDate(date)
+            break
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
