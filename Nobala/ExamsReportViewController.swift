@@ -23,7 +23,6 @@ class ExamsReportViewController: UIViewController, ENSideMenuDelegate, UITableVi
     
     var startDate: String?
     var endDate: String?
-    //        = "31/12/2016"
     
     @IBOutlet weak var fromDateLabel: UILabel!
     @IBOutlet weak var toDateLabel: UILabel!
@@ -198,7 +197,6 @@ class ExamsReportViewController: UIViewController, ENSideMenuDelegate, UITableVi
             formatter.locale = NSLocale(localeIdentifier: "en")
             formatter.dateFormat = "dd/MM/yyyy"
             endDate = formatter.stringFromDate(date)
-            print("EndDate: \(endDate)")
         case .From:
             fromDate = date
             fromDateLabel.text = formatter.stringFromDate(date)
@@ -206,7 +204,6 @@ class ExamsReportViewController: UIViewController, ENSideMenuDelegate, UITableVi
             formatter.locale = NSLocale(localeIdentifier: "en")
             formatter.dateFormat = "dd/MM/yyyy"
             startDate = formatter.stringFromDate(date)
-            print("StartDate: \(startDate)")
         }
     }
     

@@ -75,7 +75,7 @@ class SocialViewController: UIViewController, ENSideMenuDelegate {
             
             ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
             
-            if let url = NSURL(string: "http://blog.algorithmers.com/git/") {
+            if let url = NSURL(string: "https://twitter.com/nobalaschool") {
                 
                 let safariController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
                 self.presentViewController(safariController, animated: true, completion: nil)
@@ -91,7 +91,7 @@ class SocialViewController: UIViewController, ENSideMenuDelegate {
             
             ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
             
-            if let url = NSURL(string: "http://www.hongkiat.com/blog/50-freelance-job-sites-for-designers-programmers-best-of/") {
+            if let url = NSURL(string: "https://www.youtube.com/user/AlnobalaaSchools") {
                 
                 let safariController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
                 self.presentViewController(safariController, animated: true, completion: nil)
@@ -107,7 +107,7 @@ class SocialViewController: UIViewController, ENSideMenuDelegate {
             
             ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
             
-            if let url = NSURL(string: "https://www.linkedin.com/pulse/hack-zurich-2016-abdelrahman-el-semary?trk=pulse_spock-articles") {
+            if let url = NSURL(string: "https://www.facebook.com/nobalaschool") {
                 
                 let safariController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
                 self.presentViewController(safariController, animated: true, completion: nil)
@@ -123,7 +123,7 @@ class SocialViewController: UIViewController, ENSideMenuDelegate {
             
             ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
             
-            if let url = NSURL(string: "https://www.linkedin.com/pulse/cocoapods-abdelrahman-el-semary?trk=pulse_spock-articles") {
+            if let url = NSURL(string: "https://plus.google.com/107330884066981073291") {
                 
                 let safariController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
                 self.presentViewController(safariController, animated: true, completion: nil)

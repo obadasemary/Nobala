@@ -45,6 +45,7 @@ class DailyHomeworkViewController: UIViewController, ENSideMenuDelegate, UITable
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         userName.text = keychain["userFName"]
+        usertypeID = keychain["userTypeID"]
         
         if keychain["user_type"]! == "1" {
             userType.image = UIImage(named: "MLParant.png")
@@ -53,8 +54,6 @@ class DailyHomeworkViewController: UIViewController, ENSideMenuDelegate, UITable
         } else {
             userType.image = UIImage(named: "MLTeacher.png")
         }
-        
-        usertypeID = keychain["userTypeID"]
     }
     
     func fetchDailyWork() {
@@ -100,7 +99,6 @@ class DailyHomeworkViewController: UIViewController, ENSideMenuDelegate, UITable
             })
         }
         
-        ASProgressHud.hideHUDForView(self.view, animated: true)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -162,7 +160,6 @@ class DailyHomeworkViewController: UIViewController, ENSideMenuDelegate, UITable
     }
 
     @IBAction func chooseTime(sender: UIButton) {
-        //        setTimeVC = self.storyboard?.instantiateViewControllerWithIdentifier("SetTimeViewController") as? SetTimeViewController
         
         setTimeVC = SetTimeViewController(nibName: "SetTimeView", bundle: NSBundle.mainBundle())
         if sender.tag == 13 {

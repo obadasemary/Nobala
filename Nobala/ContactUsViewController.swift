@@ -71,18 +71,43 @@ class ContactUsViewController: UIViewController, ENSideMenuDelegate {
 
     
     @IBAction func phoneAction(sender: AnyObject) {
+        
+        let alertController = UIAlertController(title: "الهاتف", message: "الرقم الموحد لمجمع البنين 920009659", preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     @IBAction func mobileAction(sender: AnyObject) {
+        
+        let alertController = UIAlertController(title: "الجوال", message: "الابتدائى ورياض الاطفال 0114215712-0112966610 المتسوط والثانوى بنات 0114212095-0114201168", preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     @IBAction func faxAction(sender: AnyObject) {
+        
+        let alertController = UIAlertController(title: "الفاكس", message: "الفاكس 0114210102", preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     @IBAction func eMailAction(sender: AnyObject) {
+        
+        let alertController = UIAlertController(title: "البريد الاكتروني", message: "info@nobala.edu.sa", preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     @IBAction func mapAction(sender: AnyObject) {
+        
+        let alertController = UIAlertController(title: "العنوان", message: "العنوان الرياض - حى الشفا", preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
 }
