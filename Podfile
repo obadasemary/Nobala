@@ -14,6 +14,7 @@ target 'Nobala' do
   pod 'Alamofire', '~> 3.4'
   pod 'KeychainAccess' , '~> 2.4'
   pod 'XLPagerTabStrip', '~> 4.0.2'
+  pod 'SwiftyJSON', '2.4.0'
 
 
 target 'NobalaTests' do

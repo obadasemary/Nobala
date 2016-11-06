@@ -29,7 +29,9 @@ extension NobalaClient {
         
         static let getStudyPlan = "http://api.nobala.edu.sa/api/section/GetStudyPalne"
         static let getHomeWorkLogger = "http://api.nobala.edu.sa/api/exams/GetHomeWorkLogger"
+        static let getNewMessagesByUserID = "http://api.nobala.edu.sa/api/SMSMessanger/GetNewMessagesByUserID"
         static let getExamsTeacherFollowUp = "http://api.nobala.edu.sa/api/exams/ExamsTeacherFollowUp"
+        static let getNotification = "http://api.nobala.edu.sa/api/Notifications/GetNotification"
     }
     
     // MARK: - DATE

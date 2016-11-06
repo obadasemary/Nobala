@@ -59,6 +59,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>VRGCalendarView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,12 +82,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0BB3EF38F6297F07A2FDBAC83A27CF10</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>14C35F53942919700153D9A2517E5208</key>
+		<key>27C6368F659204156DE757987CAB2D1F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,12 +97,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4AC80B3D7C1E854CE1C2E3E9C983191C</key>
+		<key>438065765E9976F9A6106D5B6985546D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4F84E4F13E47E6AF91848385BA104CA1</key>
+		<key>4AC80B3D7C1E854CE1C2E3E9C983191C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,12 +132,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CC3C5FB4B37F3EE0A23D10B46723EA52</key>
+		<key>D4CBF8DF3F86A72C5496774B118E1C66</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E935B19088371FA3DB667C33BECA2B38</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E96E13C4D3B5B5FC0651440734C2BF4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC900DE6CD1B697AFE2F4EBABD5324B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

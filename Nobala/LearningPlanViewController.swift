@@ -196,6 +196,7 @@ class LearningPlanViewController: UIViewController, ENSideMenuDelegate, UITableV
         self.pdf.learnPlan = self.selectedLearnPlan
         
 //        let URL = "http://registeration.nobala.edu.sa/\(learnPlanArray[indexPath.row].valueForKey("fileFullPath") as? String)"
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

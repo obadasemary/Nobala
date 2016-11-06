@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 extension NobalaClient {
     
@@ -631,4 +632,95 @@ extension NobalaClient {
         completionHandler(success: true, error: nil)
     }
     
+    // MARK: - GetNewMessagesByUserID
+
+    func getNewMessagesByUserID(accessToken: String, UserID: String, completionHandler: (success: Bool, errorMessage: String?, myResult: [Messages]) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
+        
+        let headers = ["Authorization": "Bearer " + accessToken]
+        
+        let parameters: [String: AnyObject] = [
+            
+            "UserID":UserID,
+            "pageSize":"20",
+            "sorting":"",
+            "startIndex":"0"
+        ]
+        
+        Alamofire.request(.POST, NobalaClient.URLs.getNewMessagesByUserID, parameters: parameters, encoding: .JSON, headers: headers).responseJSON { (response) in
+            
+            var newArray = [Messages]()
+            
+            if let results = response.result.value {
+                
+                let json = JSON(results)
+                
+                let messages = json["Message"].arrayValue
+                
+                for item in messages {
+                    
+                    let parsedObject = Messages()
+                    
+                    let subject = item["Subject"].stringValue
+                    let mainMessageID = item["MainMessageID"].intValue
+                    let bodyText = item["BodyText"].stringValue
+                    let userID = item["UserID"].intValue
+                    
+                    parsedObject.Subject = subject
+                    parsedObject.BodyText = bodyText
+                    parsedObject.MainMessageID = mainMessageID
+                    parsedObject.UserID = userID            
+                    
+                    newArray.append(parsedObject)
+                }
+            }
+            
+            completionHandler(success: true, errorMessage: nil, myResult: newArray)
+        }
+    }
+    
+    // MARK: - GetNotification
+    
+    func getNotification(accessToken: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
+        
+        let headers = ["Authorization": "Bearer " + accessToken]
+        
+        Alamofire.request(.POST, NobalaClient.URLs.getNotification, encoding: .JSON, headers: headers).responseJSON { (response) in
+            
+            var newArray: NSArray = []
+            
+            if let results = response.result.value {
+                
+                if let result = results as? NSArray {
+                    
+                    newArray = result
+                }
+            }
+            
+            completionHandler(success: true, errorMessage: nil, myResult: newArray)
+        }
+    }
+    
+    // MARK: - GetMainPages
+    
+    func getPage(completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
+        
+        let url = NobalaClient.Constants.BaseURL + NobalaClient.Methods.getMainPages
+        
+        Alamofire.request(.GET, url).responseJSON { (response) in
+            
+            var newArray: NSArray = []
+            
+            if let results = response.result.value {
+                
+                if let result = results as? NSArray {
+                    
+                    newArray = result
+                }
+            }
+            
+            completionHandler(success: true, errorMessage: nil, myResult: newArray)
+        }
+    }
+    
+
 }

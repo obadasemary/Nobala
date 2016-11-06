@@ -5,6 +5,7 @@ PODS:
   - ENSwiftSideMenu (0.1.1)
   - KeychainAccess (2.4.0)
   - Kingfisher (2.5.0)
+  - SwiftyJSON (2.4.0)
   - VRGCalendarView (0.0.1)
   - XLPagerTabStrip (4.0.2)
 
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - ENSwiftSideMenu (~> 0.1)
   - KeychainAccess (~> 2.4)
   - Kingfisher (~> 2.4)
+  - SwiftyJSON (= 2.4.0)
   - VRGCalendarView (~> 0.0)
   - XLPagerTabStrip (~> 4.0.2)
 
@@ -25,9 +27,10 @@ SPEC CHECKSUMS:
   ENSwiftSideMenu: a934caefbe811e4925f172009349da4a49901307
   KeychainAccess: c2a71459af5bddf720a51806046a598500976c04
   Kingfisher: d467bd710907ec9aa94aaddecaa5390aa3559819
+  SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
   VRGCalendarView: f9d33791eed8be9ef69ac91e915277a1da7913e6
   XLPagerTabStrip: 5aee1990f16ae04b7285fe83befca7dbb259ec57
 
-PODFILE CHECKSUM: 4c0eec79e82cfdd0e0baa07103bce0f74b936adb
+PODFILE CHECKSUM: 68fae1e51bc8cd42dddbccee4fe2788f77a4ba66
 
 COCOAPODS: 1.1.0.rc.2

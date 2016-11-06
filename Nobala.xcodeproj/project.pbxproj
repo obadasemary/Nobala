@@ -53,6 +53,9 @@
 		AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C1D1D0D755C0053130C /* NobalaClient.swift */; };
 		AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C1F1D0D75760053130C /* NobalaConvenient.swift */; };
 		AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C211D0D75860053130C /* NobalaConstants.swift */; };
+		AF21CE011DCE3A6B006C1B9B /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21CE001DCE3A6B006C1B9B /* Messages.swift */; };
+		AF21CE031DCE3C22006C1B9B /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21CE021DCE3C21006C1B9B /* MessagesViewController.swift */; };
+		AF21CE051DCE5D8B006C1B9B /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21CE041DCE5D8B006C1B9B /* MessageTableViewCell.swift */; };
 		AF658F001D813B6C005914E9 /* HomeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF658EFF1D813B6C005914E9 /* HomeWork.swift */; };
 		AF71CA0E1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF71CA0D1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift */; };
 		AF7256801D9A75A9001E0515 /* Exams.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72567F1D9A75A9001E0515 /* Exams.swift */; };
@@ -77,6 +80,17 @@
 		AFD60D021D7D01360002ED14 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD60D011D7D01360002ED14 /* Users.swift */; };
 		AFDDCD6D1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDDCD6C1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift */; };
 		AFDDCD6F1DBF8E0200629C00 /* ExamsReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDDCD6E1DBF8E0200629C00 /* ExamsReportTableViewCell.swift */; };
+		AFEA373D1DCF89A100DD9CEE /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA373C1DCF89A100DD9CEE /* Notification.swift */; };
+		AFEA373F1DCF8E5600DD9CEE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA373E1DCF8E5600DD9CEE /* NotificationViewController.swift */; };
+		AFEA37411DCF8F5800DD9CEE /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA37401DCF8F5800DD9CEE /* NotificationTableViewCell.swift */; };
+		AFEA37431DCFE93300DD9CEE /* ShowNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA37421DCFE93300DD9CEE /* ShowNotificationViewController.swift */; };
+		AFEA37471DCFF0E100DD9CEE /* GMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA37461DCFF0E100DD9CEE /* GMP.swift */; };
+		AFEA37491DCFF2A000DD9CEE /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA37481DCFF2A000DD9CEE /* VisionViewController.swift */; };
+		AFEA374B1DCFF2D700DD9CEE /* SupervisorWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA374A1DCFF2D700DD9CEE /* SupervisorWordViewController.swift */; };
+		AFEF54191DCEAEC000FB5F6A /* GE_SS_Two_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFEF54161DCEAEC000FB5F6A /* GE_SS_Two_Bold.otf */; };
+		AFEF541A1DCEAEC000FB5F6A /* GE_SS_Two_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFEF54171DCEAEC000FB5F6A /* GE_SS_Two_Light.otf */; };
+		AFEF541B1DCEAEC000FB5F6A /* GE_SS_Two_Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFEF54181DCEAEC000FB5F6A /* GE_SS_Two_Medium.otf */; };
+		AFEF541D1DCEBBC000FB5F6A /* ShowMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEF541C1DCEBBBF00FB5F6A /* ShowMessageViewController.swift */; };
 		B86FBFB47C3B16B26650B9EF /* Pods_NobalaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F8CDBB075E1BAE30EE1D7F /* Pods_NobalaUITests.framework */; };
 		C301D2801D2327FB00EF0AE6 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301D27F1D2327FB00EF0AE6 /* SocialViewController.swift */; };
 		E3430A561DB0254C008BC6BB /* managerMainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3430A551DB0254C008BC6BB /* managerMainMenuViewController.swift */; };
@@ -163,6 +177,9 @@
 		AF106C1D1D0D755C0053130C /* NobalaClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaClient.swift; sourceTree = "<group>"; };
 		AF106C1F1D0D75760053130C /* NobalaConvenient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConvenient.swift; sourceTree = "<group>"; };
 		AF106C211D0D75860053130C /* NobalaConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConstants.swift; sourceTree = "<group>"; };
+		AF21CE001DCE3A6B006C1B9B /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		AF21CE021DCE3C21006C1B9B /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		AF21CE041DCE5D8B006C1B9B /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		AF658EFF1D813B6C005914E9 /* HomeWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWork.swift; sourceTree = "<group>"; };
 		AF71CA0D1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsTeacherFollowUp.swift; sourceTree = "<group>"; };
 		AF72567F1D9A75A9001E0515 /* Exams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exams.swift; sourceTree = "<group>"; };
@@ -187,6 +204,17 @@
 		AFD60D011D7D01360002ED14 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		AFDDCD6C1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorkReportTableViewCell.swift; sourceTree = "<group>"; };
 		AFDDCD6E1DBF8E0200629C00 /* ExamsReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsReportTableViewCell.swift; sourceTree = "<group>"; };
+		AFEA373C1DCF89A100DD9CEE /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		AFEA373E1DCF8E5600DD9CEE /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		AFEA37401DCF8F5800DD9CEE /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		AFEA37421DCFE93300DD9CEE /* ShowNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowNotificationViewController.swift; sourceTree = "<group>"; };
+		AFEA37461DCFF0E100DD9CEE /* GMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMP.swift; sourceTree = "<group>"; };
+		AFEA37481DCFF2A000DD9CEE /* VisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+		AFEA374A1DCFF2D700DD9CEE /* SupervisorWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupervisorWordViewController.swift; sourceTree = "<group>"; };
+		AFEF54161DCEAEC000FB5F6A /* GE_SS_Two_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GE_SS_Two_Bold.otf; sourceTree = "<group>"; };
+		AFEF54171DCEAEC000FB5F6A /* GE_SS_Two_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GE_SS_Two_Light.otf; sourceTree = "<group>"; };
+		AFEF54181DCEAEC000FB5F6A /* GE_SS_Two_Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GE_SS_Two_Medium.otf; sourceTree = "<group>"; };
+		AFEF541C1DCEBBBF00FB5F6A /* ShowMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMessageViewController.swift; sourceTree = "<group>"; };
 		C301D27F1D2327FB00EF0AE6 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		E3430A551DB0254C008BC6BB /* managerMainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = managerMainMenuViewController.swift; sourceTree = "<group>"; };
 		E3430A571DB02C5B008BC6BB /* homeWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeWorkViewController.swift; sourceTree = "<group>"; };
@@ -291,6 +319,8 @@
 				AFB252461DC28A6300E857A7 /* PDFViewController.swift */,
 				AF06C2641DC3A7160093E94E /* DailyWorkTableViewCell.swift */,
 				297F730D1DC3599C00D2E2B7 /* SetTimeView.xib */,
+				AF21CE041DCE5D8B006C1B9B /* MessageTableViewCell.swift */,
+				AFEA37401DCF8F5800DD9CEE /* NotificationTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -330,6 +360,12 @@
 				AFC6BC731DB979AB00AA4E9C /* DailyHomeworkViewController.swift */,
 				292ABB9B1DC183A500CF002A /* HomeWorkWebViewController.swift */,
 				AFCF4C361DC199D000E8EF2D /* ExamWebViewController.swift */,
+				AF21CE021DCE3C21006C1B9B /* MessagesViewController.swift */,
+				AFEF541C1DCEBBBF00FB5F6A /* ShowMessageViewController.swift */,
+				AFEA373E1DCF8E5600DD9CEE /* NotificationViewController.swift */,
+				AFEA37421DCFE93300DD9CEE /* ShowNotificationViewController.swift */,
+				AFEA37481DCFF2A000DD9CEE /* VisionViewController.swift */,
+				AFEA374A1DCFF2D700DD9CEE /* SupervisorWordViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -359,6 +395,9 @@
 		AF106BED1D0D5D260053130C /* Nobala */ = {
 			isa = PBXGroup;
 			children = (
+				AFEF54161DCEAEC000FB5F6A /* GE_SS_Two_Bold.otf */,
+				AFEF54171DCEAEC000FB5F6A /* GE_SS_Two_Light.otf */,
+				AFEF54181DCEAEC000FB5F6A /* GE_SS_Two_Medium.otf */,
 				292ABB871DC16EA700CF002A /* Nobala-Bridging-Header.h */,
 				292ABB9A1DC1749F00CF002A /* Libraries */,
 				AF0438861D10C28800CF6F2A /* Controller */,
@@ -409,6 +448,9 @@
 				AFCF4C301DC1246E00E8EF2D /* ExamStudentReport.swift */,
 				AF71CA0D1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift */,
 				AFCF4C3A1DC233F500E8EF2D /* LearnPlan.swift */,
+				AF21CE001DCE3A6B006C1B9B /* Messages.swift */,
+				AFEA373C1DCF89A100DD9CEE /* Notification.swift */,
+				AFEA37461DCFF0E100DD9CEE /* GMP.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -550,8 +592,11 @@
 				AF106BF91D0D5D260053130C /* LaunchScreen.storyboard in Resources */,
 				AF106BF61D0D5D260053130C /* Assets.xcassets in Resources */,
 				AF106BF41D0D5D260053130C /* Main.storyboard in Resources */,
+				AFEF541A1DCEAEC000FB5F6A /* GE_SS_Two_Light.otf in Resources */,
 				292ABB761DC16E8200CF002A /* .gitkeep in Resources */,
 				297F730E1DC3599C00D2E2B7 /* SetTimeView.xib in Resources */,
+				AFEF54191DCEAEC000FB5F6A /* GE_SS_Two_Bold.otf in Resources */,
+				AFEF541B1DCEAEC000FB5F6A /* GE_SS_Two_Medium.otf in Resources */,
 				292ABB941DC1749B00CF002A /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -835,6 +880,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFEA37471DCFF0E100DD9CEE /* GMP.swift in Sources */,
 				292ABB8B1DC16F8B00CF002A /* SetTimeViewController.swift in Sources */,
 				418825EF1D11C523002C2648 /* ViewWebServiceProtocol.swift in Sources */,
 				AFB086421D13577600DB6266 /* NobalaViewController.swift in Sources */,
@@ -844,6 +890,7 @@
 				292ABB851DC16E8200CF002A /* UIView+Animations.swift in Sources */,
 				AFDDCD6D1DBF8DE400629C00 /* HomeWorkReportTableViewCell.swift in Sources */,
 				AFB086481D143FB200DB6266 /* MainPages.swift in Sources */,
+				AFEA37431DCFE93300DD9CEE /* ShowNotificationViewController.swift in Sources */,
 				292ABB861DC16E8200CF002A /* UIViewController+Visibility.swift in Sources */,
 				E3430A5A1DB02FC5008BC6BB /* homeWorkTableViewCell.swift in Sources */,
 				AFC6BC741DB979AB00AA4E9C /* DailyHomeworkViewController.swift in Sources */,
@@ -863,6 +910,7 @@
 				AFC6BC6C1DB9791300AA4E9C /* ExamsViewController.swift in Sources */,
 				292ABB7D1DC16E8200CF002A /* PopupDialogDefaultButtons.swift in Sources */,
 				AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */,
+				AFEA373F1DCF8E5600DD9CEE /* NotificationViewController.swift in Sources */,
 				AFCA67941DA3D46200970D1B /* LoginViewController.swift in Sources */,
 				AF940BF71DA5651800937119 /* NobalaWebServiceProtocol.swift in Sources */,
 				292ABB841DC16E8200CF002A /* TransitionAnimator.swift in Sources */,
@@ -870,8 +918,10 @@
 				292ABB811DC16E8200CF002A /* PresentationController.swift in Sources */,
 				292ABB771DC16E8200CF002A /* FXBlurView.m in Sources */,
 				AFB086441D1358F500DB6266 /* KnowsUsViewController.swift in Sources */,
+				AFEA37411DCF8F5800DD9CEE /* NotificationTableViewCell.swift in Sources */,
 				AFDDCD6F1DBF8E0200629C00 /* ExamsReportTableViewCell.swift in Sources */,
 				AFB086461D13FC5800DB6266 /* ContactUsViewController.swift in Sources */,
+				AF21CE051DCE5D8B006C1B9B /* MessageTableViewCell.swift in Sources */,
 				AF658F001D813B6C005914E9 /* HomeWork.swift in Sources */,
 				AF0438881D10C2CD00CF6F2A /* NewsViewController.swift in Sources */,
 				AFCF4C3B1DC233F500E8EF2D /* LearnPlan.swift in Sources */,
@@ -887,18 +937,24 @@
 				AFC6BC6E1DB9793600AA4E9C /* HomeWorkReportViewController.swift in Sources */,
 				292ABB991DC1749B00CF002A /* TZStackViewDistribution.swift in Sources */,
 				292ABB7B1DC16E8200CF002A /* PopupDialogButton.swift in Sources */,
+				AFEF541D1DCEBBC000FB5F6A /* ShowMessageViewController.swift in Sources */,
 				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,
 				292ABB7F1DC16E8200CF002A /* PopupDialogDefaultViewController.swift in Sources */,
+				AF21CE031DCE3C22006C1B9B /* MessagesViewController.swift in Sources */,
 				292ABB7E1DC16E8200CF002A /* PopupDialogDefaultView.swift in Sources */,
 				AFB252471DC28A6300E857A7 /* PDFViewController.swift in Sources */,
 				292ABB9C1DC183A500CF002A /* HomeWorkWebViewController.swift in Sources */,
 				C301D2801D2327FB00EF0AE6 /* SocialViewController.swift in Sources */,
 				418825F11D11C698002C2648 /* News.swift in Sources */,
+				AFEA374B1DCFF2D700DD9CEE /* SupervisorWordViewController.swift in Sources */,
 				292ABB801DC16E8200CF002A /* PopupDialogOverlayView.swift in Sources */,
 				292ABB7A1DC16E8200CF002A /* PopupDialog.swift in Sources */,
+				AF21CE011DCE3A6B006C1B9B /* Messages.swift in Sources */,
 				292ABB7C1DC16E8200CF002A /* PopupDialogContainerView.swift in Sources */,
+				AFEA373D1DCF89A100DD9CEE /* Notification.swift in Sources */,
 				E3430A561DB0254C008BC6BB /* managerMainMenuViewController.swift in Sources */,
 				AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */,
+				AFEA37491DCFF2A000DD9CEE /* VisionViewController.swift in Sources */,
 				292ABB781DC16E8200CF002A /* InteractiveTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
