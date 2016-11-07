@@ -50,6 +50,10 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
+        fetchDataUponChosenChild()
+    }
+    
+    func fetchDataUponChosenChild () {
         let keychain = Keychain(service: "Noblaa.app")
         
         if let Userauth_token : String = keychain["auth_token"] {
@@ -74,7 +78,7 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
                 
                 pickerView.hidden = false
                 
-//                if currentSelectedStudentId == nil { return }
+                //                if currentSelectedStudentId == nil { return }
                 
                 NobalaClient.sharedInstance().getlistStudentsByParentID(Userauth_token, completionHandler: { (success, errorMessage,myResult) in
                     
@@ -119,6 +123,7 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
                 fetchData(Userauth_token, uID: "null")
             }
         }
+
     }
     
     func fetchData(Userauth_token: String, uID: String) {
@@ -260,5 +265,7 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
         
         currentSelectedStudentId = studentData[row].valueForKey("PK_UserID") as? Int
         print(currentSelectedStudentId)
+        
+        fetchDataUponChosenChild()
     }
 }
