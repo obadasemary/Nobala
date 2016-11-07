@@ -11,13 +11,20 @@ import ENSwiftSideMenu
 import ASProgressHud
 import KeychainAccess
 
-class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewDelegate, UITableViewDataSource {
+class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userType: UIImageView!
+    
+    @IBOutlet weak var pickerView: UIPickerView!
 
     var tableData = [Messages]()
     var selectedTableData: Messages = Messages()
+    
+    var studentData = []
+    var selectedStudentData: ListStudents = ListStudents()
+    
+    var currentSelectedStudentId: Int?
     
     var showMessage: ShowMessageViewController = ShowMessageViewController()
     
@@ -29,6 +36,9 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.pickerView.delegate = self
+        self.pickerView.dataSource = self
 
         self.sideMenuController()?.sideMenu?.delegate = self
         
@@ -46,39 +56,6 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
             
             let userTypeID = keychain["user_type"]
             
-            NobalaClient.sharedInstance().getNewMessagesByUserID(Userauth_token, UserID: "null", completionHandler: { (success, errorMessage, myResult) in
-                
-                if !success {
-                    
-                    var message = "Unknown error, please try again"
-                    
-                    if errorMessage == "invalid_Data" {
-                        
-                        message = "Pleas Make Sure  is correct"
-                    }
-                    
-                    let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
-                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                    
-                    self.presentViewController(alertController, animated: true, completion: nil)
-                    
-                    return
-                }
-                
-                self.tableData = myResult
-                
-                ASProgressHud.hideHUDForView(self.view, animated: true)
-                
-                self.tableView.reloadData()
-                
-                }, fail: { (error, errorMessage) in
-                    
-                    let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
-                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                    
-                    self.presentViewController(alertController, animated: true, completion: nil)
-            })
-            
             userName.text = keychain["userFName"]
             
             if keychain["user_type"]! == "1" {
@@ -87,6 +64,120 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
                 userType.image = UIImage(named: "MLStudend.png")
             } else {
                 userType.image = UIImage(named: "MLTeacher.png")
+            }
+            
+            let uType = Int(userTypeID!)
+            
+            if (uType == 1) {
+                
+                pickerView.hidden = false
+                
+                if currentSelectedStudentId == nil { return }
+            
+                NobalaClient.sharedInstance().getlistStudentsByParentID(Userauth_token, completionHandler: { (success, errorMessage, myResult) in
+                    
+                    if !success {
+                        
+                        var message = "Unknown error, please try again"
+                        
+                        if errorMessage == "invalid_Data" {
+                            
+                            message = "Pleas Make Sure  is correct"
+                        }
+                        
+                        let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                        
+                        self.presentViewController(alertController, animated: true, completion: nil)
+                        
+                        return
+                    }
+                    
+                    self.studentData = myResult
+                    
+                    ASProgressHud.hideHUDForView(self.view, animated: true)
+                    
+    //                print(self.studentData[0].valueForKey("FullNameAr") as? String)
+                    
+                    
+                    }, fail: { (error, errorMessage) in
+                        
+                        let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
+                        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                        
+                        self.presentViewController(alertController, animated: true, completion: nil)
+                })
+                
+                let uID = String(currentSelectedStudentId)
+                
+                NobalaClient.sharedInstance().getNewMessagesByUserID(Userauth_token, UserID: uID, completionHandler: { (success, errorMessage, myResult) in
+                    
+                    if !success {
+                        
+                        var message = "Unknown error, please try again"
+                        
+                        if errorMessage == "invalid_Data" {
+                            
+                            message = "Pleas Make Sure  is correct"
+                        }
+                        
+                        let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                        
+                        self.presentViewController(alertController, animated: true, completion: nil)
+                        
+                        return
+                    }
+                    
+                    self.tableData = myResult
+                    
+                    ASProgressHud.hideHUDForView(self.view, animated: true)
+                    
+                    self.tableView.reloadData()
+                    
+                    }, fail: { (error, errorMessage) in
+                        
+                        let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
+                        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                        
+                        self.presentViewController(alertController, animated: true, completion: nil)
+                })
+
+                
+            } else {
+                
+                NobalaClient.sharedInstance().getNewMessagesByUserID(Userauth_token, UserID: "null", completionHandler: { (success, errorMessage, myResult) in
+                    
+                    if !success {
+                        
+                        var message = "Unknown error, please try again"
+                        
+                        if errorMessage == "invalid_Data" {
+                            
+                            message = "Pleas Make Sure  is correct"
+                        }
+                        
+                        let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                        
+                        self.presentViewController(alertController, animated: true, completion: nil)
+                        
+                        return
+                    }
+                    
+                    self.tableData = myResult
+                    
+                    ASProgressHud.hideHUDForView(self.view, animated: true)
+                    
+                    self.tableView.reloadData()
+                    
+                    }, fail: { (error, errorMessage) in
+                        
+                        let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
+                        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                        
+                        self.presentViewController(alertController, animated: true, completion: nil)
+                })
             }
         }
     }
@@ -171,5 +262,25 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
             
             self.showMessage = segue.destinationViewController as! ShowMessageViewController
         }
+    }
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        return studentData.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        return studentData[row].valueForKey("FullNameAr") as? String
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        currentSelectedStudentId = studentData[row].valueForKey("PK_UserID") as? Int
     }
 }

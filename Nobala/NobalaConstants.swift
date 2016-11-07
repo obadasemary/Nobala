@@ -32,6 +32,7 @@ extension NobalaClient {
         static let getNewMessagesByUserID = "http://api.nobala.edu.sa/api/SMSMessanger/GetNewMessagesByUserID"
         static let getExamsTeacherFollowUp = "http://api.nobala.edu.sa/api/exams/ExamsTeacherFollowUp"
         static let getNotification = "http://api.nobala.edu.sa/api/Notifications/GetNotification"
+        static let getlistStudentsByParentID = "http://api.nobala.edu.sa/api/NobalaMobile/GetlstStudentsByParentID"
     }
     
     // MARK: - DATE

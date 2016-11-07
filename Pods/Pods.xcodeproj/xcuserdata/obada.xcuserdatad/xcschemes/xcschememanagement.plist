@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CABCalendarView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DualSlideMenu-DualSlideMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -82,7 +87,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>27C6368F659204156DE757987CAB2D1F</key>
+		<key>0C20C2C0454DDCD6A990E02A55D24760</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,7 +102,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>438065765E9976F9A6106D5B6985546D</key>
+		<key>4031B400A81C6D2D13A6F2A658B8E703</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,7 +112,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>538330BF0A01BE8ACF1E8AF5AE20E6E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5E40B80F0FA7BDA9FBB0AB7DDCD07249</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>63559D8596BD5E41A2A5E06BF61A4728</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6369AC4F093FF8EE44F8B511EBEE873B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,22 +152,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D4CBF8DF3F86A72C5496774B118E1C66</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E935B19088371FA3DB667C33BECA2B38</key>
+		<key>E5F23481F750C9585221AD715B82B926</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E96E13C4D3B5B5FC0651440734C2BF4D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EC900DE6CD1B697AFE2F4EBABD5324B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

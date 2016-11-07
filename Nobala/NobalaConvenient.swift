@@ -699,4 +699,26 @@ extension NobalaClient {
             completionHandler(success: true, errorMessage: nil, myResult: newArray)
         }
     }
+    
+    // MARK: - GetlistStudentsByParentID
+    
+    func getlistStudentsByParentID(accessToken: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
+        
+        let headers = ["Authorization": "Bearer " + accessToken]
+        
+        Alamofire.request(.POST, NobalaClient.URLs.getlistStudentsByParentID, encoding: .JSON, headers: headers).responseJSON { (response) in
+            
+            var newArray: NSArray = []
+            
+            if let results = response.result.value {
+                
+                if let result = results as? NSArray {
+                    
+                    newArray = result
+                }
+            }
+            
+            completionHandler(success: true, errorMessage: nil, myResult: newArray)
+        }
+    }
 }

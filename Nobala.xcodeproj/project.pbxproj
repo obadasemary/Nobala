@@ -53,6 +53,8 @@
 		AF106C1E1D0D755C0053130C /* NobalaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C1D1D0D755C0053130C /* NobalaClient.swift */; };
 		AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C1F1D0D75760053130C /* NobalaConvenient.swift */; };
 		AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C211D0D75860053130C /* NobalaConstants.swift */; };
+		AF1B621B1DD02542009EB41D /* ListStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B621A1DD02542009EB41D /* ListStudents.swift */; };
+		AF1B621D1DD0CFB2009EB41D /* ChoseStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B621C1DD0CFB2009EB41D /* ChoseStudentViewController.swift */; };
 		AF21CE011DCE3A6B006C1B9B /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21CE001DCE3A6B006C1B9B /* Messages.swift */; };
 		AF21CE031DCE3C22006C1B9B /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21CE021DCE3C21006C1B9B /* MessagesViewController.swift */; };
 		AF21CE051DCE5D8B006C1B9B /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21CE041DCE5D8B006C1B9B /* MessageTableViewCell.swift */; };
@@ -176,6 +178,8 @@
 		AF106C1D1D0D755C0053130C /* NobalaClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaClient.swift; sourceTree = "<group>"; };
 		AF106C1F1D0D75760053130C /* NobalaConvenient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConvenient.swift; sourceTree = "<group>"; };
 		AF106C211D0D75860053130C /* NobalaConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConstants.swift; sourceTree = "<group>"; };
+		AF1B621A1DD02542009EB41D /* ListStudents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListStudents.swift; sourceTree = "<group>"; };
+		AF1B621C1DD0CFB2009EB41D /* ChoseStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoseStudentViewController.swift; sourceTree = "<group>"; };
 		AF21CE001DCE3A6B006C1B9B /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		AF21CE021DCE3C21006C1B9B /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		AF21CE041DCE5D8B006C1B9B /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
@@ -364,6 +368,7 @@
 				AFEA37421DCFE93300DD9CEE /* ShowNotificationViewController.swift */,
 				AFEA37481DCFF2A000DD9CEE /* VisionViewController.swift */,
 				AFEA374A1DCFF2D700DD9CEE /* SupervisorWordViewController.swift */,
+				AF1B621C1DD0CFB2009EB41D /* ChoseStudentViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -448,6 +453,7 @@
 				AFCF4C3A1DC233F500E8EF2D /* LearnPlan.swift */,
 				AF21CE001DCE3A6B006C1B9B /* Messages.swift */,
 				AFEA373C1DCF89A100DD9CEE /* Notification.swift */,
+				AF1B621A1DD02542009EB41D /* ListStudents.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -687,7 +693,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		418A7ED01D0C93760E992F1D /* [CP] Copy Pods Resources */ = {
@@ -762,7 +768,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A6A763EE53FB97A41E168204 /* [CP] Check Pods Manifest.lock */ = {
@@ -807,7 +813,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C706194E4137806D723223BA /* [CP] Check Pods Manifest.lock */ = {
@@ -912,6 +918,7 @@
 				292ABB841DC16E8200CF002A /* TransitionAnimator.swift in Sources */,
 				292ABB791DC16E8200CF002A /* PopupDialog+Keyboard.swift in Sources */,
 				292ABB811DC16E8200CF002A /* PresentationController.swift in Sources */,
+				AF1B621B1DD02542009EB41D /* ListStudents.swift in Sources */,
 				292ABB771DC16E8200CF002A /* FXBlurView.m in Sources */,
 				AFB086441D1358F500DB6266 /* KnowsUsViewController.swift in Sources */,
 				AFEA37411DCF8F5800DD9CEE /* NotificationTableViewCell.swift in Sources */,
@@ -933,6 +940,7 @@
 				AFC6BC6E1DB9793600AA4E9C /* HomeWorkReportViewController.swift in Sources */,
 				292ABB991DC1749B00CF002A /* TZStackViewDistribution.swift in Sources */,
 				292ABB7B1DC16E8200CF002A /* PopupDialogButton.swift in Sources */,
+				AF1B621D1DD0CFB2009EB41D /* ChoseStudentViewController.swift in Sources */,
 				AFEF541D1DCEBBC000FB5F6A /* ShowMessageViewController.swift in Sources */,
 				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,
 				292ABB7F1DC16E8200CF002A /* PopupDialogDefaultViewController.swift in Sources */,
