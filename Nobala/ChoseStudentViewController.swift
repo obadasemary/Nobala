@@ -17,7 +17,7 @@ class ChoseStudentViewController: UIViewController, UIPickerViewDelegate, UIPick
     var studentData = []
     var selectedStudentData: ListStudents = ListStudents()
     
-    var studentId: Int?
+//    var studentId: Int?
     
     var currentSelectedStudentId: Int?
     
@@ -32,46 +32,51 @@ class ChoseStudentViewController: UIViewController, UIPickerViewDelegate, UIPick
             
             let userTypeID = keychain["user_type"]
             
-            NobalaClient.sharedInstance().getlistStudentsByParentID(Userauth_token, completionHandler: { (success, errorMessage, myResult) in
-                
-                if !success {
+            if (userTypeID == "1") {
+                NobalaClient.sharedInstance().getlistStudentsByParentID(Userauth_token, completionHandler: { (success, errorMessage,myResult) in
                     
-                    var message = "Unknown error, please try again"
-                    
-                    if errorMessage == "invalid_Data" {
+                    if !success {
                         
-                        message = "Pleas Make Sure  is correct"
+                        var message = "Unknown error, please try again"
+                        
+                        if errorMessage == "invalid_Data" {
+                            
+                            message = "Pleas Make Sure  is correct"
+                        }
+                        
+                        let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                        
+                        self.presentViewController(alertController, animated: true, completion: nil)
+                        
+                        return
                     }
                     
-                    let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
-                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                    self.studentData = myResult
                     
-                    self.presentViewController(alertController, animated: true, completion: nil)
+                    ASProgressHud.hideHUDForView(self.view, animated: true)
                     
-                    return
-                }
-                
-                self.studentData = myResult
-                
-                ASProgressHud.hideHUDForView(self.view, animated: true)
-                
-                self.pickerView.reloadAllComponents()
-                
-//                print(self.studentData)
-//                print(self.studentData.valueForKey("FullNameAr") as? String)
-                
-                
-                }, fail: { (error, errorMessage) in
+                    self.pickerView.reloadAllComponents()
                     
-                    let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
-                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+    //                print(self.studentData)
+    //                print(self.studentData.valueForKey("FullNameAr") as? String)
                     
-                    self.presentViewController(alertController, animated: true, completion: nil)
-            })
-            
-            self.pickerView.delegate = self
-            self.pickerView.dataSource = self
-            
+                    
+                    }, fail: { (error, errorMessage) in
+                        
+                        let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
+                        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                        
+                        self.presentViewController(alertController, animated: true, completion: nil)
+                })
+                
+                self.pickerView.delegate = self
+                self.pickerView.dataSource = self
+                
+            } else {
+                
+                return
+            }
 //            print(currentSelectedStudentId)
         }
     }
@@ -96,10 +101,4 @@ class ChoseStudentViewController: UIViewController, UIPickerViewDelegate, UIPick
         currentSelectedStudentId = studentData[row].valueForKey("PK_UserID") as? Int
         print(currentSelectedStudentId)
     }
-    
-//    @IBAction func doneActionButton(sender: AnyObject) {
-//        
-//        
-//        
-//    }
 }
