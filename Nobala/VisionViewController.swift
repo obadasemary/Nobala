@@ -9,65 +9,72 @@
 import UIKit
 import ASProgressHud
 
-class VisionViewController: UIViewController {
+class VisionViewController: UIViewController, ViewWebServiceProtocol {
     
-    var tableData = []
-    var tablePage: GMP = GMP()
-
+    @IBOutlet weak var visionTitleLabel: UILabel!
+    @IBOutlet weak var visionTextArea: UITextView!
+    
+    var clientObject: NobalaClient?
+    var pageArray = [MainPages]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.clientObject = NobalaClient.sharedInstance()
+        self.clientObject?.webServiceProtocol = self
 
         ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
         
-        NobalaClient.sharedInstance().getPage({ (success, errorMessage, myResult) in
-            
-            if !success {
-                
-                var message = "Unknown error, please try again"
-                
-                if errorMessage == "invalid_Data" {
-                    
-                    message = "Pleas Make Sure  is correct"
-                }
-                
-                let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                
-                self.presentViewController(alertController, animated: true, completion: nil)
-                
-                return
-            }
-            
-            self.tableData = myResult
-            
-            ASProgressHud.hideHUDForView(self.view, animated: true)
-            
-            }) { (error, errorMessage) in
-                
-                let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                
-                self.presentViewController(alertController, animated: true, completion: nil)
-        }
+        let url = NobalaClient.Constants.BaseURL + NobalaClient.Methods.getMainPages
         
-        let x = tableData[1].valueForKey("Title") as? String
-        print(x)
+        NobalaClient.sharedInstance().getMainPages(url) { (success, error) in
+            
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func onReceiveNews(news: [News]) {
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func onReceiveEvents(news: [Event]) {
+        
     }
-    */
+    
+    func onReceiveMainPages(mainPages: [MainPages]) {
+        
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            
+            self.pageArray = mainPages
+            
+            self.visionTitleLabel.text = self.pageArray[1].Title
+            self.visionTextArea.text = self.pageArray[1].Description
+            
+            ASProgressHud.hideHUDForView(self.view, animated: true)
+        })
+    }
+    
+    func onGetAccessToken(users: [Users]) {
+        
+    }
+    
+    func onGetCurrentExams(exams: [Exams]) {
+        
+    }
+    
+    func onGetCurrentHomeWork(homework: [HomeWork]) {
+        
+    }
+    
+    func onGetHomeWorkStudentReport(report: [HomeWorkStudentReport]) {
+        
+    }
+    
+    func onExamsTeacherFollowUp(examsTeacherFollowUp: [ExamsTeacherFollowUp]) {
+        
+    }
+    
+    func onFieldLogin() {
+        
+    }
 
 }

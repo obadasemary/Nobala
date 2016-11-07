@@ -138,21 +138,21 @@ extension NobalaClient {
                     main.Id = mainPage["Id"] as! Int
                     main.Title = mainPage["Title"] as! String
                     main.Description = mainPage["Description"] as! String
-                    main.Details = mainPage["Details"] as! String
-                    main.Photo = mainPage["Photo"] as! String
-                    main.OrderId = mainPage["OrderId"] as! Int
-                    main.Isdeleted = mainPage["Isdeleted"] as! Bool
-                    main.CreatedDate = mainPage["CreatedDate"] as! String
-                    main.UpdateDate = (mainPage["UpdateDate"] as? String)!
-                    main.UpdatedBy = (mainPage["UpdatedBy"] as? Int)!
-                    main.ViewCount = mainPage["ViewCount"] as! Int
-                    main.PrintCount = mainPage["PrintCount"] as! Int
-                    main.CreatedBy = mainPage["CreatedBy"] as! Int
-                    main.TitleEn = mainPage["TitleEn"] as! String
-                    main.DescriptionEn = mainPage["DescriptionEn"] as! String
-                    main.DetailsEn = mainPage["DetailsEn"] as! String
-                    main.ShcoolID = mainPage["ShcoolID"] as! Int
-                    main.ShowTextImage = mainPage["ShowTextImage"] as! Int
+//                    main.Details = mainPage["Details"] as! String
+//                    main.Photo = mainPage["Photo"] as! String
+//                    main.OrderId = mainPage["OrderId"] as! Int
+//                    main.Isdeleted = mainPage["Isdeleted"] as! Bool
+//                    main.CreatedDate = mainPage["CreatedDate"] as! String
+////                    main.UpdateDate = (mainPage["UpdateDate"] as? String)!
+//                    main.UpdatedBy = (mainPage["UpdatedBy"] as? Int)!
+//                    main.ViewCount = mainPage["ViewCount"] as! Int
+//                    main.PrintCount = mainPage["PrintCount"] as! Int
+//                    main.CreatedBy = mainPage["CreatedBy"] as! Int
+//                    main.TitleEn = mainPage["TitleEn"] as! String
+//                    main.DescriptionEn = mainPage["DescriptionEn"] as! String
+//                    main.DetailsEn = mainPage["DetailsEn"] as! String
+//                    main.ShcoolID = mainPage["ShcoolID"] as! Int
+//                    main.ShowTextImage = mainPage["ShowTextImage"] as! Int
                     
                     mainPagesArray.append(main)
                 }
@@ -699,28 +699,4 @@ extension NobalaClient {
             completionHandler(success: true, errorMessage: nil, myResult: newArray)
         }
     }
-    
-    // MARK: - GetMainPages
-    
-    func getPage(completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
-        
-        let url = NobalaClient.Constants.BaseURL + NobalaClient.Methods.getMainPages
-        
-        Alamofire.request(.GET, url).responseJSON { (response) in
-            
-            var newArray: NSArray = []
-            
-            if let results = response.result.value {
-                
-                if let result = results as? NSArray {
-                    
-                    newArray = result
-                }
-            }
-            
-            completionHandler(success: true, errorMessage: nil, myResult: newArray)
-        }
-    }
-    
-
 }

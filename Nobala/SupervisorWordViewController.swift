@@ -7,29 +7,73 @@
 //
 
 import UIKit
+import ASProgressHud
 
-class SupervisorWordViewController: UIViewController {
+class SupervisorWordViewController: UIViewController, ViewWebServiceProtocol {
 
+    @IBOutlet weak var supervisorWordTitleLabel: UILabel!
+    @IBOutlet weak var supervisorWordTextArea: UITextView!
+    
+    var clientObject: NobalaClient?
+    var pageArray = [MainPages]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.clientObject = NobalaClient.sharedInstance()
+        self.clientObject?.webServiceProtocol = self
+        
+        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+        
+        let url = NobalaClient.Constants.BaseURL + NobalaClient.Methods.getMainPages
+        
+        NobalaClient.sharedInstance().getMainPages(url) { (success, error) in
+            
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func onReceiveNews(news: [News]) {
+        
     }
-    */
-
+    
+    func onReceiveEvents(news: [Event]) {
+        
+    }
+    
+    func onReceiveMainPages(mainPages: [MainPages]) {
+        
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            
+            self.pageArray = mainPages
+            
+            self.supervisorWordTitleLabel.text = self.pageArray[0].Title
+            self.supervisorWordTextArea.text = self.pageArray[0].Description
+            
+            ASProgressHud.hideHUDForView(self.view, animated: true)
+        })
+    }
+    
+    func onGetAccessToken(users: [Users]) {
+        
+    }
+    
+    func onGetCurrentExams(exams: [Exams]) {
+        
+    }
+    
+    func onGetCurrentHomeWork(homework: [HomeWork]) {
+        
+    }
+    
+    func onGetHomeWorkStudentReport(report: [HomeWorkStudentReport]) {
+        
+    }
+    
+    func onExamsTeacherFollowUp(examsTeacherFollowUp: [ExamsTeacherFollowUp]) {
+        
+    }
+    
+    func onFieldLogin() {
+        
+    }
 }

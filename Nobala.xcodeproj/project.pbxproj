@@ -84,7 +84,6 @@
 		AFEA373F1DCF8E5600DD9CEE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA373E1DCF8E5600DD9CEE /* NotificationViewController.swift */; };
 		AFEA37411DCF8F5800DD9CEE /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA37401DCF8F5800DD9CEE /* NotificationTableViewCell.swift */; };
 		AFEA37431DCFE93300DD9CEE /* ShowNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA37421DCFE93300DD9CEE /* ShowNotificationViewController.swift */; };
-		AFEA37471DCFF0E100DD9CEE /* GMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA37461DCFF0E100DD9CEE /* GMP.swift */; };
 		AFEA37491DCFF2A000DD9CEE /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA37481DCFF2A000DD9CEE /* VisionViewController.swift */; };
 		AFEA374B1DCFF2D700DD9CEE /* SupervisorWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA374A1DCFF2D700DD9CEE /* SupervisorWordViewController.swift */; };
 		AFEF54191DCEAEC000FB5F6A /* GE_SS_Two_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFEF54161DCEAEC000FB5F6A /* GE_SS_Two_Bold.otf */; };
@@ -208,7 +207,6 @@
 		AFEA373E1DCF8E5600DD9CEE /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		AFEA37401DCF8F5800DD9CEE /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		AFEA37421DCFE93300DD9CEE /* ShowNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowNotificationViewController.swift; sourceTree = "<group>"; };
-		AFEA37461DCFF0E100DD9CEE /* GMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMP.swift; sourceTree = "<group>"; };
 		AFEA37481DCFF2A000DD9CEE /* VisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
 		AFEA374A1DCFF2D700DD9CEE /* SupervisorWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupervisorWordViewController.swift; sourceTree = "<group>"; };
 		AFEF54161DCEAEC000FB5F6A /* GE_SS_Two_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GE_SS_Two_Bold.otf; sourceTree = "<group>"; };
@@ -450,7 +448,6 @@
 				AFCF4C3A1DC233F500E8EF2D /* LearnPlan.swift */,
 				AF21CE001DCE3A6B006C1B9B /* Messages.swift */,
 				AFEA373C1DCF89A100DD9CEE /* Notification.swift */,
-				AFEA37461DCFF0E100DD9CEE /* GMP.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -880,7 +877,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFEA37471DCFF0E100DD9CEE /* GMP.swift in Sources */,
 				292ABB8B1DC16F8B00CF002A /* SetTimeViewController.swift in Sources */,
 				418825EF1D11C523002C2648 /* ViewWebServiceProtocol.swift in Sources */,
 				AFB086421D13577600DB6266 /* NobalaViewController.swift in Sources */,
