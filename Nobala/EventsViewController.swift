@@ -9,14 +9,14 @@
 import UIKit
 //import CalendarView
 //import SwiftMoment
-import VRGCalendarView
+//import VRGCalendarView
 import ENSwiftSideMenu
-
-class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalendarViewDelegate, ENSideMenuDelegate {
+import CABCalendarView
+class EventsViewController: UIViewController, CABCalendarViewDataSource, ViewWebServiceProtocol, ENSideMenuDelegate, CABCalendarViewDelegate {
     
-//    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    //    var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
     var sideMenu:ENSideMenu?
-
+    
     
     @IBOutlet weak var calendarView: UIView!
     
@@ -24,6 +24,8 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
     
     var clientObject: NobalaClient?
     var eventsArray = [Event]()
+    var dates = [NSDate]()
+    let calendar = CABCalendarView()
     
     func onReceiveNews(news: [News]) {
         
@@ -31,6 +33,19 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
     
     func onReceiveEvents(events: [Event]) {
         self.eventsArray = events
+        
+        for event in self.eventsArray {
+            
+            let eventStartDate = event.startDate.componentsSeparatedByString("T")
+            let dateString = eventStartDate[0]
+            let dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            print(event.startDate)
+            let date = dateFormatter.dateFromString(dateString)! as NSDate
+            
+            
+            dates.append(date)
+        }
     }
     
     func onReceiveMainPages(mainPages: [MainPages]) {
@@ -65,26 +80,79 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
         let logo = UIImage(named: "eventsTitle.png")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
-
+        
         self.clientObject = NobalaClient.sharedInstance()
         self.clientObject?.webServiceProtocol = self
         
-//        let calendar = CalendarView()
-//        calendar.frame = calendarView.frame
-//        calendar.delegate = self
-//        CalendarView.dayTextColor = UIColor.grayColor()
-//        view.addSubview(calendar)
-      
-        let calendar = VRGCalendarView()
+        //        let calendar = CalendarView()
+        //        calendar.frame = calendarView.frame
+        //        calendar.delegate = self
+        //        CalendarView.dayTextColor = UIColor.grayColor()
+        //        view.addSubview(calendar)
+        
+        
         calendar.frame = self.calendarView.frame
         calendar.delegate = self
+        calendar.dataSource = self
+        calendar.setSelectedDate(NSDate(), animated: false)
+        
+        let date = NSDate()
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .MediumStyle
+        
+        self.date.text = dateFormatter.stringFromDate(date)
         self.view.addSubview(calendar)
+        
     }
     
+    
+    // MARK: -  calender Methods
+    
+    func calendarView(calendarView: CABCalendarView, didSelectDate date: NSDate) {
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .MediumStyle
+        
+        self.date.text = dateFormatter.stringFromDate(date)
+    }
+    
+    
+    func calendarForCalendarView(calendarView: CABCalendarView) -> NSCalendar
+    {
+        let ca:NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+        return ca
+    }
+    
+    func startDateForCalendarView(calendarView: CABCalendarView) -> NSDate
+    {
+        return NSDate(timeIntervalSinceReferenceDate: 2016)
+    }
+    func endDateForCalendarView(calendarView: CABCalendarView) -> NSDate
+    {
+        let comps:NSDateComponents = NSDateComponents()
+        comps.year = 2020;
+        comps.month = 1;
+        comps.day = 1;
+        return self.calendarForCalendarView(calendar).dateFromComponents(comps)!
+    }
+    func calendarView(calendarView: CABCalendarView, hasEventAtDate date: NSDate) -> Bool {
+        
+        let ca = self.calendarForCalendarView(self.calendar)
+        var value = false
+        for eventDate in self.dates
+        {
+            value =  ca.isDate(date, inSameDayAsDate: eventDate)
+            if value == true {
+                return value
+            }
+            
+        }
+        return value
+    }
     override func viewWillAppear(animated: Bool) {
         
         NSThread.sleepForTimeInterval(0.05)
@@ -118,16 +186,7 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
             self.sideMenu?.hideSideMenu()
         }
     }
-
     
-    func calendarView(calendarView: VRGCalendarView!, switchedToMonth month: Int32, targetHeight: Float, animated: Bool) {
-        
-    }
-    
-    func calendarView(calendarView: VRGCalendarView!, dateSelected date: NSDate!)
-    {
-        
-    }
     
     @IBAction func goToHome(sender: AnyObject) {
         
@@ -136,14 +195,16 @@ class EventsViewController: UIViewController, ViewWebServiceProtocol, VRGCalenda
     }
     
     
-//    func calendarDidSelectDate(date: Moment)
-//    {
-//        self.date.text = date.format("MMMM d, yyyy")
-//    }
-//    
-//    func calendarDidPageToDate(date: Moment)
-//    {
-//        
-//        self.date.text = date.format("MMMM d, yyyy")
-//    }
+    //    func calendarDidSelectDate(date: Moment)
+    //    {
+    //        self.date.text = date.format("MMMM d, yyyy")
+    //    }
+    //
+    //    func calendarDidPageToDate(date: Moment)
+    //    {
+    //        
+    //        self.date.text = date.format("MMMM d, yyyy")
+    //    }
+    
+    
 }
