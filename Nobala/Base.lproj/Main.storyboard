@@ -1241,7 +1241,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vTb-ws-dFt">
-                                <rect key="frame" x="211" y="335" width="80" height="105"/>
+                                <rect key="frame" x="211" y="335" width="80" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="MLDalyHomework"/>
                                 <connections>
