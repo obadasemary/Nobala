@@ -86,6 +86,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ASProgressHud/ASProgressHud.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/CABCalendarView/CABCalendarView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DualSlideMenu/DualSlideMenu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ENSwiftSideMenu/ENSwiftSideMenu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/KeychainAccess/KeychainAccess.framework"
@@ -97,6 +98,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ASProgressHud/ASProgressHud.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/CABCalendarView/CABCalendarView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DualSlideMenu/DualSlideMenu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ENSwiftSideMenu/ENSwiftSideMenu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/KeychainAccess/KeychainAccess.framework"

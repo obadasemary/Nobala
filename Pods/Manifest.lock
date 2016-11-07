@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (3.4.2)
   - ASProgressHud (0.0.3)
+  - CABCalendarView (1.0.0)
   - DualSlideMenu (1.7.3)
   - ENSwiftSideMenu (0.1.1)
   - KeychainAccess (2.4.0)
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 3.4)
   - ASProgressHud
+  - CABCalendarView (~> 1.0)
   - DualSlideMenu (~> 1.7)
   - ENSwiftSideMenu (~> 0.1)
   - KeychainAccess (~> 2.4)
@@ -23,6 +25,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 6aa33201d20d069e1598891cf928883ff1888c7a
   ASProgressHud: 6a921cac52428f75f0bbdd6d4c3f9e454818e6fd
+  CABCalendarView: b572dc5c2acc934bc9743fb6ca85aaab19073a85
   DualSlideMenu: 8e1c5255a95c3dcfc1c6dc470105278765f52093
   ENSwiftSideMenu: a934caefbe811e4925f172009349da4a49901307
   KeychainAccess: c2a71459af5bddf720a51806046a598500976c04
@@ -31,6 +34,6 @@ SPEC CHECKSUMS:
   VRGCalendarView: f9d33791eed8be9ef69ac91e915277a1da7913e6
   XLPagerTabStrip: 5aee1990f16ae04b7285fe83befca7dbb259ec57
 
-PODFILE CHECKSUM: 68fae1e51bc8cd42dddbccee4fe2788f77a4ba66
+PODFILE CHECKSUM: fb64fb0047222b695ee7a4466eec82ccd8bcf048
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.0.1

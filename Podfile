@@ -15,7 +15,7 @@ target 'Nobala' do
   pod 'KeychainAccess' , '~> 2.4'
   pod 'XLPagerTabStrip', '~> 4.0.2'
   pod 'SwiftyJSON', '2.4.0'
-
+  pod 'CABCalendarView', '~> 1.0'
 
 target 'NobalaTests' do
     inherit! :search_paths
