@@ -18,6 +18,15 @@ class LearningPlanViewController: UIViewController, ENSideMenuDelegate, UITableV
     
     @IBOutlet weak var pickerView: UIPickerView!
     
+    @IBOutlet weak var chosePickerView: UIPickerView!
+    @IBOutlet weak var viewPickerView: UIView!
+    @IBOutlet weak var actionButton: UIButton!
+    
+    var studentData = []
+    var currentSelectedStudentId: Int?
+    var token: String?
+    
+    var usersType: String?
     var semsterID: String? = "1"
     var pickerDataSource = ["الفصل الدراسي الأول", "الفصل الدراسي الثاني"];
     
@@ -37,9 +46,12 @@ class LearningPlanViewController: UIViewController, ENSideMenuDelegate, UITableV
         self.pickerView.dataSource = self
         self.pickerView.delegate = self
         
+        actionButton.hidden = true
+        chosePickerView.hidden = true
+        viewPickerView.hidden = true
+        
         self.sideMenuController()?.sideMenu?.delegate = self
         
-        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
         
         let logo = UIImage(named: "LoginTitle.png")
         let imageView = UIImageView(image:logo)
@@ -51,40 +63,11 @@ class LearningPlanViewController: UIViewController, ENSideMenuDelegate, UITableV
         
         if let Userauth_token : String = keychain["auth_token"] {
             
+            token = Userauth_token
+            
             let userTypeID = keychain["user_type"]
             
-            NobalaClient.sharedInstance().getLearnPlan(Userauth_token, SemsterID: semsterID!, UserTypeID: userTypeID!, completionHandler: { (success, errorMessage, myResult) in
-                
-                if !success {
-                    
-                    var message = "Unknown error, please try again"
-                    
-                    if errorMessage == "invalid_Data" {
-                        
-                        message = "Pleas Make Sure  is correct"
-                    }
-                    
-                    let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
-                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                    
-                    self.presentViewController(alertController, animated: true, completion: nil)
-                    
-                    return
-                }
-                
-                self.learnPlanArray = myResult
-                
-                ASProgressHud.hideHUDForView(self.view, animated: true)
-                
-                self.learnPlanTableView.reloadData()
-                
-                }, fail: { (error, errorMessage) in
-                    
-                    let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
-                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                    
-                    self.presentViewController(alertController, animated: true, completion: nil)
-            })
+            usersType = userTypeID
             
             userName.text = keychain["userFName"]
             
@@ -95,7 +78,139 @@ class LearningPlanViewController: UIViewController, ENSideMenuDelegate, UITableV
             } else {
                 userType.image = UIImage(named: "MLTeacher.png")
             }
+            
+            let uType = Int(userTypeID!)
+            
+            if (uType == 1) {
+                
+                actionButton.hidden = false
+                
+                
+            } else {
+                
+                fetchData(Userauth_token, uID: userTypeID!)
+            }
         }
+    }
+    
+    func fetchDataUponChosenChild (Userauth_token: String) {
+        
+        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+        
+        NobalaClient.sharedInstance().getlistStudentsByParentID(Userauth_token, completionHandler: { (success, errorMessage,myResult) in
+            
+            if !success {
+                
+                var message = "Unknown error, please try again"
+                
+                if errorMessage == "invalid_Data" {
+                    
+                    message = "Pleas Make Sure  is correct"
+                }
+                
+                let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+                return
+            }
+            
+            self.studentData = myResult
+            
+            ASProgressHud.hideHUDForView(self.view, animated: true)
+            
+            self.chosePickerView.reloadAllComponents()
+            
+            let x = String(self.currentSelectedStudentId)
+            
+            self.fetchData(Userauth_token, uID: x)
+            
+            
+            }, fail: { (error, errorMessage) in
+                
+                let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+        })
+        
+    }
+    
+    func fetchData(Userauth_token: String, uID: String) {
+        
+        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+        
+        NobalaClient.sharedInstance().getLearnPlan(Userauth_token, SemsterID: semsterID!, UserTypeID: uID, completionHandler: { (success, errorMessage, myResult) in
+            
+            if !success {
+                
+                var message = "Unknown error, please try again"
+                
+                if errorMessage == "invalid_Data" {
+                    
+                    message = "Pleas Make Sure  is correct"
+                }
+                
+                let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+                return
+            }
+            
+            self.learnPlanArray = myResult
+            
+            ASProgressHud.hideHUDForView(self.view, animated: true)
+            
+            self.learnPlanTableView.reloadData()
+            
+            }, fail: { (error, errorMessage) in
+                
+                let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+        })
+    }
+    
+    func fetchDataSemster(Userauth_token: String, uID: String, semsterID: String) {
+        
+        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+        
+        NobalaClient.sharedInstance().getLearnPlan(Userauth_token, SemsterID: semsterID, UserTypeID: uID, completionHandler: { (success, errorMessage, myResult) in
+            
+            if !success {
+                
+                var message = "Unknown error, please try again"
+                
+                if errorMessage == "invalid_Data" {
+                    
+                    message = "Pleas Make Sure  is correct"
+                }
+                
+                let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+                return
+            }
+            
+            self.learnPlanArray = myResult
+            
+            ASProgressHud.hideHUDForView(self.view, animated: true)
+            
+            self.learnPlanTableView.reloadData()
+            
+            }, fail: { (error, errorMessage) in
+                
+                let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+        })
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -140,29 +255,75 @@ class LearningPlanViewController: UIViewController, ENSideMenuDelegate, UITableV
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         
-        return 1
+        if pickerView.tag == 2 {
+            
+            return 1
+        } else {
+            return 1
+        }
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
-        return pickerDataSource.count
+        if pickerView.tag == 2 {
+            
+            return studentData.count
+        } else {
+            return pickerDataSource.count
+            
+        }
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
-        return pickerDataSource[row]
+        if pickerView.tag == 2 {
+            
+            return studentData[row].valueForKey("FullNameAr") as? String
+        } else {
+            
+            return pickerDataSource[row]
+            
+        }
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        if(row == 0) {
+        if pickerView.tag == 1 {
             
-            self.semsterID = "1"
-            
+            if(row == 0) {
+                
+                self.semsterID = "1"
+                
+                let sOne = semsterID
+                
+                fetchDataSemster(token!, uID: usersType!, semsterID: sOne!)
+                
+            } else {
+                
+                self.semsterID = "2"
+                
+                let sTwo = semsterID
+                
+                fetchDataSemster(token!, uID: usersType!, semsterID: sTwo!)
+            }
         } else {
             
-            self.semsterID = "2"
+            currentSelectedStudentId = studentData[row].valueForKey("PK_UserID") as? Int
+            print(currentSelectedStudentId)
+            
+            self.chosePickerView.hidden = true
+            viewPickerView.hidden = true
+            
+            fetchDataUponChosenChild(token!)
         }
+    }
+    
+    @IBAction func ActionButton(sender: AnyObject) {
+        
+        chosePickerView.hidden = false
+        viewPickerView.hidden = false
+        
+        fetchDataUponChosenChild(token!)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -176,12 +337,8 @@ class LearningPlanViewController: UIViewController, ENSideMenuDelegate, UITableV
         let tableViewCell = self.learnPlanTableView.dequeueReusableCellWithIdentifier("LearnPlanCell", forIndexPath: indexPath) as! LearningPlanTableViewCell
         
         tableViewCell.learnPlanTitel.text = learnPlanArray[row].valueForKey("MaterialNameAr") as? String
-//        tableViewCell.ExamText.text = learnPlanArray[row].valueForKey("ScheduleEndDate") as? String
-//        tableViewCell.ExamDegree.text = String((learnPlanArray[row].valueForKey("ExamSheetScore") as? Int)!)
         
         tableViewCell.contentView.viewWithTag(11)!.backgroundColor = Float(indexPath.row) % 2.0 == 0 ? UIColor(red:0.94, green:0.95, blue:0.95, alpha:1.0) : UIColor(red:1.00, green:0.94, blue:0.89, alpha:1.0)
-        
-//        let URL = "http://registeration.nobala.edu.sa/\(learnPlanArray[indexPath.row].valueForKey("fileFullPath") as? String)"
         
         return tableViewCell
     }
@@ -190,13 +347,8 @@ class LearningPlanViewController: UIViewController, ENSideMenuDelegate, UITableV
         
         performSegueWithIdentifier("showLearnPlan", sender: self)
         
-//        self.selectedLearnPlan.fileFullPath = learnPlanArray[indexPath.row] as! LearnPlan
-        
         self.selectedLearnPlan.fileFullPath = (learnPlanArray[indexPath.row].valueForKey("fileFullPath") as? String)!
         self.pdf.learnPlan = self.selectedLearnPlan
-        
-//        let URL = "http://registeration.nobala.edu.sa/\(learnPlanArray[indexPath.row].valueForKey("fileFullPath") as? String)"
-        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -206,14 +358,4 @@ class LearningPlanViewController: UIViewController, ENSideMenuDelegate, UITableV
             self.pdf = segue.destinationViewController as! PDFViewController
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

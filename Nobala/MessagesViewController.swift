@@ -17,6 +17,8 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
     @IBOutlet weak var userType: UIImageView!
     
     @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var viewPickerView: UIView!
+    @IBOutlet weak var actionButton: UIButton!
 
     var tableData = [Messages]()
     var selectedTableData: Messages = Messages()
@@ -27,6 +29,8 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
     var currentSelectedStudentId: Int?
     
     var showMessage: ShowMessageViewController = ShowMessageViewController()
+    
+    var token: String?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -40,7 +44,9 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
         self.pickerView.delegate = self
         self.pickerView.dataSource = self
         
+        actionButton.hidden = true
         pickerView.hidden = true
+        viewPickerView.hidden = true
         
         self.sideMenuController()?.sideMenu?.delegate = self
         
@@ -50,13 +56,11 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        fetchDataUponChosenChild()
-    }
-    
-    func fetchDataUponChosenChild () {
         let keychain = Keychain(service: "Noblaa.app")
         
-        if let Userauth_token : String = keychain["auth_token"] {
+        if let Userauth_token: String = keychain["auth_token"] {
+            
+            token = Userauth_token
             
             let userTypeID = keychain["user_type"]
             
@@ -74,55 +78,60 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
             
             if (uType == 1) {
                 
-                ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+                actionButton.hidden = false
                 
-                pickerView.hidden = false
-                
-                //                if currentSelectedStudentId == nil { return }
-                
-                NobalaClient.sharedInstance().getlistStudentsByParentID(Userauth_token, completionHandler: { (success, errorMessage,myResult) in
-                    
-                    if !success {
-                        
-                        var message = "Unknown error, please try again"
-                        
-                        if errorMessage == "invalid_Data" {
-                            
-                            message = "Pleas Make Sure  is correct"
-                        }
-                        
-                        let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
-                        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                        
-                        self.presentViewController(alertController, animated: true, completion: nil)
-                        
-                        return
-                    }
-                    
-                    self.studentData = myResult
-                    
-                    ASProgressHud.hideHUDForView(self.view, animated: true)
-                    
-                    self.pickerView.reloadAllComponents()
-                    
-                    let x = String(self.currentSelectedStudentId)
-                    
-                    self.fetchData(Userauth_token, uID: x)
-                    
-                    
-                    }, fail: { (error, errorMessage) in
-                        
-                        let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
-                        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                        
-                        self.presentViewController(alertController, animated: true, completion: nil)
-                })
                 
             } else {
                 
                 fetchData(Userauth_token, uID: "null")
             }
         }
+
+        
+//        fetchDataUponChosenChild()
+    }
+    
+    func fetchDataUponChosenChild (Userauth_token: String) {
+        
+        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+        
+        NobalaClient.sharedInstance().getlistStudentsByParentID(Userauth_token, completionHandler: { (success, errorMessage,myResult) in
+            
+            if !success {
+                
+                var message = "Unknown error, please try again"
+                
+                if errorMessage == "invalid_Data" {
+                    
+                    message = "Pleas Make Sure  is correct"
+                }
+                
+                let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+                return
+            }
+            
+            self.studentData = myResult
+            
+            ASProgressHud.hideHUDForView(self.view, animated: true)
+            
+            self.pickerView.reloadAllComponents()
+            
+            let x = String(self.currentSelectedStudentId)
+            
+            self.fetchData(Userauth_token, uID: x)
+            
+            
+            }, fail: { (error, errorMessage) in
+                
+                let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+        })
 
     }
     
@@ -266,6 +275,18 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
         currentSelectedStudentId = studentData[row].valueForKey("PK_UserID") as? Int
         print(currentSelectedStudentId)
         
-        fetchDataUponChosenChild()
+        self.pickerView.hidden = true
+        viewPickerView.hidden = true
+        
+        fetchDataUponChosenChild(token!)
+        
+    }
+    
+    @IBAction func ActionButton(sender: AnyObject) {
+        
+        pickerView.hidden = false
+        viewPickerView.hidden = false
+        
+        fetchDataUponChosenChild(token!)
     }
 }

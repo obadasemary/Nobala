@@ -13,6 +13,7 @@ import KeychainAccess
 class ChoseStudentViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var viewPic: UIView!
     
     var studentData = []
     var selectedStudentData: ListStudents = ListStudents()
@@ -23,6 +24,9 @@ class ChoseStudentViewController: UIViewController, UIPickerViewDelegate, UIPick
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        pickerView.hidden = true
+        viewPic.hidden = true
         
         ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
 
@@ -80,6 +84,14 @@ class ChoseStudentViewController: UIViewController, UIPickerViewDelegate, UIPick
 //            print(currentSelectedStudentId)
         }
     }
+    
+    @IBAction func showPicker(sender: AnyObject) {
+        
+        
+        pickerView.hidden = false
+        viewPic.hidden = false
+        
+    }
 
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         
@@ -100,5 +112,8 @@ class ChoseStudentViewController: UIViewController, UIPickerViewDelegate, UIPick
         
         currentSelectedStudentId = studentData[row].valueForKey("PK_UserID") as? Int
         print(currentSelectedStudentId)
+        
+        pickerView.hidden = true
+        viewPic.hidden = true
     }
 }
