@@ -46,6 +46,9 @@ class LearningPlanViewController: UIViewController, ENSideMenuDelegate, UITableV
         self.pickerView.dataSource = self
         self.pickerView.delegate = self
         
+        self.chosePickerView.dataSource = self
+        self.chosePickerView.delegate = self
+        
         actionButton.hidden = true
         chosePickerView.hidden = true
         viewPickerView.hidden = true
@@ -84,7 +87,6 @@ class LearningPlanViewController: UIViewController, ENSideMenuDelegate, UITableV
             if (uType == 1) {
                 
                 actionButton.hidden = false
-                
                 
             } else {
                 

@@ -9,16 +9,24 @@
 
 import UIKit
 import ASProgressHud
-//import Kingfisher
 import ENSwiftSideMenu
 import KeychainAccess
 
 
-class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource, ENSideMenuDelegate, homeWorkTableViewCellDelegate {
+class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableViewDelegate, UITableViewDataSource, ENSideMenuDelegate, homeWorkTableViewCellDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userType: UIImageView!
-    //    var selectedHomeWorkURLString = ""
+    
+    @IBOutlet weak var chosePickerView: UIPickerView!
+    @IBOutlet weak var viewPickerView: UIView!
+    @IBOutlet weak var actionButton: UIButton!
+    
+    var studentData = []
+    var currentSelectedStudentId: Int?
+    var token: String?
+    var usersType: String?
+    
     var sideMenu:ENSideMenu?
     
     var window: UIWindow?
@@ -33,9 +41,16 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.chosePickerView.dataSource = self
+        self.chosePickerView.delegate = self
+        
+        actionButton.hidden = true
+        chosePickerView.hidden = true
+        viewPickerView.hidden = true
+        
         self.sideMenuController()?.sideMenu?.delegate = self
         
-        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+//        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
         
         let logo = UIImage(named: "LoginTitle.png")
         let imageView = UIImageView(image:logo)
@@ -50,48 +65,115 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
         
         if let Userauth_token : String = keychain["auth_token"] {
             
-            NobalaClient.sharedInstance().getCurrentHomeWork(Userauth_token, completionHandler: { (success, errorMessage, myHomeWork) in
+            token = Userauth_token
+            
+            let userTypeID = keychain["user_type"]
+            
+            usersType = userTypeID
+            
+            userName.text = keychain["userFName"]
+            
+            if keychain["user_type"]! == "1" {
+                userType.image = UIImage(named: "MLParant.png")
+            } else if keychain["user_type"]! == "2" {
+                userType.image = UIImage(named: "MLStudend.png")
+            } else {
+                userType.image = UIImage(named: "MLTeacher.png")
+            }
+            
+            let uType = Int(userTypeID!)
+            
+            if (uType == 1) {
                 
-                if !success {
+                actionButton.hidden = false
+                
+                
+            } else {
+                
+                fetchData(Userauth_token, uID: "null")
+            }
+        }
+    }
+    
+    func fetchDataUponChosenChild (Userauth_token: String) {
+        
+        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+        
+        NobalaClient.sharedInstance().getlistStudentsByParentID(Userauth_token, completionHandler: { (success, errorMessage,myResult) in
+            
+            if !success {
+                
+                var message = "Unknown error, please try again"
+                
+                if errorMessage == "invalid_Data" {
                     
-                    var message = "Unknown error, please try again"
-                    
-                    if errorMessage == "invalid_Data" {
-                        
-                        message = "Pleas Make Sure  is correct"
-                    }
-                    
-                    let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
-                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                    
-                    self.presentViewController(alertController, animated: true, completion: nil)
-                    
-                    return
+                    message = "Pleas Make Sure  is correct"
                 }
                 
-                self.hWArray = myHomeWork
+                let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
                 
-                ASProgressHud.hideHUDForView(self.view, animated: true)
+                self.presentViewController(alertController, animated: true, completion: nil)
                 
-                self.newsTableView.reloadData()
-                
-            }) { (error, errorMessage) in
+                return
+            }
+            
+            self.studentData = myResult
+            
+            ASProgressHud.hideHUDForView(self.view, animated: true)
+            
+            self.chosePickerView.reloadAllComponents()
+            
+            let x = String(self.currentSelectedStudentId)
+            
+            self.fetchData(Userauth_token, uID: x)
+            
+            
+            }, fail: { (error, errorMessage) in
                 
                 let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
                 alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
                 
                 self.presentViewController(alertController, animated: true, completion: nil)
+        })
+        
+    }
+    
+    func fetchData(Userauth_token: String, uID: String) {
+        
+        ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+        
+        NobalaClient.sharedInstance().getCurrentHomeWork(Userauth_token, UserID: uID, completionHandler: { (success, errorMessage, myHomeWork) in
+            
+            if !success {
+                
+                var message = "Unknown error, please try again"
+                
+                if errorMessage == "invalid_Data" {
+                    
+                    message = "Pleas Make Sure  is correct"
+                }
+                
+                let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+                return
             }
-        }
-        
-        userName.text = keychain["userFName"]
-        
-        if keychain["user_type"]! == "1" {
-            userType.image = UIImage(named: "MLParant.png")
-        } else if keychain["user_type"]! == "2" {
-            userType.image = UIImage(named: "MLStudend.png")
-        } else {
-            userType.image = UIImage(named: "MLTeacher.png")
+            
+            self.hWArray = myHomeWork
+            
+            ASProgressHud.hideHUDForView(self.view, animated: true)
+            
+            self.newsTableView.reloadData()
+            
+        }) { (error, errorMessage) in
+            
+            let alertController = UIAlertController(title: "Oops", message: "Connection error, please try again", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
         }
     }
     
@@ -234,6 +316,42 @@ class homeWorkViewController: UIViewController, ViewWebServiceProtocol, UITableV
             self.performSegueWithIdentifier("ViewHomeWorkWebViewController", sender: selectedHomeWorkURLString)
         }
     }
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        return studentData.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        return studentData[row].valueForKey("FullNameAr") as? String
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        currentSelectedStudentId = studentData[row].valueForKey("PK_UserID") as? Int
+        print(currentSelectedStudentId)
+        
+        self.chosePickerView.hidden = true
+        viewPickerView.hidden = true
+        
+        fetchDataUponChosenChild(token!)
+        
+    }
+    
+    @IBAction func ActionButton(sender: AnyObject) {
+        
+        chosePickerView.hidden = false
+        viewPickerView.hidden = false
+        
+        fetchDataUponChosenChild(token!)
+    }
+
 }
 
 

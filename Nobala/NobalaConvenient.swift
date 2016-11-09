@@ -421,11 +421,16 @@ extension NobalaClient {
     
     // MARK: - GetCurrentHomeWork
     
-    func getCurrentHomeWork(accessToken: String, completionHandler: (success: Bool, errorMessage: String?, myHomeWork: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
+    func getCurrentHomeWork(accessToken: String, UserID: String,completionHandler: (success: Bool, errorMessage: String?, myHomeWork: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
         
         let headers = ["Authorization": "Bearer " + accessToken]
         
-        Alamofire.request(.POST, NobalaClient.URLs.getCurrentHomeWork, headers: headers).responseJSON { (response) in
+        let parameters: [String: AnyObject] = [
+            
+            "UserID":UserID,
+        ]
+        
+        Alamofire.request(.POST, NobalaClient.URLs.getCurrentHomeWork, parameters: parameters, encoding: .JSON, headers: headers).responseJSON { (response) in
             
             var work: NSArray = []
            
@@ -441,11 +446,16 @@ extension NobalaClient {
     
     // MARK: - GetCurrentExams
     
-    func getCurrentExams(accessToken: String, completionHandler: (success: Bool, errorMessage: String?, myExams: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
+    func getCurrentExams(accessToken: String, UserID: String,completionHandler: (success: Bool, errorMessage: String?, myExams: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
         
         let headers = ["Authorization": "Bearer " + accessToken]
         
-        Alamofire.request(.POST, NobalaClient.URLs.getCurrentExams, headers: headers).responseJSON { (response) in
+        let parameters: [String: AnyObject] = [
+            
+            "UserID":UserID,
+        ]
+        
+        Alamofire.request(.POST, NobalaClient.URLs.getCurrentExams, parameters: parameters, encoding: .JSON, headers: headers).responseJSON { (response) in
             
             var newArray: NSArray = []
             
@@ -463,13 +473,18 @@ extension NobalaClient {
     
     // MARK: - HomeWorkStudentReport
     
-    func getHomeWorkStudentReport(accessToken: String, startDate: String, endDate: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
+    func getHomeWorkStudentReport(accessToken: String, startDate: String, endDate: String, UserID: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
         
         let headers = ["Authorization": "Bearer " + accessToken]
         
+        let parameters: [String: AnyObject] = [
+            
+            "UserID":UserID,
+        ]
+        
         let getHomeWorkStudentReport = "http://api.nobala.edu.sa/api/Exams/HomeWorkStudentReport?STARTDATE=" + startDate + "&ENDDATE=" + endDate
         
-        Alamofire.request(.POST, getHomeWorkStudentReport, headers: headers).responseJSON { (response) in
+        Alamofire.request(.POST, getHomeWorkStudentReport, parameters: parameters, encoding: .JSON, headers: headers).responseJSON { (response) in
             
             var newArray: NSArray = []
             
@@ -487,13 +502,18 @@ extension NobalaClient {
     
     // MARK: - ExamsStudentReport
     
-    func getExamsStudentReport(accessToken: String, startDate: String, endDate: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
+    func getExamsStudentReport(accessToken: String, startDate: String, endDate: String, UserID: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
         
         let headers = ["Authorization": "Bearer " + accessToken]
         
+        let parameters: [String: AnyObject] = [
+            
+            "UserID":UserID,
+        ]
+        
         let getExamsStudentReport = "http://api.nobala.edu.sa/api/Exams/ExamsStudentReport?STARTDATE=" + startDate + "&ENDDATE=" + endDate
         
-        Alamofire.request(.POST, getExamsStudentReport, headers: headers).responseJSON { (response) in
+        Alamofire.request(.POST, getExamsStudentReport, parameters: parameters, encoding: .JSON, headers: headers).responseJSON { (response) in
             
             var newArray: NSArray = []
             
@@ -548,7 +568,7 @@ extension NobalaClient {
         let parameters: [String: AnyObject] = [
             
             "UserTypeID": UserTypeID,
-            "UserID": "5479",
+            "UserID": UserID,
             "Date": todayDate
         ]
         
