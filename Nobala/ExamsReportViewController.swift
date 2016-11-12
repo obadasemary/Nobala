@@ -39,7 +39,8 @@ class ExamsReportViewController: UIViewController, ENSideMenuDelegate, UITableVi
     @IBOutlet weak var toDateLabel: UILabel!
     
     var examReportArrary = []
-    var selectedExamReport: ExamStudentReport = ExamStudentReport()
+    var selectedTableData: ExamStudentReport = ExamStudentReport()
+    var showExamReport: ShowExamReportViewController = ShowExamReportViewController()
 
     var sideMenu:ENSideMenu?
     
@@ -251,13 +252,55 @@ class ExamsReportViewController: UIViewController, ENSideMenuDelegate, UITableVi
         
         tableViewCell.ExamTitle.text = examReportArrary[row].valueForKey("ScheduleName") as? String
         tableViewCell.ExamText.text = examReportArrary[row].valueForKey("ScheduleEndDate") as? String
-        tableViewCell.ExamDegree.text = String((examReportArrary[row].valueForKey("ExamSheetScore") as? Int)!)
+        
+        
+        let usT = keychain["user_type"]
+        
+        if (usT! == "3") {
+            tableViewCell.ExamDegree.hidden = true
+            tableViewCell.ExamEye.hidden = false
+        } else {
+            tableViewCell.ExamDegree.hidden = false
+            tableViewCell.ExamEye.hidden = true
+            tableViewCell.ExamDegree.text = String((examReportArrary[row].valueForKey("ExamSheetScore") as? Int)!)
+        }
         
         tableViewCell.contentView.viewWithTag(11)!.backgroundColor = Float(indexPath.row) % 2.0 == 0 ? UIColor(red:0.94, green:0.95, blue:0.95, alpha:1.0) : UIColor(red:0.99, green:0.96, blue:0.86, alpha:1.0)
         
 
         
         return tableViewCell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let usT = keychain["user_type"]
+        
+        if (usT! == "3") {
+            
+            performSegueWithIdentifier("ShowExamReport", sender: self)
+            
+            self.selectedTableData.ExamScheduleID = (examReportArrary[indexPath.row].valueForKey("ExamScheduleID") as? Int)!
+            
+            self.showExamReport.showtableData = self.selectedTableData
+        } else {
+            return
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let usT = keychain["user_type"]
+        
+        if (usT! == "3") {
+         
+            if segue.identifier == "ShowExamReport" {
+                
+                self.showExamReport = segue.destinationViewController as! ShowExamReportViewController
+            }
+        } else {
+            return
+        }
     }
     
     @IBAction func chooseTime(sender: UIButton) {

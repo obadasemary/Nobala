@@ -47,7 +47,7 @@ class NotificationViewController: UIViewController, ENSideMenuDelegate, UITableV
         
         if let Userauth_token : String = keychain["auth_token"] {
             
-            let userTypeID = keychain["user_type"]
+//            let userTypeID = keychain["user_type"]
 
             NobalaClient.sharedInstance().getNotification(Userauth_token, completionHandler: { (success, errorMessage, myResult) in
                 

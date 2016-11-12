@@ -1,19 +1,18 @@
 //
-//  ExamsReportTableViewCell.swift
+//  ShowExamReportTableViewCell.swift
 //  Nobala
 //
-//  Created by Abdelrahman Mohamed on 10/25/16.
+//  Created by Abdelrahman Mohamed on 11/12/16.
 //  Copyright © 2016 Abdelrahman Mohamed. All rights reserved.
 //
 
 import UIKit
 
-class ExamsReportTableViewCell: UITableViewCell {
+class ShowExamReportTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var ExamText: UILabel!
-    @IBOutlet weak var ExamTitle: UILabel!
-    @IBOutlet weak var ExamDegree: UILabel!
-    @IBOutlet weak var ExamEye: UIImageView!
+    @IBOutlet weak var ShowExamText: UILabel!
+    @IBOutlet weak var ShowExamTitle: UILabel!
+    @IBOutlet weak var ShowExamDegree: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -236,50 +236,24 @@ extension NobalaClient {
     
     //MARK: - GetAdmissionsAndRegistrationo
     
-    func getAdmissionsAndRegistrationo(urlString: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+    func getAdmissionsAndRegistrationo(completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
         
-        taskForGETMethod(urlString) { (result, error) in
+        Alamofire.request(.GET, NobalaClient.URLs.getAdmissionsAndRegistrationo).responseJSON { (response) in
             
-            guard (error == nil) else {
-                completionHandler(success: false, error: error)
-                return
-            }
+            var newArray: NSArray = []
             
-            if let adminAndRegister = result as? NSArray {
+            if let results = response.result.value {
                 
-                for admin in adminAndRegister {
+                if let result = results as? NSArray {
                     
-                    let Id = admin["Id"] as! Int
-                    let Title = admin["Title"] as! String
-                    let Description = admin["Description"] as! String
-                    let Details = admin["Details"] as! String
-                    let Photo = admin["Photo"] as! String
-                    let OrderId = admin["OrderId"] as! Int
-                    let Isdeleted = admin["Isdeleted"] as! Bool
-                    let CreatedDate = admin["CreatedDate"] as! String
-                    let UpdateDate = admin["UpdateDate"] as? String
-                    let UpdatedBy = admin["UpdatedBy"] as? Int
-                    let ViewCount = admin["ViewCount"] as! Int
-                    let PrintCount = admin["PrintCount"] as! Int
-                    let CreatedBy = admin["CreatedBy"] as! Int
-                    let TitleEn = admin["TitleEn"] as! String
-                    let DescriptionEn = admin["DescriptionEn"] as! String
-                    let DetailsEn = admin["DetailsEn"] as! String
-                    let ShcoolID = admin["ShcoolID"] as! Int
-                    let ShowTextImage = admin["ShowTextImage"] as! Int
-                    
-                    print(Id)
-                    print(Title)
-                    print(Description)
-                    print(Details)
-                    print(CreatedDate)
-                    print(UpdateDate)
+                    newArray = result
                 }
-                
-                completionHandler(success: true, error: nil)
             }
+            
+            completionHandler(success: true, errorMessage: nil, myResult: newArray)
         }
     }
+
     
     //MARK: - GetAdvertisment
     
@@ -590,66 +564,29 @@ extension NobalaClient {
     
     // MARK: - ExamsTeacherFollowUp
     
-    func getExamsTeacherFollowUp(accessToken: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+    func getExamsTeacherFollowUp(accessToken: String, ExamScheduleID: String, completionHandler: (success: Bool, errorMessage: String?, myResult: NSArray) -> Void, fail: (error: NSError?, errorMessage: String?) -> Void) {
         
         let headers = ["Authorization": "Bearer " + accessToken]
         
-        Alamofire.request(.POST, NobalaClient.URLs.getExamsTeacherFollowUp, headers: headers)
-            .validate(contentType: ["application/json"])
-            .responseJSON { (response) in
+        let parameters: [String: AnyObject] = [
             
-            if let result = response.result.value {
+            "ExamScheduleID":ExamScheduleID
+        ]
+        
+        Alamofire.request(.POST, NobalaClient.URLs.getExamsTeacherFollowUp, parameters: parameters, encoding: .JSON, headers: headers).responseJSON { (response) in
+            
+            var newArray: NSArray = []
+            
+            if let results = response.result.value {
                 
-                if let resultArray = result as? NSArray {
+                if let result = results as? NSArray {
                     
-                    var newArray = [ExamsTeacherFollowUp]()
-                    
-                    for resultObj in resultArray {
-                        
-                        let examsTeacherFollowUp: ExamsTeacherFollowUp = ExamsTeacherFollowUp()
-                        
-                        examsTeacherFollowUp.FullNameAr = resultObj["FullNameAr"] as! String
-//                        examsTeacherFollowUp.FullNameEn = resultObj["FullNameEn"] as! String
-                        
-                        examsTeacherFollowUp.ScheduleName = resultObj["ScheduleName"] as! String
-                        examsTeacherFollowUp.ScheduleEndDate = resultObj["ScheduleEndDate"] as! String
-                        
-                        examsTeacherFollowUp.Score = resultObj["Score"] as! Int
-                        examsTeacherFollowUp.ExamTotalScore = resultObj["ExamTotalScore"] as! Int
-                        
-                        examsTeacherFollowUp.EndDate = resultObj["EndDate"] as! String
-                        
-                        examsTeacherFollowUp.ElapsedTime = resultObj["ElapsedTime"] as! Int
-                        examsTeacherFollowUp.ExamSheetID = resultObj["ExamSheetID"] as! Int
-                        examsTeacherFollowUp.StudentActualDuration = resultObj["StudentActualDuration"] as! Int
-                        
-                        print(examsTeacherFollowUp.FullNameAr)
-//                        print(examsTeacherFollowUp.FullNameEn)
-                        
-                        print(examsTeacherFollowUp.ScheduleName)
-                        print(examsTeacherFollowUp.ScheduleEndDate)
-                        
-                        print(examsTeacherFollowUp.Score)
-                        print(examsTeacherFollowUp.ExamTotalScore)
-                        
-                        print(examsTeacherFollowUp.EndDate)
-                        
-                        print(examsTeacherFollowUp.ElapsedTime)
-                        print(examsTeacherFollowUp.ExamSheetID)
-                        print(examsTeacherFollowUp.StudentActualDuration)
-                        
-                        print("***************************")
-                        
-                        newArray.append(examsTeacherFollowUp)
-                        
-                    }
-                    
-                    self.webServiceProtocol?.onExamsTeacherFollowUp(newArray)
+                    newArray = result
                 }
             }
+            
+            completionHandler(success: true, errorMessage: nil, myResult: newArray)
         }
-        
-        completionHandler(success: true, error: nil)
     }
     
     // MARK: - GetNewMessagesByUserID

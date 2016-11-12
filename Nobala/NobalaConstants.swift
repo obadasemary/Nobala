@@ -33,6 +33,8 @@ extension NobalaClient {
         static let getExamsTeacherFollowUp = "http://api.nobala.edu.sa/api/exams/ExamsTeacherFollowUp"
         static let getNotification = "http://api.nobala.edu.sa/api/Notifications/GetNotification"
         static let getlistStudentsByParentID = "http://api.nobala.edu.sa/api/NobalaMobile/GetlstStudentsByParentID"
+        
+        static let getAdmissionsAndRegistrationo = "http://api.nobala.edu.sa/api/NobalaMobile/GetAdmissionsAndRegistration"
     }
     
     // MARK: - DATE
@@ -63,7 +65,6 @@ extension NobalaClient {
         static let getTop5Events = "GetTop5Events"
         static let getMainPages = "GetMainPages"
         static let getContactInfo = "GetContactInfo"
-        static let getAdmissionsAndRegistrationo = "GetAdmissionsAndRegistrationo"
         static let getAdvertisment = "GetAdvertisment"
         static let getMonthEvents = "GetMonthEvents"
     }

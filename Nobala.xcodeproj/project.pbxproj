@@ -44,7 +44,6 @@
 		AF06C2651DC3A7160093E94E /* DailyWorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF06C2641DC3A7160093E94E /* DailyWorkTableViewCell.swift */; };
 		AF09BBDB1DBBEC4E00C4414F /* ExamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF09BBDA1DBBEC4E00C4414F /* ExamsTableViewCell.swift */; };
 		AF106BEF1D0D5D260053130C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BEE1D0D5D260053130C /* AppDelegate.swift */; };
-		AF106BF11D0D5D260053130C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BF01D0D5D260053130C /* ViewController.swift */; };
 		AF106BF41D0D5D260053130C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF106BF21D0D5D260053130C /* Main.storyboard */; };
 		AF106BF61D0D5D260053130C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF106BF51D0D5D260053130C /* Assets.xcassets */; };
 		AF106BF91D0D5D260053130C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF106BF71D0D5D260053130C /* LaunchScreen.storyboard */; };
@@ -54,10 +53,15 @@
 		AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C1F1D0D75760053130C /* NobalaConvenient.swift */; };
 		AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106C211D0D75860053130C /* NobalaConstants.swift */; };
 		AF1B621B1DD02542009EB41D /* ListStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B621A1DD02542009EB41D /* ListStudents.swift */; };
-		AF1B621D1DD0CFB2009EB41D /* ChoseStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B621C1DD0CFB2009EB41D /* ChoseStudentViewController.swift */; };
 		AF21CE011DCE3A6B006C1B9B /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21CE001DCE3A6B006C1B9B /* Messages.swift */; };
 		AF21CE031DCE3C22006C1B9B /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21CE021DCE3C21006C1B9B /* MessagesViewController.swift */; };
 		AF21CE051DCE5D8B006C1B9B /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21CE041DCE5D8B006C1B9B /* MessageTableViewCell.swift */; };
+		AF653AF81DD697BF006F71BB /* ShowExamReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF653AF71DD697BF006F71BB /* ShowExamReportViewController.swift */; };
+		AF653AFA1DD6A496006F71BB /* ShowExamReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF653AF91DD6A496006F71BB /* ShowExamReportTableViewCell.swift */; };
+		AF653AFC1DD6B221006F71BB /* RegistSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF653AFB1DD6B221006F71BB /* RegistSchoolViewController.swift */; };
+		AF653AFE1DD6B6D5006F71BB /* SchoolFeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF653AFD1DD6B6D5006F71BB /* SchoolFeesViewController.swift */; };
+		AF653B001DD6B6EB006F71BB /* WaysToPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF653AFF1DD6B6EB006F71BB /* WaysToPayViewController.swift */; };
+		AF653B021DD6B6F9006F71BB /* TransportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF653B011DD6B6F9006F71BB /* TransportationViewController.swift */; };
 		AF658F001D813B6C005914E9 /* HomeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF658EFF1D813B6C005914E9 /* HomeWork.swift */; };
 		AF71CA0E1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF71CA0D1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift */; };
 		AF7256801D9A75A9001E0515 /* Exams.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72567F1D9A75A9001E0515 /* Exams.swift */; };
@@ -164,7 +168,6 @@
 		AF09BBDA1DBBEC4E00C4414F /* ExamsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsTableViewCell.swift; sourceTree = "<group>"; };
 		AF106BEB1D0D5D260053130C /* Nobala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF106BEE1D0D5D260053130C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF106BF01D0D5D260053130C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF106BF31D0D5D260053130C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF106BF51D0D5D260053130C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF106BF81D0D5D260053130C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -179,10 +182,15 @@
 		AF106C1F1D0D75760053130C /* NobalaConvenient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConvenient.swift; sourceTree = "<group>"; };
 		AF106C211D0D75860053130C /* NobalaConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobalaConstants.swift; sourceTree = "<group>"; };
 		AF1B621A1DD02542009EB41D /* ListStudents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListStudents.swift; sourceTree = "<group>"; };
-		AF1B621C1DD0CFB2009EB41D /* ChoseStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoseStudentViewController.swift; sourceTree = "<group>"; };
 		AF21CE001DCE3A6B006C1B9B /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		AF21CE021DCE3C21006C1B9B /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		AF21CE041DCE5D8B006C1B9B /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		AF653AF71DD697BF006F71BB /* ShowExamReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowExamReportViewController.swift; sourceTree = "<group>"; };
+		AF653AF91DD6A496006F71BB /* ShowExamReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowExamReportTableViewCell.swift; sourceTree = "<group>"; };
+		AF653AFB1DD6B221006F71BB /* RegistSchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistSchoolViewController.swift; sourceTree = "<group>"; };
+		AF653AFD1DD6B6D5006F71BB /* SchoolFeesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolFeesViewController.swift; sourceTree = "<group>"; };
+		AF653AFF1DD6B6EB006F71BB /* WaysToPayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaysToPayViewController.swift; sourceTree = "<group>"; };
+		AF653B011DD6B6F9006F71BB /* TransportationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportationViewController.swift; sourceTree = "<group>"; };
 		AF658EFF1D813B6C005914E9 /* HomeWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWork.swift; sourceTree = "<group>"; };
 		AF71CA0D1D9D434A00B9D458 /* ExamsTeacherFollowUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamsTeacherFollowUp.swift; sourceTree = "<group>"; };
 		AF72567F1D9A75A9001E0515 /* Exams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exams.swift; sourceTree = "<group>"; };
@@ -323,6 +331,7 @@
 				297F730D1DC3599C00D2E2B7 /* SetTimeView.xib */,
 				AF21CE041DCE5D8B006C1B9B /* MessageTableViewCell.swift */,
 				AFEA37401DCF8F5800DD9CEE /* NotificationTableViewCell.swift */,
+				AF653AF91DD6A496006F71BB /* ShowExamReportTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -358,6 +367,7 @@
 				AFC6BC6B1DB9791300AA4E9C /* ExamsViewController.swift */,
 				AFC6BC6D1DB9793600AA4E9C /* HomeWorkReportViewController.swift */,
 				AFC6BC6F1DB9794F00AA4E9C /* ExamsReportViewController.swift */,
+				AF653AF71DD697BF006F71BB /* ShowExamReportViewController.swift */,
 				AFC6BC711DB9797700AA4E9C /* LearningPlanViewController.swift */,
 				AFC6BC731DB979AB00AA4E9C /* DailyHomeworkViewController.swift */,
 				292ABB9B1DC183A500CF002A /* HomeWorkWebViewController.swift */,
@@ -368,7 +378,10 @@
 				AFEA37421DCFE93300DD9CEE /* ShowNotificationViewController.swift */,
 				AFEA37481DCFF2A000DD9CEE /* VisionViewController.swift */,
 				AFEA374A1DCFF2D700DD9CEE /* SupervisorWordViewController.swift */,
-				AF1B621C1DD0CFB2009EB41D /* ChoseStudentViewController.swift */,
+				AF653AFB1DD6B221006F71BB /* RegistSchoolViewController.swift */,
+				AF653AFD1DD6B6D5006F71BB /* SchoolFeesViewController.swift */,
+				AF653AFF1DD6B6EB006F71BB /* WaysToPayViewController.swift */,
+				AF653B011DD6B6F9006F71BB /* TransportationViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -407,7 +420,6 @@
 				41D16C5C1D10311000EEB8A2 /* View */,
 				AF106C1C1D0D70FC0053130C /* Model */,
 				AF106BEE1D0D5D260053130C /* AppDelegate.swift */,
-				AF106BF01D0D5D260053130C /* ViewController.swift */,
 				AF106BF21D0D5D260053130C /* Main.storyboard */,
 				AF106BF51D0D5D260053130C /* Assets.xcassets */,
 				AF106BF71D0D5D260053130C /* LaunchScreen.storyboard */,
@@ -896,9 +908,10 @@
 				292ABB861DC16E8200CF002A /* UIViewController+Visibility.swift in Sources */,
 				E3430A5A1DB02FC5008BC6BB /* homeWorkTableViewCell.swift in Sources */,
 				AFC6BC741DB979AB00AA4E9C /* DailyHomeworkViewController.swift in Sources */,
-				AF106BF11D0D5D260053130C /* ViewController.swift in Sources */,
 				292ABB821DC16E8200CF002A /* PresentationManager.swift in Sources */,
+				AF653AFE1DD6B6D5006F71BB /* SchoolFeesViewController.swift in Sources */,
 				AFD60D021D7D01360002ED14 /* Users.swift in Sources */,
+				AF653AFC1DD6B221006F71BB /* RegistSchoolViewController.swift in Sources */,
 				AFCF4C391DC221FF00E8EF2D /* LearningPlanTableViewCell.swift in Sources */,
 				AF09BBDB1DBBEC4E00C4414F /* ExamsTableViewCell.swift in Sources */,
 				41EE79731D1F0227003B4025 /* leftViewController.swift in Sources */,
@@ -940,21 +953,24 @@
 				AFC6BC6E1DB9793600AA4E9C /* HomeWorkReportViewController.swift in Sources */,
 				292ABB991DC1749B00CF002A /* TZStackViewDistribution.swift in Sources */,
 				292ABB7B1DC16E8200CF002A /* PopupDialogButton.swift in Sources */,
-				AF1B621D1DD0CFB2009EB41D /* ChoseStudentViewController.swift in Sources */,
 				AFEF541D1DCEBBC000FB5F6A /* ShowMessageViewController.swift in Sources */,
 				AF106C201D0D75760053130C /* NobalaConvenient.swift in Sources */,
+				AF653B001DD6B6EB006F71BB /* WaysToPayViewController.swift in Sources */,
 				292ABB7F1DC16E8200CF002A /* PopupDialogDefaultViewController.swift in Sources */,
 				AF21CE031DCE3C22006C1B9B /* MessagesViewController.swift in Sources */,
 				292ABB7E1DC16E8200CF002A /* PopupDialogDefaultView.swift in Sources */,
+				AF653AFA1DD6A496006F71BB /* ShowExamReportTableViewCell.swift in Sources */,
 				AFB252471DC28A6300E857A7 /* PDFViewController.swift in Sources */,
 				292ABB9C1DC183A500CF002A /* HomeWorkWebViewController.swift in Sources */,
 				C301D2801D2327FB00EF0AE6 /* SocialViewController.swift in Sources */,
 				418825F11D11C698002C2648 /* News.swift in Sources */,
 				AFEA374B1DCFF2D700DD9CEE /* SupervisorWordViewController.swift in Sources */,
+				AF653AF81DD697BF006F71BB /* ShowExamReportViewController.swift in Sources */,
 				292ABB801DC16E8200CF002A /* PopupDialogOverlayView.swift in Sources */,
 				292ABB7A1DC16E8200CF002A /* PopupDialog.swift in Sources */,
 				AF21CE011DCE3A6B006C1B9B /* Messages.swift in Sources */,
 				292ABB7C1DC16E8200CF002A /* PopupDialogContainerView.swift in Sources */,
+				AF653B021DD6B6F9006F71BB /* TransportationViewController.swift in Sources */,
 				AFEA373D1DCF89A100DD9CEE /* Notification.swift in Sources */,
 				E3430A561DB0254C008BC6BB /* managerMainMenuViewController.swift in Sources */,
 				AF106C221D0D75860053130C /* NobalaConstants.swift in Sources */,

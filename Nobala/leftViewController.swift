@@ -98,6 +98,10 @@ class leftViewController: UIViewController {
         keychain["user_type"] = nil
         keychain["userFName"] = nil
         
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
+        var destViewController : UIViewController
         
+        destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("NobalaStory")
+        sideMenuController()?.setContentViewController(destViewController)
     }
 }

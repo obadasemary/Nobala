@@ -244,6 +244,11 @@ class MessagesViewController: UIViewController, ENSideMenuDelegate, UITableViewD
         self.selectedTableData.MainMessageID = tableData[indexPath.row].MainMessageID
         self.selectedTableData.UserID = tableData[indexPath.row].UserID
         
+//        print(tableData[indexPath.row].Subject)
+//        print(tableData[indexPath.row].BodyText)
+//        print(tableData[indexPath.row].MainMessageID)
+//        print(tableData[indexPath.row].UserID)        
+        
         self.showMessage.tableData = self.selectedTableData
     }
     
