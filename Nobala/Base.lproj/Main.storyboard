@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="HqQ-Vt-z3p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="HqQ-Vt-z3p">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -58,14 +58,14 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundHome" id="M85-oD-Ktz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewMenubg1" id="M85-oD-Ktz">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rHG-kP-DHw">
                                 <rect key="frame" x="116" y="323" width="173" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="socialMedia"/>
+                                <state key="normal" image="NewMenuGroup 1 copy 5-1"/>
                                 <connections>
                                     <segue destination="BDW-Hc-rZj" kind="push" id="hBW-ei-LZx"/>
                                 </connections>
@@ -73,7 +73,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qHl-0Z-Te1">
                                 <rect key="frame" x="48" y="386" width="171" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="learning"/>
+                                <state key="normal" image="NewMenuGroup 1 copy 6"/>
                                 <connections>
                                     <action selector="enterManagementArea:" destination="TMz-fk-2yr" eventType="touchUpInside" id="aQn-uo-Hei"/>
                                 </connections>
@@ -81,7 +81,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kbn-0L-EyC">
                                 <rect key="frame" x="63" y="48" width="128" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="knowUs"/>
+                                <state key="normal" image="NewMenuGroup 1"/>
                                 <connections>
                                     <segue destination="0Ub-dj-UU5" kind="push" id="Fn0-ns-hqs"/>
                                 </connections>
@@ -89,7 +89,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dlq-3Y-523">
                                 <rect key="frame" x="131" y="114" width="97" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="news"/>
+                                <state key="normal" image="NewMenuGroup 1 copy 4"/>
                                 <connections>
                                     <action selector="newsButtonClicked:" destination="TMz-fk-2yr" eventType="touchUpInside" id="Uww-As-Nhk"/>
                                     <segue destination="wBN-0l-szh" kind="push" id="GMx-5T-Ex6"/>
@@ -98,7 +98,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IRS-De-CjL">
                                 <rect key="frame" x="160" y="184" width="119" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="events"/>
+                                <state key="normal" image="NewMenuGroup 1 copy 5"/>
                                 <connections>
                                     <segue destination="jk5-Do-0gb" kind="push" identifier="showEventsView" id="dDV-Wq-Vp1"/>
                                 </connections>
@@ -106,7 +106,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="njI-1w-Zzl">
                                 <rect key="frame" x="152" y="254" width="107" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="contactUs"/>
+                                <state key="normal" image="NewMenuGroup 1 copy 7"/>
                                 <connections>
                                     <segue destination="mw9-3u-oUh" kind="push" id="jpv-1U-8z3"/>
                                 </connections>
@@ -396,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OPM-uU-Fdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1005" y="-501"/>
+            <point key="canvasLocation" x="631" y="-1147"/>
         </scene>
         <!--Knows Us View Controller-->
         <scene sceneID="H3S-tG-99g">
@@ -410,81 +410,73 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tys-TP-pbi">
-                                <rect key="frame" x="43" y="160" width="234" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="divider line"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" id="9pN-vs-vDZ">
                                 <rect key="frame" x="20" y="416" width="95" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Cw1-Sq-rQu">
-                                <rect key="frame" x="43" y="129" width="234" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="divider line"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O0w-EN-fCS">
-                                <rect key="frame" x="43" y="69" width="234" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="divider line"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yBh-zm-O2y">
-                                <rect key="frame" x="139" y="81" width="143" height="27"/>
+                                <rect key="frame" x="139" y="90" width="143" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="KalmetMoshref"/>
+                                <state key="normal" image="NewTa3arf3alynaTake"/>
                                 <connections>
                                     <segue destination="ist-6T-0od" kind="push" id="HT1-ef-yI8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tym-fw-5cS">
-                                <rect key="frame" x="43" y="98" width="234" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="divider line"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XnT-mT-Bxe">
-                                <rect key="frame" x="139" y="113" width="143" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="registerInSchool"/>
-                                <connections>
-                                    <segue destination="VjF-IG-27x" kind="push" id="2Ep-tQ-mNW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HOV-rZ-Rbo">
-                                <rect key="frame" x="139" y="144" width="143" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="feesSchool"/>
-                                <connections>
-                                    <segue destination="irq-1H-iUS" kind="push" id="git-wf-fzw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1wN-hQ-abM">
-                                <rect key="frame" x="162" y="174" width="120" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="cashway"/>
-                                <connections>
-                                    <segue destination="xUD-03-laG" kind="push" id="dqA-MG-3JG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gse-G5-Re0">
-                                <rect key="frame" x="43" y="201" width="234" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="divider line"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BZ2-4x-M7w">
-                                <rect key="frame" x="139" y="209" width="143" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="transportation"/>
-                                <connections>
-                                    <segue destination="7vo-U0-UhN" kind="push" id="9vI-gL-v74"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ajN-vj-2NN">
                                 <rect key="frame" x="152" y="46" width="130" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="vision"/>
+                                <state key="normal" image="NewTa3arf3alynaVision"/>
                                 <connections>
                                     <segue destination="2u7-SY-eFl" kind="push" id="Zxt-tb-iwu"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="Zoa-A3-OIF">
+                                <rect key="frame" x="40" y="81" width="240" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="qvQ-eC-JrT">
+                                <rect key="frame" x="40" y="125" width="240" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098039215686272" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0tK-Yx-gSS">
+                                <rect key="frame" x="173" y="134" width="107" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="NewTa3arf3alynaWhoAreWe"/>
+                                <connections>
+                                    <action selector="whoAreWeTouched:" destination="0Ub-dj-UU5" eventType="touchUpInside" id="2kW-cu-0pD"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="BNX-MV-fpb">
+                                <rect key="frame" x="40" y="172" width="240" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="VNa-AT-36v">
+                                <rect key="frame" x="40" y="219" width="240" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0cy-nj-ImI">
+                                <rect key="frame" x="150" y="181" width="132" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="NewTa3arf3alynaPhotoAlbum"/>
+                                <connections>
+                                    <action selector="photoAlbumTouched:" destination="0Ub-dj-UU5" eventType="touchUpInside" id="h3t-W6-eYh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="66E-VO-6ic">
+                                <rect key="frame" x="40" y="266" width="240" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ogz-D7-Ayy">
+                                <rect key="frame" x="116" y="228" width="170" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="NewTa3arf3alynaPhotoCamera"/>
+                                <connections>
+                                    <action selector="nobalaInYourHandTouched:" destination="0Ub-dj-UU5" eventType="touchUpInside" id="gCa-Yc-KBX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -971,42 +963,74 @@
                                 <rect key="frame" x="15" y="20" width="285" height="470"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0j3-0g-gET">
-                                <rect key="frame" x="226" y="60" width="54" height="26"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EiV-2I-yIz">
+                                <rect key="frame" x="26" y="33" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="telephone"/>
+                                <state key="normal" image="twitter"/>
+                                <connections>
+                                    <action selector="twitterAction:" destination="mw9-3u-oUh" eventType="touchUpInside" id="Vq4-u0-4iw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8CX-sI-zZ5">
+                                <rect key="frame" x="162" y="33" width="56" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="facebook"/>
+                                <connections>
+                                    <action selector="facebookAction:" destination="mw9-3u-oUh" eventType="touchUpInside" id="bxR-Yq-1Ok"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dRU-27-qYF">
+                                <rect key="frame" x="231" y="33" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="google plus"/>
+                                <connections>
+                                    <action selector="googlePlusAction:" destination="mw9-3u-oUh" eventType="touchUpInside" id="x8l-OV-YrK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iJW-O6-0JQ">
+                                <rect key="frame" x="91" y="33" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="youtube"/>
+                                <connections>
+                                    <action selector="youtubeAction:" destination="mw9-3u-oUh" eventType="touchUpInside" id="8Am-Dl-B2E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0j3-0g-gET">
+                                <rect key="frame" x="228" y="98" width="54" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="NewEtaselBenaPhone"/>
                                 <connections>
                                     <action selector="phoneAction:" destination="mw9-3u-oUh" eventType="touchUpInside" id="mCu-zc-bXJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h8g-lE-Kbw">
-                                <rect key="frame" x="228" y="98" width="53" height="27"/>
+                                <rect key="frame" x="226" y="133" width="62" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="mobileNumber"/>
+                                <state key="normal" image="NewEtaselBenaMobile"/>
                                 <connections>
                                     <action selector="mobileAction:" destination="mw9-3u-oUh" eventType="touchUpInside" id="MZj-Q7-fBt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1qV-jV-B7Y">
-                                <rect key="frame" x="222" y="140" width="64" height="22"/>
+                                <rect key="frame" x="224" y="178" width="64" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="fax"/>
+                                <state key="normal" image="NewEtaselBenaFax"/>
                                 <connections>
                                     <action selector="faxAction:" destination="mw9-3u-oUh" eventType="touchUpInside" id="4av-ez-GhC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vxa-oc-CqL">
-                                <rect key="frame" x="194" y="172" width="87" height="34"/>
+                                <rect key="frame" x="196" y="210" width="87" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="email"/>
+                                <state key="normal" image="NewEtaselBenaEmail"/>
                                 <connections>
                                     <action selector="eMailAction:" destination="mw9-3u-oUh" eventType="touchUpInside" id="7oZ-HK-Chh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WB7-gs-9hz">
-                                <rect key="frame" x="225" y="209" width="59" height="28"/>
+                                <rect key="frame" x="227" y="247" width="59" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Address"/>
+                                <state key="normal" image="NewEtaselBenaAddress"/>
                                 <connections>
                                     <action selector="mapAction:" destination="mw9-3u-oUh" eventType="touchUpInside" id="G8Z-C3-27n"/>
                                 </connections>
@@ -1115,7 +1139,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="BtG-CL-vQO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.15994435548782349" green="0.2633877694606781" blue="0.41696423292160034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.25098039215686274" green="0.023529411764705882" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1142,36 +1166,51 @@
                                 <rect key="frame" x="15" y="20" width="285" height="470"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FAI-d2-kBg">
-                                <rect key="frame" x="26" y="65" width="57" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cgc-Gg-4yU">
+                                <rect key="frame" x="50" y="83" width="234" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="twitter"/>
+                                <state key="normal" image="divider line"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hm4-gD-Ag0">
+                                <rect key="frame" x="50" y="52" width="234" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="divider line"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="00J-GC-mxm">
+                                <rect key="frame" x="146" y="36" width="143" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="NewlkobolWlTasgeelReg"/>
                                 <connections>
-                                    <action selector="twitterAction:" destination="BDW-Hc-rZj" eventType="touchUpInside" id="WL9-HJ-yjb"/>
+                                    <segue destination="VjF-IG-27x" kind="push" id="yHh-7p-Aa0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8ou-ef-Rq9">
-                                <rect key="frame" x="162" y="65" width="56" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UPh-Th-Iwu">
+                                <rect key="frame" x="146" y="67" width="143" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="facebook"/>
+                                <state key="normal" image="NewlkobolWlTasgeelFees"/>
                                 <connections>
-                                    <action selector="facebookAction:" destination="BDW-Hc-rZj" eventType="touchUpInside" id="hXF-yo-1GO"/>
+                                    <segue destination="irq-1H-iUS" kind="push" id="TrC-uX-oEz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d1X-f2-RGD">
-                                <rect key="frame" x="231" y="65" width="57" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ju1-zw-njS">
+                                <rect key="frame" x="169" y="97" width="120" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="google plus"/>
+                                <state key="normal" image="NewlkobolWlTasgeelPayWay"/>
                                 <connections>
-                                    <action selector="googlePlusAction:" destination="BDW-Hc-rZj" eventType="touchUpInside" id="gvz-4W-6Gk"/>
+                                    <segue destination="xUD-03-laG" kind="push" id="J9f-3i-zod"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="G3E-Fd-WBW">
-                                <rect key="frame" x="91" y="65" width="57" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sg2-kM-Et8">
+                                <rect key="frame" x="50" y="124" width="234" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="youtube"/>
+                                <state key="normal" image="divider line"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ctg-pd-dbn">
+                                <rect key="frame" x="146" y="132" width="143" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="NewlkobolWlTasgeelTran"/>
                                 <connections>
-                                    <action selector="youtubeAction:" destination="BDW-Hc-rZj" eventType="touchUpInside" id="bNq-YY-3Iy"/>
+                                    <segue destination="7vo-U0-UhN" kind="push" id="192-yG-vUa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1194,7 +1233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XbT-qE-FAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="306" y="887"/>
+            <point key="canvasLocation" x="1172" y="-1794"/>
         </scene>
         <!--News-->
         <scene sceneID="QKo-N7-hHW">
@@ -3281,7 +3320,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Address" width="59" height="28"/>
         <image name="DWDateIcon" width="28" height="28"/>
         <image name="DWshap" width="18" height="23"/>
         <image name="DWshap2" width="26" height="28"/>
@@ -3293,7 +3331,6 @@
         <image name="HWRIcon2" width="25" height="22"/>
         <image name="HWicon" width="24" height="23"/>
         <image name="HWlink" width="17" height="16"/>
-        <image name="KalmetMoshref" width="171" height="26"/>
         <image name="LPDown" width="22" height="20"/>
         <image name="LPIcon1" width="22" height="28"/>
         <image name="LPIcon2" width="18" height="23"/>
@@ -3321,23 +3358,39 @@
         <image name="MLReportExams" width="86" height="104"/>
         <image name="MLReportHomework" width="86" height="104"/>
         <image name="MLStudend" width="65" height="25"/>
+        <image name="NewEtaselBenaAddress" width="69" height="33"/>
+        <image name="NewEtaselBenaEmail" width="119" height="16"/>
+        <image name="NewEtaselBenaFax" width="75" height="25"/>
+        <image name="NewEtaselBenaMobile" width="62" height="32"/>
+        <image name="NewEtaselBenaPhone" width="62" height="31"/>
+        <image name="NewMenuGroup 1" width="149" height="63"/>
+        <image name="NewMenuGroup 1 copy 4" width="112" height="63"/>
+        <image name="NewMenuGroup 1 copy 5" width="138" height="63"/>
+        <image name="NewMenuGroup 1 copy 5-1" width="198" height="63"/>
+        <image name="NewMenuGroup 1 copy 6" width="199" height="63"/>
+        <image name="NewMenuGroup 1 copy 7" width="124" height="63"/>
+        <image name="NewMenubg1" width="375" height="595"/>
+        <image name="NewTa3arf3alynaPhotoAlbum" width="132" height="31"/>
+        <image name="NewTa3arf3alynaPhotoCamera" width="170" height="31"/>
+        <image name="NewTa3arf3alynaTake" width="200" height="31"/>
+        <image name="NewTa3arf3alynaVision" width="157" height="31"/>
+        <image name="NewTa3arf3alynaWhoAreWe" width="107" height="31"/>
+        <image name="NewlkobolWlTasgeelFees" width="179" height="31"/>
+        <image name="NewlkobolWlTasgeelPayWay" width="135" height="32"/>
+        <image name="NewlkobolWlTasgeelReg" width="191" height="31"/>
+        <image name="NewlkobolWlTasgeelTran" width="178" height="32"/>
         <image name="Notification" width="123" height="149"/>
         <image name="NotificationI1" width="75" height="71"/>
         <image name="NotificationI2" width="75" height="71"/>
         <image name="backgroundEvents" width="320" height="511"/>
-        <image name="backgroundHome" width="320" height="511"/>
         <image name="backgroundKnowsUs" width="320" height="511"/>
         <image name="backgroundNews" width="320" height="511"/>
-        <image name="cashway" width="116" height="27"/>
         <image name="contactUs" width="107" height="75"/>
         <image name="contactUsBackground" width="320" height="511"/>
         <image name="contactUsRectangle" width="287" height="471"/>
         <image name="divider line" width="234" height="1"/>
-        <image name="email" width="102" height="14"/>
         <image name="events" width="119" height="73"/>
         <image name="facebook" width="56" height="57"/>
-        <image name="fax" width="64" height="21"/>
-        <image name="feesSchool" width="153" height="27"/>
         <image name="google plus" width="57" height="57"/>
         <image name="house" width="16" height="15"/>
         <image name="knowUs" width="128" height="72"/>
@@ -3345,19 +3398,14 @@
         <image name="list" width="26" height="13"/>
         <image name="logo" width="71" height="65"/>
         <image name="logoEvents" width="52" height="47"/>
-        <image name="mobileNumber" width="53" height="27"/>
         <image name="news" width="97" height="73"/>
         <image name="newsCellRectangle" width="311" height="106"/>
         <image name="newsDetailsBackground" width="320" height="511"/>
         <image name="newsDetailsImage" width="37" height="11"/>
         <image name="newsDetailsRectangle" width="287" height="472"/>
         <image name="rectangleEvents" width="287" height="471"/>
-        <image name="registerInSchool" width="163" height="26"/>
         <image name="socialMedia" width="173" height="70"/>
-        <image name="telephone" width="54" height="26"/>
-        <image name="transportation" width="153" height="26"/>
         <image name="twitter" width="57" height="57"/>
-        <image name="vision" width="134" height="27"/>
         <image name="youtube" width="57" height="57"/>
     </resources>
     <inferredMetricsTieBreakers>

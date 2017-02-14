@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SafariServices
+import ASProgressHud
 import ENSwiftSideMenu
 
 class KnowsUsViewController: UIViewController, ENSideMenuDelegate {
@@ -61,6 +63,54 @@ class KnowsUsViewController: UIViewController, ENSideMenuDelegate {
         else
         {
             self.sideMenu?.hideSideMenu()
+        }
+    }
+    
+    @IBAction func whoAreWeTouched(sender: AnyObject) {
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            
+            ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+            
+            if let url = NSURL(string: "https://noor.moe.gov.sa/noor/login.aspx") {
+                
+                let safariController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
+                self.presentViewController(safariController, animated: true, completion: nil)
+            }
+            
+            ASProgressHud.hideHUDForView(self.view, animated: true)
+        }
+    }
+    
+    @IBAction func photoAlbumTouched(sender: AnyObject) {
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            
+            ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+            
+            if let url = NSURL(string: "http://nobala.edu.sa/Gallery.aspx?SchoolID=1000&archived=0") {
+                
+                let safariController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
+                self.presentViewController(safariController, animated: true, completion: nil)
+            }
+            
+            ASProgressHud.hideHUDForView(self.view, animated: true)
+        }
+    }
+    
+    @IBAction func nobalaInYourHandTouched(sender: AnyObject) {
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            
+            ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
+            
+            if let url = NSURL(string: "http://nobala.edu.sa/panorama/index.html") {
+                
+                let safariController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
+                self.presentViewController(safariController, animated: true, completion: nil)
+            }
+            
+            ASProgressHud.hideHUDForView(self.view, animated: true)
         }
     }
 }

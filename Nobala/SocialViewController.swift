@@ -22,7 +22,7 @@ class SocialViewController: UIViewController, ENSideMenuDelegate {
         super.viewDidLoad()
 
         
-        let logo = UIImage(named: "Social.png")
+        let logo = UIImage(named: "NewlkobolWlTasgeelUplo.png")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
         // Do any additional setup after loading the view.
@@ -69,70 +69,7 @@ class SocialViewController: UIViewController, ENSideMenuDelegate {
         }
     }
     
-    @IBAction func twitterAction(sender: AnyObject) {
-        
-        dispatch_async(dispatch_get_main_queue()) {
-            
-            ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
-            
-            if let url = NSURL(string: "https://twitter.com/nobalaschool") {
-                
-                let safariController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
-                self.presentViewController(safariController, animated: true, completion: nil)
-            }
-            
-            ASProgressHud.hideHUDForView(self.view, animated: true)
-        }
-    }
     
-    @IBAction func youtubeAction(sender: AnyObject) {
-        
-        dispatch_async(dispatch_get_main_queue()) {
-            
-            ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
-            
-            if let url = NSURL(string: "https://www.youtube.com/user/AlnobalaaSchools") {
-                
-                let safariController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
-                self.presentViewController(safariController, animated: true, completion: nil)
-            }
-            
-            ASProgressHud.hideHUDForView(self.view, animated: true)
-        }
-    }
-    
-    @IBAction func facebookAction(sender: AnyObject) {
-        
-        dispatch_async(dispatch_get_main_queue()) {
-            
-            ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
-            
-            if let url = NSURL(string: "https://www.facebook.com/nobalaschool") {
-                
-                let safariController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
-                self.presentViewController(safariController, animated: true, completion: nil)
-            }
-            
-            ASProgressHud.hideHUDForView(self.view, animated: true)
-        }
-    }
-    
-    @IBAction func googlePlusAction(sender: AnyObject) {
-        
-        dispatch_async(dispatch_get_main_queue()) {
-            
-            ASProgressHud.showHUDAddedTo(self.view, animated: true, type: .Default)
-            
-            if let url = NSURL(string: "https://plus.google.com/107330884066981073291") {
-                
-                let safariController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
-                self.presentViewController(safariController, animated: true, completion: nil)
-            }
-            
-            ASProgressHud.hideHUDForView(self.view, animated: true)
-        }
-    }
-
     
 
     /*
