@@ -40,7 +40,7 @@ class ExamsReportViewController: UIViewController, ENSideMenuDelegate, UITableVi
     
     var examReportArrary = []
     var selectedTableData: ExamStudentReport = ExamStudentReport()
-    var showExamReport: ShowExamReportViewController = ShowExamReportViewController()
+    var showExamReport : ShowExamReportViewController = ShowExamReportViewController()
 
     var sideMenu:ENSideMenu?
     

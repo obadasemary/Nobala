@@ -43,7 +43,7 @@ class TransportationViewController: UIViewController {
             self.tableData = myResult
             
             self.titleLabel.text = self.tableData[4].valueForKey("Title") as? String
-            self.textArea.text = self.tableData[4].valueForKey("Description") as? String
+            self.textArea.text = (self.tableData[4].valueForKey("Details") as? String)!.html2String
             
             ASProgressHud.hideHUDForView(self.view, animated: true)
             
@@ -55,5 +55,23 @@ class TransportationViewController: UIViewController {
             
             self.presentViewController(alertController, animated: true, completion: nil)
         }
+    }
+}
+
+extension String {
+    
+    var html2AttributedString: NSAttributedString? {
+        guard
+            let data = dataUsingEncoding(NSUTF8StringEncoding)
+            else { return nil }
+        do {
+            return try NSAttributedString(data: data, options: [NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType,NSCharacterEncodingDocumentAttribute:NSUTF8StringEncoding], documentAttributes: nil)
+        } catch let error as NSError {
+            print(error.localizedDescription)
+            return  nil
+        }
+    }
+    var html2String: String {
+        return html2AttributedString?.string ?? ""
     }
 }
